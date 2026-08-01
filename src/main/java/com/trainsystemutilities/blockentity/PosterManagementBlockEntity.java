@@ -24,6 +24,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib.animatable.GeoBlockEntity;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.*;
 
@@ -31,7 +37,8 @@ import java.util.*;
  * ポスター管理ブロック：リンクしたモニターにPNG/JPG画像を表示する。
  * 複数画像のスライドショーとアニメーション切替に対応。
  */
-public class PosterManagementBlockEntity extends BlockEntity implements Container, MenuProvider {
+public class PosterManagementBlockEntity extends BlockEntity
+        implements Container, MenuProvider, GeoBlockEntity {
 
     // モニター連携カード（スロット0）
     private ItemStack monitorLinkCard = ItemStack.EMPTY;
@@ -121,6 +128,29 @@ public class PosterManagementBlockEntity extends BlockEntity implements Containe
         super(ModBlockEntities.POSTER_MANAGEMENT.get(), pos, state);
     }
 
+    // --- Geckolib (= 静的モデル。 カード有無で bone 表示 / status LED テクスチャを切替) ---
+
+    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        controllers.add(new AnimationController<>(this, "idle", 0, state -> PlayState.STOP));
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() { return cache; }
+
+    /** モデルのモニターカード bone / status LED 用 (= このブロックはメモリーカードを持たない)。 */
+    public boolean hasMonitorCard() { return !monitorLinkCard.isEmpty(); }
+
+    /** カード取り外し時に client へ BE を再送する (= setItem 側は既に送信済み)。
+     *  §5.1: client は Container の ItemStack を直接見られないため、 getUpdateTag 経由で
+     *  同期しないとモデルが更新されない (= setChanged だけでは保存用フラグが立つのみ)。 */
+    private void syncCardPresence() {
+        if (level == null || level.isClientSide()) return;
+        level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+    }
+
     // --- Container ---
 
     @Override public int getContainerSize() { return 1; }
@@ -134,6 +164,7 @@ public class PosterManagementBlockEntity extends BlockEntity implements Containe
         if (monitorLinkCard.isEmpty()) monitorLinkCard = ItemStack.EMPTY;
         updateMonitorLinks();
         setChanged();
+        syncCardPresence();
         return result;
     }
 
@@ -142,6 +173,7 @@ public class PosterManagementBlockEntity extends BlockEntity implements Containe
         if (slot != 0) return ItemStack.EMPTY;
         ItemStack result = monitorLinkCard;
         monitorLinkCard = ItemStack.EMPTY;
+        syncCardPresence();
         return result;
     }
 
@@ -163,7 +195,7 @@ public class PosterManagementBlockEntity extends BlockEntity implements Containe
     @Override public boolean stillValid(Player player) {
         return player.distanceToSqr(worldPosition.getX() + 0.5, worldPosition.getY() + 0.5, worldPosition.getZ() + 0.5) <= 64;
     }
-    @Override public void clearContent() { monitorLinkCard = ItemStack.EMPTY; }
+    @Override public void clearContent() { monitorLinkCard = ItemStack.EMPTY; syncCardPresence(); }
 
     // --- MenuProvider ---
 

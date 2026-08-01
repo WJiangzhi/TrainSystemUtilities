@@ -22,6 +22,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import com.trainsystemutilities.gui.ManagementComputerMenu;
+import software.bernie.geckolib.animatable.GeoBlockEntity;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +37,7 @@ import java.util.UUID;
  * 管理用コンピューターのBlockEntity。
  * モニターとリンクし、路線図の投影制御、列車管理機能を提供する。
  */
-public class ManagementComputerBlockEntity extends BlockEntity implements Container {
+public class ManagementComputerBlockEntity extends BlockEntity implements Container, GeoBlockEntity {
 
     private BlockPos linkedMonitorPos = null;
     private BlockPos linkedRailwayManagerPos = null;
@@ -595,6 +601,38 @@ public class ManagementComputerBlockEntity extends BlockEntity implements Contai
         } catch (Exception ignored) { return "?"; }
     }
 
+    // --- Geckolib (= 静的モデル。 カード有無で bone 表示 / status LED テクスチャを切替) ---
+
+    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        controllers.add(new AnimationController<>(this, "idle", 0, state -> PlayState.STOP));
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() { return cache; }
+
+    /** モデルのメモリーカード bone / status LED 用 (= client でも参照される)。 */
+    public boolean hasMemoryCard() { return !memoryCard.isEmpty(); }
+
+    /** モデルのモニターカード bone / status LED 用 (= client でも参照される)。 */
+    public boolean hasMonitorCard() { return !monitorLinkCard.isEmpty(); }
+
+    /** 直近 client へ送ったカード有無 (bit0=memory, bit1=monitor)。 未送信は -1。 */
+    private int syncedCardBits = -1;
+
+    /** カードの有無が変わったときだけ client へ BE を再送する。
+     *  §5.1: client は Container の ItemStack を直接見られないため、 getUpdateTag 経由で
+     *  同期しないとモデルが更新されない (= setChanged だけでは保存用フラグが立つのみ)。 */
+    private void syncCardPresence() {
+        if (level == null || level.isClientSide()) return;
+        int bits = (memoryCard.isEmpty() ? 0 : 1) | (monitorLinkCard.isEmpty() ? 0 : 2);
+        if (bits == syncedCardBits) return;
+        syncedCardBits = bits;
+        level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+    }
+
     // --- Container implementation (slot 0 = memoryCard, slot 1 = monitorLinkCard,
     //     slot 2 = 時刻表書き出し 入力, slot 3 = 書き出し 出力) ---
     @Override public int getContainerSize() { return 4; }
@@ -623,6 +661,7 @@ public class ManagementComputerBlockEntity extends BlockEntity implements Contai
         if (slot == 3 && src.isEmpty()) exportOutputStack = ItemStack.EMPTY;
         setChanged();
         if (slot == 1) syncMonitorLinkFromCard();
+        syncCardPresence();
         return result;
     }
     @Override
@@ -635,6 +674,7 @@ public class ManagementComputerBlockEntity extends BlockEntity implements Contai
             case 3 -> { old = exportOutputStack; exportOutputStack = ItemStack.EMPTY; }
             default -> { return ItemStack.EMPTY; }
         }
+        syncCardPresence();
         return old;
     }
     @Override
@@ -646,6 +686,7 @@ public class ManagementComputerBlockEntity extends BlockEntity implements Contai
             case 3 -> { exportOutputStack = stack; setChanged(); }
             default -> {}
         }
+        syncCardPresence();
     }
     @Override public boolean stillValid(Player player) {
         return player.distanceToSqr(worldPosition.getX() + 0.5, worldPosition.getY() + 0.5, worldPosition.getZ() + 0.5) <= 64;
@@ -657,6 +698,7 @@ public class ManagementComputerBlockEntity extends BlockEntity implements Contai
         exportOutputStack = ItemStack.EMPTY;
         setChanged();
         syncMonitorLinkFromCard();
+        syncCardPresence();
     }
 
     // --- 時刻表書き出し (server 権威) ---

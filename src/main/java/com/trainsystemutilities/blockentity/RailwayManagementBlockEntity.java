@@ -20,6 +20,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import software.bernie.geckolib.animatable.GeoBlockEntity;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.*;
 
@@ -27,7 +33,7 @@ import java.util.*;
  * 鉄道管理ブロック：駅にリンクして使用。
  * リンクした駅の名前、到着列車、停車時間を管理する。
  */
-public class RailwayManagementBlockEntity extends BlockEntity implements Container {
+public class RailwayManagementBlockEntity extends BlockEntity implements Container, GeoBlockEntity {
 
     private String linkedStationName = null;
     private BlockPos linkedStationPos = null;
@@ -485,6 +491,39 @@ public class RailwayManagementBlockEntity extends BlockEntity implements Contain
     // Slot allocation: 0 = monitor link card, 1 = detection card, 2 = range board,
     //                  3..18 = per-entry recording media (MAX_ENTRIES = 16)
 
+    // --- Geckolib (= 静的モデル。 カード有無で bone 表示 / status LED テクスチャを切替) ---
+
+    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
+        controllers.add(new AnimationController<>(this, "idle", 0, state -> PlayState.STOP));
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() { return cache; }
+
+    /** モデルのメモリーカード bone / status LED 用。 このブロックの「メモリーカード」は
+     *  ホームドア group 用 (= slot SLOT_SCREEN_DOOR_CARD、 UI 表記 tsu.rm.sd_card)。 */
+    public boolean hasMemoryCard() { return !screenDoorCard.isEmpty(); }
+
+    /** モデルのモニターカード bone / status LED 用。 */
+    public boolean hasMonitorCard() { return !monitorLinkCard.isEmpty(); }
+
+    /** 直近 client へ送ったカード有無 (bit0=memory, bit1=monitor)。 未送信は -1。 */
+    private int syncedCardBits = -1;
+
+    /** カードの有無が変わったときだけ client へ BE を再送する。
+     *  §5.1: client は Container の ItemStack を直接見られないため、 getUpdateTag 経由で
+     *  同期しないとモデルが更新されない (= setChanged だけでは保存用フラグが立つのみ)。 */
+    private void syncCardPresence() {
+        if (level == null || level.isClientSide()) return;
+        int bits = (screenDoorCard.isEmpty() ? 0 : 1) | (monitorLinkCard.isEmpty() ? 0 : 2);
+        if (bits == syncedCardBits) return;
+        syncedCardBits = bits;
+        level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
+    }
+
     @Override public int getContainerSize() { return TOTAL_SLOTS; }
 
     @Override
@@ -518,6 +557,7 @@ public class RailwayManagementBlockEntity extends BlockEntity implements Contain
         setChanged();
         if (slot == SLOT_MONITOR_CARD) updateMonitorLinks();
         if (slot == SLOT_DETECTION_CARD) refreshDetectionListener();
+        syncCardPresence();
         return result;
     }
 
@@ -539,6 +579,7 @@ public class RailwayManagementBlockEntity extends BlockEntity implements Contain
                 announcementMedia.set(mediaIdx, ItemStack.EMPTY);
             } else result = ItemStack.EMPTY;
         }
+        syncCardPresence();
         return result;
     }
 
@@ -559,6 +600,7 @@ public class RailwayManagementBlockEntity extends BlockEntity implements Contain
             }
         }
         setChanged();
+        syncCardPresence();
     }
 
     @Override
@@ -606,6 +648,7 @@ public class RailwayManagementBlockEntity extends BlockEntity implements Contain
         screenDoorCard = ItemStack.EMPTY;
         refreshDetectionListener();
         refreshScreenDoorDetectionListener();
+        syncCardPresence();
     }
 
     // === Phase 21: ホームドア群 getters/setters ===

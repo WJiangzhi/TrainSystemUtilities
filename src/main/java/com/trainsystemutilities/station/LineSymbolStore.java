@@ -39,6 +39,12 @@ public class LineSymbolStore extends SavedData {
         return stationKey == null ? null : byStation.get(stationKey);
     }
 
+    /** 全割り当ての読み取り専用ビュー (stationKey → symbol)。 駅名サインが「同一路線の隣の番号」を
+     *  逆引きするのに使う。 chunk load に依存せず全駅を見られるのはこの store だけ。 */
+    public Map<String, LineSymbol> entries() {
+        return java.util.Collections.unmodifiableMap(byStation);
+    }
+
     /** 割り当てを設定 (symbol==null で解除)。 値が変わったときだけ snapshot を差し替えて dirty 化する。 */
     public void setSymbol(String stationKey, LineSymbol symbol) {
         if (stationKey == null || stationKey.isEmpty()) return;

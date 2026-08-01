@@ -56,6 +56,16 @@ public class ClientSetup {
         // 架線トラス (= ANGLE_8 で 8 方向回転 + CORNER で model 切替、 Geckolib model)
         event.registerBlockEntityRenderer(ModBlockEntities.OVERHEAD_TRUSS.get(),
                 com.trainsystemutilities.client.electrification.OverheadTrussBlockRenderer::new);
+        // 1.0.7: 駅名サイン — Geckolib 筐体 + 白面へ Manta で駅名 / 隣駅 / 帯 / 路線記号を描画
+        event.registerBlockEntityRenderer(ModBlockEntities.STATION_NAME_SIGN.get(),
+                com.trainsystemutilities.client.structure.StationNameSignBlockRenderer::new);
+        // 1.0.7: 管理系コンソール 3 種 — Geckolib 静的 + カード有無で bone / status LED を切替
+        event.registerBlockEntityRenderer(ModBlockEntities.MANAGEMENT_COMPUTER.get(),
+                com.trainsystemutilities.client.renderer.ManagementComputerBlockRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.RAILWAY_MANAGEMENT.get(),
+                com.trainsystemutilities.client.renderer.RailwayManagementBlockRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.POSTER_MANAGEMENT.get(),
+                com.trainsystemutilities.client.renderer.PosterManagementBlockRenderer::new);
     }
 
     private static void registerScreens(RegisterMenuScreensEvent event) {

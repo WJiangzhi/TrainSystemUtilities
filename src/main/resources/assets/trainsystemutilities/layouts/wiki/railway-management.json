@@ -574,13 +574,22 @@
                   "borderRadius": 3,
                   "children": [
                     {
-                      "tag": "span",
-                      "x": 6,
+                      "tag": "icon",
+                      "x": 5,
                       "y": 2,
-                      "w": 38,
+                      "w": 10,
                       "h": 10,
                       "color": "#4fc3f7",
-                      "text": "⚙ 設定"
+                      "icon": "manta:settings"
+                    },
+                    {
+                      "tag": "span",
+                      "x": 17,
+                      "y": 2,
+                      "w": 27,
+                      "h": 10,
+                      "color": "#4fc3f7",
+                      "text": "設定"
                     }
                   ]
                 },

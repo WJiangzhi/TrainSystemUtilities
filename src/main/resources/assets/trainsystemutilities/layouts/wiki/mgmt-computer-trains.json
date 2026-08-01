@@ -239,7 +239,7 @@
                       "text": "列車"
                     },
                     {
-                      "tag": "span",
+                      "tag": "icon",
                       "classes": [
                         "dropdown-arrow"
                       ],
@@ -247,7 +247,7 @@
                       "w": 10,
                       "h": 12,
                       "color": "#4fc3f7",
-                      "text": "▼"
+                      "icon": "manta:chevron-down"
                     }
                   ]
                 },

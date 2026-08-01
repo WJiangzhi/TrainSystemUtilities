@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "block/block",
   "textures": {
-    "top": "trainsystemutilities:block/poster_management_block_top",
-    "front": "trainsystemutilities:block/poster_management_block_front",
-    "side": "trainsystemutilities:block/poster_management_block_side"
+    "particle": "trainsystemutilities:block/poster_management_block"
   }
 }

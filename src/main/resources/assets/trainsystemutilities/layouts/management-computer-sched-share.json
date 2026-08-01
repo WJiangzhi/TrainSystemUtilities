@@ -8,7 +8,7 @@
      "classes": ["sched-share-title"], "textKey": "sched-share-title",
      "x": 12, "y": 12, "w": 200, "h": 11, "children": []},
     {"bg": "rgba(255,255,255,0.05)", "color": "#aaa", "borderColor": "#555", "borderWidth": 1,
-     "borderRadius": 3, "fontWeight": "", "isSlot": false, "text": "×", "tag": "div",
+     "borderRadius": 3, "fontWeight": "", "isSlot": false, "tag":"icon","icon":"manta:x",
      "classes": ["sched-share-close"], "x": 216, "y": 10, "w": 16, "h": 14,
      "hoverColor": "#f44", "hoverBorderColor": "#f44", "clickable": true, "textAlign": "center",
      "children": []},

@@ -27,6 +27,11 @@ public class ChestLinkHintRenderer {
     // MCSS 共通アニメ追跡
     private static final belugalab.tsu.api.HudAnimState anim =
             new belugalab.tsu.api.HudAnimState(220_000_000L, 160_000_000L);
+    /** ラベル左に描く registry icon (空 = icon なし)。W7-1 で ✔ glyph から移行。 */
+    private static String lastIconId = "";
+    /** icon の実寸と text までの間隔 (px)。 */
+    private static final int ICON_PX = 8;
+    private static final int ICON_GAP = 3;
     private static String lastLabel = "";
     private static boolean lastAlreadyLinked = false;
 
@@ -49,8 +54,13 @@ public class ChestLinkHintRenderer {
         if (visibleNow) {
             BlockPos linked = TrainPresetToolItem.getLinkedChestPos(tool);
             lastAlreadyLinked = linked != null && linked.equals(chestPos);
+            // MANTA_5 Wave 7 / W7-1 (R4.23.1): \u5148\u982d\u306e \u2714 \u306f\u72b6\u614b iconography \u306a\u306e\u3067
+            // registry icon (manta:check) \u3078\u5206\u96e2\u3057\u305f\u3002**escape \u8a18\u6cd5\u3060\u3063\u305f\u305f\u3081
+            // control-glyph gate \u304b\u3089\u4e0d\u53ef\u8996**\u3060\u3063\u305f (gate \u306f 2026-07-26 \u306b escape \u5fa9\u53f7\u3092\u8ffd\u52a0)\u3002
+            // \u26ab \u306f control \u3067\u306f\u306a\u304f\u884c\u982d bullet \u306e typography \u306a\u306e\u3067 text \u306e\u307e\u307e\u6b8b\u3059\u3002
+            lastIconId = lastAlreadyLinked ? "manta:check" : "";
             lastLabel = lastAlreadyLinked
-                    ? "\u2714 \u30ea\u30f3\u30af\u6e08\u307f \u00b7 shift+\u30db\u30a4\u30fc\u30eb\u62bc\u3057\u8fbc\u307f\u3067\u518d\u767b\u9332"
+                    ? "\u30ea\u30f3\u30af\u6e08\u307f \u00b7 shift+\u30db\u30a4\u30fc\u30eb\u62bc\u3057\u8fbc\u307f\u3067\u518d\u767b\u9332"
                     : "\u26ab shift+\u30db\u30a4\u30fc\u30eb\u62bc\u3057\u8fbc\u307f\u3067\u8cc7\u6750\u30c1\u30a7\u30b9\u30c8\u3068\u3057\u3066\u767b\u9332";
         }
 
@@ -77,8 +87,16 @@ public class ChestLinkHintRenderer {
         belugalab.tsu.api.HudChrome.pushUiScale(g, sw / 2f, y + HINT_H / 2f);
         belugalab.tsu.api.HudChrome.drawRoundedRect(g, x, y, HINT_W, HINT_H,
                 (bgA << 24) | bgRgb, (borderA << 24) | borderRgb);
+        // icon がある状態では「icon + gap + text」を 1 グループとして中央寄せする
+        // (text だけを中央に置くと icon 幅ぶん左右非対称になる)。
+        int iconW = lastIconId.isEmpty() ? 0 : ICON_PX + ICON_GAP;
         int lw = mc.font.width(lastLabel);
-        g.drawString(mc.font, lastLabel, x + (HINT_W - lw) / 2, y + (HINT_H - 9) / 2,
+        int gx = x + (HINT_W - (iconW + lw)) / 2;
+        if (!lastIconId.isEmpty()) {
+            belugalab.experience.render.Icons.draw(g, lastIconId, gx,
+                    y + (HINT_H - ICON_PX) / 2f, ICON_PX, ICON_PX, (fgA << 24) | fgRgb);
+        }
+        g.drawString(mc.font, lastLabel, gx + iconW, y + (HINT_H - 9) / 2,
                 (fgA << 24) | fgRgb, false);
         belugalab.tsu.api.HudChrome.popUiScale(g);
     }

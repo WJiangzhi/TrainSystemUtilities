@@ -205,6 +205,27 @@ public class ModBlocks {
                             .sound(SoundType.METAL)
                             .noOcclusion()));
 
+    // 駅名サイン (= 横 4 ブロック × 高さ 1 ブロックのマルチブロック、 Manta ワールドレンダーで
+    // 駅名 / 隣駅 / 路線記号を表示。 UI なし)
+    public static final DeferredBlock<com.trainsystemutilities.structure.block.StationNameSignBlock> STATION_NAME_SIGN =
+            BLOCKS.register("station_name_sign", () -> new com.trainsystemutilities.structure.block.StationNameSignBlock(
+                    BlockBehaviour.Properties.of()
+                            .strength(2.0F)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.METAL)
+                            .noOcclusion()
+                            .lightLevel(state -> 6)));
+
+    // 駅名サイン (ポール付き) — 看板は同一、 両端に柱があり その 2 セルだけ高さ 2 ブロック
+    public static final DeferredBlock<com.trainsystemutilities.structure.block.StationNameSignBlock> STATION_NAME_SIGN_POLE =
+            BLOCKS.register("station_name_sign_pole", () -> new com.trainsystemutilities.structure.block.StationNameSignBlock(
+                    BlockBehaviour.Properties.of()
+                            .strength(2.0F)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.METAL)
+                            .noOcclusion()
+                            .lightLevel(state -> 6), true));
+
     // 架線柱 (= 単線用ポール、 ANGLE_8 で 8 方向設置)。 Create track のカーブと整合。
     public static final DeferredBlock<OverheadPoleBlock> OVERHEAD_POLE =
             BLOCKS.register("overhead_pole", () -> new OverheadPoleBlock(

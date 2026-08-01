@@ -40,6 +40,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.PLATFORM_SCREEN_DOOR.get());
                         output.accept(ModItems.TICKET_VENDING_MACHINE.get());
                         output.accept(ModItems.TICKET_GATE.get());
+                        output.accept(ModItems.STATION_NAME_SIGN.get());
+                        output.accept(ModItems.STATION_NAME_SIGN_POLE.get());
                         output.accept(ModItems.OVERHEAD_POLE.get());
                         output.accept(ModItems.OVERHEAD_TRUSS.get());
                         output.accept(ModItems.INSULATOR.get());

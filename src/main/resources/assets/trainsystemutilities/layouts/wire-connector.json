@@ -11,14 +11,13 @@
 		{ "tag": "span", "classes": ["screen-title"], "translatableKey": "tsu.wire_connector.title",
 		  "color": "#80deea", "fontWeight": "bold",
 		  "x": 12, "y": 12, "w": 300, "h": 14 },
-		{ "tag": "div", "classes": ["mc-popup-close", "header-close"], "text": "×",
-		  "bg": "rgba(255,255,255,0.05)", "color": "#aaa", "borderColor": "#555",
+		{ "tag":"icon","icon":"manta:x", "classes": ["mc-popup-close", "header-close"], "bg": "rgba(255,255,255,0.05)", "color": "#aaa", "borderColor": "#555",
 		  "borderWidth": 1, "borderRadius": 3,
 		  "x": 488, "y": 10, "w": 16, "h": 14,
 		  "textAlign": "center", "hoverColor": "#f44", "hoverBorderColor": "#f44", "clickable": true },
 		{ "tag": "span", "classes": ["hint-toggle-label"], "translatableKey": "tsu.common.hint", "color": "#80deea", "x": 404, "y": 12, "w": 30, "h": 11 },
 		{ "tag": "div", "classes": ["hint-toggle-track"], "bg": "#555", "borderRadius": 6, "x": 438, "y": 11, "w": 24, "h": 12, "bgKey": "hint-toggle-bg", "transitionKey": "toggle-bg", "clickable": true, "children": [ { "tag": "div", "classes": ["hint-toggle-knob"], "bg": "#aaa", "borderRadius": 4, "x": 440, "y": 13, "w": 8, "h": 8, "bgKey": "hint-knob-bg", "dynamicX": "hint-knob-x", "transitionKey": "toggle-knob" } ] },
-		{ "tag": "div", "classes": ["wiki-btn"], "text": "📖", "bg": "rgba(255,255,255,0.05)", "color": "#80deea", "borderColor": "#555", "borderWidth": 1, "borderRadius": 3, "x": 466, "y": 10, "w": 16, "h": 14, "textAlign": "center", "hoverColor": "#fff", "hoverBorderColor": "#4fc3f7", "clickable": true },
+		{ "tag": "icon", "icon": "manta:book-open", "classes": ["wiki-btn"], "bg": "rgba(255,255,255,0.05)", "color": "#80deea", "borderColor": "#555", "borderWidth": 1, "borderRadius": 3, "x": 466, "y": 10, "w": 16, "h": 14, "textAlign": "center", "hoverColor": "#fff", "hoverBorderColor": "#4fc3f7", "clickable": true },
 		{ "tag": "div", "classes": ["header-sep"], "bg": "#4fc3f7",
 		  "x": 10, "y": 28, "w": 494, "h": 1 },
 
@@ -38,8 +37,8 @@
 			  "color": "#80deea",
 			  "x": 18, "y": 58, "w": 76, "h": 11, "textKey": "filter-dropdown-label",
 			  "clickable": true },
-			{ "tag": "span", "classes": ["filter-dropdown-arrow", "filter-dropdown-btn"],
-			  "color": "#80deea", "text": "▼",
+			{ "tag": "icon", "classes": ["filter-dropdown-arrow", "filter-dropdown-btn"],
+			  "color": "#80deea", "icon": "manta:chevron-down",
 			  "x": 94, "y": 58, "w": 12, "h": 11, "textAlign": "right", "clickable": true }
 		  ] },
 

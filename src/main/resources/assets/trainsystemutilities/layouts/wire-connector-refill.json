@@ -1,6 +1,6 @@
 {"bg":"#1a1a2e","borderColor":"#4fc3f7","borderWidth":2,"borderRadius":10,"isSlot":false,"children":[
 {"tag":"span","classes":["refill-popup-title"],"color":"#4fc3f7","fontWeight":"bold","x":10,"y":12,"w":176,"h":11,"translatableKey":"tsu.wire_refill.title"},
-{"tag":"div","classes":["refill-popup-close","mc-popup-close"],"bg":"rgba(255,255,255,0.05)","color":"#aaa","borderColor":"#555","borderWidth":1,"borderRadius":3,"text":"×","x":194,"y":10,"w":16,"h":14,"hoverColor":"#f44","hoverBorderColor":"#f44","clickable":true,"textAlign":"center"},
+{"tag":"icon","icon":"manta:x","classes":["refill-popup-close","mc-popup-close"],"bg":"rgba(255,255,255,0.05)","color":"#aaa","borderColor":"#555","borderWidth":1,"borderRadius":3,"x":194,"y":10,"w":16,"h":14,"hoverColor":"#f44","hoverBorderColor":"#f44","clickable":true,"textAlign":"center"},
 {"tag":"div","classes":["refill-popup-sep"],"bg":"#4fc3f7","x":10,"y":26,"w":200,"h":1},
 {"tag":"div","classes":["refill-tank-row"],"bg":"rgba(0,0,0,0.3)","borderColor":"#555","borderWidth":1,"borderRadius":4,"x":10,"y":33,"w":200,"h":18,"children":[
   {"tag":"div","classes":["refill-tank-bar"],"bg":"rgba(0,0,0,0.5)","borderColor":"#333","borderWidth":1,"borderRadius":2,"x":16,"y":36,"w":188,"h":12,"children":[

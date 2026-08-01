@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "block/block",
   "textures": {
-    "top": "trainsystemutilities:block/management_computer_top",
-    "front": "trainsystemutilities:block/management_computer_front",
-    "side": "trainsystemutilities:block/management_computer_side"
+    "particle": "trainsystemutilities:block/management_computer"
   }
 }

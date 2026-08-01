@@ -388,19 +388,32 @@ public class PlaceModeHudRenderer {
                 g.renderItem(icon, cellX + 2, cellY + 2);
                 if (ready) {
                     // 緑チェックマーク overlay (右下)
-                    g.drawString(mc.font, "\u2714", cellX + 12, cellY + 9,
-                            ((int) (0xFF * fade) << 24) | 0xFF66bb6a, false);
+                    // MANTA_5 Wave 7 / W7-1 (R4.23.1): \u2714 \u306f\u72b6\u614b iconography \u306a\u306e\u3067
+                    // registry icon \u3067\u63cf\u304f\u3002**\u3053\u306e site \u306f unicode escape \u3067\u66f8\u304b\u308c\u3066\u3044\u305f\u305f\u3081
+                    // control-glyph gate \u304b\u3089\u4e0d\u53ef\u8996**\u3060\u3063\u305f (gate \u306f 2026-07-26 \u306b escape \u5fa9\u53f7\u3092\u8ffd\u52a0)\u3002
+                    belugalab.experience.render.Icons.draw(g, "manta:check",
+                            cellX + 12, cellY + 9, 8f, 8f,
+                            ((int) (0xFF * fade) << 24) | 0xFF66bb6a);
                 }
             }
             String name = icon.isEmpty() ? "?" : icon.getHoverName().getString();
             name = HudText.clip(mc.font, name, cellW - 26);
+            // W7-1 (R4.23.1): ready 行の先頭 ✔ は registry icon へ。text 側は "OK" だけを持ち、
+            // icon 幅ぶん右へ寄せる (未達行は icon が無いので従来どおりの位置)。
             String count = ready
-                    ? "✔ OK"
+                    ? "OK"
                     : net.minecraft.network.chat.Component.translatable("tsu.tool.hud_short_fmt", TrainPresetMaterials.formatCompactCount(entry.count())).getString();
             int countColor = ready ? 0xFF66bb6a : 0xFF80deea;
             int textColor = ((int) (0xFF * fade) << 24) | 0xFFF0F0;
             g.drawString(mc.font, name, cellX + 24, cellY + 3, textColor, false);
-            g.drawString(mc.font, count, cellX + 24, cellY + 11,
+            int countX = cellX + 24;
+            if (ready) {
+                belugalab.experience.render.Icons.draw(g, "manta:check",
+                        countX, cellY + 11.5f, 7f, 7f,
+                        ((int) (0xFF * fade) << 24) | countColor);
+                countX += 9;
+            }
+            g.drawString(mc.font, count, countX, cellY + 11,
                     ((int) (0xFF * fade) << 24) | countColor, false);
         }
 

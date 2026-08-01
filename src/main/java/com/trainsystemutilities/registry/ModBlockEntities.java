@@ -125,6 +125,14 @@ public class ModBlockEntities {
                             ModBlocks.TICKET_GATE.get()
                     ).build(null));
 
+    public static final Supplier<BlockEntityType<com.trainsystemutilities.structure.blockentity.StationNameSignBlockEntity>> STATION_NAME_SIGN =
+            BLOCK_ENTITIES.register("station_name_sign",
+                    () -> BlockEntityType.Builder.of(
+                            com.trainsystemutilities.structure.blockentity.StationNameSignBlockEntity::new,
+                            ModBlocks.STATION_NAME_SIGN.get(),
+                            ModBlocks.STATION_NAME_SIGN_POLE.get()
+                    ).build(null));
+
     public static final Supplier<BlockEntityType<OverheadPoleBlockEntity>> OVERHEAD_POLE =
             BLOCK_ENTITIES.register("overhead_pole",
                     () -> BlockEntityType.Builder.of(

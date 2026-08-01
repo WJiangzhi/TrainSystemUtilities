@@ -101,8 +101,11 @@ public final class TransitDetailHudRenderer {
         int dy = y + 6;
 
         // ヘッダ: 戻る ボタンっぽいダミー (実際の interaction は Screen 側で)
-        g.drawString(mc.font, "← " + Component.translatable("tsu.transit_terminal.hud_title").getString(),
-                innerX, dy, fa(0xFF80DEEA, fade), false);
+        // W7-1: 戻る glyph を manta:arrow-left icon へ (fade の alpha はそのまま乗る)。
+        int hdrC = fa(0xFF80DEEA, fade);
+        belugalab.experience.render.Icons.draw(g, "manta:arrow-left", innerX, dy, 9, hdrC);
+        g.drawString(mc.font, Component.translatable("tsu.transit_terminal.hud_title").getString(),
+                innerX + 11, dy, hdrC, false);
         dy += 12;
 
         // サマリ
@@ -189,7 +192,10 @@ public final class TransitDetailHudRenderer {
                     String waitText = Component.translatable("tsu.transit_terminal.transfer_wait_fmt",
                             waitSec / 60, waitSec % 60).getString();
                     SmoothRenderer.fillRect(g, barColX + 5, dy, 2, 10, fa(0xFF606080, fade));
-                    g.drawString(mc.font, "🔄 " + waitText, barColX + 14, dy + 2, fa(0xFFAAAAAA, fade), false);
+                    // W7-1: 待機 glyph を manta:refresh-cw icon へ。
+                    int waitC = fa(0xFFAAAAAA, fade);
+                    belugalab.experience.render.Icons.draw(g, "manta:refresh-cw", barColX + 14, dy + 2, 8, waitC);
+                    g.drawString(mc.font, waitText, barColX + 25, dy + 2, waitC, false);
                     dy += 12;
                 }
             }

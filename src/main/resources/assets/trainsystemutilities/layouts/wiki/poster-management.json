@@ -434,16 +434,16 @@
                               "borderRadius": 2,
                               "children": [
                                 {
-                                  "tag": "span",
+                                  "tag": "icon",
                                   "x": 2,
                                   "w": 6,
                                   "h": 12,
                                   "color": "#4fc3f7",
-                                  "text": "▼"
+                                  "icon": "manta:chevron-down"
                                 }
                               ]
                             },
-                            {
+                            { "color": "#ff4444",
                               "classes": [
                                 "image-del"
                               ],
@@ -452,16 +452,7 @@
                               "borderColor": "#555555",
                               "borderWidth": 1,
                               "borderRadius": 2,
-                              "children": [
-                                {
-                                  "tag": "span",
-                                  "x": 2,
-                                  "w": 6,
-                                  "h": 12,
-                                  "color": "#ff4444",
-                                  "text": "×"
-                                }
-                              ]
+                              "children": []
                             }
                           ]
                         }
@@ -537,12 +528,12 @@
                               "borderRadius": 2,
                               "children": [
                                 {
-                                  "tag": "span",
+                                  "tag": "icon",
                                   "x": 2,
                                   "w": 6,
                                   "h": 12,
                                   "color": "#4fc3f7",
-                                  "text": "▲"
+                                  "icon": "manta:chevron-up"
                                 }
                               ]
                             },
@@ -558,16 +549,16 @@
                               "borderRadius": 2,
                               "children": [
                                 {
-                                  "tag": "span",
+                                  "tag": "icon",
                                   "x": 2,
                                   "w": 6,
                                   "h": 12,
                                   "color": "#4fc3f7",
-                                  "text": "▼"
+                                  "icon": "manta:chevron-down"
                                 }
                               ]
                             },
-                            {
+                            { "color": "#ff4444",
                               "classes": [
                                 "image-del"
                               ],
@@ -576,16 +567,7 @@
                               "borderColor": "#555555",
                               "borderWidth": 1,
                               "borderRadius": 2,
-                              "children": [
-                                {
-                                  "tag": "span",
-                                  "x": 2,
-                                  "w": 6,
-                                  "h": 12,
-                                  "color": "#ff4444",
-                                  "text": "×"
-                                }
-                              ]
+                              "children": []
                             }
                           ]
                         }
@@ -661,16 +643,16 @@
                               "borderRadius": 2,
                               "children": [
                                 {
-                                  "tag": "span",
+                                  "tag": "icon",
                                   "x": 2,
                                   "w": 6,
                                   "h": 12,
                                   "color": "#4fc3f7",
-                                  "text": "▲"
+                                  "icon": "manta:chevron-up"
                                 }
                               ]
                             },
-                            {
+                            { "color": "#ff4444",
                               "classes": [
                                 "image-del"
                               ],
@@ -679,16 +661,7 @@
                               "borderColor": "#555555",
                               "borderWidth": 1,
                               "borderRadius": 2,
-                              "children": [
-                                {
-                                  "tag": "span",
-                                  "x": 2,
-                                  "w": 6,
-                                  "h": 12,
-                                  "color": "#ff4444",
-                                  "text": "×"
-                                }
-                              ]
+                              "children": []
                             }
                           ]
                         }

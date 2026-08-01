@@ -45,7 +45,7 @@
                   "fontWeight": "bold",
                   "text": "カラーピッカー"
                 },
-                {
+                { "tag": "icon", "icon": "manta:x", "color": "#aaaaaa",
                   "classes": [
                     "mc-popup-close",
                     "popup-close",
@@ -57,17 +57,7 @@
                   "borderColor": "#555555",
                   "borderWidth": 1,
                   "borderRadius": 3,
-                  "children": [
-                    {
-                      "tag": "span",
-                      "w": 16,
-                      "h": 12,
-                      "color": "#aaaaaa",
-                      "fontWeight": "bold",
-                      "textAlign": "center",
-                      "text": "×"
-                    }
-                  ]
+                  "children": []
                 }
               ]
             },
@@ -323,14 +313,23 @@
               "borderRadius": 6,
               "children": [
                 {
-                  "tag": "span",
-                  "x": 14,
+                  "tag": "icon",
+                  "x": 16,
                   "y": 4,
-                  "w": 52,
+                  "w": 10,
+                  "h": 10,
+                  "color": "#aaaaaa",
+                  "icon": "manta:x"
+                },
+                {
+                  "tag": "span",
+                  "x": 28,
+                  "y": 4,
+                  "w": 38,
                   "h": 10,
                   "color": "#aaaaaa",
                   "textAlign": "center",
-                  "text": "× 閉じる"
+                  "text": "閉じる"
                 }
               ]
             }

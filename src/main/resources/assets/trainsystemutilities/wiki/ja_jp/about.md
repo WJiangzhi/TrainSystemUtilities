@@ -29,9 +29,9 @@ Create が用意している「線路 / 駅 / スケジュール / 信号」を�
 > [!TIP]
 > 各アイコンの右下に **青いマーカー** が付いているものはクリックでそのページに飛びます。
 
-#### 駅・表示系 (9)
+#### 駅・表示系 (11)
 
-```embed:items size=32 cols=5 label=true ids=trainsystemutilities:railway_management_block,trainsystemutilities:management_computer,trainsystemutilities:poster_management_block,trainsystemutilities:monitor,trainsystemutilities:double_monitor,trainsystemutilities:monitor_half,trainsystemutilities:double_monitor_half,trainsystemutilities:monitor_slim,trainsystemutilities:double_monitor_slim links=railway-management,management-computer/overview,poster-management,-,-,-,-,-,-
+```embed:items size=32 cols=5 label=true ids=trainsystemutilities:railway_management_block,trainsystemutilities:management_computer,trainsystemutilities:poster_management_block,trainsystemutilities:monitor,trainsystemutilities:double_monitor,trainsystemutilities:monitor_half,trainsystemutilities:double_monitor_half,trainsystemutilities:monitor_slim,trainsystemutilities:double_monitor_slim,trainsystemutilities:station_name_sign,trainsystemutilities:station_name_sign_pole links=railway-management,management-computer/overview,poster-management,-,-,-,-,-,-,structure/station-name-sign,structure/station-name-sign
 ```
 
 #### ツール (3)

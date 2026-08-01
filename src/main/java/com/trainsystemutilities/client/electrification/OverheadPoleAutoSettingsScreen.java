@@ -146,10 +146,13 @@ public class OverheadPoleAutoSettingsScreen extends JsonLayoutPlainScreen {
                     }
                     return Component.translatable("tsu.opas.storage_me_fmt", v).getString();
                 }
-                case "opas-h-value" -> { return AutoPlaceConfig.getHeight(stack)          + "  ⇅"; }
-                case "opas-c-value" -> { return AutoPlaceConfig.getClearance(stack)       + "  ⇅"; }
-                case "opas-s-value" -> { return AutoPlaceConfig.getSpan(stack)            + "  ⇅"; }
-                case "opas-m-value" -> { return AutoPlaceConfig.getMultiTrackCount(stack) + "  ⇅"; }
+                // MANTA_5 Wave 7 / W7-1 (R4.23.1): 末尾の ⇅ は「ホイールで変更できる」control
+                // affordance なので、値ボックスの子 icon (manta:arrow-up-down) へ移した。
+                // ここは値だけを返す。opas-s-value は layout に対応ノードが無い (既存の死んだ case)。
+                case "opas-h-value" -> { return String.valueOf(AutoPlaceConfig.getHeight(stack)); }
+                case "opas-c-value" -> { return String.valueOf(AutoPlaceConfig.getClearance(stack)); }
+                case "opas-s-value" -> { return String.valueOf(AutoPlaceConfig.getSpan(stack)); }
+                case "opas-m-value" -> { return String.valueOf(AutoPlaceConfig.getMultiTrackCount(stack)); }
                 // confirm popup: 数値項目 (= 常時 ✓ 付き表示)
                 case "opas-conf-item-1" -> {
                     return Component.translatable("tsu.opas.conf_height_fmt", AutoPlaceConfig.getHeight(stack)).getString();
@@ -162,9 +165,11 @@ public class OverheadPoleAutoSettingsScreen extends JsonLayoutPlainScreen {
                 }
                 // confirm popup: boolean 項目 (= ON で ○ / OFF で ×、 U+25CB / U+00D7)
                 // class 名と dynamicText key 両方の case を用意 (= MCSS layout 仕様の差異吸収)
-                case "opas-conf-cant-check", "opas-conf-cant-mark"   -> { return AutoPlaceConfig.getCantilever(stack)      ? "○" : "×"; }
-                case "opas-conf-truss-check", "opas-conf-truss-mark" -> { return AutoPlaceConfig.getPlaceTruss(stack)      ? "○" : "×"; }
-                case "opas-conf-ins-check", "opas-conf-ins-mark"     -> { return AutoPlaceConfig.getPlaceInsulator(stack)  ? "○" : "×"; }
+                // W7-1: layout 側を tag=icon + iconKey にしたので、ここは **registry ID** を返す
+                // (getDynamicText は iconKey の解決にも使われる契約 — SvgRenderNode の iconIdBinding)。
+                case "opas-conf-cant-check", "opas-conf-cant-mark"   -> { return AutoPlaceConfig.getCantilever(stack)      ? "manta:circle-check" : "manta:x"; }
+                case "opas-conf-truss-check", "opas-conf-truss-mark" -> { return AutoPlaceConfig.getPlaceTruss(stack)      ? "manta:circle-check" : "manta:x"; }
+                case "opas-conf-ins-check", "opas-conf-ins-mark"     -> { return AutoPlaceConfig.getPlaceInsulator(stack)  ? "manta:circle-check" : "manta:x"; }
             }
         }
         return defaultText;

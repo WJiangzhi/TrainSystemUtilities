@@ -191,6 +191,8 @@
   "block.trainsystemutilities.platform_screen_door": "Platform Screen Door",
   "block.trainsystemutilities.ticket_vending_machine": "Ticket Vending Machine",
   "block.trainsystemutilities.ticket_gate": "Automatic Ticket Gate",
+  "block.trainsystemutilities.station_name_sign": "Station Name Sign",
+  "block.trainsystemutilities.station_name_sign_pole": "Station Name Sign (Pole)",
   "tsu.ticket_gate.no_station_warn": "Place this gate inside a station's range",
   "tsu.ticket_gate.invalid_ticket": "Cannot exit at this station",
   "tsu.ticket_gate.not_origin": "This is not your boarding station",

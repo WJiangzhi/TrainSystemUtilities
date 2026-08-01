@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "SGS",
+    "III"
+  ],
+  "key": {
+    "I": { "item": "create:iron_sheet" },
+    "S": { "item": "create:sturdy_sheet" },
+    "G": { "item": "minecraft:glowstone" }
+  },
+  "result": {
+    "count": 1,
+    "id": "trainsystemutilities:station_name_sign"
+  }
+}

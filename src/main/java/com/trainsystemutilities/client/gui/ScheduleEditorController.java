@@ -542,7 +542,9 @@ public final class ScheduleEditorController {
             case "destination" -> name + ": " + (entry.text.isEmpty() ? "—" : entry.text);
             case "deliver", "fetch" -> entry.text.isEmpty() ? name : name + ": " + entry.text;
             case "rename" -> name + ": " + entry.text;
-            case "throttle" -> name + ": " + entry.value + "% ↕";
+            // W7-1 (R4.23.1): 末尾の ↕ は「ホイールで変更できる」control affordance。
+            // 文字ではなく registry icon で描くため、ラベルからは外して描画側で足す。
+            case "throttle" -> name + ": " + entry.value + "%";
             default -> name;
         };
     }
@@ -629,21 +631,24 @@ public final class ScheduleEditorController {
             int delX = x + contentW - btnW - 3;
             boolean hDel = inBtn(mouseX, mouseY, delX, btnY, btnW, btnH);
             roundedBtn(g, delX, btnY, btnW, btnH, hDel ? BTN_RED_HV : BTN_RED);
-            g.drawString(this.font, "×", delX + 4, btnY + 3, TEXT_RED, false);
+            // W7-1: 削除 glyph を manta:x icon へ。**icon はボタン全体に敷く** —
+            // lucide は 24x24 viewBox の内側 50% にしか描かないので、box を満たせば
+            // glyph は自動的に中央の適正サイズになる (手動 offset だと中央からずれる)。
+            belugalab.experience.render.Icons.draw(g, "manta:x", delX, btnY, btnW, btnH, TEXT_RED);
             entryDelBtns.add(new int[]{delX, btnY, btnW, btnH, i});
 
             int downX = delX - btnW - 2;
             if (i < total - 1) {
                 boolean hh = inBtn(mouseX, mouseY, downX, btnY, btnW, btnH);
                 roundedBtn(g, downX, btnY, btnW, btnH, hh ? BTN_CYAN_HV : BTN_CYAN);
-                g.drawString(this.font, "▼", downX + 3, btnY + 3, TEXT_CYAN, false);
+                belugalab.experience.render.Icons.draw(g, "manta:chevron-down", downX, btnY, btnW, btnH, TEXT_CYAN);
                 entryDownBtns.add(new int[]{downX, btnY, btnW, btnH, i});
             }
             int upX = downX - btnW - 2;
             if (i > 0) {
                 boolean hh = inBtn(mouseX, mouseY, upX, btnY, btnW, btnH);
                 roundedBtn(g, upX, btnY, btnW, btnH, hh ? BTN_CYAN_HV : BTN_CYAN);
-                g.drawString(this.font, "▲", upX + 3, btnY + 3, TEXT_CYAN, false);
+                belugalab.experience.render.Icons.draw(g, "manta:chevron-up", upX, btnY, btnW, btnH, TEXT_CYAN);
                 entryUpBtns.add(new int[]{upX, btnY, btnW, btnH, i});
             }
 
@@ -655,6 +660,13 @@ public final class ScheduleEditorController {
             // rename 編集中はハイライト
             if ("rename".equals(entry.type) && renameFocusEntry == i) textColor = TEXT_CYAN;
             g.drawString(this.font, labelTrunc, x + 6, yy + 5, textColor, false);
+            // W7-1 (R4.23.1): throttle は wheel で変更できるので、ラベル直後に
+            // manta:arrow-up-down を置く (旧: ラベル文字列末尾の "↕")。
+            // truncate 後の実幅から位置を出すので、切り詰められても重ならない。
+            if ("throttle".equals(entry.type)) {
+                belugalab.experience.render.Icons.draw(g, "manta:arrow-up-down",
+                        x + 6 + this.font.width(labelTrunc) + 2, yy + 5f, 7f, 7f, textColor);
+            }
 
             // throttle: 値部を wheel-edit hover 対象に
             if ("throttle".equals(entry.type)) {
@@ -684,18 +696,25 @@ public final class ScheduleEditorController {
                 int cdW = 11, cdX = condX + condW - cdW - 2, cdY = yy + 1;
                 boolean hcd = inBtn(mouseX, mouseY, cdX, cdY, cdW, condRowH - 2);
                 roundedBtn(g, cdX, cdY, cdW, condRowH - 2, hcd ? BTN_RED_HV : 0xFF3a1a1a);
-                g.drawString(this.font, "×", cdX + 3, cdY + 1, TEXT_RED, false);
+                belugalab.experience.render.Icons.draw(g, "manta:x", cdX, cdY, cdW, condRowH - 2, TEXT_RED);
                 entryCondDelBtns.add(new int[]{cdX, cdY, cdW, condRowH - 2, i, ci});
 
                 if (!valueText.isEmpty()) {
                     // 値ボックス (右寄せ)。 wheel/click 対象は「ここだけ」= 数字の上でのみ変更可。
                     // chip 全体だと一覧スクロール時に誤って値が変わるため。
-                    String vt = editable ? valueText + " ↕" : valueText;
-                    int vw = this.font.width(vt) + 6;
+                    // W7-1 (R4.23.1): editable の目印 ↕ は registry icon で描く。
+                    // 箱幅は text 幅 + icon 幅で出すので、当たり判定も見た目と一致したまま。
+                    int iconW = editable ? 9 : 0;
+                    int vw = this.font.width(valueText) + 6 + iconW;
                     int vx = cdX - vw - 3;
                     boolean vHover = mouseX >= vx && mouseX < vx + vw && mouseY >= yy + 1 && mouseY < yy + condRowH - 1;
                     SmoothRenderer.fillRoundedRect(g, vx, yy + 1, vw, condRowH - 2, 3f, vHover ? 0xFF2a4a5e : 0xFF14202c);
-                    g.drawString(this.font, vt, vx + 3, yy + 2, editable ? TEXT_VALUE : TEXT_CYAN, false);
+                    int vc = editable ? TEXT_VALUE : TEXT_CYAN;
+                    g.drawString(this.font, valueText, vx + 3, yy + 2, vc, false);
+                    if (editable) {
+                        belugalab.experience.render.Icons.draw(g, "manta:arrow-up-down",
+                                vx + 3 + this.font.width(valueText) + 2, yy + 2.5f, 7f, 7f, vc);
+                    }
                     entryCondHoverBounds.add(new int[]{vx, yy, vw, condRowH, i, ci});
                     g.drawString(this.font, truncate(name, vx - condX - 8), condX + 5, yy + 2, TEXT_SUB, false);
                 } else {

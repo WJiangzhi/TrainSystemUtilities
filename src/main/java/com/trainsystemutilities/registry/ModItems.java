@@ -47,13 +47,13 @@ public class ModItems {
             ITEMS.register("double_monitor_slim",
                     () -> new BlockItem(ModBlocks.DOUBLE_MONITOR_SLIM.get(), new Item.Properties()));
 
-    public static final DeferredItem<BlockItem> POSTER_MANAGEMENT_BLOCK =
+    public static final DeferredItem<com.trainsystemutilities.item.GeoBlockItem> POSTER_MANAGEMENT_BLOCK =
             ITEMS.register("poster_management_block",
-                    () -> new BlockItem(ModBlocks.POSTER_MANAGEMENT_BLOCK.get(), new Item.Properties()));
+                    () -> new com.trainsystemutilities.item.GeoBlockItem(ModBlocks.POSTER_MANAGEMENT_BLOCK.get(), new Item.Properties()));
 
-    public static final DeferredItem<BlockItem> MANAGEMENT_COMPUTER =
+    public static final DeferredItem<com.trainsystemutilities.item.GeoBlockItem> MANAGEMENT_COMPUTER =
             ITEMS.register("management_computer",
-                    () -> new BlockItem(ModBlocks.MANAGEMENT_COMPUTER.get(), new Item.Properties()));
+                    () -> new com.trainsystemutilities.item.GeoBlockItem(ModBlocks.MANAGEMENT_COMPUTER.get(), new Item.Properties()));
 
     public static final DeferredItem<MemoryCardItem> MEMORY_CARD =
             ITEMS.register("memory_card",
@@ -142,6 +142,13 @@ public class ModItems {
     public static final DeferredItem<com.trainsystemutilities.item.GeoBlockItem> TICKET_GATE =
             ITEMS.register("ticket_gate",
                     () -> new com.trainsystemutilities.item.GeoBlockItem(ModBlocks.TICKET_GATE.get(), new Item.Properties()));
+    public static final DeferredItem<com.trainsystemutilities.item.GeoBlockItem> STATION_NAME_SIGN =
+            ITEMS.register("station_name_sign",
+                    () -> new com.trainsystemutilities.item.GeoBlockItem(ModBlocks.STATION_NAME_SIGN.get(), new Item.Properties()));
+    // ポール付きは天井下面クリックで 1 ブロック下げて設置 (= 吊り下げ。 ポールの天井めり込み防止)
+    public static final DeferredItem<com.trainsystemutilities.item.StationNameSignPoleItem> STATION_NAME_SIGN_POLE =
+            ITEMS.register("station_name_sign_pole",
+                    () -> new com.trainsystemutilities.item.StationNameSignPoleItem(ModBlocks.STATION_NAME_SIGN_POLE.get(), new Item.Properties()));
 
     // 架線柱 (= 単線用ポール、 8 方向設置)。 GeoBlockItem の派生で、 既存 pole に右
     // クリックで軸方向 chain 配置する。 inventory icon は Geckolib model を表示。

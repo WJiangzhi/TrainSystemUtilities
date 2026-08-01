@@ -239,7 +239,7 @@
                       "text": "駅"
                     },
                     {
-                      "tag": "span",
+                      "tag": "icon",
                       "classes": [
                         "dropdown-arrow"
                       ],
@@ -247,7 +247,7 @@
                       "w": 10,
                       "h": 12,
                       "color": "#4fc3f7",
-                      "text": "▼"
+                      "icon": "manta:chevron-down"
                     }
                   ]
                 },
@@ -415,13 +415,13 @@
                               "borderRadius": 2,
                               "children": [
                                 {
-                                  "tag": "span",
+                                  "tag": "icon",
                                   "x": 4,
                                   "y": 1,
                                   "w": 6,
                                   "h": 12,
                                   "color": "#4fc3f7",
-                                  "text": "✎"
+                                  "icon": "manta:pencil"
                                 }
                               ]
                             }

@@ -15,15 +15,16 @@ logoFile = "trainsystemutilitieslogo.png"
 authors = "${mod_authors}"
 description = '''${mod_description}'''
 
-# CROSS-REL-001 修正 (2026-07-17): TSU は com.manta.api.render.WikiPrebuild /
-# com.manta.api.anim.MantaAnim facade を hard 参照するため、これらが初出の 1.0.2 を下限にしていた。
-# 1.0.6 から com.manta.api.image.MantaImage (JPEG decode) も hard 参照するため、
-# その初出である 1.0.7 へ下限を引き上げる。下回ると NoClassDefFoundError になる。
-# manta は TSU release に同梱配布 = 常に同版。
+# CROSS-REL-001 (2026-07-17): 下限は当初「hard 参照 API の初出版」だった (WikiPrebuild/MantaAnim
+# → 1.0.2、1.0.6 から MantaImage hard 参照 → 1.0.7)。
+# 2026-07-19 改訂: 下限 = 内包 Manta の版 (gradle.properties の manta_version が単一の正、
+# processResources が展開)。全 consumer がこの規約に従うと、新旧 mod 混在時に古い内包 Manta が
+# range 共通部分から脱落し、最新の内包 Manta が決定的に選ばれる。古い mod は Manta の 2.0 未満
+# binary compatibility の上で動く。下回ると NoClassDefFoundError になる。
 [[dependencies.${mod_id}]]
     modId = "manta"
     type = "required"
-    versionRange = "[1.0.7,2)"
+    versionRange = "[${manta_version},2)"
     ordering = "AFTER"
     side = "BOTH"
 

@@ -20,7 +20,7 @@ import java.util.List;
  * 駅ブロック右クリック → 駅情報をアイテムに保存（イベントハンドラで処理）
  * 設置時 → アイテムのNBTから駅情報を読み取ってリンク
  */
-public class RailwayManagementBlockItem extends BlockItem {
+public class RailwayManagementBlockItem extends GeoBlockItem {
 
     public RailwayManagementBlockItem(Properties properties) {
         super(ModBlocks.RAILWAY_MANAGEMENT_BLOCK.get(), properties);

@@ -117,7 +117,7 @@
       "clickable": true
     },
     {
-      "tag": "div", "classes": ["pset-close-btn"],
+      "tag": "icon", "icon": "manta:x", "classes": ["pset-close-btn"],
       "x": 124, "y": 112, "w": 68, "h": 18,
       "bg": "rgba(0,0,0,0.3)", "color": "#aaaaaa",
       "borderColor": "#555555", "borderWidth": 1, "borderRadius": 2,

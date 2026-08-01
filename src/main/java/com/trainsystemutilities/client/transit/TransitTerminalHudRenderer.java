@@ -75,9 +75,9 @@ public class TransitTerminalHudRenderer {
             g.drawString(mc.font, Component.translatable("tsu.transit_terminal.minihud_open_hint").getString(),
                     x + 8, y + 17, hintC, false);
         }
-        // 右下に "▶" 開くアイコン
+        // 右下に「開く」アイコン — W7-1: raw ▶ を manta:play icon へ (fade の alpha はそのまま乗る)。
         int rightArrowC = ((int) (0xFF * fade) << 24) | 0xFFD54F;
-        g.drawString(mc.font, "▶", x + W - 12, y + 17, rightArrowC, false);
+        belugalab.experience.render.Icons.draw(g, "manta:play", x + W - 13, y + 16, 9, rightArrowC);
         HudChrome.popUiScale(g);
     }
 

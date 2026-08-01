@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P P",
+    " N "
+  ],
+  "key": {
+    "P": { "item": "create:metal_girder" },
+    "N": { "item": "trainsystemutilities:station_name_sign" }
+  },
+  "result": {
+    "count": 1,
+    "id": "trainsystemutilities:station_name_sign_pole"
+  }
+}

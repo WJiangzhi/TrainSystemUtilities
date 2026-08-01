@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "trainsystemutilities:block/station_name_sign" },
+    "facing=south": { "model": "trainsystemutilities:block/station_name_sign" },
+    "facing=west":  { "model": "trainsystemutilities:block/station_name_sign" },
+    "facing=east":  { "model": "trainsystemutilities:block/station_name_sign" }
+  }
+}

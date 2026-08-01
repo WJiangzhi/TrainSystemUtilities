@@ -191,6 +191,8 @@
   "block.trainsystemutilities.platform_screen_door": "ホームドア",
   "block.trainsystemutilities.ticket_vending_machine": "券売機",
   "block.trainsystemutilities.ticket_gate": "自動改札",
+  "block.trainsystemutilities.station_name_sign": "駅名サイン",
+  "block.trainsystemutilities.station_name_sign_pole": "駅名サイン (ポール付き)",
   "tsu.ticket_gate.no_station_warn": "この改札は駅範囲内に設置してください",
   "tsu.ticket_gate.invalid_ticket": "この駅では降りられません",
   "tsu.ticket_gate.not_origin": "ここは発駅ではありません",

@@ -45,7 +45,7 @@
                   "fontWeight": "bold",
                   "text": "記号エディタ"
                 },
-                {
+                { "tag": "icon", "icon": "manta:x", "color": "#aaaaaa",
                   "classes": [
                     "mc-popup-close",
                     "popup-close",
@@ -57,17 +57,7 @@
                   "borderColor": "#555555",
                   "borderWidth": 1,
                   "borderRadius": 3,
-                  "children": [
-                    {
-                      "tag": "span",
-                      "w": 16,
-                      "h": 12,
-                      "color": "#aaaaaa",
-                      "fontWeight": "bold",
-                      "textAlign": "center",
-                      "text": "×"
-                    }
-                  ]
+                  "children": []
                 }
               ]
             },
@@ -596,15 +586,24 @@
               "borderRadius": 6,
               "children": [
                 {
-                  "tag": "span",
-                  "x": 14,
+                  "tag": "icon",
+                  "x": 18,
                   "y": 4,
-                  "w": 52,
+                  "w": 10,
+                  "h": 10,
+                  "color": "#ffffff",
+                  "icon": "manta:check"
+                },
+                {
+                  "tag": "span",
+                  "x": 30,
+                  "y": 4,
+                  "w": 36,
                   "h": 10,
                   "color": "#ffffff",
                   "fontWeight": "bold",
                   "textAlign": "center",
-                  "text": "✓ 保存"
+                  "text": "保存"
                 }
               ]
             },
@@ -620,14 +619,23 @@
               "borderRadius": 6,
               "children": [
                 {
-                  "tag": "span",
-                  "x": 14,
+                  "tag": "icon",
+                  "x": 10,
                   "y": 4,
-                  "w": 52,
+                  "w": 10,
+                  "h": 10,
+                  "color": "#aaaaaa",
+                  "icon": "manta:x"
+                },
+                {
+                  "tag": "span",
+                  "x": 22,
+                  "y": 4,
+                  "w": 48,
                   "h": 10,
                   "color": "#aaaaaa",
                   "textAlign": "center",
-                  "text": "× キャンセル"
+                  "text": "キャンセル"
                 }
               ]
             }

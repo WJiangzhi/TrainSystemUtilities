@@ -239,7 +239,7 @@
                       "text": "時刻表"
                     },
                     {
-                      "tag": "span",
+                      "tag": "icon",
                       "classes": [
                         "dropdown-arrow"
                       ],
@@ -247,7 +247,7 @@
                       "w": 10,
                       "h": 12,
                       "color": "#4fc3f7",
-                      "text": "▼"
+                      "icon": "manta:chevron-down"
                     }
                   ]
                 },
@@ -356,13 +356,22 @@
                           "borderRadius": 4,
                           "children": [
                             {
-                              "tag": "span",
+                              "tag": "icon",
                               "x": 6,
+                              "y": 3,
+                              "w": 10,
+                              "h": 10,
+                              "color": "#f44336",
+                              "icon": "manta:square"
+                            },
+                            {
+                              "tag": "span",
+                              "x": 18,
                               "y": 2,
-                              "w": 68,
+                              "w": 56,
                               "h": 12,
                               "color": "#f44336",
-                              "text": "⏹ 全列車停止"
+                              "text": "全列車停止"
                             }
                           ]
                         },

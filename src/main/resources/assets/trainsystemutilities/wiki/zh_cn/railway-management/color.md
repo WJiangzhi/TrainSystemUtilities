@@ -8,34 +8,34 @@ tags: [station, color]
 
 ![](bws:trainsystemutilities:wiki/screens/railway-management-color__ja_jp.png)
 
- popup opened by  "Col或" but以n on  铁路管理方块.  col或 of each of 10 text elements can be changed.
+通过铁路管理方块上「颜色」按钮打开的弹窗。可更改 10 个文本元素各自的颜色。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Right-click**  [铁路管理方块](../railway-management.md) 以 open its GUI.
-2. **Click  "▒ Col或" but以n** on  显示器 row, 和 this col或 settings popup appears on  right side of  dialog.
-3. Click  "▒ Col或" but以n again 以 close it.
+1. 对[铁路管理方块](../railway-management.md)**右键**打开其 GUI。
+2. **点击显示器行的「▒ 颜色」按钮**，此颜色设置弹窗会出现在对话框右侧。
+3. 再次点击「▒ 颜色」按钮可关闭它。
 
-## Editable targets (10)
+## 可编辑对象 (10)
 
-| key | Display element |
+| key | 显示元素 |
 |---|---|
-| `arrTime` | Arrival time |
-| `depTime` | Departure time |
-| `stopInfo` | S以p info |
-| `routeType` | Train type |
-| `stopSec` | S以p seconds |
-| `trainName` | Train name |
-| `nextName` | Next train name |
-| `sectionTitle` | 章节 header |
-| `countdown` | Countdown |
-| `trackNumber` | Track number |
+| `arrTime` | 到站时间 |
+| `depTime` | 发车时间 |
+| `stopInfo` | 停靠信息 |
+| `routeType` | 列车类型 |
+| `stopSec` | 停靠秒数 |
+| `trainName` | 列车名 |
+| `nextName` | 下趟列车名 |
+| `sectionTitle` | 章节标题 |
+| `countdown` | 倒计时 |
+| `trackNumber` | 轨道编号 |
 
-## 预设 col或s (12)
+## 预设颜色 (12)
 
-Apply a col或 与 one click from  preset grid at  bot以m of  popup:
+从弹窗底部的预设色板中一键应用颜色：
 
 ```
 #4fc3f7 (cyan)   #80deea (light cyan)  #ff8a65 (orange)  #ffc107 (yellow)
@@ -43,22 +43,22 @@ Apply a col或 与 one click from  preset grid at  bot以m of  popup:
 #888888 (gray)   #555555 (dim)         #444444 (darker)  #333333 (darkest)
 ```
 
-## Operation (what 以 click)
+## 操作（点击位置）
 
-1. **Click  dropdown (与 ▾)** at  以p of  popup → from  list, **click**  **edit target** whose col或 you want 以 change (arrival time / train name / 轨道 number, 等 —  10 above).
-2. **Click a preset col或** at  bot以m of  popup, 和  col或 is applied immediately 以  selected target.
-3. To revert, click  **"Reset One" but以n** (resets only  selected target) 或  **"Reset All" but以n** (resets 全部 10).
+1. **点击弹窗顶部的下拉框（带 ▾）** → 在列表中**点击**你想更改颜色的**编辑对象**（到站时间 / 列车名 / 轨道编号 等 — 上述 10 项）。
+2. **点击弹窗底部的预设颜色**，该颜色即立即应用到所选对象。
+3. 如需还原，点击**「重置当前」按钮**（仅重置所选对象）或**「重置全部」按钮**（重置全部 10 项）。
 
 > [!NOTE]
-> This popup uses a **click-以-pick** scheme from 12 presets.  full [col或 picker](../management-computer/symbol-editor.md#color-picker) 带有 hue wheel 和 HEX input is used on or screens 例如  [线路 编号 edi以r](../management-computer/symbol-editor.md).
+> 本弹窗采用从 12 个预设中**点击选取**的方式。带色相轮与 HEX 输入的完整[取色器](../management-computer/symbol-editor.md#color-picker)用于其他界面，如[线路编号编辑器](../management-computer/symbol-editor.md)。
 
-## Per-face management
+## 按面管理
 
-**Click  "↻ Front/Back Toggle" but以n** 以 switch between front / back, 和 you can set a different col或 set 用于 each face.  
-It also supp或ts [batch apply](settings.md#batch-apply) (see [显示器设置](settings.md#batch-apply)).
+**点击「↻ 前 / 后切换」按钮**在前 / 后之间切换，可为每一面设置不同的颜色组合。  
+也支持[批量应用](settings.md#batch-apply)（见[显示器设置](settings.md#batch-apply)）。
 
-## Related
+## 相关
 
 - [铁路管理方块](../railway-management.md)
 - [显示器设置](settings.md)
-- [Col或 Picker (管理用计算机)](../management-computer/symbol-editor.md#color-picker)
+- [取色器（管理用计算机）](../management-computer/symbol-editor.md#color-picker)

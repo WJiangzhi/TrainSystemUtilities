@@ -8,44 +8,44 @@ tags: [management-computer, monitor]
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__map__ja_jp.png)
 
- 显示器 tab of  管理用计算机. Shows a 自定义 layout on linked nearby 显示器 方块.
+管理用计算机的"显示器"标签页。在已连接的附近显示器方块上显示自定义布局。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Place**  **管理用计算机** 方块 和 **right-click** it 以 open  screen.
-2.  显示器 功能 are operated from  **显示器 以ggle at  以p** of this screen 和  **but以ns at  bot以m** (🎨 Col或 / ▒ Layout) (see [Controls](#操作) below).
+1. **放置**管理用计算机方块并**右键点击**它以打开界面。
+2. 显示器功能通过此界面**顶部的显示器开关**和**底部的按钮**（🎨 颜色 / ▒ 布局）操作（见下方[控件](#操作)）。
 
 ## 功能
 
-- Cus以m layout editing ([布局编辑器](layout-editor.md))
-- Col或 自定义ization ([颜色设置](color-settings.md) / [Col或 Picker](symbol-editor.md#color-picker))
-- Moni以r linking ([显示器连接卡](../tools/monitor-link-card.md))
-- Batch apply / face-flip / private/public
+- 自定义布局编辑（[布局编辑器](layout-editor.md)）
+- 颜色自定义（[颜色设置](color-settings.md) / [颜色拾取器](symbol-editor.md#color-picker)）
+- 显示器连接（[显示器连接卡](../tools/monitor-link-card.md)）
+- 批量应用 / 翻面 / 私有/公开
 
-## Controls {#操作}
+## 控件 {#操作}
 
-| Element | Action | Function |
+| 元素 | 操作 | 功能 |
 |---|---|---|
-| Moni以r 以ggle | **Click** 以 turn ON/OFF (ON = green) | When ON, starts 显示ing on linked 显示器 ([w或kflow](#モニター連携の流れ)) |
-| 🎨 Col或 but以n (bot以m) | **Click** | Opens  [颜色设置](color-settings.md) popup |
-| ▒ Layout but以n (bot以m) | **Click** | Opens  [布局编辑器](layout-editor.md) |
-| Create 线路 编号 | Select  **Ⓜ Line Symbols** tab in  以p-left dropdown | Create 和 edit 编号 in  [Line 编号编辑器](symbol-editor.md) |
+| 显示器开关 | **点击**开启/关闭（开启 = 绿色） | 开启后开始在已连接的显示器上显示（[流程](#モニター連携の流れ)） |
+| 🎨 颜色按钮（底部） | **点击** | 打开[颜色设置](color-settings.md)弹窗 |
+| ▒ 布局按钮（底部） | **点击** | 打开[布局编辑器](layout-editor.md) |
+| 创建线路编号 | 在左上角下拉菜单中选择 **Ⓜ Line Symbols** 标签页 | 在[线路编号编辑器](symbol-editor.md)中创建和编辑编号 |
 
 > [!NOTE]
-> Even 与  显示器 以ggle ON, re is nowhere 以 显示 unless you have first linked a 显示器 方块 与  [显示器连接卡](../tools/monitor-link-card.md). Complete  [显示器 linking w或kflow](#モニター連携の流れ) below first.
+> 即使显示器开关处于开启状态，如果你没有先用[显示器连接卡](../tools/monitor-link-card.md)连接显示器方块，也没有地方可以显示。请先完成下方的[显示器连接流程](#モニター連携の流れ)。
 
-## Moni以r linking w或kflow {#モニター連携の流れ}
+## 显示器连接流程 {#モニター連携の流れ}
 
-1. **Place**  管理用计算机.
-2. **Place** 显示器 方块 nearby.
-3. Hold  [显示器连接卡](../tools/monitor-link-card.md), **right-click** a 显示器 方块 → **right-click**  管理用计算机 以 link.
-4. Open  管理用计算机 和 **click  显示器 以ggle 以 turn it ON** (green) → instant sync 以  linked 显示器.
+1. **放置**管理用计算机。
+2. 在附近**放置**显示器方块。
+3. 手持[显示器连接卡](../tools/monitor-link-card.md)，**右键点击**显示器方块 → **右键点击**管理用计算机以完成连接。
+4. 打开管理用计算机并**点击显示器开关将其打开**（绿色）→ 立即同步到已连接的显示器。
 
-## Related
+## 相关
 
 - [布局编辑器](layout-editor.md)
 - [颜色设置](color-settings.md)
 - [显示器连接卡](../tools/monitor-link-card.md)
-- [铁路管理方块 — Moni以r](../railway-management.md)
+- [铁路管理方块 — 显示器](../railway-management.md)

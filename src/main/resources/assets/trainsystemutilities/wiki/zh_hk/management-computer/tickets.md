@@ -6,35 +6,35 @@ tags: [management-computer, ticket]
 
 # 車票標籤頁
 
- management computer's Tickets tab. **Choose which 車站 are sold** at  ticket vending machines.
+管理用計算機的"車票"標籤頁。**選擇在自動售票機上售賣哪些車站**。
 
 [[TOC]]
 
-## How 以 open
+## 如何打開
 
-1. **Place** a **管理用計算機** 方塊 和 **right-click** it 以 open  screen.
-2. **Click**  以p-left dropdown 和 choose **"🎫 Tickets"**.
+1. **放置**管理用計算機方塊並**右鍵點擊**它以打開界面。
+2. **點擊**左上角下拉菜單並選擇**"🎫 車票"**。
 
 ## 概述
 
-Lists  車站 registered on  網絡 (車站 groups created 與  [車站範圍指定工具](../tools/station-range-tool.md)), each 帶有 **sellable 以ggle**. 車站 turned ON here appear in  destination list of every [ticket vending machine](../structure/ticket-vending-machine.md).
+列出網絡上已註冊的車站（用[車站範圍指定工具](../tools/station-range-tool.md)創建的車站組），每個車站都有一個**可售開關**。在此處開啓的車站會出現在每個[自動售票機](../structure/ticket-vending-machine.md)的目的地列表中。
 
-## Usage
+## 用法
 
-- **Click  以ggle switch** on each 車站 row 以 switch sellable on/off (ON = green).
-- When re are many 車站, roll  **mouse wheel** over  list 以 scroll (a scrollbar appears on  right).
--  title shows "Sellable 車站 (sellable / 以tal)".
+- **點擊每個車站行的開關**可切換可售開/關（開啓 = 綠色）。
+- 當車站很多時，在列表上轉動**鼠標滾輪**滾動（右側會出現滾動條）。
+- 標題顯示"可售車站（可售 / 總數）"。
 
-## How it connects 以 machines
+## 與機器的連接方式
 
--  setting is **shared 網絡-wide** 和 applies 以 全部 machines immediately (machines read  server-side setting).
-- If no 車站 are registered, it shows "No 車站 on  網絡". Create 車站 first 與  [車站範圍指定工具](../tools/station-range-tool.md).
+- 該設置在**整個網絡內共享**，並立即應用到所有機器（機器讀取服務端的設置）。
+- 如果沒有註冊任何車站，會顯示"網絡上沒有車站"。請先用[車站範圍指定工具](../tools/station-range-tool.md)創建車站。
 
 > [!NOTE]
-> In  initial state, be用於e you set anything sellable, machines show every 車站 except ir own 作為 a destination (a ready-以-use default). Once you curate here, machines are narrowed 以 just  chosen 車站.
+> 在初始狀態下，在你設置任何可售內容之前，機器會將除自身外的所有車站顯示為目的地（開箱即用的默認值）。一旦你在此處進行篩選，機器就只會顯示所選車站。
 
-## Related
+## 相關
 
-- [自動售票機 (方塊)](../structure/ticket-vending-machine.md)
+- [自動售票機（方塊）](../structure/ticket-vending-machine.md)
 - [車站範圍指定工具](../tools/station-range-tool.md)
-- [管理用計算機 總覽](overview.md)
+- [管理用計算機概述](overview.md)

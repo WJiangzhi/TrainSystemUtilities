@@ -1,56 +1,56 @@
 ---
-title: 車站名稱標識
+title: 站名標誌
 id: structure/station-name-sign
 tags: [structure, block, station, sign]
 ---
 
-# 車站名稱標識
+# 站名標誌
 
 ```embed:items size=48 cols=2 label=true ids=trainsystemutilities:station_name_sign,trainsystemutilities:station_name_sign_pole
 ```
 
-A 月臺 車站 name 板, 4 方塊 wide 和 1 方塊 t全部. Place it **inside a 車站 group range** 和 it au以matic全部y 顯示  車站 name, 線路 col或 和 neighb或ing 車站, on both faces. re is no UI — everything shown is derived from  車站 group 和  分配 線路 編號.
+月臺上的站名板，寬 4 格、高 1 格。將其放置在**車站組範圍內**後，會在正反兩面自動顯示站名、線路色和鄰站。沒有 UI — 顯示的全部內容都來自車站組與已分配的線路編號。
 
 [[TOC]]
 
-## Placement {#place}
+## 放置 {#place}
 
-1. Hold  sign 和 **right-click** where you want it.  顯示 face turns 以ward you.
-2. It needs 4 方塊 of h或izontal space. If  space is 方塊ed, placement is cancelled 和 no 物品 is consumed.
-3. Breaking any of  4 cells removes  whole sign 和 drops  物品.
+1. 手持站名標誌，在你想放置的位置**右鍵**。顯示面朝向你。
+2. 需要 4 格的水平空間。若空間被阻擋，放置會取消，物品不會消耗。
+3. 破壞這 4 格中的任意一格都會移除整塊標誌並掉落物品。
 
 > [!WARNING]
-> **A sign placed outside any 車站 group range shows nothing** ( panel stays blank white). Always place it inside a 車站 group created 與  [車站範圍指定工具](../tools/station-range-tool.md).
+> **放置在任何車站組範圍之外的標誌什麼都不會顯示**（面板保持空白白色）。請始終將其放置在用[車站範圍指定工具](../tools/station-range-tool.md)建立的車站組內。
 
-## Pole variant (hanging) {#pole}
+## 帶柱變體（懸掛式） {#pole}
 
- pole variant adds a hanging pole at each end, 用於 a 以tal height of 2 方塊.
+帶柱變體在兩端各加一根懸掛柱，總高度為 2 格。
 
-- **Right-click  underside of a ceiling** 以 hang it:  poles attach 以  ceiling 和  板 sits one 方塊 below.
-- Placement is cancelled if  pole space (above  two end cells) is 方塊ed.
-- Display behavi或 is identical 以  n或mal variant.
+- **右鍵天花板底部**將其懸掛：柱子連到天花板上，板體位於其下方一格。
+- 若柱子空間（兩端兩格上方）被阻擋，放置會取消。
+- 顯示行為與普通變體一致。
 
-## 什麼是 顯示ed {#顯示}
+## 顯示內容 {#display}
 
-| Element | Content | Requires |
+| 元素 | 內容 | 需要條件 |
 |---|---|---|
-| 車站 name (center) | Name of  車站 group containing  sign | Sign inside a 車站 group |
-| Line 編號 badge | Left of  車站 name | A [線路 編號](../management-computer/line-symbols.md) 分配 以 a Create 車站 inside  group |
-| Col或 b和 | B和 below  name; col或 = ** 編號's b或der col或** | Same 作為 above |
-| Neighb或ing 車站 | White text at both ends of  b和 | 一種or 車站 group connected by 軌道 |
+| 站名（中央） | 包含該標誌的車站組的名稱 | 標誌在車站組內 |
+| 線路編號徽章 | 站名左側 | 組內某 Create 車站已分配[線路編號](../management-computer/line-symbols.md) |
+| 色帶 | 名稱下方的帶；顏色 = **編號的邊框色** | 同上 |
+| 鄰站 | 色帶兩端的白色文字 | 透過軌道相連的另一個車站組 |
 
-- Renames 和 編號 changes propagate 以  sign 與以… few seconds.
-- Neighb或s are resolved **from  軌道 網路**: starting at this 車站,  first different 車站 group found in each directi在…上long  軌道 is shown. Left/right 分配ment follows  sign's facing au以matic全部y.
-- After changing 軌道 或 車站 groups,  neighb或 顯示 may take up 以 ~30 seconds 以 refresh.
+- 重新命名和編號更改會在幾秒內同步到標誌。
+- 鄰站**透過軌道網路**解析：從本站出發，沿軌道在每個方向上找到的第一個不同車站組即顯示。左右分配會根據標誌的朝向自動決定。
+- 更改軌道或車站組後，鄰站顯示最多可能需要約 30 秒重新整理。
 
-## Troubleshooting {#faq}
+## 故障排查 {#faq}
 
-- **Nothing is 顯示ed** →  sign is outside any 車站 group range.
-- **No b和 / badge** → no 線路 編號 is 分配 以  車站. Assign one in  [管理用計算機's 線路 編號 tab](../management-computer/line-symbols.md).
-- **No neighb或s** → check  軌道 actu全部y connect 以  neighb或ing 車站 和  it h作為 its own 車站 group.
+- **什麼都不顯示** → 標誌在任何車站組範圍之外。
+- **沒有色帶 / 徽章** → 該車站未分配線路編號。請在[管理用計算機的線路編號標籤頁](../management-computer/line-symbols.md)中分配一個。
+- **沒有鄰站** → 檢查軌道是否確實連到鄰站，以及鄰站是否有自己的車站組。
 
-## Related 頁面s
+## 相關頁面
 
 - [車站範圍指定工具](../tools/station-range-tool.md)
-- [Line Symbols (管理用計算機)](../management-computer/line-symbols.md)
-- [自動售票機](ticket-vending-machine.md) / [站臺圍欄](platform-fence.md)
+- [線路編號（管理用計算機）](../management-computer/line-symbols.md)
+- [自動售票機](ticket-vending-machine.md) / [月臺柵欄](platform-fence.md)

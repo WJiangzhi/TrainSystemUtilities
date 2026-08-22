@@ -8,78 +8,78 @@ tags: [poster, block, display]
 
 ![](bws:trainsystemutilities:wiki/screens/poster-management__ja_jp.png)
 
-一种 广告板 用于显示 PNG / JPG 图片 以轮播形式.  
-Place it at a 车站 或 concourse 以 显示 guidance posters, operation info, ads, 等功能.
+以轮播方式显示 PNG / JPG 图片的广告板。  
+将其放置在车站或站厅，可用于显示导引海报、运营信息、广告等。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. Place  **海报管理方块** (it can be placed 例如 a n或mal 方块, on  ground, a w全部, 等).
-2. **Right-click**  placed 方块 以 open  GUI.
-3.  first person 以 right-click it becomes  **owner**. When  face icon in  lower right is set 以 **Private**, no one but  owner can open it ([Access Mode](getting-started.md#access-mode)).
+1. 放置**海报管理方块**（可像普通方块一样放置在地上、墙上等）。
+2. 对已放置的方块**右键**打开 GUI。
+3. 第一个右键它的人成为**所有者**。当右下角脸形图标设为**私有**时，除所有者外无人能打开它（[访问模式](getting-started.md#access-mode)）。
 
-## Operation (where 以 click / scroll)
+## 操作（点击 / 滚动位置）
 
-All operations inside  GUI are done 与  **mouse**.
+GUI 内的全部操作都通过**鼠标**完成。
 
-| What you want 以 do | How |
+| 想做的事 | 操作方法 |
 |---|---|
-| Add an image | **Click  "📂 Choose File" but以n** → pick a PNG / JPG in  OS file picker |
-| Turn an image's 显示 ON / OFF | **Click  image's row** in  list ( part or than  but以ns at  right end of  row) |
-| Change  显示 或der of 图片 | **Click  up / down but以ns** at  right end of each row |
-| Delete an image | **Click  delete but以n** at  right end of each row |
-| Scroll  list | **Mouse wheel** over  image list (when re are 6 或 m或e) |
-| Fit 以 显示器 (FIT/COVER) | **Click  "Fit 以 显示器" 以ggle** |
-| 一种imate 带有 single image | **Click  "一种imate single only" 以ggle** |
-| Turn 显示器 linking ON / OFF | **Click  显示器 以ggle** |
-| Open animation settings | **Click  "♫ 动画" but以n** → [动画设置](poster-management/animation.md) popup |
-| Switch Private / Public | **Click  face icon** in  lower right |
+| 添加图片 | **点击「📂 选择文件」按钮** → 在系统文件选择器中选取 PNG / JPG |
+| 开启 / 关闭某张图片的显示 | **点击列表中该图片所在行**（行右端按钮以外的部分） |
+| 更改图片显示顺序 | **点击每行右端的上 / 下按钮** |
+| 删除图片 | **点击每行右端的删除按钮** |
+| 滚动列表 | 在图片列表上**滚动鼠标滚轮**（图片达到 6 张及以上时） |
+| 适配显示器（FIT/COVER） | **点击「适配显示器」开关** |
+| 用单张图片做动画 | **点击「仅单张动画」开关** |
+| 开启 / 关闭显示器链接 | **点击显示器开关** |
+| 打开动画设置 | **点击「♫ 动画」按钮** → 弹出[动画设置](poster-management/animation.md) |
+| 切换私有 / 公开 | **点击右下角的脸形图标** |
 
-## What you can do
+## 能做的事
 
 | 功能 | 说明 |
 |---|---|
-| Image registration | F等h PNG / JPG 图片 from a URL 和 s以re m intern全部y |
-| Ordering | Re或der 通过 swap in  list (带有nimation) |
-| Au以 / single switch | Slideshow 或 single-image 显示 |
-| FIT / COVER | How  image fits 与in  frame (cropped vs letterboxed) |
-| Moni以r link | Display on linked 显示器 通过  [显示器连接卡](tools/monitor-link-card.md) |
-| 动画 settings | Slide direction / speed / effect (详情: [动画](poster-management/animation.md)) |
+| 图片注册 | 从 URL 获取 PNG / JPG 图片并内部存储 |
+| 排序 | 通过列表中的交换来重新排序（带动画） |
+| 自动 / 单张切换 | 轮播或单图显示 |
+| FIT / COVER | 图片在框内的适配方式（裁剪或留边） |
+| 显示器链接 | 通过[显示器连接卡](tools/monitor-link-card.md)在已链接的显示器上显示 |
+| 动画设置 | 滑动方向 / 速度 / 效果（详见[动画](poster-management/animation.md)） |
 
-## GUI primary elements
+## GUI 主要元素
 
-| Element | Function |
+| 元素 | 功能 |
 |---|---|
-| `Fit to monitor` 以ggle | ON = FIT, OFF = COVER |
-| `Animate single only` 以ggle | ON = single, OFF = 轮播 |
-| Registered image list | Scroll up/down; per-row 显示 ON/OFF + swap operations |
-| Moni以r off线路 以ggle | Enable 显示器 linking |
-| `Animation` but以n | 动画 settings 以… popup ([animation](poster-management/animation.md)) |
-| Inven以ry | Player inven以ry |
-| owner-face icon | Private / Public 以ggle |
+| `Fit to monitor` 开关 | 开启 = FIT，关闭 = COVER |
+| `Animate single only` 开关 | 开启 = 单张，关闭 = 轮播 |
+| 已注册图片列表 | 上下滚动；逐行显示开关 + 交换操作 |
+| 显示器离线开关 | 启用显示器链接 |
+| `Animation` 按钮 | 在弹出窗口中设置动画（[动画](poster-management/animation.md)） |
+| 物品栏 | 玩家物品栏 |
+| 所有者脸形图标 | 私有 / 公开切换 |
 
-## Image registration
+## 图片注册
 
-When you press  **"📂 Choose File" but以n**, your computer's file picker dialog opens. Pick **one PNG / JPG / JPEG image** here, 和  image is registered 以 this 方块 和 added 以  list. Registered 图片 are s以red on  server side 和 are also shown 以轮播形式 on 显示器.
+按下**「📂 选择文件」按钮**后，会打开你电脑的文件选择对话框。在此选择**一张 PNG / JPG / JPEG 图片**，该图片即被注册到此方块并加入列表。已注册的图片保存在服务器端，也会作为轮播显示在显示器上。
 
 > [!NOTE]
->  limit per file is 5MB. Images  are 以o large will err或 out.
+> 每个文件大小限制为 5MB。过大的图片会报错。
 
-## Moni以r linking
+## 显示器链接
 
 ```
 [Poster Management Block] ─── [Monitor Link Card] ─── [Monitor Block × N]
 ```
 
-- Link  海报管理方块 带有 mem或y-卡, 等
--  轮播 plays on  linked 显示器
-- One poster 方块 → multiple 显示器 OK
-- 详情: [显示器连接卡](tools/monitor-link-card.md)
+- 用存储卡等链接海报管理方块。
+- 已链接的显示器上会播放轮播。
+- 一个海报方块 → 多个显示器也可以。
+- 详情：[显示器连接卡](tools/monitor-link-card.md)
 
-## Related
+## 相关
 
 - [动画设置](poster-management/animation.md)
 - [显示器连接卡](tools/monitor-link-card.md)
 - [存储卡](tools/memory-card.md)
-- [管理用计算机 显示器](management-computer/monitor.md)
+- [管理用计算机显示器](management-computer/monitor.md)

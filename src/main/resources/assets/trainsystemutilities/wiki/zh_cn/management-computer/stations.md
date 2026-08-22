@@ -8,52 +8,52 @@ tags: [management-computer, station]
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__stations__ja_jp.png)
 
- 车站 tab of  管理用计算机. List of 全部 车站, 车站 group management, 和 线路 编号 分配ment.
+管理用计算机的"车站"标签页。所有车站的列表、车站组管理，以及线路编号分配。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Place**  **管理用计算机** 方块 和 **right-click** it 以 open  screen.
-2. **Click**  以p-left dropdown 和 choose **"🏯 车站"**.
-3. When re are 以o many 车站 以 fit  list, turn  **mouse wheel** over  list 以 scroll.
+1. **放置**管理用计算机方块并**右键点击**它以打开界面。
+2. **点击**左上角下拉菜单并选择**"🏯 车站"**。
+3. 当车站过多无法在列表中全部显示时，在列表上转动**鼠标滚轮**滚动。
 
-## Displayed content
+## 显示内容
 
-| Column | Content |
+| 列 | 内容 |
 |---|---|
-| 车站 name | Create 车站 name |
-| Group | Owning 车站 group (registered 与 [车站范围指定工具](../tools/station-range-tool.md)) |
-| Line 编号 | Assigned 编号 (e.g. JA01) |
-| Train detection | Most recent p作为sing train |
+| 车站名 | Create 车站名 |
+| 组 | 所属车站组（用[车站范围指定工具](../tools/station-range-tool.md)注册） |
+| 线路编号 | 已分配的编号（如 JA01） |
+| 列车检测 | 最近经过的列车 |
 
-## 车站 group management
+## 车站组管理
 
-Lists  车站 groups created 与  [车站范围指定工具](../tools/station-range-tool.md), where you can:
-- Check member 车站
-- Rename a group
-- Delete a group
+列出用[车站范围指定工具](../tools/station-range-tool.md)创建的车站组，你可以：
+- 查看成员车站
+- 重命名组
+- 删除组
 
-## 车站 详情 和 controls
+## 车站详情与控件
 
-- **Select a 车站**: **click a 车站's row** in  list 以 open its 详情 (车站 name, position, owning group, do或 direction, 等).
-- **Return 以  list**: **click  "◀ Back" but以n** in  详情.
-- **Set  do或 opening side**: **click** a direction but以n in  详情 (**N或th / South / E作为t / West / Au以 / None**) 以 choose.
+- **选择车站**：在列表中**点击某一车站的行**可打开其详情（车站名、位置、所属组、车门方向等）。
+- **返回列表**：在详情中**点击"◀ 返回"按钮**。
+- **设置车门开启侧**：在详情中**点击**方向按钮（**北 / 南 / 东 / 西 / 自动 / 无**）来选择。
 
-## Line 编号 分配ment (分配 popup)
+## 线路编号分配（分配弹窗）
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer-station-assign__ja_jp.png)
 
-- **Open  分配 popup**: **click  分配 but以n (＋)** on each 车站's row in  list 以 open a 线路 编号 list just below  车站.
-- **Assign a 编号**: **click  线路 编号** you want 以 分配 from  list (choosing "None" clears  分配ment).
--  编号 you can 分配 are created 以…dvance in  [线路编号标签页](line-symbols.md).
+- **打开分配弹窗**：在列表中**点击每个车站行上的分配按钮（＋）**，会在该车站正下方打开一个线路编号列表。
+- **分配编号**：从列表中**点击你想分配的线路编号**（选择"无"可清除分配）。
+- 你能分配的编号是预先在[线路编号标签页](line-symbols.md)中创建的。
 
 ## 线路编号
 
-Symbols created in  [线路编号标签页](line-symbols.md) are 分配 以 车站 here.  
-Assigned 编号 appear in  [铁路管理方块 header](../railway-management.md) 和 on  [线路图](route-map.md).
+在[线路编号标签页](line-symbols.md)中创建的编号会在此分配给车站。
+已分配的编号会显示在[铁路管理方块标题](../railway-management.md)和[线路图](route-map.md)上。
 
-## Related
+## 相关
 
 - [车站范围指定工具](../tools/station-range-tool.md)
 - [线路编号标签页](line-symbols.md)

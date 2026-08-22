@@ -6,19 +6,19 @@ tags: [tutorial, video]
 
 # 影片教程
 
-Watch how 以 use TSU 和 Manta 與out leaving  game —  video 卡 below play right inside Minecraft (Manta's embedded video 功能).
+無需離開遊戲即可觀看 TSU 和 Manta 的使用方法 — 下方的影片卡片會在 Minecraft 內直接播放（Manta 的嵌入式影片功能）。
 
 > [!NOTE]
->  video runtime (Chromium) is downloaded au以matic全部y on first launch. If it is not available yet,  卡 shows a notice instead.
+> 影片執行時（Chromium）會在首次啟動時自動下載。如果尚未就緒，卡片會改為顯示提示資訊。
 
-## Using  遊戲內 Video 系統
+## 使用遊戲內影片系統
 
- official guide 以 Manta's 遊戲內 video playback (wiki embeds / PiP panel).
+Manta 遊戲內影片播放（wiki 嵌入 / 畫中畫面板）的官方指南。
 
 ```embed:youtube url=https://youtu.be/lUIN8LcW59Y title=Manta Guide: Use the In-Game Video System
 ```
 
-## Related 頁面s
+## 相關頁面
 
-- [快速開始](getting-started.md) — 基礎操作 和 hints / F1 跳轉
-- [關於 TSU](about.md) — MOD 整體範圍與推薦執行環境
+- [快速開始](getting-started.md) — 基礎操作與提示 / F1 跳轉
+- [什麼是 TSU](about.md) — MOD 整體範圍與推薦執行環境

@@ -11,69 +11,66 @@ tags: [tool, station]
 
 ![](bws:trainsystemutilities:wiki/screens/station-group-save__ja_jp.png)
 
-A 工具  registers a 车站 area 作为 a **车站 group** by specifying two points.  
-It bundles multiple railway management 方块 作为 one 车站, letting you apply common settings (col或 / settings / announcement) 全部 at once.
+一种通过指定两点来将一片车站区域注册为**车站组**的工具。
+它可将多个铁路管理方块归并为一个车站，从而一次性应用通用设置（颜色 / 设置 / 广播）。
 
 [[TOC]]
 
-## Mode switching
+## 模式切换
 
-This 工具 switches between three modes 与 **Alt + mouse wheel** (while held,  current mode is shown above  hotbar).
+此工具用 **Alt + 鼠标滚轮**在三种模式间切换（手持时，当前模式会显示在快捷栏上方）。
 
-| Mode | Behavi或 |
+| 模式 | 行为 |
 |---|---|
-| Select (default) | Left-click  two 角落s of  range 以 create a 车站 group |
-| GUI | Right-click 以 open  车站 group management GUI |
-| Show | Display  out线路 of 现有 车站 groups in  w或ld |
+| 选择（默认） | 左键点击范围的两个角，创建车站组 |
+| GUI | 右键打开车站组管理 GUI |
+| 显示 | 显示世界中已有车站组的轮廓 |
 
-## Usage (Select mode)
+## 用法（选择模式）
 
-1. Hold  工具 和 **left-click**  first 角落 of  车站 area.
-2. **Left-click**  opposite 角落.
-3. Right-click  工具 → 车站 group save GUI is shown.
-4. Enter  车站 group name → Enter 以 save.
+1. 手持工具并**左键**点击车站区域的第一个角。
+2. **左键**点击对角的另一个角。
+3. 右键工具 → 弹出车站组保存 GUI。
+4. 输入车站组名称 → 回车保存。
 
-## Track numbering modes
+## 股道编号模式
 
-At save time, you can choose a **轨道 au以-numbering** mode:
+保存时可选择一种**股道自动编号**模式：
 
-| Mode | Behavi或 |
+| 模式 | 行为 |
 |---|---|
-| AUTO | Au以-numbered 与 inside = 轨道 1 |
-| LEFT | Left edge = 轨道 1 |
-| RIGHT | Right edge = 轨道 1 |
+| AUTO | 自动编号，内侧 = 股道 1 |
+| LEFT | 左边缘 = 股道 1 |
+| RIGHT | 右边缘 = 股道 1 |
 
-## 车站 group management
+## 车站组管理
 
 ![](bws:trainsystemutilities:wiki/screens/station-group-manage__ja_jp.png)
 
-Switch  工具 以 **GUI** mode 与 **Alt + mouse wheel**, n **right-click** 以 open 
-management GUI, where you can:
-- Rename
-- Delete (与 confirmation dialog)
-- Check member 车站
-
-of a saved 车站 group.
+用 **Alt + 鼠标滚轮**将工具切换到 **GUI** 模式，然后**右键**打开管理 GUI，在其中可对已保存的车站组进行：
+- 重命名
+- 删除（带确认对话框）
+- 查看成员车站
 
 > [!NOTE]
-> re is no comm和 用于 车站 group management. Everything is done from this 工具's GUI mode.
+> 车站组管理没有命令，全部通过此工具的 GUI 模式完成。
 
 ![](bws:trainsystemutilities:wiki/screens/station-group-manage-delete__ja_jp.png)
 
-## Where 车站 groups are used
+## 车站组的使用场景
 
-- [管理用计算机 车站标签页](../management-computer/stations.md) 分配s a 线路 编号 以  group
-- [铁路管理方块 batch apply](../railway-management/settings.md#batch-apply) applies settings 以 全部 in  same group at once
-- Share destination (share) 用于 [SAS 广播](../railway-management/announcement.md)
-- **C和idate sale 车站** 用于 [自动售票机s](../structure/ticket-vending-machine.md) (chosen from 车站 groups in  [车票标签页](../management-computer/tickets.md))
-- Recognition of 车站 targeted by **au以matic ticket gates**
-- Target of **route search** 用于  [换乘查询终端](transit-terminal.md) (search using 车站 groups 作为 或igin / destination)
+- [管理用计算机车站标签页](../management-computer/stations.md) 为该组分配线路符号
+- [铁路管理方块批量应用](../railway-management/settings.md#batch-apply) 一次性为同一组内的全部成员应用设置
+- [SAS 广播](../railway-management/announcement.md) 的共享目的地（share）
+- [自动售票机](../structure/ticket-vending-machine.md) 的**候选售票车站**（从[车票标签页](../management-computer/tickets.md)中的车站组里选取）
+- 识别**自动检票闸机**所指向的车站
+- [换乘查询终端](transit-terminal.md) **路径检索**的目标（以车站组作为起讫点进行检索）
 
 > [!NOTE]
-> Ticket vending machines, au以matic ticket gates, 和 transit routing 全部 **reference  车站 groups created 与 this 工具 作为 shared data.** Be用于e using m, first register  target 车站 作为 车站 groups.
+> 自动售票机、自动检票闸机和换乘检索都**以本工具创建的车站组作为共享数据引用。** 在使用它们之前，请先将目标车站注册为车站组。
 
-## Related
+## 相关
 
 - [铁路管理方块](../railway-management.md)
-- [管理用计算机 车站标签页](../management-computer/stations.md)
+- [管理用计算机车站标签页](../management-computer/stations.md)
 - [存储卡](memory-card.md)

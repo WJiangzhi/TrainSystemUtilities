@@ -1,56 +1,56 @@
 ---
-title: 车站名称标识
+title: 站名标志
 id: structure/station-name-sign
 tags: [structure, block, station, sign]
 ---
 
-# 车站名称标识
+# 站名标志
 
 ```embed:items size=48 cols=2 label=true ids=trainsystemutilities:station_name_sign,trainsystemutilities:station_name_sign_pole
 ```
 
-A 月台 车站 name 板, 4 方块 wide 和 1 方块 t全部. Place it **inside a 车站 group range** 和 it au以matic全部y 显示  车站 name, 线路 col或 和 neighb或ing 车站, on both faces. re is no UI — everything shown is derived from  车站 group 和  分配 线路 编号.
+月台上的站名板，宽 4 格、高 1 格。将其放置在**车站组范围内**后，会在正反两面自动显示站名、线路色和邻站。没有 UI — 显示的全部内容都来自车站组与已分配的线路编号。
 
 [[TOC]]
 
-## Placement {#place}
+## 放置 {#place}
 
-1. Hold  sign 和 **right-click** where you want it.  显示 face turns 以ward you.
-2. It needs 4 方块 of h或izontal space. If  space is 方块ed, placement is cancelled 和 no 物品 is consumed.
-3. Breaking any of  4 cells removes  whole sign 和 drops  物品.
+1. 手持站名标志，在你想放置的位置**右键**。显示面朝向你。
+2. 需要 4 格的水平空间。若空间被阻挡，放置会取消，物品不会消耗。
+3. 破坏这 4 格中的任意一格都会移除整块标志并掉落物品。
 
 > [!WARNING]
-> **A sign placed outside any 车站 group range shows nothing** ( panel stays blank white). Always place it inside a 车站 group created 与  [车站范围指定工具](../tools/station-range-tool.md).
+> **放置在任何车站组范围之外的标志什么都不会显示**（面板保持空白白色）。请始终将其放置在用[车站范围指定工具](../tools/station-range-tool.md)创建的车站组内。
 
-## Pole variant (hanging) {#pole}
+## 带柱变体（悬挂式） {#pole}
 
- pole variant adds a hanging pole at each end, 用于 a 以tal height of 2 方块.
+带柱变体在两端各加一根悬挂柱，总高度为 2 格。
 
-- **Right-click  underside of a ceiling** 以 hang it:  poles attach 以  ceiling 和  板 sits one 方块 below.
-- Placement is cancelled if  pole space (above  two end cells) is 方块ed.
-- Display behavi或 is identical 以  n或mal variant.
+- **右键天花板底部**将其悬挂：柱子连到天花板上，板体位于其下方一格。
+- 若柱子空间（两端两格上方）被阻挡，放置会取消。
+- 显示行为与普通变体一致。
 
-## 什么是 显示ed {#显示}
+## 显示内容 {#display}
 
-| Element | Content | Requires |
+| 元素 | 内容 | 需要条件 |
 |---|---|---|
-| 车站 name (center) | Name of  车站 group containing  sign | Sign inside a 车站 group |
-| Line 编号 badge | Left of  车站 name | A [线路 编号](../management-computer/line-symbols.md) 分配 以 a Create 车站 inside  group |
-| Col或 b和 | B和 below  name; col或 = ** 编号's b或der col或** | Same 作为 above |
-| Neighb或ing 车站 | White text at both ends of  b和 | 一种or 车站 group connected by 轨道 |
+| 站名（中央） | 包含该标志的车站组的名称 | 标志在车站组内 |
+| 线路编号徽章 | 站名左侧 | 组内某 Create 车站已分配[线路编号](../management-computer/line-symbols.md) |
+| 色带 | 名称下方的带；颜色 = **编号的边框色** | 同上 |
+| 邻站 | 色带两端的白色文字 | 通过轨道相连的另一个车站组 |
 
-- Renames 和 编号 changes propagate 以  sign 与以… few seconds.
-- Neighb或s are resolved **from  轨道 网络**: starting at this 车站,  first different 车站 group found in each directi在…上long  轨道 is shown. Left/right 分配ment follows  sign's facing au以matic全部y.
-- After changing 轨道 或 车站 groups,  neighb或 显示 may take up 以 ~30 seconds 以 refresh.
+- 重命名和编号更改会在几秒内同步到标志。
+- 邻站**通过轨道网络**解析：从本站出发，沿轨道在每个方向上找到的第一个不同车站组即显示。左右分配会根据标志的朝向自动决定。
+- 更改轨道或车站组后，邻站显示最多可能需要约 30 秒刷新。
 
-## Troubleshooting {#faq}
+## 故障排查 {#faq}
 
-- **Nothing is 显示ed** →  sign is outside any 车站 group range.
-- **No b和 / badge** → no 线路 编号 is 分配 以  车站. Assign one in  [管理用计算机's 线路 编号 tab](../management-computer/line-symbols.md).
-- **No neighb或s** → check  轨道 actu全部y connect 以  neighb或ing 车站 和  it h作为 its own 车站 group.
+- **什么都不显示** → 标志在任何车站组范围之外。
+- **没有色带 / 徽章** → 该车站未分配线路编号。请在[管理用计算机的线路编号标签页](../management-computer/line-symbols.md)中分配一个。
+- **没有邻站** → 检查轨道是否确实连到邻站，以及邻站是否有自己的车站组。
 
-## Related 页面s
+## 相关页面
 
 - [车站范围指定工具](../tools/station-range-tool.md)
-- [Line Symbols (管理用计算机)](../management-computer/line-symbols.md)
-- [自动售票机](ticket-vending-machine.md) / [站台围栏](platform-fence.md)
+- [线路编号（管理用计算机）](../management-computer/line-symbols.md)
+- [自动售票机](ticket-vending-machine.md) / [月台栅栏](platform-fence.md)

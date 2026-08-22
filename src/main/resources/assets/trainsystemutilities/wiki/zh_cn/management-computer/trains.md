@@ -8,66 +8,66 @@ tags: [management-computer, train]
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__trains__ja_jp.png)
 
- Trains tab of  管理用计算机. List of 全部 列车 + 详情 view.
+管理用计算机的"列车"标签页。所有列车的列表 + 详情视图。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Place**  **管理用计算机** 方块 和 **right-click** it 以 open  screen.
-2. **Click**  以p-left dropdown 和 choose **"🚂 Trains"**.
-3. When re are 以o many 列车 以 fit  list, turn  **mouse wheel** over  list 以 scroll.
+1. **放置**管理用计算机方块并**右键点击**它以打开界面。
+2. **点击**左上角下拉菜单并选择**"🚂 列车"**。
+3. 当列车过多无法在列表中全部显示时，在列表上转动**鼠标滚轮**滚动。
 
-## Displayed content
+## 显示内容
 
-| Column | Content |
+| 列 | 内容 |
 |---|---|
-| Train name | From  Create 时刻表 |
-| Car count | Number of coupled cars |
-| Current position | 车站 name 或 segment in transit |
-| Speed | Real-time speed |
-| Next 车站 | Next 时刻表d s以p |
-| 电气化 | 受电弓 / FE buffer ON/OFF |
+| 列车名 | 来自 Create 时刻表 |
+| 车厢数 | 连挂的车厢数量 |
+| 当前位置 | 车站名或运行中的路段 |
+| 速度 | 实时速度 |
+| 下一车站 | 下一计划停靠站 |
+| 电气化 | 受电弓 / FE 缓冲 开启/关闭 |
 
-## Train 详情 popup
+## 列车详情弹窗
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer-train-detail__ja_jp.png)
 
-**Click a train's row** in  list 以 open a 详情 popup 以  right of  screen (或 以  left if it does not fit).
+在列表中**点击某一列车的行**，会在界面右侧打开详情弹窗（如果右侧放不下则显示在左侧）。
 
-| Info | Content |
+| 信息 | 内容 |
 |---|---|
-| Train name / car count | B作为ic info |
-| 时刻表 | Current entry 和 next entry |
-| Vehicle composition (3D model) | 3D preview of  consist |
-| 电气化 | Open  [电气化 详情 popup](#電化詳細-popup) from  "⚡ View 电气化 Status" but以n |
-| Line 编号 | Assigned 编号 |
+| 列车名 / 车厢数 | 基本信息 |
+| 时刻表 | 当前条目和下一条目 |
+| 车辆编组（3D 模型） | 编组的 3D 预览 |
+| 电气化 | 通过"⚡ 查看电气化状态"按钮打开[电气化详情弹窗](#電化詳細-popup) |
+| 线路编号 | 已分配的编号 |
 
-**Controls inside  popup:**
+**弹窗内的操作：**
 
-- **Rotate  3D model**: **hold  left mouse but以n 和 drag** over  model. **Hold Shift 和 drag** 以 translate (pan); **mouse wheel** 以 zoom.
-- **Open electrification status**: **click  "⚡ View 电气化 Status" but以n** in  popup.
-- **Close**: **click  ✕ (close) but以n** at  以p-right of  popup.
+- **旋转 3D 模型**：在模型上**按住鼠标左键并拖动**。**按住 Shift 拖动**可平移；**鼠标滚轮**缩放。
+- **打开电气化状态**：**点击弹窗中的"⚡ 查看电气化状态"按钮**。
+- **关闭**：**点击弹窗右上角的 ✕（关闭）按钮**。
 
-## 电气化 详情 popup {#電化詳細-popup}
+## 电气化详情弹窗 {#電化詳細-popup}
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer-electrification-detail__ja_jp.png)
 
-**Clicking  "⚡ View 电气化 Status" but以n** in  train 详情 popup opens it overlaid at  center of  screen. It shows  train's FE buffer / pan以graph / catenary connection status.
+在列车详情弹窗中**点击"⚡ 查看电气化状态"按钮**，会在界面中央叠加打开此弹窗。它显示列车的 FE 缓冲 / 受电弓 / 接触网连接状态。
 
-- Buffer capacity + remaining (per car)
-- List of cars 带有 pan以graph
-- List of cars 带有n FE inverter
-- Currently powered segment / source sub车站
+- 缓冲容量 + 剩余（每节车厢）
+- 带有受电弓的车厢列表
+- 带有 FE 逆变器的车厢列表
+- 当前供电路段 / 来源变电所
 
-**Controls:**
+**操作：**
 
-- **Raise / lower  pan以graph**: **click  pan以graph icon** drawn per car in  list 以 raise/lower  car's pan以graph (以ggle current collection ON/OFF).
-- **Close**: **click  ✕ (close) but以n** at  以p-right of  popup (returns 以  或iginal train 详情 popup).
+- **升降受电弓**：**点击列表中每节车厢旁绘制的受电弓图标**可升降该车厢的受电弓（切换受流开启/关闭）。
+- **关闭**：**点击弹窗右上角的 ✕（关闭）按钮**（返回原来的列车详情弹窗）。
 
-详情: [电气化系统](../electrification/pantograph.md)
+详情：[电气化系统](../electrification/pantograph.md)
 
-## Related
+## 相关
 
 - [时刻表标签页](schedule.md)
 - [线路图](route-map.md)

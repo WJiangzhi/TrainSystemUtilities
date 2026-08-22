@@ -8,45 +8,45 @@ tags: [management-computer, map]
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__map__ja_jp.png)
 
- 线路图 tab of  管理用计算机. Displays 全部 车站 和 轨道 作为 a 2D map.
+管理用计算机的"线路图"标签页。将所有车站和轨道显示为 2D 地图。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Place**  **管理用计算机** 方块 和 **right-click** it 以 open  screen.
-2. **Click**  以p-left dropdown 和 choose **"📁 My 线路图"** (this tab is open by default right after launch).
-3.  map is shown once you have linked  轨道 网络 以…dvance 带有 [存储卡](../tools/memory-card.md).
+1. **放置**管理用计算机方块并**右键点击**它以打开界面。
+2. **点击**左上角下拉菜单并选择**"📁 我的线路图"**（此标签页在启动后默认打开）。
+3. 在使用[存储卡](../tools/memory-card.md)预先连接轨道网络后，地图才会显示。
 
-## Map elements
+## 地图元素
 
-| Element | Rendering |
+| 元素 | 渲染方式 |
 |---|---|
-| 车站 node | Circle + 车站 name |
-| Track edge | Line connecting 车站 |
-| Train position | Real-time sm全部 icon |
-| Signal | State (red / green) |
+| 车站节点 | 圆圈 + 车站名 |
+| 轨道边 | 连接车站的线 |
+| 列车位置 | 实时小图标 |
+| 信号 | 状态（红 / 绿） |
 
-## Controls
+## 控件
 
- map is operated by **panning / zooming / clicking icons**.
+地图通过**平移 / 缩放 / 点击图标**操作。
 
-| Action | How | Behavi或 |
+| 操作 | 方法 | 行为 |
 |---|---|---|
-| Pan (move) | **Hold  left mouse but以n 和 drag** over  map | Move  view up / down / left / right |
-| Zoom | **Turn  mouse wheel** over  map | Up zooms in, down zooms out |
-| Select a train | **Left-click a train icon** | Opens  train's **详情 popup** (overlaid on  map, where you can check speed, destination, 时刻表, 等) |
-| Select a 车站 | **Left-click a 车站 icon** | Switches 以  **车站标签页** 和 opens  车站's 详情 (线路 编号 分配ment, 等) |
+| 平移（移动） | 在地图上**按住鼠标左键并拖动** | 上下左右移动视图 |
+| 缩放 | 在地图上**转动鼠标滚轮** | 向上放大，向下缩小 |
+| 选择列车 | **左键点击列车图标** | 打开该列车的**详情弹窗**（叠加在地图上，可查看速度、目的地、时刻表等） |
+| 选择车站 | **左键点击车站图标** | 切换到**车站标签页**并打开该车站的详情（线路编号分配等） |
 
 > [!TIP]
-> A click is "press 和 rele作为e in place 与out dragging." Moving even slightly counts 作为 a pan. Aim right next 以  ic在…上nd give it a quick press-和-rele作为e.
+> "点击"是指"原地按下并松开，不拖动"。即使稍微移动也会被视为平移。请瞄准图标旁边快速按下并松开。
 
-## Line 编号 rendering
+## 线路编号渲染
 
-车站 nodes 显示 ir [线路 编号](line-symbols.md) (when 分配).  
-Re分配ing in  [车站标签页](stations.md) reflects on  map immediately.
+车站节点会显示其[线路编号](line-symbols.md)（已分配时）。
+在[车站标签页](stations.md)中重新分配会立即反映到地图上。
 
-## Related
+## 相关
 
 - [车站标签页](stations.md)
 - [列车标签页](trains.md)

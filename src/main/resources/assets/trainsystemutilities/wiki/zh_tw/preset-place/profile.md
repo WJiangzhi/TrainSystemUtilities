@@ -8,55 +8,55 @@ tags: [preset-place, profile]
 
 ![](bws:trainsystemutilities:wiki/screens/preset-place-profile__ja_jp.png)
 
-Per-user 頁面. Two modes: your own 頁面 和 or users' 頁面s.
+按使用者區分的頁面。有兩種模式：自己的主頁和他人的主頁。
 
 [[TOC]]
 
-## Opening {#open}
+## 開啟 {#open}
 
-- **Your own profile** … **Right-click**  [列車預設工具](../train-preset-tool/browse.md) in **GUI mode** → set  mode 以 **`Place` (public)** 和 **left-click** your name/ic在…上rea at  以p.
-- **其他 users' profiles** … On  [預設詳情](detail.md) 頁面, **left-click  uploader's name** 以 open it.
+- **你自己的主頁** … 在 **GUI 模式**下**右鍵**[列車預設工具](../train-preset-tool/browse.md) → 將模式設為 **`Place`（公開）**，並**左鍵**頂部的你的名字 / 圖示區域。
+- **他人的主頁** … 在[預設詳情](detail.md)頁面，**左鍵上傳者的名字**即可開啟。
 
- first time you open it, you may be 作為ked 以 aunticate your Microsoft account. Follow  on-screen guidance.
+首次開啟時，可能會要求你進行 Microsoft 賬號認證。請按介面提示操作。
 
-## Modes {#modes}
+## 模式 {#modes}
 
-What you can do differs depending on wher it is your own 頁面 或 someone else's.
+視頁面是自己還是他人，可執行的操作有所不同。
 
-| Mode | Content |
+| 模式 | 內容 |
 |---|---|
-| **Own** | Edit profile / change icon / view stats / go 以 創作者中心 |
-| **其他s** | Browse public presets / follow |
+| **自己的** | 編輯主頁 / 更換圖示 / 檢視資料 / 前往創作者中心 |
+| **他人的** | 瀏覽公開預設 / 關注 |
 
-## But以n operations {#but以ns}
+## 按鈕操作 {#buttons}
 
-| But以n | Display 條件 | Operation / Behavi或 |
+| 按鈕 | 顯示條件 | 操作 / 行為 |
 |---|---|---|
-| Follow | 其他s' 頁面 | **Left-click** 以 follow / unfollow (gray while following, 或ange when not following) |
-| 創作者中心 | Own 頁面 | **Left-click** 以 open  [創作者中心](creator-center.md) |
-| Edit icon | Own 和 Official Accounts only | **Left-click** 以 open  icon edi以r |
-| 預設 tile | Both | **Left-click** 以 go 以  preset's [詳情](detail.md) |
-| × / Back | Both | Close / go back |
+| 關注 | 他人主頁 | **左鍵**關注 / 取消關注（已關注時為灰色，未關注時為橙色） |
+| 創作者中心 | 自己的主頁 | **左鍵**開啟[創作者中心](creator-center.md) |
+| 編輯圖示 | 僅自己的主頁和官方賬號 | **左鍵**開啟圖示編輯器 |
+| 預設卡片 | 兩者 | **左鍵**前往該預設的[詳情](detail.md) |
+| × / 返回 | 兩者 | 關閉 / 返回 |
 
-## 個人資料 icon {#icon}
+## 主頁圖示 {#icon}
 
-Supp或ts 自定義 icons in SVG 形式at.  
-Editing is done in  個人資料 Icon Edi以r (a dedicated popup, opened from  **Edit icon** but以n on your own 頁面):
+支援 SVG 格式的自定義圖示。
+編輯在主頁圖示編輯器中完成（一個專用彈窗，從你自己主頁上的 **"編輯圖示"按鈕**開啟）：
 
-- Load an SVG file
-- Adjust scale / offset
-- Set background col或 / frame col或
-- **Editable only by Official Accounts** ( edit but以n is not shown 以 general users)
+- 載入 SVG 檔案
+- 調整縮放 / 偏移
+- 設定背景色 / 邊框色
+- **僅官方賬號可編輯**（普通使用者不會顯示編輯按鈕）
 
-## Stats 顯示
+## 資料顯示
 
-Your own profile shows:
-- Public preset count
-- Total downloads
-- Total 例如s
-- Followers
+你自己的主頁會顯示：
+- 公開預設數
+- 累計下載量
+- 累計點贊數
+- 關注者數
 
-## Related
+## 相關
 
 - [Preset Place 概述](overview.md)
 - [預設詳情](detail.md)

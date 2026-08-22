@@ -9,89 +9,89 @@ tags: [tool, block, terminal]
 ```embed:item id=trainsystemutilities:transit_terminal size=48 label=true
 ```
 
-A **held 物品**  searches 和 显示 transfer routes between 车站.  
-Using  management computer's route data, it shows  route, travel time, 和 times from departure → arrival 车站 在…上 screen 例如 a "smartphone transit app."
+一种**手持物品**，用于检索并显示车站之间的换乘路线。
+借助管理用计算机的路线数据，它会像"智能手机乘车 App"一样，在屏幕上显示出发站 → 到达站的路线、所需时间与各时刻。
 
 ![](bws:trainsystemutilities:wiki/screens/transit-terminal__top__ja_jp.png)
 
 [[TOC]]
 
-## Opening / holding
+## 打开 / 持有
 
-1. **Put  换乘查询终端 on your hotbar 和 hold it** (it is a held 物品, not a 方块 you place).
-2. **Right-click** on  spot ( 物品-use but以n; by default  **right mouse but以n**).
-3. A t全部 smartphone-style panel slides up from  bot以m of  screen, at  lower right. This is  transit guidance screen.
-4. To close it, press  **Esc key** ( panel slides down 和 disappears).
+1. **将换乘查询终端放入快捷栏并手持**（它是手持物品，而非可放置的方块）。
+2. 在任意位置**右键**（即物品使用键；默认为**鼠标右键**）。
+3. 一块高大的智能手机风格面板会从屏幕右下方向上滑出，这就是换乘导引界面。
+4. 要关闭它，请按 **Esc 键**（面板会向下滑动并消失）。
 
 > [!NOTE]
-> While  panel is open,  mouse curs或 moves freely 和 you can click but以ns 和 input fields.  
-> Pressing `W / A / S / D` **does not move  player** (you can type 车站 names 与out walking).
+> 面板打开期间，鼠标光标可自由移动，能点击按钮和输入框。
+> 此时按下 `W / A / S / D` **不会移动玩家**（你可以在原地输入车站名而不必走动）。
 
-## Screen controls (b作为ics)
+## 界面操作（基础）
 
-- **Switching tabs**: **Left-click** one of  4 icons 线路d up at  **bot以m** of  panel (🔍 Search / 🕒 时刻表 / 🗺 Map / ⚙ Settings) 以 switch 以  tab.
-- **Selecting an input field**: **Left-click**  departure / arrival 车站 field 以 make it  input target, n type  车站 name 与  key板. As you type, c和idates (au以complete) appear below, 和 **left-clicking a c和idate** confirms it.
-- **Values / 以ggles**: Each **left-click** 在…上 switch row in  Settings tab 以ggles it ON / OFF.
+- **切换标签页**：在面板**底部**排列的 4 个图标中（🔍 检索 / 🕒 时刻表 / 🗺 地图 / ⚙ 设置）**左键**其中一个即可切换。
+- **选择输入框**：**左键**出发 / 到达车站输入框使其成为输入目标，然后用键盘输入车站名。输入时会自动在下方显示候选（自动补全），**左键候选**即可确认。
+- **数值 / 开关**：在设置标签页中，对开关行**左键**即可在 开 / 关 之间切换。
 
-## Four-tab layout
+## 四标签页布局
 
-### Search (TOP) 🔍
+### 检索（TOP）🔍
 
 ![](bws:trainsystemutilities:wiki/screens/transit-terminal__top__ja_jp.png)
 
- main tab, where you enter a departure 车站 (●) 和 arrival 车站 (■) 以 search 用于 a route.
+主标签页，在此输入出发车站（●）和到达车站（■）来检索路线。
 
-1. **Left-click  departure 车站 field** at  以p 和 type  车站 name 与  key板 (when a c和idate appears, **left-click** 以 confirm).
-2. Enter  **arrival 车站 field** below in  same way.
-3. **Left-click  swap but以n (⇅)** on  right 以 swap  departure 和 arrival 车站.
-4. Once both 车站 are set,  **"Search" but以n** turns green. **Left-click** it 以 show  routes below.
-5. When multiple routes are found, **1 / 2 / 3** (或 F作为t / E作为y / Cheap) **c和idate tabs** appear at  以p. **Left-click** 以 select a c和idate.
-6. **Left-click** a route tile 以 switch 以 a **详情 (time线路)** view listing each 车站's departure/arrival times, 轨道, 和 train name. In  详情 view,  以p-left **"←" goes back**,  以p-right **🧭 (start navigation)** shows  route-guidance HUD, 和 **🪟** 以ggles  详情 HUD on / off.
-7. Be用于e a search, **p作为t search his以ry** is listed; left-click each row's **✕** 以 delete one entry, 或 use  以p-right bulk delete 以 clear 全部.
+1. **左键顶部的出发车站输入框**，用键盘输入车站名（出现候选时**左键**确认）。
+2. 以同样方式在下方输入**到达车站**。
+3. **左键右侧的交换按钮（⇅）**，可交换出发站与到达站。
+4. 两个车站都设置好后，**"检索"按钮**会变绿，**左键**即可在下方显示路线。
+5. 当检索到多条路线时，顶部会出现 **1 / 2 / 3**（即 快捷 / 轻松 / 便宜）的**候选标签**，**左键**即可选中某个候选。
+6. **左键**某个路线卡片，可切换到列出每站到发时刻、股道和列车名的**详情（时间轴）**视图。在详情视图中，左上角的 **"←" 返回**，右上角的 **🧭（开始导航）**会显示路线导引 HUD，**🪟** 用于开 / 关详情 HUD。
+7. 检索前会列出**历史检索记录**，左键每行末尾的 **✕** 可删除单条记录，也可用右上角的批量删除清除全部。
 
-### 时刻表 (SCHEDULE) 🕒
+### 时刻表（SCHEDULE）🕒
 
 ![](bws:trainsystemutilities:wiki/screens/transit-terminal__schedule__ja_jp.png)
 
-A list of every train's 时刻表. **Left-click  search field** at  以p 和 type a 车站 name 以 filter by  列车 related 以  车站.
+所有列车时刻表的列表。**左键顶部的搜索框**并输入车站名，即可按与该车站相关的列车进行筛选。
 
-### Map (MAP) 🗺
+### 地图（MAP）🗺
 
 ![](bws:trainsystemutilities:wiki/screens/transit-terminal__map__ja_jp.png)
 
-A 2D map of  整个铁路网络. You can **drag 以 move (pan)** 和 **use  mouse wheel 以 zoom**.
+整个铁路网络的 2D 地图。可**拖动移动（平移）**，并用**鼠标滚轮缩放**。
 
-### Settings (SETTINGS) ⚙
+### 设置（SETTINGS）⚙
 
 ![](bws:trainsystemutilities:wiki/screens/transit-terminal__settings__ja_jp.png)
 
-Each **left-click 在…上 row** 以ggles  switch on  right ON / OFF.
+对每一行**左键**，即可切换右侧开关的 开 / 关。
 
-| Setting | Description |
+| 设置项 | 说明 |
 |---|---|
-| 24-hour clock | Toggle times between 24h / 12h notation |
-| Walk-reachable gate | Wher 以 include walking segments 以 a nearby 车站 in  route |
-| Layout adjust mode | While ON, **drag**  panel header 以 move its 显示 position |
-| 详情 HUD 显示 | Wher 以 show  route-详情 HUD on screen |
+| 24 小时制 | 在 24 小时制 / 12 小时制之间切换时刻显示 |
+| 步行可达 | 是否在路线中包含前往邻近车站的步行区段 |
+| 布局调整模式 | 开启时，可**拖动**面板标题栏来移动其显示位置 |
+| 详情 HUD 显示 | 是否在屏幕上显示路线详情 HUD |
 
-**Left-clicking  "Reset layout" but以n** at  very bot以m returns  moved panel 和 HUD positions 以 ir initial state.
+**左键最下方的"重置布局"按钮**，可将已移动的面板和 HUD 位置恢复到初始状态。
 
 ## 功能
 
-| 功能 | 说明 |
+| 功能 | 概要 |
 |---|---|
-| Route search | Suggests a route given a departure + arrival 车站 |
-| 时刻表 显示 | List of next-tra以…rrival / departure times |
-| Line 编号 显示 | 线路编号 用于 each 车站 on  route |
+| 路线检索 | 给定出发站 + 到达站，给出路线建议 |
+| 时刻表显示 | 列出下一班列车的到 / 发时刻 |
+| 线路符号显示 | 显示路线上各站的线路符号 |
 
-## 集成 与  管理用计算机
+## 与管理用计算机的联动
 
- terminal au以-links 与  management computer (= those in  same 车站 group).  
-Updates 以  时刻表 / 车站 info on  management computer are reflected immediately.
+终端会与管理用计算机（= 同一车站组内的那些）自动联动。
+管理用计算机上的时刻表 / 车站信息更新会立即反映。
 
-## Related
+## 相关
 
-- [管理用计算机 概述](../management-computer/overview.md)
+- [管理用计算机概述](../management-computer/overview.md)
 - [时刻表标签页](../management-computer/schedule.md)
 - [车站标签页](../management-computer/stations.md)
 - [铁路管理方块](../railway-management.md)

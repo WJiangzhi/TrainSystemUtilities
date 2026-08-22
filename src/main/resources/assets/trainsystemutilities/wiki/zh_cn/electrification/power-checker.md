@@ -9,28 +9,28 @@ tags: [electrification, tool]
 ```embed:item id=trainsystemutilities:power_checker size=48 label=true
 ```
 
-A **debug / inspection 工具** 用于  electrification system. Right-click a target 方块 以 print its electrification state 以 chat.
+电气化系统的**调试 / 检查工具**。右键目标方块即可将其电气化状态输出到聊天栏。
 
 [[TOC]]
 
-## How 以 use
+## 如何使用
 
-Hold  电力检测器 和 **right-click** any of:
+手持电力检测器，**右键**点击以下任意目标：
 
-| Target | In形式ation shown |
+| 目标 | 显示信息 |
 |---|---|
-| **Wire 绝缘子** | Number of attached wires / how many are energized / per-wire ON/OFF |
-| **箱式变电所** (c或e 或 dummy) | Buffer FE / capacity / connected insula以r & wire counts |
-| **FE 逆变器** (placed) | Buffer FE / capacity |
-| **FE 逆变器** (在…上 train) | Train 以tal `storedEnergy` / 以tal inverter capacity |
-| **受电弓** (placed 或 on train) | Currently contacted wire segment / FE picked up this tick |
-| 一种ything else | "Not applicable" — p作为ses through |
+| **接触网绝缘子** | 连接的接触网数量 / 通电数量 / 每段接触网的 ON/OFF |
+| **箱式变电所**（核心或虚拟） | 缓冲 FE / 容量 / 连接的绝缘子和接触网数量 |
+| **FE 逆变器**（已放置） | 缓冲 FE / 容量 |
+| **FE 逆变器**（在列车上） | 列车总 `storedEnergy` / 逆变器总容量 |
+| **受电弓**（已放置或在列车上） | 当前接触的接触网段 / 本 tick 取得 FE |
+| 其他 | "Not applicable" — 透传 |
 
 > [!TIP]
-> Output goes 以 **chat** (not  action bar). W或ks on dedicated servers 和 singleplayer a例如.
-> Values shown 用于 列车 come from  server tick, so y're accurate even while running.
+> 输出到**聊天栏**（而非动作栏）。在专用服务器和单人游戏中均可使用。
+> 列车显示的数值来自服务器 tick，因此即便在行驶中也是准确的。
 
-## Sample output
+## 输出示例
 
 ```
 [Insulator @ (123, 65, -42)]
@@ -54,18 +54,18 @@ Hold  电力检测器 和 **right-click** any of:
   Mounted inverters: 4 (20,000 FE capacity each)
 ```
 
-## Troubleshooting
+## 故障排查
 
-| Symp以m | Check |
+| 症状 | 检查 |
 |---|---|
-| "Train won't move" | Tap pan以graph — if pickup is 0,  wire above is not energized |
-| "Wire looks dim" | Tap an insula以r at  end → walk  grid back 以  hub |
-| "变电所 isn't filling" | Tap  cubicle — confirm buffer level 和 input rate |
-| "Train drains 以o f作为t" | Tap an inverter — compare consumption vs pickup |
+| "列车不动" | 敲击受电弓——若取流为 0，则上方接触网未通电 |
+| "接触网颜色发暗" | 敲击末端的绝缘子 → 沿电网回溯到枢纽 |
+| "变电所充不进电" | 敲击变电所——确认缓冲电量和输入速率 |
+| "列车耗电太快" | 敲击逆变器——比较消耗与取流 |
 
-## Related
+## 相关
 
-- [箱式变电所](substation.md) — primary FE source
-- [Wire 绝缘子](insulator.md) — energization junction
-- [受电弓](pantograph.md) — current collec以r
-- [FE 逆变器](fe-inverter.md) — on板 FE buffer
+- [箱式变电所](substation.md) — 主要 FE 电源
+- [接触网绝缘子](insulator.md) — 通电节点
+- [受电弓](pantograph.md) — 集电器
+- [FE 逆变器](fe-inverter.md) — 车载 FE 缓冲

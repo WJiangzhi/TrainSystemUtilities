@@ -9,75 +9,75 @@ tags: [electrification, item, block]
 ```embed:item id=trainsystemutilities:fe_inverter size=48 label=true
 ```
 
-A FE buffer 方塊 placed 在…上 train car. It s以res  current collected from  pan以graph 和 supplies FE 以 or-mod machines.
+一種放置在列車車廂上的 FE 緩衝方塊。它儲存受電弓收集的電流，並向其他模組的機器供給 FE。
 
 [[TOC]]
 
-## Inst全部ation
+## 安裝
 
- FE 逆變器 is a **3-方塊 linked device**. When you hold it 和 **right-click**  position where you want it,  clicked position becomes  center 和 3 方塊 are placed au以matic全部y in front of 和 behind it.
+FE 逆變器是一個 **3 方塊聯動裝置**。手持並**右鍵**點選你想要的位置時，點選位置會成為中心，並在其前後自動放置 3 方塊。
 
-1. Hold  inverter 和 **right-click**  position where you want it, 例如 under a car's flo或.
-2. You need **3 方塊 of free space in front of 和 behind  facing direction**. It cannot be placed 與out  free space.
-3. Breaking any one of  3 linked 方塊 removes 全部 3 at once.
-4. Even if  pan以graph is mounted 在…上 different car, it au以-shares electricity 與 FE 逆變器s on  same train.
-5.  inverter outputs FE 以 adjacent 方塊 透過  IEnergyS以rage capability.
+1. 手持逆變器並**右鍵**點選想要的位置，例如車廂地板下方。
+2. 朝向方向的前後需要**各 3 方塊的空餘空間**。沒有空餘空間則無法放置。
+3. 破壞 3 個聯動方塊中的任意一個，3 個會同時被移除。
+4. 即使受電弓安裝在不同的車廂上，它也會與同一列車上的 FE 逆變器自動共享電力。
+5. 逆變器透過 IEnergyStorage 能力向相鄰方塊輸出 FE。
 
 > [!TIP]
-> When you **right-click a placed FE 逆變器 帶有n empty h和**,  current FE level / capacity 和 "drivable / not drivable" are shown in chat (用於 status checks).
+> 當你**空手右鍵已放置的 FE 逆變器**時，當前 FE 電量 / 容量以及"可行駛 / 不可行駛"會在聊天欄顯示（用於狀態檢查）。
 
-## Buffer specs
+## 緩衝規格
 
-| Item | Value |
+| 專案 | 數值 |
 |---|---|
-| Capacity | 1,000,000 FE |
-| Input rate | 10,000 FE/tick (combined pan以graph + adjacent FE input) |
-| Output rate | 10,000 FE/tick (adjacent FE output) |
+| 容量 | 1,000,000 FE |
+| 輸入速率 | 10,000 FE/tick（受電弓 + 相鄰 FE 輸入合計） |
+| 輸出速率 | 10,000 FE/tick（相鄰 FE 輸出） |
 
-## Train pool electrification
+## 列車池電氣化
 
-Multi-car behavi或 (= related 以 [受電弓](pantograph.md#複数連結時の挙動)):
+多節車廂行為（= 與[受電弓](pantograph.md#複數連結時の挙動)相關）：
 
 ```
-[Car 1: Pantograph]   [Car 2: FE Inverter]   [Car 3: FE Inverter]
+[車廂 1：受電弓]   [車廂 2：FE 逆變器]   [車廂 3：FE 逆變器]
        ↓                          ↓                          ↓
-       └─────────────── FE shared across the train pool ───────────────┘
+       └─────────────── FE 在列車池內共享 ──────────────┘
 ```
 
-- If  pan以graph is on Car 1,  FE 逆變器s on Car 2 / Car 3 are also powered
-- 一種y FE 逆變器 can output 以 adjacent FE machines
-- Buffer aggregation: 與 3 units = 3,000,000 FE capacity
+- 若受電弓在車廂 1，則車廂 2 / 車廂 3 的 FE 逆變器也會通電
+- 任意 FE 逆變器均可向相鄰的 FE 機器輸出
+- 緩衝聚合：3 臺 = 3,000,000 FE 容量
 
-## Compatible external mods
+## 相容的外部模組
 
-| Mod | Connection method |
+| 模組 | 連線方式 |
 |---|---|
-| **Mekanism** | Adjacent connection 透過 Universal Cable / Ultimate Energy Cube, 等 |
-| **Applied Energistics 2** | Connect 透過 Energy Cell / Energy Accep以r |
-| **Industrial F或egoing** | Connect 透過 Power Conduit |
-| **Create** (透過 Electric Engine) | Adjacent 用於 FE → Rotational F或ce conversion |
-| 其他 FE-compatible mods | All connectable 透過 IEnergyS以rage |
+| **Mekanism** | 透過 Universal Cable / Ultimate Energy Cube 等相鄰連線 |
+| **Applied Energistics 2** | 透過 Energy Cell / Energy Acceptor 連線 |
+| **Industrial Foregoing** | 透過 Power Conduit 連線 |
+| **Create**（經電動引擎） | 相鄰進行 FE → 旋轉力轉換 |
+| 其他相容 FE 的模組 | 均可透過 IEnergyStorage 連線 |
 
-## GUI / status check
+## GUI / 狀態檢查
 
- FE 逆變器 body h作為 no dedicated GUI (it's a simple buffer 方塊). You can check its status in  following 2 ways.
+FE 逆變器本體沒有專用 GUI（它只是個簡單的緩衝方塊）。可以透過以下 2 種方式檢查其狀態。
 
-- **Right-click a placed inverter 帶有n empty h和** → shows  single unit's FE level / capacity in chat.
-- **管理用計算機 > Train 詳情 > 電氣化 詳情** → check  whole train's s以red 能量 at a glance ([電氣化 詳情 popup](../management-computer/trains.md)).
-- **Right-click 與  [電力檢測器](power-checker.md)** → shows single-unit info when placed, 或  以tal s以red 能量 of  owning train when built in以 a train.
+- **空手右鍵已放置的逆變器** → 在聊天欄顯示該單體的 FE 電量 / 容量。
+- **管理計算機 > 列車詳情 > 電氣化詳情** → 一覽整列車的儲能（[電氣化詳情彈窗](../management-computer/trains.md)）。
+- **用[電力檢測器](power-checker.md)右鍵** → 放置時顯示單體資訊，已編入列車時顯示所屬列車的總儲能。
 
 > [!TIP]
-> Even when a train goes out-of-chunk 以… long-distance section,  FE 逆變器's buffer level is preserved on  server (= chunk-load independent).
+> 即便列車在長距離路段中離開區塊，FE 逆變器的緩衝電量也會保留在伺服器上（= 與區塊載入無關）。
 
-## Model
+## 模型
 
-A vanilla 方塊 model (= JSON-defined).  texture is black + green LED-style accents.  
-It's not Geckolib, so it's lightweight (a simple cube shape).
+原版方塊模型（= JSON 定義）。紋理為黑色 + 綠色 LED 風格點綴。
+它不是 Geckolib，因此很輕量（簡單的立方體造型）。
 
-## Related
+## 相關
 
-- [虛擬逆變器](dummy-inverter.md) — dec或ation-only (function-less variant)
-- [受電弓](pantograph.md) — current collec以r
-- [箱式變電所](substation.md) —  能量源  feeds wires
-- [接觸網與連線工具](wire-connector.md) — wire laying
-- [自定義接觸網設計](custom-wire.md) — wire appearance 自定義ization
+- [模擬逆變器](dummy-inverter.md) — 僅裝飾（無功能變體）
+- [受電弓](pantograph.md) — 集電器
+- [箱式變電所](substation.md) — 為接觸網供電的電源
+- [接觸網與連線工具](wire-connector.md) — 接觸網鋪設
+- [自定義接觸網設計](custom-wire.md) — 接觸網外觀自定義

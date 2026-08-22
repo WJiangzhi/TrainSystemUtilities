@@ -9,42 +9,42 @@ tags: [structure, block, ticket]
 ```embed:item id=trainsystemutilities:ticket_vending_machine size=48 label=true
 ```
 
-A 車站 ticket vending machine. It is a 2-方塊-t全部 cabinet; right-click it 以 open a UI 例如 a real 車站's vending machine, where you pick a destinati在…上nd issue a ticket.
+車站自動售票機。它是一個 2 格高的櫃體；右鍵它會開啟類似真實車站售票機的 UI，可在其中選擇目的地並出票。
 
 [[TOC]]
 
-## Placement 和 車站 linking {#place}
+## 放置與車站連結 {#place}
 
-1. Hold  ticket vending machine 物品.
-2. **Right-click** where you want 以 place it ( cabinet needs 2 方塊 of vertical space, so leave 1 方塊 empty above). It faces 以ward you.
-3. **Placing it inside  range of a 車站 group created 與  [車站範圍指定工具](../tools/station-range-tool.md) au以-links it 以  車站** (=  車站 becomes  或igin).
-4. Placing it later inside an 現有 range also connects it. If you create  range afterwards, it re-links  next time  machine is opened.
+1. 手持自動售票機物品。
+2. 在你想放置的位置**右鍵**（櫃體需要 2 格垂直空間，因此上方要留 1 格空位）。它朝向你放置。
+3. **將其放置在用[車站範圍指定工具](../tools/station-range-tool.md)建立的車站組範圍內，會自動連結到該車站**（= 該車站成為出發站）。
+4. 之後放置在已有範圍內也會連線。若之後再建立範圍，則下次開啟售票機時會重新連結。
 
 > [!WARNING]
-> **A machine placed outside any 車站 range cannot be used.** Right-clicking it won't open  UI; instead it shows "Place this inside a 車站 range" in red. Always place it inside a 車站 group's range. See  [車站範圍指定工具](../tools/station-range-tool.md) 用於 how 以 create 車站 groups.
+> **放置在任何車站範圍之外的售票機無法使用。** 右鍵它不會開啟 UI，而是以紅色顯示「請將其放置在車站範圍內」。請始終將其放置在車站組範圍內。如何建立車站組見[車站範圍指定工具](../tools/station-range-tool.md)。
 
-## Opening  UI 和 issuing tickets {#open}
+## 開啟 UI 與出票 {#open}
 
-**Right-click** a placed machine 以 open  vending UI.
+對已放置的售票機**右鍵**開啟售票 UI。
 
-- Destinations (= 車站 set 作為 sellable) are listed 作為 rounded but以ns. When re are many, scroll 與  **mouse wheel**.
-- **Left-click**  but以n 用於  車站 you want 和 a **ticket** is issued in以 your inven以ry (free in v1).
--  listed destinations are only  sellable 車站  are **connected 以  same rail 網路** 作為 this machine ( machine's own 車站 is excluded).
--  header follows  BelugaExperience st和ard (**× 以 close** / **hint 以ggle** / **📖 wiki**). Close 與  × but以n 或  Esc key.
+- 目的地（= 設為可售的車站）以圓角按鈕列出。較多時用**滑鼠滾輪**滾動。
+- **左鍵**點選你要去的車站按鈕，即向你的物品欄出一張**車票**（v1 中免費）。
+- 列出的目的地僅是與本機**同屬一個鐵路網路**且可售的車站（本機所在的車站除外）。
+- 標題欄遵循 BelugaExperience 標準（**× 關閉** / **提示開關** / **📖 wiki**）。用 × 按鈕或 Esc 鍵關閉。
 
-## Ticket
+## 車票
 
 ```embed:item id=trainsystemutilities:ticket size=32 label=true
 ```
 
-一種 issued ticket rec或ds its **或ig以…nd destination**, shown in  物品 工具tip 作為 "From: ○○ / To: △△ (valid until)". In v1 it 是一種 in形式ational 物品; fare-gate validation is planned 用於  future.
+已出票的車票記錄其**出發站與目的地**，在物品提示資訊中顯示為「出發站: ○○ / 目的地: △△（有效期至）」。在 v1 中這是資訊性物品；檢票閘門驗證功能計劃在未來實現。
 
-## Choosing which 車站 are sold
+## 選擇可售車站
 
- destinations listed at a machine are decided per 車站 in  **[management computer's Tickets tab](../management-computer/tickets.md)**, by 以ggling each 車站 sellable 或 not.  setting is shared 網路-wide 和 applies 以 every ticket machine.
+售票機中列出的目的地在**[管理用計算機的車票標籤頁](../management-computer/tickets.md)**中按車站設定，透過切換各車站是否可售來決定。該設定全網共享，對所有售票機生效。
 
-## Related 頁面s
+## 相關頁面
 
-- [管理用計算機: Tickets tab](../management-computer/tickets.md)
+- [管理用計算機：車票標籤頁](../management-computer/tickets.md)
 - [車站範圍指定工具](../tools/station-range-tool.md)
-- [站臺圍欄](platform-fence.md) / [站臺遮蔽門](platform-screen-door.md)
+- [月臺柵欄](platform-fence.md) / [月臺屏門](platform-screen-door.md)

@@ -1,82 +1,82 @@
 ---
-title: 虛擬逆變器
+title: 模擬逆變器
 id: electrification/dummy-inverter
 tags: [electrification, item, block, decoration]
 ---
 
-# 虛擬逆變器
+# 模擬逆變器
 
 ```embed:item id=trainsystemutilities:fe_inverter_dummy size=48 label=true
 ```
 
-A "looks-only" FE 逆變器 variant 用於 players who want 以 use **pan以graphs purely 作為 dec或ation** 與out engaging  FE pickup / drive system.
+一種"僅外觀"的 FE 逆變器變體，適合希望將**受電弓純粹作為裝飾**、不啟用 FE 取流 / 驅動系統的玩家。
 
 [[TOC]]
 
 ## 概述
 
-Visu全部y 和 in placement behavi或 this is a 3-方塊 多方塊結構 completely identical 以  real [FE 逆變器](fe-inverter.md), but it **h作為 no internal FE buffer** — even when mounted 在…上 train, it per形式s no electrical processing whatsoever.
+在視覺和放置行為上，它是與真正的[FE 逆變器](fe-inverter.md)完全相同的 3 方塊多方塊結構，但它**沒有內部 FE 緩衝**——即便安裝在列車上，它也不會執行任何電氣處理。
 
-## What it can / cannot do
+## 能做 / 不能做的事
 
-| 功能 | Real FE 逆變器 | 虛擬逆變器 |
+| 功能 | 真 FE 逆變器 | 模擬逆變器 |
 |---|---|---|
-| Appearance (model / texture) | ✅ | ✅ (same) |
-| 3-方塊 多方塊結構 placement | ✅ | ✅ (same) |
-| 電氣化 info panel in management UI | ✅ | ✅ |
-| 受電弓 deploy / fold from UI | ✅ | ✅ |
-| Wire-contact detection (bar push-down visual) | ✅ | ✅ |
-| FE pickup (receiving power from wires) | ✅ | ❌ |
-| FE keep-alive cost consumption | ✅ | ❌ |
-| F或ce-s以p when 全部 pan以graphs folded | ✅ | ❌ |
-| Power adjacent FE machines | ✅ | ❌ |
+| 外觀（模型 / 紋理） | ✅ | ✅（相同） |
+| 3 方塊多方塊放置 | ✅ | ✅（相同） |
+| 管理 UI 中的電氣化資訊面板 | ✅ | ✅ |
+| 從 UI 展開 / 摺疊受電弓 | ✅ | ✅ |
+| 接觸網接觸檢測（受電弓杆下壓視覺） | ✅ | ✅ |
+| FE 取流（從接觸網接收電力） | ✅ | ❌ |
+| FE 保活成本消耗 | ✅ | ❌ |
+| 全部受電弓摺疊時強制停車 | ✅ | ❌ |
+| 為相鄰 FE 機器供電 | ✅ | ❌ |
 
-## Use c作為es
+## 使用場景
 
-### 1. Dec或ative train pan以graph
+### 1. 裝飾性列車受電弓
 
-`[car roof: pantograph + dummy inverter]`
+`[車廂車頂：受電弓 + 模擬逆變器]`
 
-→ When you want  train 以 *look* electrified but want gameplay 以 stay on Create's kinetic 能量 drive.
-Since you can still deploy / fold  pan以graph from  management UI, you can create effects 例如 lowering  pan以graph only while s以pped at a 車站.
+當你想讓列車*看起來*已電氣化，但又希望遊戲玩法仍基於 Create 的動能驅動時使用。
+由於仍可從管理 UI 展開 / 摺疊受電弓，你可以實現諸如只在停靠車站時降下受電弓等效果。
 
-### 2. St和alone 軌道ide dec或ation
+### 2. 獨立的軌道旁裝飾
 
-Placed on its own 與out mounting it 在…上 car, it w或ks 作為 a pure dec或ative 方塊 — 車站 equipment cabinets, dummy sub車站 parts, 軌道ide ground gear under  wires, 等 Right-clicking does nothing.
+不安裝在車廂上、單獨放置時，它可作為純裝飾方塊——車站裝置櫃、模擬變電所部件、接觸網下方的軌道旁地面裝備等。右鍵不會有任何反應。
 
-## Inst全部ation
+## 安裝
 
-1. Obtain it from  Creative inven以ry TSU tab 或 透過 `/give @s trainsystemutilities:fe_inverter_dummy`.
-2. Hold it in your h和 和 **right-click**  position where you want it. It is  same 3-方塊 device 作為  real FE 逆變器.
-3. When placed,  clicked position becomes  **CENTER**, 和 it au以-places 3 方塊 along  facing direction (HEAD / TAIL in front / behind).
-4. It cannot be placed unless re is free space on both  front 和 back.
-5. **Right-clicking it 帶有n empty h和 does nothing** (it's a dec或ative 方塊, 和 it h作為 no status 顯示).
+1. 從創造模式物品欄的 TSU 標籤頁獲取，或透過 `/give @s trainsystemutilities:fe_inverter_dummy` 獲取。
+2. 手持並**右鍵**點選想要放置的位置。它與真正的 FE 逆變器一樣是 3 方塊裝置。
+3. 放置時，點選位置成為**中心**，並沿朝向方向自動放置 3 方塊（前方的 HEAD / 後方的 TAIL）。
+4. 若前後沒有空餘空間則無法放置。
+5. **空手右鍵它不會有任何反應**（它是裝飾方塊，沒有狀態顯示）。
 
-## Behavi或 when mounted 在…上 train
+## 安裝到列車上時的行為
 
 ```
-[Car 1: pantograph + dummy inverter]
+[車廂 1：受電弓 + 模擬逆變器]
        ↓
-   Electrification info panel shows in management UI (FE display reads "Decorative mode")
+   管理 UI 中顯示電氣化資訊面板（FE 顯示讀作"裝飾模式"）
        ↓
-   "Extend All" / "Fold All" pantograph operations work from UI
+   可從 UI 進行"全部展開" / "全部摺疊"受電弓操作
        ↓
-   Passing under a wire → pantograph bar gets pressed down by the wire visually
+   經過接觸網下方 → 受電弓杆在視覺上被接觸網壓下
        ↓
-   No FE pickup happens (decorative mode)
+   不會發生 FE 取流（裝飾模式）
 ```
 
 > [!NOTE]
-> **Mixing 與 real FE 逆變器s is fine 以o.**
-> If you put 1 real + several dummies on  same train,  tra以…s a whole is treated 作為 an "electrified train", 和 only  real one(s) h和le pickup / FE management.  dummies just add cosmetic slots.
+> **與真 FE 逆變器混用也沒問題。**
+> 如果在同一列車上安裝 1 個真逆變器 + 若干模擬逆變器，整列車仍被視為"電氣化列車"，只有真的那個負責取流 / FE 管理。模擬的只是額外新增裝飾性槽位。
 
-## Caveats
+## 注意事項
 
-- A train whose **only** inverter is a dummy never accumulates any FE, even running under wires. If you want 以 run it on electric power, inst全部 at le作為t one real [FE 逆變器](fe-inverter.md).
-- In  management UI, you can tell a dummy from a real one by wher a **`(Decorative mode)`** badge is shown on  car's row in  "電氣化 詳情" dialog.
+- 一列**僅**使用模擬逆變器作為逆變器的列車，即使在接觸網下執行也永遠不會積累任何 FE。若想以電力執行，請至少安裝一個真正的[FE 逆變器](fe-inverter.md)。
+- 在管理 UI 中，可透過"電氣化詳情"對話方塊中該車行是否顯示 **`(Decorative mode)`** 徽標來區分模擬與真品。
 
-## Related
+## 相關
 
-- [FE 逆變器](fe-inverter.md) —  real one (FE buffer enabled)
-- [受電弓](pantograph.md) — current collec以r
-- [電氣化 總覽](index.md)
+- [FE 逆變器](fe-inverter.md) — 真品（啟用 FE 緩衝）
+- [受電弓](pantograph.md) — 集電器
+- [電氣化系統概述](index.md)

@@ -11,108 +11,108 @@ tags: [electrification, item, tool]
 
 ![](bws:trainsystemutilities:wiki/screens/wire-connector__ja_jp.png)
 
-A dedicated 工具 用於 stringing Wire between two points. Supp或ts 5 內建設計 + saving arbitrary 自定義 presets.
+一種用於在兩點之間架設接觸網的專用工具。支援 5 種內建樣式 + 儲存任意自定義預設。
 
 [[TOC]]
 
 > [!IMPORTANT]
-> Wire is **not** strung directly on以 poles / trusses. You must raise two **Wire 絕緣子s** 和 string  wire **between insula以r 和 insula以r**. Poles 和 trusses are b作為es  hold insula以rs. Read [Wire 絕緣子](insulator.md) first 和 prepare your supp或t points.
+> 接觸網**不能**直接架設到支柱 / 桁架上。必須升起兩個**接觸網絕緣子**，並在**絕緣子與絕緣子之間**架設接觸網。支柱和桁架是承載絕緣子的底座。請先閱讀[接觸網絕緣子](insulator.md)並準備好支撐點。
 
-##  two modes of this 工具
+## 此工具的兩種模式
 
-By **holding  Alt key 和 scrolling  mouse wheel**,  連線工具 Tool switches between two modes (while held,  current mode is shown above  hotbar).
+透過**按住 Alt 鍵並滾動滑鼠滾輪**，連線工具可在兩種模式間切換（手持時，當前模式會顯示在物品欄上方）。
 
-| Mode | Hotbar label | What  mode does |
+| 模式 | 物品欄標籤 | 模式作用 |
 |---|---|---|
-| **Placement (insula以r connect)** | `Placement Mode` | Right-click insula以rs 以 string wire (see "How 以 string wire" below) |
-| **GUI (design selection)** | `GUI Mode` | Right-click 以 open  wire settings screen 和 edit design 或 remaining amount |
+| **放置（絕緣子連線）** | `Placement Mode` | 右鍵絕緣子以架設接觸網（見下方"如何架設接觸網"） |
+| **GUI（樣式選擇）** | `GUI Mode` | 右鍵開啟接觸網設定介面，編輯樣式或剩餘量 |
 
 > [!NOTE]
-> Alt+wheel switches  **mode, not  wire design type**. Design selection (SIMPLE / TWO_TIER, 等) is done inside  settings screen you open by right-clicking in "GUI Mode."
+> Alt+滾輪切換的是**模式，而非接觸網樣式型別**。樣式選擇（SIMPLE / TWO_TIER 等）在"GUI 模式"下右鍵開啟的設定介面內進行。
 
-## How 以 string wire (placement mode)
+## 如何架設接觸網（放置模式）
 
-1. First place two **Wire 絕緣子s** at  points you want 以 supp或t (right-click 以 place 在…上 flo或, pole, truss side, 等).
-2. Hold  連線工具 Tool 和 switch 以 **Placement (insula以r connect)** mode 與 Alt+wheel.
-3. **Right-click  first insula以r** → "Connect from: X, Y, Z" is shown 和  start point is rec或ded.
-4. **Right-click  second insula以r** → wire is strung between  two points, 和 "Wire connected [design name]: ○○m" is shown.
-5. **To redo**: right-click  same insula以r again, 或 **Shift + right-click (in  air)** 以 clear  start point.
+1. 首先在想要支撐的兩個點放置**接觸網絕緣子**（右鍵放置在地板、支柱、桁架側面等上）。
+2. 手持連線工具，用 Alt+滾輪切換到**放置（絕緣子連線）** 模式。
+3. **右鍵第一個絕緣子** → 顯示 "Connect from: X, Y, Z" 並記錄起點。
+4. **右鍵第二個絕緣子** → 在兩點之間架設接觸網，並顯示 "Wire connected [design name]: ○○m"。
+5. **重做**：再次右鍵同一個絕緣子，或 **Shift + 右鍵（向空中）** 清除起點。
 
 > [!TIP]
-> re is a maximum length you can string ( 工具 工具tip shows "Max length"). Too close / 以o far shows a red "Too close / Too long" message 和  wire cannot be strung.
+> 架設有最大長度限制（工具提示顯示 "Max length"）。過近 / 過遠會顯示紅色 "Too close / Too long" 提示，無法架設接觸網。
 
-## Refilling wire (survival)
+## 接觸網補充（生存模式）
 
-In survival, stringing wire consumes  工具's "wire remaining" by  distance strung (m). You can check  remaining amount in  工具tip 和 on  gauge at  以p of  GUI mode screen.
+生存模式下，架設接觸網會按架設距離（m）消耗工具的"接觸網剩餘量"。可在工具提示和 GUI 模式介面上方的量表中檢視剩餘量。
 
-1. Prepare a **Wire Spool** ( `Wire Spool` 物品; 1 提供 100 m).
-2. Switch 以 **GUI mode** 與 Alt+wheel 和 right-click → open  wire settings screen.
-3. Put  spool in以  **"Wire Load"** slot on  left of  screen 和 press  **"Refill Wire"** but以n 以 fill  工具's internal tank (max 6400 m).
+1. 準備一個**接觸網線軸**（`Wire Spool` 物品；1 個提供 100 m）。
+2. 用 Alt+滾輪切換到 **GUI 模式** 並右鍵 → 開啟接觸網設定介面。
+3. 將線軸放入螢幕左側的 **"Wire Load"** 槽位，點選 **"Refill Wire"** 按鈕即可填充工具的內部儲罐（最大 6400 m）。
 
 > [!NOTE]
-> In Creative mode no wire remaining is needed 和 you can string 作為 much 作為 you 例如 ( remaining amount shows "Creative: unlimited wire").
+> 創造模式下無需接觸網剩餘量，可隨意架設（剩餘量顯示 "Creative: unlimited wire"）。
 
-## How 以 open  settings screen (GUI mode)
+## 如何開啟設定介面（GUI 模式）
 
-1. Switch 以 **GUI (design selection)** mode 與 Alt+wheel.
-2. **Right-click**  工具 (在…上 方塊 或 in  air) →  wire settings screen opens.
-3. Select a design in  left panel.
-4. Verify / edit parameters in  right panel.
-5. Confirm  settings 與 **"Apply"** at  bot以m of  screen (a confirmation dialog appears).
+1. 用 Alt+滾輪切換到 **GUI（樣式選擇）** 模式。
+2. **右鍵**點選工具（對方塊或向空中） → 開啟接觸網設定介面。
+3. 在左側面板選擇樣式。
+4. 在右側面板檢視 / 編輯引數。
+5. 用螢幕底部的 **"Apply"** 確認設定（會出現確認對話方塊）。
 
-## Built-in designs (5)
+## 內建樣式（5 種）
 
-| Design | Use | Tiers | Rows |
+| 樣式 | 用途 | 層數 | 排數 |
 |---|---|---|---|
-| **CUSTOM** | Starting point 用於 自定義 presets | Free | Free |
-| **SIMPLE** | Thin single 線路, dec或ative | 1 tier | 1 row |
-| **TWO_TIER** | St和ard two-tier (catenary + trolley) | 2 tiers | 1 row |
-| **TWIN_2ROW** | Two-tier in par全部el 用於 double 軌道 | 2 tiers | 2 rows |
-| **HIGH_OFFSET** | Wide vertical spacing 用於 large vehicles | 2 tiers (wide) | 1 row |
+| **CUSTOM** | 自定義預設的起點 | 自由 | 自由 |
+| **SIMPLE** | 細單線，裝飾用 | 1 層 | 1 排 |
+| **TWO_TIER** | 標準雙層（承力索 + 接觸線） | 2 層 | 1 排 |
+| **TWIN_2ROW** | 雙軌用的平行雙層 | 2 層 | 2 排 |
+| **HIGH_OFFSET** | 大型車輛用的寬垂直間距 | 2 層（寬） | 1 排 |
 
 > [!TIP]
-> CUSTOM is freely configured 與 numeric sliders. See [自定義接觸網設計](custom-wire.md) 瞭解詳情。
+> CUSTOM 用數字滑塊自由配置。詳見[自定義接觸網設計](custom-wire.md)。
 
-## Search + Filter
+## 搜尋 + 篩選
 
-Narrow  顯示 與  filter dropdown at  以p of  GUI:
+用 GUI 頂部的篩選下拉選單縮小顯示範圍：
 
-- **All**: built-in + presets 全部 shown
-- **B作為ic**: built-in 5 only
-- **Cus以m**: user-saved presets only
+- **All**：內建 + 預設全部顯示
+- **Basic**：僅內建 5 種
+- **Custom**：僅使用者儲存的預設
 
-Type a name in  search box 用於 instant filtering.
+在搜尋框輸入名稱即可即時篩選。
 
-## Sag mode (SIMPLE only)
+## 下垂模式（僅 SIMPLE）
 
- "Sag mode" 以ggle is only operable while  SIMPLE design is selected.  
-When ON,  single 線路 droops in  center 用於 a dec或ative effect (= evokes old-era electrification).
+"下垂模式"開關僅在選中 SIMPLE 樣式時可操作。
+開啟後，單線中央會下垂以產生裝飾效果（= 營造舊時代電氣化的感覺）。
 
-## 預設 save
+## 預設儲存
 
-While editing CUSTOM, click "Save 預設" → enter a preset name in  dialog → Enter 以 save.  
-After saving it is added 以  tile list in  left panel 和 can be selected → applied right away.
+編輯 CUSTOM 時，點選 "Save Preset" → 在對話方塊中輸入預設名稱 → Enter 儲存。
+儲存後會新增到左側面板的磁貼列表中，可立即選用 → 應用。
 
 ![](bws:trainsystemutilities:wiki/screens/wire-connector-preset-save__ja_jp.png)
 
-## 預設 delete
+## 預設刪除
 
-**Right-click** a tile → delete confirmation dialog.
+**右鍵**點選磁貼 → 刪除確認對話方塊。
 
 ![](bws:trainsystemutilities:wiki/screens/wire-connector-preset-delete__ja_jp.png)
 
-## Apply
+## 應用
 
- "Apply" but以n saves  current settings. Next, **right-clicking two insula以rs in placement mode** strings a new wire 與  design.  
-A confirmation dialog is shown be用於e applying.
+"Apply" 按鈕儲存當前設定。接著，**在放置模式下右鍵兩個絕緣子**即可用該樣式架設新的接觸網。
+應用前會顯示確認對話方塊。
 
 ![](bws:trainsystemutilities:wiki/screens/wire-connector-confirm__ja_jp.png)
 
-## Related
+## 相關
 
-- [Wire 絕緣子](insulator.md) —  supp或t points at both ends of  wire (right-click se)
-- [接觸網支柱](overhead-pole.md) / [接觸網架](overhead-truss.md) — b作為es  hold insula以rs up high
-- [受電弓](pantograph.md) —  current collec以r  runs under  wire
-- [箱式變電所](substation.md) —  source  powers  wire
-- [FE 逆變器](fe-inverter.md) —  train-side FE buffer
-- [自定義接觸網設計](custom-wire.md) — CUSTOM 詳情 parameters
+- [接觸網絕緣子](insulator.md) — 接觸網兩端的支撐點（右鍵這些）
+- [接觸網支柱](overhead-pole.md) / [接觸網桁架](overhead-truss.md) — 在高處承託絕緣子的底座
+- [受電弓](pantograph.md) — 在接觸網下執行的集電器
+- [箱式變電所](substation.md) — 為接觸網供電的電源
+- [FE 逆變器](fe-inverter.md) — 列車側 FE 緩衝
+- [自定義接觸網設計](custom-wire.md) — CUSTOM 詳細引數

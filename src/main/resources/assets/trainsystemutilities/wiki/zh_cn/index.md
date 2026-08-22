@@ -12,8 +12,8 @@ tags: [overview]
 ## 从这里开始
 
 - [快速开始](getting-started.md) — 基础操作与提示 / F1 跳转功能
-- [关于 TSU](about.md) — MOD 整体范围与推荐运行环境
-- [管理用计算机 概述](management-computer/overview.md)
+- [什么是 TSU](about.md) — MOD 整体范围与推荐运行环境
+- [管理用计算机概述](management-computer/overview.md)
 - [铁路管理方块](railway-management.md)
 
 ## 视频教程
@@ -86,4 +86,4 @@ tags: [overview]
 
 ---
 
-如果你陷入困境， [提示和 F1](getting-started.md#提示和-F1) 章节中的 快速开始 是快速上手的最佳途径。
+如果不知从何下手，[快速开始](getting-started.md) 中的 [提示与 F1](getting-started.md#hints-and-f1) 章节是快速上手的最快途径。

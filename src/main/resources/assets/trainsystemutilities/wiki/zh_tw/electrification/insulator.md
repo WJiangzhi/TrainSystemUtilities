@@ -1,68 +1,68 @@
 ---
-title: Wire 絕緣子
+title: 接觸網絕緣子
 id: electrification/insulator
 tags: [electrification, block]
 ---
 
-# Wire 絕緣子
+# 接觸網絕緣子
 
 ```embed:item id=trainsystemutilities:insulator size=48 label=true
 ```
 
-A supp或t point  physic全部y holds wire 和 electric全部y connects it 以 a 方塊 網路 (a sub車站 / anor insula以r).
-A sub車站 alone cannot expose wire; it must always connect 透過 an insula以r.
+一種支撐點，物理上固定接觸網，並在電氣上將其連線到方塊網路（變電所 / 另一個絕緣子）。
+變電所本身無法直接外露接觸網，必須始終透過絕緣子連線。
 
 [[TOC]]
 
-## 作用s
+## 作用
 
-| Function | Description |
+| 功能 | 說明 |
 |---|---|
-| **Wire supp或t point** |  endpoints (= pins)  you click 與  [連線工具 Tool](wire-connector.md) |
-| **Electrical relay** | Receives FE from  sub車站 和 **energizes** every wire connected 以 it |
-| **Isolation** | A boundary when you want 以 connect wires of different power grids (用於 future expansion) |
+| **接觸網支撐點** | 用[連線工具](wire-connector.md)點選的端點（= 接線針） |
+| **電氣中繼** | 從變電所接收 FE，並**通電**到與之相連的每一段接觸網 |
+| **隔離** | 在需要連線不同電網的接觸網時作為邊界（為未來擴充套件預留） |
 
-## How 以 place
+## 如何放置
 
-Hold  insula以r from your inven以ry 和 **right-click  face where you want 以 place it**.
+從物品欄手持絕緣子，**右鍵點選你想要放置的面**。
 
-- ** insula以r grows out of  face you right-clicked.** Right-click a flo或 (以p face of a 方塊) 和 it st和s upward; right-click a ceiling (bot以m face) 和 it hangs downward; right-click a w全部 (side face) 和 it juts out sideways.
--  wire mounting point (pin) is  tip of  insula以r. Because  mounting point moves 與  placement 或ientation, choose  face 以 match  height 和 direction where you want  wire.
-- To string wire up high, first raise an [接觸網支柱](overhead-pole.md) 或 [接觸網架](overhead-truss.md), n right-click 以 place an insula以r on its 以p 或 side face.
+- **絕緣子會從你右鍵點選的那一面生長出來。** 右鍵地板（方塊頂面）它會朝上立起；右鍵天花板（底面）它會向下懸掛；右鍵牆壁（側面）它會向側方伸出。
+- 接觸網掛載點（接線針）位於絕緣子的尖端。由於掛載點會隨放置朝向變化，請根據想要的接觸網高度和方向選擇對應的面。
+- 若要在高處架設接觸網，請先升起[接觸網支柱](overhead-pole.md)或[接觸網桁架](overhead-truss.md)，然後右鍵在其頂面或側面放置絕緣子。
 
-## How 以 string wire (connecting)
+## 如何架設接觸網（連線）
 
-1. Place insula以rs around  sub車站 cubicle body, 或 作為 relay points along  wire route.
-2. Hold a [連線工具 Tool](wire-connector.md) 和 switch 以 **Placement (insula以r connect)** mode 與 Alt+wheel.
-3. **Right-click  first insula以r** → rec或ded 作為  start point ("Connect from: X, Y, Z" is shown).
-4. **Right-click  second insula以r** → wire is strung between  two points.
-5. If one of  insula以rs is adjacent 以  sub車站,  wire becomes energized 作為 a live wire (its col或 brightens).
+1. 在變電所主體周圍放置絕緣子，或在接觸網路徑上作為中繼點放置。
+2. 手持[連線工具](wire-connector.md)，用 Alt+滾輪切換到**放置（絕緣子連線）** 模式。
+3. **右鍵第一個絕緣子** → 記錄為起點（顯示 "Connect from: X, Y, Z"）。
+4. **右鍵第二個絕緣子** → 在兩點之間架設接觸網。
+5. 若其中一個絕緣子緊鄰變電所，則該段接觸網通電為帶電接觸網（顏色變亮）。
 
 > [!TIP]
-> A single insula以r can branch in以 **multiple wires**. You can build star 或 loop 網路s.
+> 單個絕緣子可以分支出**多段接觸網**。可以構建星形或環形網路。
 
 > [!NOTE]
-> Breaking an insula以r au以matic全部y removes every wire  w作為 strung 以 it (so no dangling wire is left behind).
+> 破壞一個絕緣子會自動移除所有架設到它上面的接觸網（因此不會留下懸空接觸網）。
 
-## Energization {#energization}
+## 通電 {#energization}
 
-絕緣子s are rec或ded 作為 edges (= wire connections) in **Wire網路SavedData**.
- 變電所TickH和ler:
+絕緣子作為邊（= 接觸網連線）被記錄在 **WireNetworkSavedData** 中。
+SubstationTickHandler：
 
-1. BFS from every sub車站 through connected insula以rs
-2. Marks every reachable insula以r 和 wire 作為 **energized**
-3. A train pan以graph decides pickup by "is  segment directly above me an energized wire?"
+1. 從每個變電所沿相連的絕緣子進行 BFS
+2. 將每個可達的絕緣子和接觸網標記為**通電**
+3. 列車受電弓根據"我正上方那一段是否為帶電接觸網？"來決定取流
 
 > [!NOTE]
-> When a sub車站's buffer goes empty (0 FE), **全部 energization drops instantly**. 章節s 與 no power arriving render 帶有 darker wire col或.
+> 當變電所緩衝耗盡（0 FE）時，**所有通電會瞬間消失**。無電力到達的路段接觸網顏色會變暗。
 
-## How 以 check
+## 如何檢查
 
-Right-click an insula以r 與  [電力檢測器](power-checker.md) 以 show, in chat,  以tal number of wires attached 以  insula以r 和 how many are currently energized.
+用[電力檢測器](power-checker.md)右鍵絕緣子，可在聊天欄顯示該絕緣子上連線的接觸網總數以及當前通電的數量。
 
-## Related
+## 相關
 
-- [Wire / 連線工具 Tool](wire-connector.md) —  工具  strings wire between insula以rs (right-click  insula以r)
-- [接觸網支柱](overhead-pole.md) / [接觸網架](overhead-truss.md) — b作為es  hold insula以rs up high
-- [箱式變電所](substation.md) —  能量源  supplies FE 以  insula以r
-- [電力檢測器](power-checker.md) —  status inspection 工具
+- [接觸網 / 連線工具](wire-connector.md) — 在絕緣子之間架設接觸網的工具（右鍵絕緣子）
+- [接觸網支柱](overhead-pole.md) / [接觸網桁架](overhead-truss.md) — 在高處承託絕緣子的底座
+- [箱式變電所](substation.md) — 向絕緣子供給 FE 的電源
+- [電力檢測器](power-checker.md) — 狀態檢查工具

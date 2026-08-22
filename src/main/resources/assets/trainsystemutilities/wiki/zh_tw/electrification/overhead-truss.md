@@ -1,43 +1,43 @@
 ---
-title: 接觸網架
+title: 接觸網桁架
 id: electrification/overhead-truss
 tags: [electrification, block]
 ---
 
-# 接觸網架
+# 接觸網桁架
 
 ```embed:item id=trainsystemutilities:overhead_truss size=48 label=true
 ```
 
-A p或tal-frame overhead supp或t structure  spans multiple 軌道. On double-軌道 或 wider sections, a single structure can suspend several wires.
+一種跨越多條軌道的龍門式高架支撐結構。在雙軌或更寬的路段上，單個結構即可懸掛多段接觸網。
 
 [[TOC]]
 
-## Placement
+## 放置
 
-Hold  overhead truss from your inven以ry 和 **right-click where you want 以 place it**.
+從物品欄手持接觸網桁架，**右鍵點選你想要放置的位置**。
 
-- Orientation supp或ts 8 directions (45° steps), so it can follow diagonal sections.
-- **To extend sideways (span a beam)**: right-click a truss  is already placed, 和 anor truss is appended at  tip of  beam in its direction. Keep right-clicking 以 extend it 以 a length  spans across  軌道 group.
-- **To attach 以 a diagonal pole**: right-click  side of a diagon全部y-raised [接觸網支柱](overhead-pole.md), 和  truss is placed on  diagonal cell  matches  pole's 或ientation.
-- F或 bulk placement  [支柱自動工具](../tools/overhead-pole-auto-tool.md) is h和y (turn "Place trusses" ON in its settings 以 au以-線路 up trusses 以ger 與 poles).
+- 朝向支援 8 個方向（45° 步進），可跟隨斜向路段。
+- **向側方延伸（橫樑跨度）**：右鍵點選已放置的桁架，另一段桁架會沿其朝向在橫樑尖端處接續。持續右鍵可延伸至跨越整個軌道組的長度。
+- **連線到斜向支柱**：右鍵點選斜向升起的[接觸網支柱](overhead-pole.md)的側面，桁架會放置在匹配該支柱朝向的斜向單元上。
+- 若要批次放置，[接觸網支柱自動工具](../tools/overhead-pole-auto-tool.md)非常方便（在其設定中將"放置桁架"設為 ON，即可讓桁架與支柱一起自動排開）。
 
 > [!IMPORTANT]
-> You cannot string wire directly on以  truss itself. Right-click 以 place a [Wire 絕緣子](insulator.md) on  side 或 underside of  truss, n right-click  insula以r 與  [連線工具 Tool](wire-connector.md) 以 string  wire.
+> 不能直接在桁架上架設接觸網。右鍵在桁架的側面或底面放置[接觸網絕緣子](insulator.md)，然後用[連線工具](wire-connector.md)右鍵該絕緣子才能架設接觸網。
 
-## Flow up 以 stringing wire
+## 到架設接觸網的流程
 
-1. Place  truss so it spans across  軌道 group (right-click 以 append beams until it reaches  required width).
-2. Right-click 以 place a [Wire 絕緣子](insulator.md) roughly directly above each 軌道.
-3. Put  [連線工具 Tool](wire-connector.md) in以 placement mode 和 right-click **insula以r → insula以r** in 或der 以 string  wire.
+1. 放置桁架使其跨越整個軌道組（右鍵接續橫樑直至達到所需寬度）。
+2. 右鍵在每條軌道大致正上方處放置[接觸網絕緣子](insulator.md)。
+3. 將[連線工具](wire-connector.md)切換到放置模式，按順序右鍵**絕緣子 → 絕緣子**以架設接觸網。
 
 > [!NOTE]
-> F或 single 軌道,  [接觸網支柱](overhead-pole.md) is m或e compact.
+> 單軌時，[接觸網支柱](overhead-pole.md)更為緊湊。
 
-## Related 頁面s
+## 相關頁面
 
-- [電氣化 總覽](index.md)
-- [Wire 絕緣子](insulator.md) —  wire mounting point placed on  truss
-- [Wire / 連線工具 Tool](wire-connector.md) — strings wire between insula以rs
+- [電氣化系統概述](index.md)
+- [接觸網絕緣子](insulator.md) — 放置在桁架上的接觸網掛載點
+- [接觸網 / 連線工具](wire-connector.md) — 在絕緣子之間架設接觸網
 - [接觸網支柱](overhead-pole.md)
-- [支柱自動工具](../tools/overhead-pole-auto-tool.md)
+- [接觸網支柱自動工具](../tools/overhead-pole-auto-tool.md)

@@ -1,58 +1,58 @@
 ---
-title: Train 預設保存
+title: 列車預設保存
 id: train-preset-tool/save
 tags: [tool, preset, train]
 ---
 
-# Train 預設保存
+# 列車預設保存
 
 ```embed:item id=trainsystemutilities:train_preset_tool size=48 label=true
 ```
 
 ![](bws:trainsystemutilities:wiki/screens/train-preset-save__ja_jp.png)
 
- save screen of  **列車預設工具**, which serializes a train structure 以 JSON 和 s以res it 作為 a template. Select a range 與  工具, n per形式  save action 以 open this screen.
+**列車預設工具**的保存界面，可將列車結構序列化為 JSON 並作為模板存儲。用工具選定範圍後，執行保存動作即可打開此界面。
 
 [[TOC]]
 
 ## 功能
 
-- Scans 全部 方塊 + carriage entities 與in  range
-- Saves 以 JSON 格式 以 **internal s以rage** (file: `<gamedir>/trainsystemutilities/presets/<author>/<name>.json`)
-- Can be moved 以 anor w或ld / anor player
-- Can also be shared 在線 通過 [Preset Place](../preset-place/overview.md)
+- 掃描範圍內的所有方塊 + 車廂實體
+- 以 JSON 格式保存到**內部存儲**（文件：`<gamedir>/trainsystemutilities/presets/<author>/<name>.json`）
+- 可遷移到其他世界 / 其他玩家
+- 也可通過 [Preset Place](../preset-place/overview.md) 在線分享
 
-## Holding / Modes
+## 持有 / 模式
 
- **列車預設工具** h作為 3 modes. Right after you switch 以 it, it is in **GUI mode**. Saving uses **Selection mode**.
+**列車預設工具**有 3 種模式。切換到該工具後即為 **GUI 模式**。保存使用**選擇模式**。
 
-- **GUI mode** (initial state): Right-click opens  [預設瀏覽 / Place](browse.md) screen.
-- **Selection mode**:  mode 用於 specifying  two points (Pos1 / Pos2)  enclose  train. After deciding  range, right-clicking opens this **save screen**.
-- **Place mode**:  mode 用於 placing a saved preset in以  w或ld (see [預設瀏覽 / Place](browse.md)).
+- **GUI 模式**（初始狀態）：右鍵打開[預設瀏覽 / 放置](browse.md)界面。
+- **選擇模式**：用於指定圍住列車的兩個點（Pos1 / Pos2）的模式。確定範圍後右鍵即可打開此**保存界面**。
+- **放置模式**：用於將已保存的預設放入世界的模式（見[預設瀏覽 / 放置](browse.md)）。
 
-Switch modes 與 **Alt + mouse wheel**. While held,  current mode is shown above  hotbar.
+用 **Alt + 鼠標滾輪**切換模式。手持時，當前模式會顯示在快捷欄上方。
 
-## Opening / Usage
+## 打開 / 用法
 
-1. **Hold**  列車預設工具.
-2. Switch 以 **Selection mode** 與 **Alt + wheel**.
-3. To enclose  train you want 以 save, **right-click  position of  first 角落** (default: **right mouse but以n**) (`Pos1` is rec或ded).
-4. **Right-click  opposite 角落** (`Pos2` is rec或ded 和  range is finalized). To rec或d a precise spot, aim at  方塊 和 right-click.
-5. With both points set, **right-click once m或e** 以 open  **save screen**.
-6. **Type a preset name 與  key板** in以  input field on  screen 和 press **Enter** 以 save (**left-clicking  save but以n** also saves). You cannot save when  name is empty.
-7. **Shift + right-click** clears  rec或ded range (Pos1 / Pos2). Use it when you want 以 start over.
+1. **手持**列車預設工具。
+2. 用 **Alt + 滾輪**切換到**選擇模式**。
+3. 要圍住你想保存的列車，請**右鍵第一個角的位置**（默認：**鼠標右鍵**）（記錄 `Pos1`）。
+4. **右鍵對角的另一個角**（記錄 `Pos2`，範圍就此確定）。要記錄精確位置，請瞄準該方塊並右鍵。
+5. 兩個點都設置好後，**再次右鍵**即可打開**保存界面**。
+6. 在界面的輸入框中**用鍵盤輸入預設名稱**，按 **Enter** 保存（**左鍵保存按鈕**也可保存）。名稱為空時無法保存。
+7. **Shift + 右鍵**清除已記錄的範圍（Pos1 / Pos2）。想重新開始時使用。
 
 > [!TIP]
-> You can check  current mode 和 wher Pos1 / Pos2 are rec或ded from  工具tip shown when you **hover  mouse over**  工具.
+> 將鼠標**懸停**在工具上時，可從顯示的提示信息中查看當前模式以及 Pos1 / Pos2 是否已記錄。
 
-## Limits
+## 限制
 
-- Max volume: 256×256×256 方塊 (16.7M 方塊 cap)
-- Large ranges are rejected early 以 prevent server freeze
-- Blocks in unloaded chunks are excluded
+- 最大體積：256×256×256 方塊（上限 1670 萬方塊）
+- 過大的範圍會被提前拒絕，以防服務器卡死
+- 未加載區塊內的方塊會被排除
 
-## Related
+## 相關
 
-- [預設瀏覽 / Place](browse.md)
+- [預設瀏覽 / 放置](browse.md)
 - [材料補充](refill.md)
 - [Preset Place 概述](../preset-place/overview.md)

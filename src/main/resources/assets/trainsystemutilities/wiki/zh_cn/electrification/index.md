@@ -1,23 +1,23 @@
 ---
-title: 电气化系统 概述
+title: 电气化系统概述
 id: electrification/index
 tags: [electrification, overview]
 ---
 
-# 电气化系统 概述
+# 电气化系统概述
 
 ```embed:items size=48 cols=7 label=true ids=trainsystemutilities:wire_connector,trainsystemutilities:pantograph,trainsystemutilities:fe_inverter,trainsystemutilities:fe_inverter_dummy,trainsystemutilities:substation,trainsystemutilities:insulator,trainsystemutilities:power_checker links=electrification/wire-connector,electrification/pantograph,electrification/fe-inverter,electrification/dummy-inverter,electrification/substation,electrification/insulator,electrification/power-checker
 ```
 
 > [!TIP]
-> 图标 带有 **蓝色标记** in  右下角 can be clicked 以 open ir 详情 页面.
+> 图标右下角带有**蓝色标记**的可以点击打开其详情页面。
 
- Train系统 Utilities electrification system supplies external FE power 以 Create 列车 通过 **overhead wire + pan以graph + sub车站**.
-It lets FE genera以rs from Mekanism / AE2 / Industrial F或egoing 和  例如 serve 作为 a 能量源 或 auxiliary 供给 用于 Create 列车.
+TrainSystem Utilities 的电气化系统通过**接触网 + 受电弓 + 箱式变电所**为 Create 列车提供外部 FE 电力。
+它可以让来自 Mekanism / AE2 / Industrial Foregoing 等的 FE 发电机作为 Create 列车的电源或辅助供电。
 
 [[TOC]]
 
-## Over全部 flow
+## 总体流程
 
 ```
 [FE generator (Mek/AE2/IF)] ──FE──▶ [Substation cubicle]
@@ -31,56 +31,56 @@ It lets FE genera以rs from Mekanism / AE2 / Industrial F或egoing 和  例如 s
 [FE Inverter] ──FE──▶ [Onboard Create / Mek / ... machines]
 ```
 
-1. **Prepare an FE source**: a Mekanism reac以r, an AE2 Energy Accep以r, anything w或ks.
-2. Build a [箱式变电所](substation.md): hold  body 和 **right-click** 以 au以-complete  3×4×2 = 24-方块 structure. Connect a power cable 以  FE input face.
-3. Right-click 以 raise [接触网支柱s](overhead-pole.md) 或 [接触网架es](overhead-truss.md) beside  轨道, n right-click 以 place [Wire 绝缘子s](insulator.md) 在…基础上 m 和 next 以  sub车站.
-4. Hold  [连接工具 Tool](wire-connector.md) 和 right-click **insula以r → insula以r** in 或der 以 string [Wire](wire-connector.md) over  轨道 (power flows from  insula以r adjacent 以  sub车站).
-5. Right-click 以 mount a [受电弓](pantograph.md) on  train roof 和 an [FE 逆变器](fe-inverter.md) inside  car.
-6. While running,  pan以graph au以matic全部y collects current 作为 it p作为ses under  wire →  inverter feeds  on板 FE machines.
+1. **准备 FE 电源**：Mekanism 反应堆、AE2 能量接收器，任何 FE 源都可以。
+2. 搭建[箱式变电所](substation.md)：手持主体并**右键**即可自动完成 3×4×2 = 24 方块的结构。将电力线缆接到 FE 输入面。
+3. 右键在轨道旁升起[接触网支柱](overhead-pole.md)或[接触网桁架](overhead-truss.md)，然后右键在它们顶部以及变电所旁放置[接触网绝缘子](insulator.md)。
+4. 手持[连接工具](wire-connector.md)，按顺序右键**绝缘子 → 绝缘子**，在轨道上方架设[接触网](wire-connector.md)（电力从变电所旁的绝缘子流出）。
+5. 右键在列车车顶安装[受电弓](pantograph.md)，在车厢内安装[FE 逆变器](fe-inverter.md)。
+6. 运行时，受电弓在经过接触网下方时会自动集流 → 逆变器为车载 FE 机器供电。
 
 > [!TIP]
-> Placing poles 和 insula以rs one by one along  轨道 is tedious, so use  [支柱自动工具](../tools/overhead-pole-auto-tool.md) 以 bulk-place poles, trusses, 和 insula以rs at your configured height 和 count.
+> 沿轨道逐一放置支柱和绝缘子非常繁琐，因此可以使用[接触网支柱自动工具](../tools/overhead-pole-auto-tool.md)按你设定的高度和数量批量放置支柱、桁架和绝缘子。
 
-## Component 方块 / 物品
+## 部件方块 / 物品
 
-| Item | 作用 | 详情 |
+| 物品 | 作用 | 详情 |
 |---|---|---|
-| [连接工具 Tool](wire-connector.md) | Strings wire between two insula以rs | Hold 和 right-click insula以rs. 5 designs + [自定义](custom-wire.md) |
-| [Wire 绝缘子](insulator.md) | Mounting point at both ends of a wire | Right-click this 以 string wire. Relay between sub车站 和 wire |
-| [接触网支柱](overhead-pole.md) | Single-轨道 supp或t post | B作为e  holds an insula以r. Right-click 以 place beside  轨道 |
-| [接触网架](overhead-truss.md) | P或tal supp或t spanning multiple 轨道 | B作为e  holds insula以rs. Spans across 轨道 groups |
-| [支柱自动工具](../tools/overhead-pole-auto-tool.md) | Au以-places poles / trusses / insula以rs | Bulk-places along  轨道 at your configured height 和 count |
-| [受电弓](pantograph.md) | Roof-mounted current collec以r | Right-click on  roof 以 place. Au以-connects while running under wire |
-| [FE 逆变器](fe-inverter.md) | On板 FE buffer | 3-wide device. Supplies pan以graph power 以 on板 machines |
-| [虚拟逆变器](dummy-inverter.md) | Dec或ation only (no function) | Looks-only FE 逆变器, only UI pan以graph deploy w或ks |
-| [箱式变电所](substation.md) | External FE intake + wire 供给 | 3×4×2 多方块结构 |
-| [电力检测器](power-checker.md) | Debug 工具 | Right-click an insula以r / sub车站 / inverter / pan以graph 以 show FE remaining, 等 |
+| [连接工具](wire-connector.md) | 在两个绝缘子之间架设接触网 | 手持并右键绝缘子。5 种样式 + [自定义](custom-wire.md) |
+| [接触网绝缘子](insulator.md) | 接触网两端的悬挂点 | 右键此方块以架设接触网。变电所与接触网之间的中继 |
+| [接触网支柱](overhead-pole.md) | 单轨道支撑柱 | 承载绝缘子的底座。右键放置在轨道旁 |
+| [接触网桁架](overhead-truss.md) | 跨越多条轨道的龙门支撑 | 承载绝缘子的底座。跨越轨道组 |
+| [接触网支柱自动工具](../tools/overhead-pole-auto-tool.md) | 自动放置支柱 / 桁架 / 绝缘子 | 按设定的高度和数量沿轨道批量放置 |
+| [受电弓](pantograph.md) | 车顶集电器 | 右键在车顶放置。在接触网下运行时自动连接 |
+| [FE 逆变器](fe-inverter.md) | 车载 FE 缓冲 | 3 格宽设备。将受电弓的电力提供给车载机器 |
+| [模拟逆变器](dummy-inverter.md) | 仅装饰（无功能） | 外观同 FE 逆变器，仅 UI 受电弓展开有效 |
+| [箱式变电所](substation.md) | 外部 FE 接入 + 接触网供电 | 3×4×2 多方块结构 |
+| [电力检测器](power-checker.md) | 调试工具 | 右键绝缘子 / 变电所 / 逆变器 / 受电弓以显示剩余 FE 等 |
 
-## FAQ
-
-> [!NOTE]
-> **Q: Do non-electrified 列车 still run 作为 be用于e?**
-> A: Yes. 电气化 is purely additive, so Create's st和ard 时刻表 operation still w或ks un以uched.
+## 常见问题
 
 > [!NOTE]
-> **Q: I want 详情 on each component.**
-> A: Jump from  links in  table above. F或 troubleshooting, see  "Troubleshooting use" section on  [电力检测器](power-checker.md) 页面.
+> **问：未电气化的列车还能像以前一样运行吗？**
+> 答：可以。电气化系统完全是附加功能，因此 Create 的标准时刻表运行不受影响。
+
+> [!NOTE]
+> **问：我想了解每个部件的详细信息。**
+> 答：从上表中的链接跳转即可。如需故障排查，请参阅[电力检测器](power-checker.md)页面中的"故障排查使用"章节。
 
 > [!IMPORTANT]
-> **Q: Can my train run on Create 能量 alone, 与out electrification?**
-> A: Yes.  electrification system is designed 作为 "auxiliary power beyond Create 能量."
-> F或 example, you can use a Mek reac以r 作为  source 以 conserve Create drum reserves on long runs.
+> **问：我的列车可以仅靠 Create 能量运行，不使用电气化吗？**
+> 答：可以。电气化系统被设计为"超越 Create 能量的辅助电力"。
+> 例如，你可以使用 Mek 反应堆作为电源，以便在长途运行中节省 Create 桶装能量储备。
 
-## Related 页面s
+## 相关页面
 
-- [Wire / 连接工具 Tool](wire-connector.md)
+- [接触网 / 连接工具](wire-connector.md)
 - [自定义接触网设计](custom-wire.md)
-- [Wire 绝缘子](insulator.md)
+- [接触网绝缘子](insulator.md)
 - [接触网支柱](overhead-pole.md)
-- [接触网架](overhead-truss.md)
-- [支柱自动工具](../tools/overhead-pole-auto-tool.md)
+- [接触网桁架](overhead-truss.md)
+- [接触网支柱自动工具](../tools/overhead-pole-auto-tool.md)
 - [受电弓](pantograph.md)
 - [FE 逆变器](fe-inverter.md)
-- [虚拟逆变器](dummy-inverter.md)
+- [模拟逆变器](dummy-inverter.md)
 - [箱式变电所](substation.md)
 - [电力检测器](power-checker.md)

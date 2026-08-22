@@ -8,73 +8,73 @@ tags: [station, display, block]
 
 ![](bws:trainsystemutilities:wiki/screens/railway-management__ja_jp.png)
 
-A 顯示 板 方塊 placed 在…上 車站 月台. It 自動顯示s 已停靠 / 即將到站的列車 和 integrates 與 顯示器, col或 settings, 和廣播 (SAS).
+放置在車站月台上的顯示板方塊。它會自動顯示已停靠 / 即將到站的列車，並可與顯示器、顏色設置和廣播（SAS）整合。
 
 [[TOC]]
 
-## How 以 open
+## 如何打開
 
-1. Place  **鐵路管理方塊** 在…上 車站 月台. Just 例如 Create's 車站 方塊, you place it on以 a 軌道 by **right-clicking a 軌道** you have laid.
-2. **Right-click**  placed 方塊 以 open  GUI.
-3. Which 車站 it 顯示 is decided by linking this 方塊 以  [管理用計算機](management-computer/overview.md) 帶有 [存儲卡](tools/memory-card.md).
-4.  first person 以 right-click it becomes  **owner**. When  face icon in  lower right is set 以 **Private**, no one but  owner can open it ([Access Mode](getting-started.md#access-mode)).
+1. 將**鐵路管理方塊**放置在車站月台上。和 Create 的車站方塊一樣，通過**右鍵已鋪設的軌道**將其放置到軌道上。
+2. 對已放置的方塊**右鍵**打開 GUI。
+3. 顯示哪個車站，需用[存儲卡](tools/memory-card.md)將此方塊與[管理用計算機](management-computer/overview.md)鏈接後決定。
+4. 第一個右鍵它的人成為**所有者**。當右下角臉形圖標設為**私有**時，除所有者外無人能打開它（[訪問模式](getting-started.md#access-mode)）。
 
 > [!NOTE]
-> This 方塊 is placed "在…上 軌道", just 例如 a Create 車站. It cannot be placed on empty ground. Lay a 軌道 first, n right-click  軌道.
+> 本方塊和 Create 的車站一樣是「放置在軌道上」的，不能放在空地上。請先鋪設軌道，再右鍵該軌道。
 
-## Operation (where 以 click / scroll)
+## 操作（點擊 / 滾動位置）
 
-All operations inside  GUI are done 與  **mouse** (no key板).
+GUI 內的全部操作都通過**鼠標**完成（無需鍵盤）。
 
-| What you want 以 do | How |
+| 想做的事 | 操作方法 |
 |---|---|
-| Turn  顯示器 ON / OFF | **Click  以ggle** on  顯示器 row |
-| Open 顯示器 settings | **Click  "⚙ Settings" but以n** on  顯示器 row → [顯示器設置](railway-management/settings.md) popup |
-| Open col或 settings | **Click  "▒ Col或" but以n** on  顯示器 row → [顏色設置](railway-management/color.md) popup |
-| Open announcement / 月台-do或 settings | **Click  "功能 ▼" but以n** on  顯示器 row → from  list  appears, **click "廣播" 或 "Plat形式 Do或"** |
-| Advance  list of next 列車 |  頁面 switches au以matic全部y at set intervals (no manual action needed) |
-| Show hints | **Click  "Hint" 以ggle** in  upper right 以 turn it ON. In  state, hover  curs或 over a but以n 和 press **F1** 以 跳轉到  功能's wiki description ([How 以 use F1](getting-started.md#提示和-F1)) |
-| Switch Private / Public | **Click  face icon** in  lower right |
+| 開啓 / 關閉顯示器 | **點擊顯示器所在行的開關** |
+| 打開顯示器設置 | **點擊顯示器行的「⚙ 設置」按鈕** → [顯示器設置](railway-management/settings.md) 彈窗 |
+| 打開顏色設置 | **點擊顯示器行的「▒ 顏色」按鈕** → [顏色設置](railway-management/color.md) 彈窗 |
+| 打開廣播 / 月台屏門設置 | **點擊顯示器行的「功能 ▼」按鈕** → 在出現的列表中**點擊「廣播」或「月台屏門」** |
+| 推進即將到站列車列表 | 按設定間隔自動翻頁（無需手動操作） |
+| 顯示提示 | **點擊右上角的「Hint」開關**將其打開。在此狀態下，將光標懸停在按鈕上並按 **F1** 可跳轉到該功能的 wiki 説明（[F1 的使用方法](getting-started.md#hints-and-f1)） |
+| 切換私有 / 公開 | **點擊右下角的臉形圖標** |
 
 > [!TIP]
-> This 方塊 is a "顯示-only" 板 placed 在…上 車站 月台. To adjust numbers 或 col或s in bulk, operate from  popup side ([顯示器設置](railway-management/settings.md) / [顏色設置](railway-management/color.md)). Numbers inside  popup are incre作為ed/decre作為ed by **hovering over  value 和 using  mouse wheel** (re are no ＋ / − but以ns).
+> 本方塊是放置在車站月台上的「僅顯示」板。如需批量調整數字或顏色，請在彈窗側操作（[顯示器設置](railway-management/settings.md) / [顏色設置](railway-management/color.md)）。彈窗內的數字通過**將光標懸停在數值上並滾動鼠標滾輪**來增減（沒有 ＋ / − 按鈕）。
 
-## 概述
+## 概覽
 
 | 功能 | 説明 |
 |---|---|
-| Arriving train 顯示 | Shows  s以pped train on  以p row (train name / cars / arrival time / departure time) |
-| Next train 顯示 | Shows  列車 arriving next on  bot以m rows (multiple) |
-| Line 編號 | Displays  [分配](management-computer/stations.md) 線路 編號 in  header |
-| Moni以r link | Shows  same content on nearby 顯示器 方塊 |
-| Col或 自定義 | Change  col或 of each text element 通過  [col或 popup](railway-management/color.md) |
-| 廣播 (SAS) | Departure melodies / announcements 通過 [SpatialAudioSystem](railway-management/announcement.md) 整合 |
-| Batch apply | Apply settings at once 以 全部 方塊 in  same 網絡 |
+| 到站列車顯示 | 頂行顯示已停靠的列車（列車名 / 車廂數 / 到站時間 / 發車時間） |
+| 下趟列車顯示 | 下方各行顯示接下來到站的列車（多趟） |
+| 線路編號 | 在頭部顯示[已分配的](management-computer/stations.md)線路編號 |
+| 顯示器鏈接 | 在附近的顯示器方塊上顯示相同內容 |
+| 顏色自定義 | 通過[顏色彈窗](railway-management/color.md)更改每個文本元素的顏色 |
+| 廣播（SAS） | 通過 [SpatialAudioSystem](railway-management/announcement.md) 整合播放發車旋律 / 廣播 |
+| 批量應用 | 一次性將設置應用到同一網絡中的全部方塊 |
 
-## GUI primary elements
+## GUI 主要元素
 
 ![](bws:trainsystemutilities:wiki/screens/railway-management__ja_jp.png)
 
-| Element | Function |
+| 元素 | 功能 |
 |---|---|
-| `Hint` 以ggle | F1 跳轉 + mouse-hover descriptions ON/OFF |
-| header-sym | Assigned 線路 編號 (hidden if none) |
-| Arriving 列車 list | 1 entry,  currently s以pped train |
-| Next 列車 list | In arrival 或der from  以p, 與 paging |
-| Moni以r row | Moni以r on/off + status 顯示 + Settings / Col或 / 廣播 but以ns |
-| owner-face | Private/Public 以ggle |
-| Inven以ry | Player inven以ry |
+| `Hint` 開關 | F1 跳轉 + 鼠標懸停説明的 開 / 關 |
+| 頭部編號 | 已分配的線路編號（無則隱藏） |
+| 到站列車列表 | 1 項，當前停靠的列車 |
+| 下趟列車列表 | 按到站順序從上到下排列，帶分頁 |
+| 顯示器行 | 顯示器開關 + 狀態顯示 + 設置 / 顏色 / 廣播按鈕 |
+| 所有者臉形 | 私有 / 公開切換 |
+| 物品欄 | 玩家物品欄 |
 
-## Related popups
+## 相關彈窗
 
-| Popup | Content |
+| 彈窗 | 內容 |
 |---|---|
-| [顯示器設置](railway-management/settings.md) | Font size / 軌道 position / clock 顯示 / batch apply |
-| [顏色設置](railway-management/color.md) | Col或s of 10 text elements (arrTime, depTime, trainName, 等) |
-| [廣播設置](railway-management/announcement.md) | SAS-integrated entry management (條件al triggers) |
+| [顯示器設置](railway-management/settings.md) | 字體大小 / 軌道位置 / 時鐘顯示 / 批量應用 |
+| [顏色設置](railway-management/color.md) | 10 個文本元素的顏色（到站時間、發車時間、列車名 等） |
+| [廣播設置](railway-management/announcement.md) | SAS 整合的條目管理（條件觸發） |
 
-## Related
+## 相關
 
-- [管理用計算機 概述](management-computer/overview.md) — 總覽 management of 全部 車站 和 列車
-- [顯示器連接卡](tools/monitor-link-card.md) — link 與 nearby 顯示器
-- [車站範圍指定工具](tools/station-range-tool.md) — register 車站 groups
+- [管理用計算機概述](management-computer/overview.md) — 所有車站與列車的總覽管理
+- [顯示器連接卡](tools/monitor-link-card.md) — 與附近顯示器鏈接
+- [車站範圍指定工具](tools/station-range-tool.md) — 註冊車站組

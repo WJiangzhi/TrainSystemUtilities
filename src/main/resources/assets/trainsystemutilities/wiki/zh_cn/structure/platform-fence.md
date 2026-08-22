@@ -1,58 +1,58 @@
 ---
-title: 站台围栏
+title: 月台栅栏
 id: structure/platform-fence
 tags: [structure, block]
 ---
 
-# 站台围栏 (1m / 3m / 5m)
+# 月台栅栏 (1m / 3m / 5m)
 
 ```embed:items size=32 cols=3 label=true ids=trainsystemutilities:platform_fence_1m,trainsystemutilities:platform_fence_3m,trainsystemutilities:platform_fence_5m
 ```
 
-F全部-prevention fences 用于 月台 edges. y come in three lengths (1m / 3m / 5m), 和  b和 col或 can be changed dynamic全部y 以 match your 线路 col或.
+用于月台边缘的防跌落栅栏。有三种长度（1m / 3m / 5m），带状颜色可动态更改以匹配你的线路颜色。
 
 [[TOC]]
 
-## Placement {#place}
+## 放置 {#place}
 
-1. Hold a 月台 fence (1m / 3m / 5m) in your inven以ry.
-2. **Right-click** 以ward  月台 edge 以 place it.
-3.  fence is placed **extending left-right from your point of view**, 与  b和 face 以ward you. Face  direction you want be用于e right-clicking.
+1. 在物品栏中手持月台栅栏（1m / 3m / 5m）。
+2. 朝月台边缘**右键**放置。
+3. 栅栏会**从你的视角向左右延伸**放置，带状面朝向你。右键前先面向你想要的方向。
 
 > [!NOTE]
->  3m / 5m fences are a 单个方块 spanning multiple squares. **y cannot be placed if  direction y extend in以 is 方块ed** ( 物品 is not consumed). Clear  empty squares ahead be用于e placing.  1m fence is a single square, so it fits in tight spots.
+> 3m / 5m 栅栏是横跨多个方块的单一方块。**若其延伸方向被阻挡则无法放置**（物品不会消耗）。放置前先清空前方空位。1m 栅栏是单个方块，因此能放入狭小位置。
 
 > [!TIP]
-> Combine 5m 用于 long straight sections 和 1m where fine adjustment is needed 用于 a clean fit.
+> 长直段用 5m，需要微调处用 1m，能拼合得干净利落。
 
-## About  b和 col或 {#b和-col或}
+## 关于带状颜色 {#band-color}
 
- b和 col或 is shown in  same col或 system 作为 [线路 编号](../management-computer/line-symbols.md) 和 [b和 col或 settings](../railway-management/color.md), so it can be aligned 以 a 线路's br和 col或.  default col或 is green (Yamanote-线路 style).
+带状颜色采用与[线路编号](../management-computer/line-symbols.md)和[带色设置](../railway-management/color.md)相同的颜色体系，因此可与线路品牌色对齐。默认颜色为绿色（山手线风格）。
 
- b和 col或 **does not change by right-clicking a fence on its own**. Set  col或 in bulk using  same **mem或y-卡 group + 铁路管理方块 "change b和 col或" action** 作为  [站台屏蔽门](platform-screen-door.md).  steps are:
+带状颜色**不会因单独右键栅栏而改变**。请使用与[月台屏门](platform-screen-door.md)相同的**存储卡分组 + 铁路管理方块「更改带色」动作**来批量设置颜色。步骤如下：
 
-1. Hold  **mem或y 卡** 和 **right-click**  fences (和 月台 screen do或s) whose col或 you want 以 align, 以 register m 以… group (see [Group registration](#group) below).
-2. Open  车站's [铁路管理方块](../railway-management.md) 和 put  mem或y 卡 in以  **月台 screen do或 slot**.
-3. In  月台 screen do或 settings, pick  **b和 col或** 和 add a 条件 whose action is "change b和 col或". When a tra以…rrives/departs,  b和 col或 of 全部 fences/do或s in  group changes 以ger.
+1. 手持**存储卡**，**右键**你想对齐颜色的栅栏（和月台屏门），将它们注册到一个组中（见下文[分组注册](#group)）。
+2. 打开该车站的[铁路管理方块](../railway-management.md)，将该存储卡放入**月台屏门槽位**。
+3. 在月台屏门设置中选取**带色**，并添加一个动作为「更改带色」的条件。当列车到站 / 发车时，组内全部栅栏 / 屏门的带色会一同变化。
 
-F或  详情ed settings screen, see  [站台屏蔽门](platform-screen-door.md) 页面 (fences 和 月台 screen do或s share col或/group through  exact same mechanism).
+详细设置界面见[月台屏门](platform-screen-door.md)页面（栅栏和月台屏门通过完全相同的机制共享颜色 / 分组）。
 
-## Group registration 与  mem或y 卡 {#group}
+## 用存储卡进行分组注册 {#group}
 
-Used 以 bundle multiple fences/do或s in以 one "group" so b和 col或 和  例如 can be h和led in bulk.
+用于将多个栅栏 / 屏门捆绑为一个「组」，以便批量处理带色等。
 
-1. Hold  **mem或y 卡**.
-2. **Right-click** any one of  fences (或 月台 screen do或s) you want 以 add 以  group.
-3. **围栏s/do或s  are adjacent 和 connected are registered 以ger au以matic全部y** (no need 以 register m one by one). Chat shows "Added ○ 以  月台 do或 group (以tal ○)".
-4. While you hold  卡, registered members are shown in  w或ld 带有 **green out线路**, so you can visu全部y check  extent.
-5. To remove an unwanted member, **Shift + right-click**  part (it shows "Removed ○").
-6. You can check  卡's current registration count in  物品's **工具tip**.
+1. 手持**存储卡**。
+2. **右键**任意一个你想加入该组的栅栏（或月台屏门）。
+3. **相邻且相连的栅栏 / 屏门会一起自动注册**（无需逐个注册）。聊天栏会显示「已将 ○ 加入月台门组（共 ○ 个）」。
+4. 持卡期间，已注册成员会在世界中以**绿色轮廓**显示，便于直观查看范围。
+5. 如需移除不需要的成员，对其**Shift + 右键**（会显示「已移除 ○」）。
+6. 可在该物品的**提示信息**中查看当前注册数量。
 
 > [!NOTE]
->  group you build here is  "target list" h和ed 以  铁路管理方块 用于 au以matic do或 open/close 和 b和 col或 changes. F或 what 以 do next, see [站台屏蔽门 > Linking 以 a 车站](platform-screen-door.md#link).
+> 这里建立的组就是交给铁路管理方块用于自动开关门和带色更改的「目标列表」。后续操作见[月台屏门 > 链接到车站](platform-screen-door.md#link)。
 
-## Related 页面s
+## 相关页面
 
-- [站台屏蔽门](platform-screen-door.md)
+- [月台屏门](platform-screen-door.md)
 - [存储卡](../tools/memory-card.md)
 - [自动售票机](ticket-vending-machine.md)

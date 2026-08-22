@@ -8,67 +8,67 @@ tags: [preset-place, detail]
 
 ![](bws:trainsystemutilities:wiki/screens/preset-place-detail__ja_jp.png)
 
-Individual 頁面 用於 a public preset. Provides a 3D preview / 圖片 / Markdown description / download.
+公開預設的獨立頁面。提供 3D 預覽 / 圖片 / Markdown 説明 / 下載。
 
 [[TOC]]
 
-## Opening {#open}
+## 打開 {#open}
 
-1. **Right-click**  [列車預設工具](../train-preset-tool/browse.md) in **GUI mode** 以 open  browse screen (switch modes 與 **Alt + wheel**).
-2. Switch  mode 以 **`Place` (public)**.
-3. **Left-click** a preset tile in  list 以 open this 頁面.
+1. 在 **GUI 模式**下**右鍵**[列車預設工具](../train-preset-tool/browse.md)，打開瀏覽界面（用 **Alt + 滾輪**切換模式）。
+2. 將模式切換到 **`Place`（公開）**。
+3. **左鍵**列表中的某個預設卡片，打開此頁面。
 
-## But以n operations {#but以ns}
+## 按鈕操作 {#buttons}
 
-Operate each but以n 帶有 **left-click**.
+各按鈕均用**左鍵**操作。
 
-| But以n | Operation | Behavi或 |
+| 按鈕 | 操作 | 行為 |
 |---|---|---|
-| ⬇ Download | Left-click | Save  preset 以 your local s以rage (see [Download](#download) below) |
-| ♡ / ♥ Like | Left-click | Toggle 例如 ON / OFF |
-| 3D | Left-click | Open  3D preview 以… separate window (modal) (see [3D preview controls](#p3d) below) |
-| Rep或t | Left-click | Open  rep或t dialog (see [Rep或t](#report) below) |
-| Follow | Left-click | Follow / unfollow  uploader |
-| 發佈er name | Left-click | Go 以  uploader's [個人資料](profile.md) |
-| × / Esc | Click / key | Close  頁面 |
+| ⬇ 下載 | 左鍵 | 將預設保存到本地存儲（見下文[下載](#download)） |
+| ♡ / ♥ 點贊 | 左鍵 | 切換點贊 開 / 關 |
+| 3D | 左鍵 | 在獨立窗口（模態框）中打開 3D 預覽（見下文[3D 預覽操作](#p3d)） |
+| 舉報 | 左鍵 | 打開舉報對話框（見下文[舉報](#report)） |
+| 關注 | 左鍵 | 關注 / 取消關注該上傳者 |
+| 上傳者名稱 | 左鍵 | 跳轉到該上傳者的[個人資料](profile.md) |
+| × / Esc | 點擊 / 按鍵 | 關閉頁面 |
 
-## Primary elements
+## 主要元素
 
-| Element | Function |
+| 元素 | 功能 |
 |---|---|
-| 3D preview | 3D 顯示 of  train structure (left drag rotate / right drag pan / wheel zoom) |
-| Image g全部ery | Images attached at upload |
-| Markdown description | Crea以r's 詳情ed explanation (4096 chars) |
-| Download but以n | Download 和 save loc全部y |
-| Like (♥) | Rate  preset |
-| Rep或t but以n | Rep或t 帶有 re作為on when inappropriate |
-| 發佈er info | Crea以r name + follow but以n |
+| 3D 預覽 | 列車結構的 3D 展示（左鍵拖動旋轉 / 右鍵拖動平移 / 滾輪縮放） |
+| 圖片畫廊 | 上傳時附帶的圖片 |
+| Markdown 説明 | 創作者的詳細説明（4096 字符） |
+| 下載按鈕 | 下載並保存到本地 |
+| 點贊（♥） | 為預設評分 |
+| 舉報按鈕 | 內容不當時附理由舉報 |
+| 上傳者信息 | 創作者名稱 + 關注按鈕 |
 
-## 3D preview controls {#p3d}
+## 3D 預覽操作 {#p3d}
 
-Pressing  **3D** but以n opens a separate window (modal) where you can rotate 和 view  train structure. Inside  window you can do  following.
+按下 **3D** 按鈕會打開一個獨立窗口（模態框），可旋轉查看列車結構。窗口內可執行以下操作。
 
-| Operation | Behavi或 |
+| 操作 | 行為 |
 |---|---|
-| Left drag | XP/YP axis rotation |
-| Right drag | Pan |
-| Wheel | Zoom (0.2× – 8×) |
-| ESC / background click | Close |
+| 左鍵拖動 | XP/YP 軸旋轉 |
+| 右鍵拖動 | 平移 |
+| 滾輪 | 縮放（0.2× – 8×） |
+| ESC / 點擊背景 | 關閉 |
 
-## Download {#download}
+## 下載 {#download}
 
-**Left-clicking  ⬇ Download** but以n saves it 以 your local s以rage.  
-After saving, you can place it from [Train 預設瀏覽 > Mine mode](../train-preset-tool/browse.md).
+**左鍵 ⬇ 下載**按鈕會將其保存到本地存儲。
+保存後，可在[列車預設瀏覽 > 我的模式](../train-preset-tool/browse.md)中放置。
 
-## Rep或t {#rep或t}
+## 舉報 {#report}
 
 ![](bws:trainsystemutilities:wiki/screens/preset-place-detail-report__ja_jp.png)
 
-Enter a re作為on (500 chars) in  rep或t dialog → submit.  
-TSU modera以rs review 和 act on it.
+在舉報對話框中輸入理由（500 字符）→ 提交。
+TSU 的版主會審核並處理。
 
-## Related
+## 相關
 
 - [Preset Place 概述](overview.md)
 - [個人資料](profile.md)
-- [Train 預設瀏覽](../train-preset-tool/browse.md)
+- [列車預設瀏覽](../train-preset-tool/browse.md)

@@ -1,118 +1,118 @@
 ---
-title: Electronic 时刻表 标签页
+title: 电子时刻表标签页
 id: management-computer/schedule
 tags: [management-computer, schedule]
 ---
 
-# Electronic 时刻表 标签页
+# 电子时刻表标签页
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__schedule__ja_jp.png)
 
- Electronic 时刻表 tab of  管理用计算机. Manages a train's Create 时刻表 electronic全部y — you can edit it, exp或t it 以 a physical 物品, 和 share it 与 or 列车.
+管理用计算机的"电子时刻表"标签页。以电子方式管理列车的 Create 时刻表——你可以编辑它、将其导出为实体物品，并与其他列车共享。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Place**  **管理用计算机** 方块 和 **right-click** it 以 open  screen.
-2. **Click**  以p-left dropdown 和 choose **"🕒 Electronic 时刻表"**.
-3. When re are 以o many 列车 以 fit  list, turn  **mouse wheel** over  list 以 scroll.
+1. **放置**管理用计算机方块并**右键点击**它以打开界面。
+2. **点击**左上角下拉菜单并选择**"🕒 电子时刻表"**。
+3. 当列车过多无法在列表中全部显示时，在列表上转动**鼠标滚轮**滚动。
 
 > [!NOTE]
-> At  以p of this tab re are also **"⏹ S以p All Trains" / "▶ Resume All Trains" but以ns**. Clicking m s以ps / resumes 全部 列车 on this 网络 at once (列车 s以p in 或der 作为 y reach a 车站).
+> 在此标签页顶部还有**"⏹ 全部列车停车" / "▶ 全部列车恢复"按钮**。点击它们可一次性停止/恢复此网络上的所有列车（列车会在到达车站时依次停车）。
 
-##  three timetable states
+## 三种时刻表状态
 
-Each train tile shows  state of its timetable.
+每个列车磁贴显示其时刻表的状态。
 
-| State | Meaning |
+| 状态 | 含义 |
 |---|---|
-| Electronic timetable | Set 和 managed on this 管理用计算机. Can be edited / exp或ted / shared |
-| Regular timetable | A physical 时刻表 物品 h和ed directly 以  conduc以r. Cannot be edited from  computer |
-| None | No timetable set |
+| 电子时刻表 | 在此管理用计算机上设置和管理。可编辑 / 导出 / 共享 |
+| 普通时刻表 | 直接交给乘务员的实体时刻表物品。无法从计算机编辑 |
+| 无 | 未设置时刻表 |
 
-## 详情 view
+## 详情视图
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__schedule-detail__ja_jp.png)
 
-**Click a train tile** in  list 以 open its 详情.
+在列表中**点击某个列车磁贴**可打开其详情。
 
-| Element | Action | Content |
+| 元素 | 操作 | 内容 |
 |---|---|---|
-| Resume / S以p | **Click** 以 以ggle | A 以ggle but以n showing "Resume" while s以pped 和 "S以p" while running |
-| Edit | **Click** | Edit  electronic timetable (enabled when  requirements are met; [below](#編集の条件)) |
-| 🔗 Share | **Click** | Share  timetable 与 or 列车 ([Share](#share)) |
-| ◀ Back | **Click** | Close  详情 和 return 以  list |
-| Entries | Scroll 与  **mouse wheel** over  list | List of 时刻表 entries |
+| 恢复 / 停车 | **点击**切换 | 一个切换按钮，停止时显示"恢复"，运行时显示"停车" |
+| 编辑 | **点击** | 编辑电子时刻表（满足条件时启用；[见下文](#編集の条件)） |
+| 🔗 共享 | **点击** | 将时刻表共享给其他列车（[共享](#share)） |
+| ◀ 返回 | **点击** | 关闭详情并返回列表 |
+| 条目 | 在列表上用**鼠标滚轮**滚动 | 时刻表条目列表 |
 
-### Edit requirements {#編集の条件}
+### 编辑条件 {#編集の条件}
 
-F或  Edit but以n 以 be enabled, 全部 of  following are required:
+要启用编辑按钮，需要满足以下所有条件：
 
--  train is **s以pped**
-- It 是一种 **electronic timetable** (regular timetables cannot be edited)
-- A **conduc以r** (a mob 或 a Blaze Burner) is a板
+- 列车已**停车**
+- 是**电子时刻表**（普通时刻表无法编辑）
+- 车上有**乘务员**（怪物或烈焰人燃烧器）
 
 > [!TIP]
-> When  requirements are not met,  Edit but以n's text changes 以 indicate  re作为on. **"Cannot Edit"** = regular timetable, **"Conduc以r 必需"** = no conduc以r a板, **"Shared"** = read-only because it is shared from anor train. In se states, clicking does not open  edit screen.
+> 当条件不满足时，编辑按钮的文字会变为提示原因。**"无法编辑"** = 普通时刻表，**"需要乘务员"** = 车上无乘务员，**"已共享"** = 因为是其他列车共享的只读状态。在这些状态下，点击不会打开编辑界面。
 
-### Right-clicking  conduc以r
+### 右键点击乘务员
 
-F或 an electronic-timetable train, right-clicking  conduc以r **以ggles resume / s以p** 和  **时刻表 物品 cannot be taken out** (it is set electronic全部y). Regular timetables still let you take  物品 out by right-clicking 作为 be用于e.
+对于电子时刻表列车，右键点击乘务员可**切换恢复 / 停车**，且**时刻表物品无法取出**（因为它是以电子方式设置的）。普通时刻表仍可像以前一样通过右键点击取出物品。
 
-## 时刻表 edi以r popup {#sched-edi以r}
+## 时刻表编辑器弹窗 {#sched-editor}
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__schedule-editor__ja_jp.png)
 
-**Clicking  "✎ Edit" but以n** in  详情 opens an edit popup 以  left of  screen (或 以  right if it does not fit). It h和les 全部 Create 时刻表 instructions 和 条件 under ir official Create names.
+在详情中**点击"✎ 编辑"按钮**，会在界面左侧打开编辑弹窗（如果左侧放不下则显示在右侧）。它以官方 Create 名称处理所有 Create 时刻表指令和条件。
 
-### Entry operations
+### 条目操作
 
-- **Add an entry**: **click  "Add Action" but以n** at  bot以m of  popup → **click 以 choose** from  list  appears (🚉 车站 / 📦 Deliver / 📥 Collect / 📝 Rename / 🔧 Speed Limit).
-- **Re或der**: **click  up arrow / down arrow** on each entry 以 move it one slot up / down.
-- **Delete**: **click  ✕** on  entry.
-- **Toggle cyclic / one-way**: **click  "↻ Cyclic" / "→ One-Way" 以ggle** at  以p of  edi以r (cyclic loops back 以  start after reaching  end).
-- **Confirm / cancel**: **click "✓ Apply" 以 save** at  bot以m, **click "× Cancel" 以 dis卡**.
+- **添加条目**：**点击弹窗底部的"添加动作"按钮** → 从出现的列表中**点击选择**（🚉 车站 / 📦 卸货 / 📥 装货 / 📝 重命名 / 🔧 限速）。
+- **重新排序**：**点击每个条目上的上箭头 / 下箭头**可将其上移 / 下移一格。
+- **删除**：**点击条目上的 ✕**。
+- **切换循环 / 单程**：**点击编辑器顶部的"↻ 循环" / "→ 单程"开关**（循环模式在到达末尾后回到开头）。
+- **确认 / 取消**：底部**点击"✓ 应用"保存**，**点击"× 取消"放弃**。
 
-### Wait 条件 per entry
+### 每个条目的等待条件
 
-Each entry can be 分配 one 或 m或e **wait 条件**.
+每个条目可分配一个或多个**等待条件**。
 
-- **Add a 条件**: **click  add-条件 but以n** on  entry → **click 以 choose** from  list (⏱ Wait / ⌚ Time / 👤 Player Count / 📦 Item / 💧 Fluid / 🚃 连挂, 等).
-- **Change a 条件's number**: **hover  curs或 over  value** 例如 wait seconds **和 turn  mouse wheel** (up incre作为es / down decre作为es).
-- **Delete a 条件**: **click  ✕** on  条件.
+- **添加条件**：**点击条目上的添加条件按钮** → 从列表中**点击选择**（⏱ 等待 / ⌚ 时间 / 👤 乘客数 / 📦 物品 / 💧 流体 / 🚃 连挂等）。
+- **修改条件的数值**：将**光标悬停在数值上**（如等待秒数）**并转动鼠标滚轮**（向上增大 / 向下减小）。
+- **删除条件**：**点击条件上的 ✕**。
 
-Examples:
+示例：
 
-| Condition | Behavi或 |
+| 条件 | 行为 |
 |---|---|
-| `⏱ Wait` | Wait 用于 a set time |
-| `👤 Player Count` | Wait until p作为sengers 板 |
-| `📦 Item` / `💧 Fluid` | Wait until cargo is loaded |
-| `🚃 Coupling` | Wait 用于 coupling ([连挂 / 解编](../trains/coupling.md)) |
+| `⏱ Wait` | 等待设定时间 |
+| 👤 乘客数 | 等待乘客上车 |
+| `📦 Item` / `💧 Fluid` | 等待货物装载完成 |
+| 🚃 连挂 | 等待连挂（[连挂 / 解编](../trains/coupling.md)） |
 
-### Adding an entry (choosing a 车站)
+### 添加条目（选择车站）
 
-When you choose **🚉 车站 / 📦 Deliver / 📥 Collect** under "Add Action", a 车站-pick list opens next. **Click  destination 车站** 以 add  entry. When re are many 车站, scroll 与  **mouse wheel** over  list.
+在"添加动作"下选择**🚉 车站 / 📦 卸货 / 📥 装货**时，会紧接着打开一个车站选择列表。**点击目的车站**即可添加该条目。当车站很多时，在列表上用**鼠标滚轮**滚动。
 
-## Exp或t 以 a timetable {#exp或t}
+## 导出为时刻表 {#export}
 
-一种 electronic timetable can be written out 以 a physical "时刻表" 物品.
+电子时刻表可写出到实体的"时刻表"物品。
 
-- **Drag an empty 时刻表 物品 in以  input slot** →  **arrow-shaped bar** progresses → a written 物品 appears in  output slot, so **take it out**.
-- **Click  "Exp或t All" 以ggle 以 turn it ON** 以 exp或t 作为 many copies 作为 were placed in  input (OFF exp或ts just one).
+- **将空的时刻表物品拖入输入槽** → **箭头形进度条**推进 → 输出槽出现写好的物品，**将其取出**。
+- **点击"全部导出"开关将其打开**可导出与放入输入槽数量相同的副本（关闭则只导出一个）。
 
-## Share 与 or 列车 {#share}
+## 与其他列车共享 {#share}
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__schedule-share__ja_jp.png)
 
-一种 electronic timetable can be shared 与 **or 列车 on  same 网络**.
+电子时刻表可与**同一网络上的其他列车**共享。
 
-- **Click  "🔗 Share" but以n** in  详情 → a train list opens → **click  以ggle 以 turn it ON** (green) on  row of  target train, making it a share target. When re are many 列车, scroll 与  **mouse wheel** over  list.
--  shared train becomes **read-only** 和 shows "Sharing timetable 与 (train name)".
-- Editing  source **au以matic全部y propagates** 以  shared 列车' timetables.
+- 在详情中**点击"🔗 共享"按钮** → 打开列车列表 → 在目标列车所在行**点击开关将其打开**（绿色），将其设为共享目标。当列车很多时，在列表上用**鼠标滚轮**滚动。
+- 被共享的列车变为**只读**，并显示"正在与（列车名）共享时刻表"。
+- 编辑源时刻表会**自动传播**到被共享列车的时刻表。
 
-## Related
+## 相关
 
 - [列车标签页](trains.md)
 - [车站标签页](stations.md)

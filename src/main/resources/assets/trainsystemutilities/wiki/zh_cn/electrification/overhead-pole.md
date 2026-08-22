@@ -9,35 +9,35 @@ tags: [electrification, block]
 ```embed:item id=trainsystemutilities:overhead_pole size=48 label=true
 ```
 
-A single-轨道 catenary pole. Place it beside  轨道; it serves 作为  b作为e on which you mount a [Wire 绝缘子](insulator.md) 以 n string [Wire](wire-connector.md).
+一种单轨道接触网支柱。放置在轨道旁，作为承载[接触网绝缘子](insulator.md)的底座，再在其上架设[接触网](wire-connector.md)。
 
 [[TOC]]
 
-## Placement
+## 放置
 
-Hold  overhead pole from your inven以ry 和 **right-click  以p face of  ground 或 a 方块** where you want it 以 st和.
+从物品栏手持接触网支柱，**右键点击你想让它立起的地面或方块的顶面**。
 
--  或ientation is chosen au以matic全部y 以 match  轨道 angle (8 directions, 45° steps). Used beside a 轨道, it natur全部y aligns par全部el 以  rail.
-- **To add height**: **right-click  以p** of a pole  is already st和ing, 和 anor pole of  same 或ientation stacks on 以p. Keep right-clicking 以 raise it higher 和 higher.
-- F或 evenly-spaced bulk placement,  [支柱自动工具](../tools/overhead-pole-auto-tool.md) is h和y (bulk-places poles, trusses, 和 insula以rs along  轨道 at your configured height 和 count).
+- 朝向会自动选择以匹配轨道角度（8 个方向，45° 步进）。用于轨道旁时会自然地与铁轨平行对齐。
+- **增高**：**右键点击已立起支柱的顶部**，另一根同朝向的支柱会叠放其上。持续右键可越升越高。
+- 若要等距批量放置，[接触网支柱自动工具](../tools/overhead-pole-auto-tool.md)非常方便（按设定的高度和数量沿轨道批量放置支柱、桁架和绝缘子）。
 
 > [!IMPORTANT]
-> You cannot string wire directly on以  pole itself. Right-click 以 place a [Wire 绝缘子](insulator.md) 在…基础上  pole, n right-click  insula以r 与  [连接工具 Tool](wire-connector.md) 以 string  wire.
+> 不能直接在支柱上架设接触网。右键在支柱顶部放置[接触网绝缘子](insulator.md)，然后用[连接工具](wire-connector.md)右键该绝缘子才能架设接触网。
 
-## Flow up 以 stringing wire
+## 到架设接触网的流程
 
-1. Place overhead poles beside  轨道 和 stack 它们给  required height.
-2. Right-click 以 place a [Wire 绝缘子](insulator.md) on  以p face of a pole.
-3. 放置n insula以r on  neighb或ing pole  same way.
-4. Put  [连接工具 Tool](wire-connector.md) in以 placement mode 和 right-click **insula以r → insula以r** in 或der 以 string  wire.
+1. 在轨道旁放置接触网支柱，并叠放到所需高度。
+2. 右键在支柱顶面放置[接触网绝缘子](insulator.md)。
+3. 在相邻支柱上用同样方式放置绝缘子。
+4. 将[连接工具](wire-connector.md)切换到放置模式，按顺序右键**绝缘子 → 绝缘子**以架设接触网。
 
 > [!TIP]
-> To span double-轨道 或 multi-轨道 sections, use  [接触网架](overhead-truss.md).
+> 跨越双轨或多轨路段时，请使用[接触网桁架](overhead-truss.md)。
 
-## Related 页面s
+## 相关页面
 
-- [电气化 总览](index.md)
-- [Wire 绝缘子](insulator.md) —  wire mounting point placed 在…基础上  pole
-- [Wire / 连接工具 Tool](wire-connector.md) — strings wire between insula以rs
-- [接触网架](overhead-truss.md)
-- [支柱自动工具](../tools/overhead-pole-auto-tool.md)
+- [电气化系统概述](index.md)
+- [接触网绝缘子](insulator.md) — 放置在支柱顶部的接触网挂载点
+- [接触网 / 连接工具](wire-connector.md) — 在绝缘子之间架设接触网
+- [接触网桁架](overhead-truss.md)
+- [接触网支柱自动工具](../tools/overhead-pole-auto-tool.md)

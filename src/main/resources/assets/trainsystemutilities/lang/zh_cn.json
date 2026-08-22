@@ -199,7 +199,7 @@
   "tsu.ticket_gate.entered": "已进站",
   "tsu.ticket_gate.passed": "已回收车票",
   "death.attack.induction": "%1$s因擅自接近接触网，触电身亡。高压危险，严禁攀爬。",
-  "death.attack.induction.player": "%1$s与%2$s战斗时误触接触网，触电身亡。高压危险，严禁嬉戏打闹。"
+  "death.attack.induction.player": "%1$s与%2$s战斗时误触接触网，触电身亡。高压危险，严禁嬉戏打闹。",
   "item.trainsystemutilities.memory_card": "存储卡",
   "item.trainsystemutilities.monitor_link_card": "显示器连接卡",
   "item.trainsystemutilities.train_preset_tool": "列车预设工具",

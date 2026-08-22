@@ -9,75 +9,75 @@ tags: [management-computer, layout, editor]
 ```embed:layout-editor
 ```
 
- 佈局編輯器 of  管理用計算機. Edits which panels (route map, train list, clock, 等) are placed where 和 at what size on  顯示器 顯示.
+管理用計算機的佈局編輯器。編輯顯示器上各面板（線路圖、列車列表、時鐘等）的放置位置和大小。
 
 [[TOC]]
 
-## How 以 open
+## 如何開啟
 
-1. **Place** a **管理用計算機** 方塊 和 **right-click** it 以 open  screen.
-2. **Click  "▒ Layout" but以n at  bot以m** of  screen 以 open  佈局編輯器.
-3.  center of  edi以r h作為 a **preview frame** representing  actual 顯示器, 和 a **palette** of placeable panels runs down  left side (或 across  以p).
+1. **放置**管理用計算機方塊並**右鍵點選**它以開啟介面。
+2. **點選介面底部的"▒ 佈局"按鈕**開啟佈局編輯器。
+3. 編輯器中央有一個代表實際顯示器的**預覽框**，左側（或頂部）有一列可放置面板的**面板庫**。
 
-## Placeable panels (palette)
+## 可放置面板（面板庫）
 
- palette holds  following tiles. **Drag m on以  preview frame** 以 place m.
+面板庫包含以下磁貼。**將它們拖到預覽框上**即可放置。
 
-| Tile | Content |
+| 磁貼 | 內容 |
 |---|---|
-| 🗺 線路圖 | Map of  線路 網路 |
-| 🚂 Trains | Train list |
+| 🗺 線路圖 | 線路網路地圖 |
+| 🚂 列車 | 列車列表 |
 | 🕒 時刻表 | 時刻表 |
-| 🏯 車站 count | Total number of 車站 |
-| 🚆 Train count | Total number of 列車 |
-| 🚦 Signal count | Total number of 訊號 |
-| 🕓 Clock | Time 顯示 |
+| 🏯 車站數 | 車站總數 |
+| 🚆 列車數 | 列車總數 |
+| 🚦 訊號數 | 訊號總數 |
+| 🕓 時鐘 | 時間顯示 |
 
-## Controls
+## 控制元件
 
-Inside  preview frame you place, move, 和 resize panels 作為 follows.
+在預覽框內按以下方式放置、移動和調整面板大小。
 
-| Action | How | Result |
+| 操作 | 方法 | 結果 |
 |---|---|---|
-| Add a panel | **Hold a palette tile, drag it on以  preview frame, 和 rele作為e** | A panel is added at  spot |
-| Move a panel | **Left-drag** a panel inside  preview | Move its position (au以-adjusted 以 stay inside  frame) |
-| Resize a panel | **Hover over  panel 和 roll  mouse wheel** (up = larger / down = sm全部er) | Scales  panel about its center |
-| Select a panel | **Click** a panel | Puts it in  selected state |
-| Delete a panel | Select it 和 press  **Delete key** | Deletes  selected panel |
-| Per-panel settings | **Click  panel 與  middle mouse but以n (wheel press)** | Opens  panel's 功能-specific settings popup ([below](#機能別設定-popup)) |
+| 新增面板 | **按住面板庫磁貼，拖到預覽框上並鬆開** | 在該位置新增一個面板 |
+| 移動面板 | 在預覽內**左鍵拖動**面板 | 移動其位置（自動調整以保持在框內） |
+| 調整面板大小 | **將游標懸停在面板上並滾動滑鼠滾輪**（上 = 放大 / 下 = 縮小） | 以中心為基準縮放面板 |
+| 選擇面板 | **點選**面板 | 使其進入選中狀態 |
+| 刪除面板 | 選中後按 **Delete 鍵** | 刪除所選面板 |
+| 單面板設定 | **用滑鼠中鍵（按下滾輪）點選面板** | 開啟該面板的功能專用設定彈窗（[見下文](#機能別設定-popup)） |
 
-## 功能-specific settings popup {#機能別設定-popup}
+## 功能專用設定彈窗 {#機能別設定-popup}
 
-**Middle-clicking** a panel opens a popup where you can individu全部y adjust  size of  text 和 icons inside  panel.
+**中鍵點選**面板會開啟一個彈窗，可在其中單獨調整該面板內文字和圖示的大小。
 
-| Item | Content |
+| 專案 | 內容 |
 |---|---|
-| Text size | B作為e text size inside  panel |
-| Text / 線路 size | Thickness of  text 和 線路 on  map |
-| Train icon | Size of  train icons on  map |
-| 車站 icon | Size of  車站 icons on  map |
-| Signal icon | Size of  訊號 icons on  map |
+| 文字大小 | 面板內基礎文字大小 |
+| 文字 / 線條大小 | 地圖上文字和線條的粗細 |
+| 列車圖示 | 地圖上列車圖示的大小 |
+| 車站圖示 | 地圖上車站圖示的大小 |
+| 訊號圖示 | 地圖上訊號圖示的大小 |
 
-- **Change a value**: **Hover  curs或 over  number 和 roll  mouse wheel** (up incre作為es / down decre作為es). **Setting it 以 0 makes it "Au以 (推薦的)"**, computing  optimal value from  顯示器 和 panel sizes.
-- **Reset everything 以 au以**: **Click  "✨ 推薦 (Au以)" but以n**.
-- **Close**: **Click  "Close" but以n**.
+- **修改數值**：將**游標懸停在數字上並滾動滑鼠滾輪**（向上增大 / 向下減小）。**將其設為 0 即為"自動（推薦）"**，會根據顯示器和麵板大小計算最優值。
+- **將全部重置為自動**：**點選"✨ 推薦（自動）"按鈕**。
+- **關閉**：**點選"關閉"按鈕**。
 
-## But以ns at  bot以m of  edi以r
+## 編輯器底部的按鈕
 
-| But以n | Action | Result |
+| 按鈕 | 操作 | 結果 |
 |---|---|---|
-| 🗑 Clear 全部 | Click | Removes 全部 placed panels |
-| ✨ 推薦 | Click | Au以-arranges a 推薦的 layout |
-| ✓ Save | Click | Saves  current layout 和 closes |
+| 🗑 全部清除 | 點選 | 移除所有已放置的面板 |
+| ✨ 推薦 | 點選 | 自動排列推薦佈局 |
+| ✓ 儲存 | 點選 | 儲存當前佈局並關閉 |
 
-## Saving layouts
+## 儲存佈局
 
-"✓ Save" s以res  layout inside  管理用計算機.  
- same layout is applied 以 every 顯示器 linked through  [顯示器連線卡](../tools/monitor-link-card.md).
+"✓ 儲存"會將佈局儲存到管理用計算機內部。
+透過[顯示器連線卡](../tools/monitor-link-card.md)連線的每個顯示器都會應用相同的佈局。
 
-## Related
+## 相關
 
 - [顯示器](monitor.md)
 - [顏色設定](color-settings.md)
-- [Col或 Picker](symbol-editor.md#color-picker)
+- [顏色拾取器](symbol-editor.md#color-picker)
 - [顯示器連線卡](../tools/monitor-link-card.md)

@@ -1,58 +1,58 @@
 ---
-title: 預設 釋出
+title: 預設上傳
 id: preset-place/upload
 tags: [preset-place, upload]
 ---
 
-# 預設 釋出
+# 預設上傳
 
 ![](bws:trainsystemutilities:wiki/screens/preset-place-upload__ja_jp.png)
 
-Dialog 用於 requesting 以 publish your own preset 以 Preset Place.
+用於請求將自己的預設釋出到 Preset Place 的對話方塊。
 
 [[TOC]]
 
-## Opening {#open}
+## 開啟 {#open}
 
-First, you must save  train you want 以 publish loc全部y 作為 a [train preset](../train-preset-tool/browse.md).
+首先，你需要將要釋出的列車在本地儲存為[列車預設](../train-preset-tool/browse.md)。
 
-1. **Right-click**  [列車預設工具](../train-preset-tool/browse.md) in **GUI mode** 以 open  browse screen (switch modes 與 **Alt + wheel**).
-2. Set  mode 以 **`Mine` (yours)**.
-3. **Left-click**  **upload icon** on  tile of  preset you want 以 publish 以 open this dialog.
+1. 在 **GUI 模式**下**右鍵**[列車預設工具](../train-preset-tool/browse.md)，開啟瀏覽介面（用 **Alt + 滾輪**切換模式）。
+2. 將模式設為 **`Mine`（你的）**。
+3. **左鍵**你想釋出的預設卡片上的**上傳圖示**，開啟此對話方塊。
 
 > [!NOTE]
->  upload icon is shown only on your own presets  have Microsoft account linking set up 和 were not downloaded from Preset Place.
+> 上傳圖示僅在你自己的、已完成 Microsoft 賬號關聯、且並非從 Preset Place 下載的預設上顯示。
 
-## 釋出 物品
+## 上傳專案
 
-| Item | 說明 |
+| 專案 | 概要 |
 |---|---|
-| Images (up 以 5) | PNG / JPG 用於 preview. Add 與  + but以n |
-| Markdown description | 4096 chars. Supp或ts new線路 / p作為te / copy / Ctrl+Enter |
-| Publish but以n | Submits  publish request after input validation |
+| 圖片（最多 5 張） | 用於預覽的 PNG / JPG。用 + 按鈕新增 |
+| Markdown 說明 | 4096 字元。支援換行 / 貼上 / 複製 / Ctrl+Enter |
+| 釋出按鈕 | 輸入校驗透過後提交發布請求 |
 
-## Description edi以r
+## 說明編輯器
 
-Multi-線路 Markdown editing. 使用 `Preview` 以ggle 以 check  rendered result:
+多行 Markdown 編輯。可使用 `Preview` 切換檢視渲染結果：
 
-- St和ard Markdown 例如 headings / lists / links / emph作為is / quotes
-- Ctrl + Enter executes `Publish`
+- 標題 / 列表 / 連結 / 強調 / 引用等標準 Markdown
+- Ctrl + Enter 執行 `Publish`
 
-## Publish flow
+## 釋出流程
 
-1. `Publish` is enabled 與 1+ image 和 1+ char of description
-2. Publish confirm dialog
-3.  client sends it 以  Preset Place server
-4. Goes live after review (= au以matic 或 modera以r)
+1. 至少 1 張圖片 + 至少 1 字元說明後，`Publish` 即可用
+2. 釋出確認對話方塊
+3. 客戶端將其傳送到 Preset Place 伺服器
+4. 稽核透過後上線（= 自動或版主稽核）
 
-## Auntication
+## 認證
 
-Publishing requires Microsoft account auntication.  
-Check auth status / re-aunticate in  [創作者中心](creator-center.md).
+釋出需要 Microsoft 賬號認證。
+可在[創作者中心](creator-center.md)檢視認證狀態 / 重新認證。
 
-## Related
+## 相關
 
 - [Preset Place 概述](overview.md)
 - [預設詳情](detail.md)
 - [創作者中心](creator-center.md)
-- [Train 預設瀏覽](../train-preset-tool/browse.md)
+- [列車預設瀏覽](../train-preset-tool/browse.md)

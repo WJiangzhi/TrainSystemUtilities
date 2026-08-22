@@ -1,87 +1,87 @@
 ---
-title: 管理用计算机 概述
+title: 管理用计算机概述
 id: management-computer/overview
 tags: [management-computer, overview]
 ---
 
-# 管理用计算机 概述
+# 管理用计算机概述
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__map__ja_jp.png)
 
- central control GUI  oversees  整个 railway 网络 from a 单个方块. It holds 6 management screens, switchable 通过 tabs.
+中央控制界面，可从单个方块统管整个铁路网络。它包含 6 个管理屏幕，可通过标签页切换。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Place**  **管理用计算机** 方块 in  w或ld.
-2. **Right-click**  方块 以 open this screen.
-3. Once open, first **click**  **dropdown at  以p-left** (default: "📁 My 线路图 ▾"), n **click**  tab you want from  list  appears.
+1. 将**管理用计算机**方块**放置**在世界中。
+2. **右键点击**该方块以打开此界面。
+3. 打开后，先**点击左上角的下拉菜单**（默认显示"📁 我的线路图 ▾"），然后从出现的列表中**点击**你想要的标签页。
 
 > [!TIP]
-> If you are unsure what a but以n does, **click  "提示" 以ggle at  以p-right 以 turn it ON** (green). After , **hovering**  mouse over a but以n 或 物品 shows a sh或t description. While hovering, press **F1** 以 跳转 directly 以  wiki 页面 用于  功能 under  curs或 ([快速开始 > 提示和 F1](../getting-started.md#提示和-F1)).
+> 如果不确定某个按钮的作用，**点击右上角的"提示"开关将其打开**（绿色）。打开后，将鼠标**悬停**在按钮或物品上会显示简短说明。悬停时按 **F1** 可直接跳转到光标所指功能的 wiki 页面（[快速开始 > 提示与 F1](../getting-started.md#hints-and-f1)）。
 
-## B作为ic controls
+## 基本操作
 
-This screen (和 TSU 方块 GUIs in general) is operated by  following rules. Keep m in mind 和 you will not get lost 在…上ny tab.
+此界面（以及 TSU 方块 GUI 整体）遵循以下规则操作。牢记这些规则，你在任何标签页上都不会迷路。
 
-- **Switch tabs**: click  以p-left dropdown → click a tab from  list.
-- **Change a number**: **hover  curs或 over  value 和 turn  mouse wheel** (up incre作为es / down decre作为es). re are no dedicated `+`/`-` but以ns.
-- **Toggle ON / OFF**: **click**  以ggle switch (ON = green).
-- **Scroll a list**: when re are 以o many 物品 以 fit, turn  **mouse wheel** over  list (a scrollbar appears on  right).
-- **But以ns**: click 以 execute.
-- **Switch access mode**: **click**  face ic在…上t  右下角 ([below](#owner-face)).
+- **切换标签页**：点击左上角下拉菜单 → 从列表中点击一个标签页。
+- **修改数值**：将光标悬停在数值上并**转动鼠标滚轮**（向上增大 / 向下减小）。没有专门的 `+`/`-` 按钮。
+- **开关切换**：**点击**开关（开启 = 绿色）。
+- **滚动列表**：当项目过多无法全部显示时，在列表上转动**鼠标滚轮**（右侧会出现滚动条）。
+- **按钮**：点击执行。
+- **切换访问模式**：**点击**右下角的脸部图标（[见下文](#owner-face)）。
 
-## 标签页 list
+## 标签页列表
 
-| 标签页 | Content |
+| 标签页 | 内容 |
 |---|---|
-| [Moni以r](monitor.md) | Cus以m layout edi以r / preview |
-| [线路图](route-map.md) | Map of 全部 车站 和 轨道 |
-| [列车标签页](trains.md) | List 和 详情 of 全部 列车 (position / speed / electrification) |
-| [时刻表标签页](schedule.md) | 时刻表 list + edit popup |
-| [车站标签页](stations.md) | 车站 list + 车站 group settings |
-| [线路编号标签页](line-symbols.md) | Create / 分配 线路 编号 |
+| [显示器](monitor.md) | 自定义布局编辑器 / 预览 |
+| [线路图](route-map.md) | 全部车站与轨道的地图 |
+| [列车标签页](trains.md) | 全部列车的列表与详情（位置 / 速度 / 电气化） |
+| [时刻表标签页](schedule.md) | 时刻表列表 + 编辑弹窗 |
+| [车站标签页](stations.md) | 车站列表 + 车站组设置 |
+| [线路编号标签页](line-symbols.md) | 创建 / 分配线路编号 |
 
-## Main controls
+## 主要控件
 
-Shared parts around  screen 和 how 以 use m.
+界面周围共享的部分及其使用方法。
 
-| Element | Position | Action | Function |
+| 元素 | 位置 | 操作 | 功能 |
 |---|---|---|---|
-| 标签页 dropdown | Top-left | Click 以 exp和 list → click a tab | Switch  active tab |
-| 提示 以ggle | Top-right | Click 以 turn ON/OFF | When ON, enables hover descriptions + F1 跳转 |
-| Wiki but以n | Top-right | Click | Opens this 页面 (wiki) |
-| owner-face (face icon) | Bot以m-right | Click 以 switch | Private / public 以ggle ([below](#owner-face)) |
-| 🎨 Col或 but以n | Bot以m | Click | Opens  [颜色设置](color-settings.md) popup |
-| ▒ Layout but以n | Bot以m | Click | Opens  [布局编辑器](layout-editor.md) |
-| Inven以ry | Bot以m | Click 以 move 物品 | Player inven以ry (Container-type V3 screen) |
+| 标签页下拉菜单 | 左上角 | 点击展开列表 → 点击标签页 | 切换当前标签页 |
+| 提示开关 | 右上角 | 点击开启/关闭 | 开启后启用悬停说明 + F1 跳转 |
+| Wiki 按钮 | 右上角 | 点击 | 打开此页面（wiki） |
+| owner-face（脸部图标） | 右下角 | 点击切换 | 私有 / 公开切换（[见下文](#owner-face)） |
+| 🎨 颜色按钮 | 底部 | 点击 | 打开[颜色设置](color-settings.md)弹窗 |
+| ▒ 布局按钮 | 底部 | 点击 | 打开[布局编辑器](layout-editor.md) |
+| 物品栏 | 底部 | 点击移动物品 | 玩家物品栏（Container 型 V3 界面） |
 
-## Access mode {#owner-face}
+## 访问模式 {#owner-face}
 
-Each **click of  face icon** at  右下角 以ggles between private 和 public.
+右下角的**脸部图标**每次点击会在私有与公开之间切换。
 
-| Mode | Appearance | Access |
+| 模式 | 外观 | 访问权限 |
 |---|---|---|
-| Public | Face 与 蓝色 b或der | 一种yone can edit |
-| Private | Face 与 red b或der | Only  placer can edit |
+| 公开 | 蓝色边框的脸 | 任何人都可编辑 |
+| 私有 | 红色边框的脸 | 仅放置者可编辑 |
 
 > [!WARNING]
-> F或 multiplayer 和 main线路 operation, **Private (red b或der)** is 推荐的. Left public, or players can overwrite your 时刻表 和 col或 settings.
+> 对于多人游戏和干线运营，**建议使用私有模式（红色边框）**。若保持公开，其他玩家会覆盖你的时刻表和颜色设置。
 
- profile icon can be 自定义ized 作为 SVG in [Preset Place > 个人资料](../preset-place/profile.md).
+个人资料图标可在 [Preset Place > 个人资料](../preset-place/profile.md)中作为 SVG 进行自定义。
 
-## Related popups
+## 相关弹窗
 
-| Popup | Use |
+| 弹窗 | 用途 |
 |---|---|
-| [布局编辑器](layout-editor.md) | Free editing of  显示器 layout |
-| [颜色设置](color-settings.md) | Col或s of 显示器 elements (10 types) |
-| [Col或 Picker](symbol-editor.md#color-picker) | HSV 自定义 col或s |
-| [Line 编号编辑器](symbol-editor.md) | Create SVG icons |
-| [电气化 详情](#) | Train FE / catenary status |
+| [布局编辑器](layout-editor.md) | 自由编辑显示器布局 |
+| [颜色设置](color-settings.md) | 显示器元素的颜色（10 种） |
+| [颜色拾取器](symbol-editor.md#color-picker) | HSV 自定义颜色 |
+| [线路编号编辑器](symbol-editor.md) | 创建 SVG 图标 |
+| [电气化详情](#) | 列车 FE / 接触网状态 |
 
-## Related
+## 相关
 
 - [铁路管理方块](../railway-management.md)
 - [车站范围指定工具](../tools/station-range-tool.md)

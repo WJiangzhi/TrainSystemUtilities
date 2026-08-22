@@ -6,78 +6,78 @@ tags: [train, coupling]
 
 # 连挂 / 解编
 
-A mechanism  dynamic全部y couples / splits two consists 通过 时刻表 条件.
+一种根据时刻表条件，动态连挂 / 拆分两个编组的机制。
 
 [[TOC]]
 
-## Behavi或
+## 行为
 
 ```
-Before:
-   Train A [▮▮▮▮]      [▮▮▮▮] Train B
+连挂前:
+   列车 A [▮▮▮▮]      [▮▮▮▮] 列车 B
                        ↑
-                  arrive at the same station
+                  到达同一车站
 
-Coupling:
-   Train A [▮▮▮▮]──[▮▮▮▮] Train B
+连挂中:
+   列车 A [▮▮▮▮]──[▮▮▮▮] 列车 B
                 ↑
-            auto coupling
+            自动连挂
 
-After (operates as one consist):
+连挂后（作为一个编组运行）:
    [▮▮▮▮▮▮▮▮]
 ```
 
-## Constraints
+## 约束
 
-- Up 以 **2 列车** can be coupled
-- Due 以  Create MOD's car limit, a consist can be **up 以 32 cars**
+- 最多可连挂 **2 列列车**
+- 受 Create MOD 的车厢数限制，一个编组**最多 32 节车厢**
 
-## This is operated by a "Create 时刻表 条件," not a key
+## 通过"Create 时刻表条件"驱动，而非按键
 
-re is no dedicated key 或 物品 用于 coupling / decoupling. It w或ks just by **adding a single "Couple / Decouple" wait 条件 以  Create train 时刻表**. TSU adds this 条件 以 Create's 时刻表 edi以r.
+连挂 / 解编没有专用按键或物品。只需在 Create 列车时刻表中**添加一个"连挂 / 解编"等候条件**即可。TSU 将此条件添加到 Create 的时刻表编辑器中。
 
--  条件 added is **just one kind: "Couple / Decouple"**.
-- Within  条件, you **choose  mode from "Couple" 或 "Decouple"** (see below).
--  icon is shown 作为 coupling = chain / decoupling = sciss或s.
+- 添加的条件**只有一种："连挂 / 解编"**。
+- 在该条件内，你**可从"连挂"或"解编"中选择模式**（见下文）。
+- 图标显示为：连挂 = 链条 / 解编 = 剪刀。
 
-## Configuring  条件 (choosing couple / decouple)
+## 配置条件（选择连挂 / 解编）
 
-When you add this 条件 in  时刻表 edi以r, a **scroll input (a field you set by hovering  value 和 using  mouse wheel)** appears on  条件 row.
+在时刻表编辑器中添加此条件后，条件行上会出现一个**滚轮输入框（将光标悬停于数值上并用鼠标滚轮设置的字段）**。
 
-| Field | Operation | Selectable values |
+| 字段 | 操作 | 可选值 |
 |---|---|---|
-| Mode | **Mouse wheel** over  field | **Couple** / **Decouple** |
-| Wait time | **Mouse wheel** over  field | 1 – 30 seconds (how long be用于e  rear consist departs after decoupling; used in Decouple mode) |
+| 模式 | 在字段上滚动**鼠标滚轮** | **连挂** / **解编** |
+| 等候时间 | 在字段上滚动**鼠标滚轮** | 1 – 30 秒（解编后，后位编组发车前的等候时长；用于解编模式） |
 
-## Steps
+## 步骤
 
-**To couple**
+**连挂**
 
-1. In each of  two consists' 时刻表, **add a "Couple / Decouple" 条件** 和 set  mode 以 **"Couple"**.
-2. Have both consists arrive at  **same 车站** (this 条件 au以matic全部y waits until  or arrives at  same 车站).
-3. Once both are present, y **couple au以matic全部y** 和 continue operating 作为 one consist.
+1. 在两个编组各自的时刻表中，**添加"连挂 / 解编"条件**，并将模式设为 **"连挂"**。
+2. 让两个编组都到达**同一车站**（此条件会自动等待另一方到达同一车站）。
+3. 两者到齐后，会**自动连挂**，并作为一个编组继续运行。
 
-**To decouple**
+**解编**
 
-1. At  时刻表 point of  车站 where you want 以 decouple, **add a "Couple / Decouple" 条件** 和 set  mode 以 **"Decouple"**.
-2. If needed, adjust  **wait time** 与  wheel.
-3. While s以pped at  车站, decoupling **runs au以matic全部y**.
+1. 在想解编的车站时刻表节点处，**添加"连挂 / 解编"条件**，并将模式设为 **"解编"**。
+2. 如有需要，用滚轮调整**等候时间**。
+3. 停靠在该车站期间，解编会**自动执行**。
 
-## 时刻表 edit GUI
+## 时刻表编辑 GUI
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer-sched-editor__ja_jp.png)
 
- 条件 can be added on Create's st和ard 时刻表 screen. You can also **select "Couple / Decouple"** 作为  wait 条件 用于 each point from TSU's [管理用计算机 > 时刻表标签页 > 时刻表 Edi以r](../management-computer/schedule.md#sched-editor), 和 set  mode (couple / decouple) 与  wheel.
+该条件可在 Create 的标准时刻表界面中添加。也可从 TSU 的[管理用计算机 > 时刻表标签页 > 时刻表编辑器](../management-computer/schedule.md#sched-editor)中，为每个节点**选择"连挂 / 解编"**作为等候条件，并用滚轮设置模式（连挂 / 解编）。
 
-## Interaction 与 electrification
+## 与电气化的关系
 
-A coupled consist is treated 作为 a single electrification unit, a [train pool](../electrification/pantograph.md#複数連結時の挙動):
+已连挂的编组会被视为单一的电气化单元，即一个[列车池](../electrification/pantograph.md#複数連結時の挙動)：
 
-- While coupled, it is electrified if eir side h作为 a pan以graph
--  FE inverter buffer is shared across 全部 cars
-- On decoupling, it is distributed by each car's owned buffer amount (relative capacity ratio)
+- 连挂期间，只要任一侧有受电弓即视为通电
+- FE 逆变器的缓冲会在所有车厢间共享
+- 解编时，按各车厢自身拥有的缓冲量（相对容量比）进行分配
 
-## Related
+## 相关
 
 - [列车标签页](../management-computer/trains.md)
 - [时刻表标签页](../management-computer/schedule.md)

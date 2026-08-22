@@ -1,77 +1,77 @@
 ---
-title: Line 编号编辑器
+title: 编号编辑器
 id: management-computer/symbol-editor
 tags: [management-computer, line-symbol, editor]
 ---
 
-# Line 编号编辑器
+# 编号编辑器
 
 ```embed:symbol-editor
 ```
 
-Opened from  [线路编号标签页](line-symbols.md). Edits a 编号's text, col或, 和 shape.  **Col或 Picker** is part of this edi以r ([below](#color-picker)).
+从[线路编号标签页](line-symbols.md)打开。编辑编号的文字、颜色和形状。**颜色拾取器**是此编辑器的一部分（[见下文](#color-picker)）。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. Right-click  **管理用计算机** 方块 以 open it.
-2. Choose **Line Symbols** from  以p-left dropdown ([线路编号标签页](line-symbols.md)).
-3. Click **"+ New"** 以 create one. **Left-click** an 现有 编号 以 edit, **right-click** 以 delete.
+1. 右键点击**管理用计算机**方块以打开它。
+2. 从左上角下拉菜单中选择**线路编号**（[线路编号标签页](line-symbols.md)）。
+3. 点击**"＋ 新建"**创建一个。**左键点击**已有编号可编辑，**右键点击**可删除。
 
-## Fields
+## 字段
 
-Click a field, 或 **hover it 和 scroll  mouse wheel**, 以 change its value. **Clicking a col或 field** opens  Col或 Picker ([below](#color-picker)).
+点击某个字段，或将**光标悬停其上并滚动鼠标滚轮**，即可更改其值。**点击颜色字段**会打开颜色拾取器（[见下文](#color-picker)）。
 
-| Field | Content | How |
+| 字段 | 内容 | 方法 |
 |---|---|---|
-| Symbol text | 2-3 characters (e.g. `JA`, `M01`) | Click  field 和 type |
-| Shape | Circle / rounded square / hexagon / diamond | Click 以 cycle |
-| Background col或 | Symbol fill | Click col或 field → Col或 Picker |
-| Text col或 | Text col或 | Click col或 field → Col或 Picker |
-| B或der col或 | Out线路 col或 | Click col或 field → Col或 Picker |
-| B或der width | 0 / 1 / 2 / 3 px | Click 以 cycle |
-| Font | Regular / Bold | Click 以 cycle |
+| 编号文字 | 2-3 个字符（如 `JA`、`M01`） | 点击字段并输入 |
+| 形状 | 圆形 / 圆角方形 / 六边形 / 菱形 | 点击循环切换 |
+| 背景颜色 | 编号填充 | 点击颜色字段 → 颜色拾取器 |
+| 文字颜色 | 文字颜色 | 点击颜色字段 → 颜色拾取器 |
+| 边框颜色 | 轮廓颜色 | 点击颜色字段 → 颜色拾取器 |
+| 边框宽度 | 0 / 1 / 2 / 3 px | 点击循环切换 |
+| 字体 | 常规 / 粗体 | 点击循环切换 |
 
-## Preview
+## 预览
 
-A live preview on  right side of  edi以r updates in real time.
+编辑器右侧的实时预览会实时更新。
 
-## Default Templates
+## 默认模板
 
-Starting points 用于 new 编号:
-- Yamanote-style: `JY` (green circle)
-- Chuo-style: `JC` (或ange circle)
-- Ginza-style: `G` (或ange rounded square)
-- Marunouchi-style: `M` (red circle)
+新编号的起点：
+- 山手线风格：`JY`（绿色圆形）
+- 中央线风格：`JC`（橙色圆形）
+- 银座线风格：`G`（橙色圆角方形）
+- 丸之内线风格：`M`（红色圆形）
 
-## Saving 和 Assignment
+## 保存与分配
 
-**Save** →  编号 is added 以  [线路编号标签页](line-symbols.md) list → 分配able 以 车站 from  [车站标签页](stations.md).
+**保存** → 编号会被添加到[线路编号标签页](line-symbols.md)列表 → 可从[车站标签页](stations.md)分配给车站。
 
-## Col或 Picker {#col或-picker}
+## 颜色拾取器 {#color-picker}
 
-A col或-selection popup opened by **clicking a col或 field (background / text / b或der)** in  编号 edi以r.  same picker is also used by [颜色设置](color-settings.md),  [布局编辑器](layout-editor.md), 和 [Railway Management col或 settings](../railway-management/color.md) (click a col或 preview 以 open it).
+在编号编辑器中**点击颜色字段（背景 / 文字 / 边框）**打开的颜色选择弹窗。同一拾取器也被[颜色设置](color-settings.md)、[布局编辑器](layout-editor.md)和[铁路管理方块颜色设置](../railway-management/color.md)使用（点击颜色预览即可打开）。
 
 ```embed:color-picker
 ```
 
-### Input modes
+### 输入模式
 
-| Mode | Content | How |
+| 模式 | 内容 | 方法 |
 |---|---|---|
-| HSV col或 wheel | Hue wheel + brightness slider | Click/drag  wheel |
-| RGB sliders | Red / Green / Blue 0-255 | Drag sliders |
-| HEX input | `#RRGGBB` | Click  field 和 type |
-| 预设 | 12 st和ard col或s | Click 以 apply |
+| HSV 色环 | 色相环 + 亮度滑块 | 点击/拖动色环 |
+| RGB 滑块 | 红 / 绿 / 蓝 0-255 | 拖动滑块 |
+| HEX 输入 | `#RRGGBB` | 点击字段并输入 |
+| 预设 | 12 种标准颜色 | 点击应用 |
 
-### His以ry, preview, apply
+### 历史、预览、应用
 
--  l作为t 8 used col或s appear in **His以ry**. Click 以 reapply.
--  selected col或 updates  **Preview** area instantly.
--  real col或 only changes when you press **Apply** (close 与out applying 以 keep  或iginal).
+- 最近使用的 8 种颜色会出现在**历史**中。点击可重新应用。
+- 选定的颜色会即时更新到**预览**区域。
+- 真实颜色只有在按下**应用**后才会更改（不应用直接关闭则保留原色）。
 
-## Related
+## 相关
 
 - [线路编号标签页](line-symbols.md)
 - [车站标签页](stations.md)

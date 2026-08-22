@@ -8,49 +8,49 @@ tags: [management-computer, line-symbol]
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__symbol__ja_jp.png)
 
- Line Symbols tab of  管理用计算机. Create, edit, 和 delete 线路 编号 (e.g. `JA`, `JB`, `M01`).
+管理用计算机的"线路编号"标签页。创建、编辑和删除线路编号（如 `JA`、`JB`、`M01`）。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Place** a **管理用计算机** 方块 和 **right-click** it 以 open  screen.
-2. **Click**  以p-left dropdown 和 choose **"Ⓜ Line Symbols"**.
-3. When  编号 don't 全部 fit, roll  **mouse wheel** over  list 以 scroll.
+1. **放置**管理用计算机方块并**右键点击**它以打开界面。
+2. **点击**左上角下拉菜单并选择**"Ⓜ 线路编号"**。
+3. 当编号无法全部显示时，在列表上转动**鼠标滚轮**滚动。
 
-## 什么是 a Line Symbol?
+## 什么是线路编号？
 
-一种 identifier 分配 以 each 车站 和 train. Example: Yamanote Line = `JY`, Chuo Line = `JC`.  
-Assigned 以 车站 in  [车站标签页](stations.md) → 显示ed on  [线路图](route-map.md) 和  [铁路管理方块](../railway-management.md).
+分配给每个车站和列车的标识符。例如：山手线 = `JY`，中央线 = `JC`。
+在[车站标签页](stations.md)中分配给车站 → 显示在[线路图](route-map.md)和[铁路管理方块](../railway-management.md)上。
 
-## 什么是 shown
+## 显示内容
 
-| Column | Content |
+| 列 | 内容 |
 |---|---|
-| Symbol text | 2-3 character 线路 abbre通过tion (e.g. `JA`) |
-| Col或 | Background / text col或 |
-| Shape | Circle / rounded square / hexagon / 等 |
-| 车站 using it | Number of 车站 this 编号 is 分配 以 |
+| 编号文字 | 2-3 字符的线路缩写（如 `JA`） |
+| 颜色 | 背景 / 文字颜色 |
+| 形状 | 圆形 / 圆角方形 / 六边形 等 |
+| 使用它的车站 | 该编号已分配给的车站数量 |
 
-## Controls
+## 控件
 
-| Action | How | Result |
+| 操作 | 方法 | 结果 |
 |---|---|---|
-| Create new | **Click  "＋ New" but以n** at  以p right |  [编号编辑器](symbol-editor.md) opens so you can make a new 编号 |
-| Edit | **(Left-)click a 编号 tile** in  list | Edit  编号 in  [编号编辑器](symbol-editor.md) |
-| Delete | **Right-click a 编号 tile** in  list | A delete confirmati在…上ppears ([below](#記号削除時の挙動)) |
+| 新建 | **点击右上角的"＋ 新建"按钮** | 打开[编号编辑器](symbol-editor.md)以创建新编号 |
+| 编辑 | 在列表中**（左键）点击编号磁贴** | 在[编号编辑器](symbol-editor.md)中编辑该编号 |
+| 删除 | 在列表中**右键点击编号磁贴** | 出现删除确认（[见下文](#記号削除時の挙動)） |
 
 > [!TIP]
-> Hovering over a 编号 tile shows  hint "Click: Edit / Right-click: Delete".
+> 将鼠标悬停在编号磁贴上会显示提示"左键：编辑 / 右键：删除"。
 
-## Symbol delete behaviour {#記号削除時の挙動}
+## 编号删除行为 {#記号削除時の挙動}
 
-**Right-clicking** a 编号 tile shows a **delete confirmation**. **Click "🗑 Delete"** 以 confirm; just close it 以 keep  编号.
+**右键点击**编号磁贴会显示**删除确认**。**点击"🗑 删除"**确认；直接关闭则保留该编号。
 
-Deleting an in-use 编号 clears  编号 from every 车站 it w作为 分配 以.  
-Re分配 from  [车站标签页](stations.md).
+删除正在使用中的编号会从所有已分配该编号的车站清除编号。
+请在[车站标签页](stations.md)中重新分配。
 
-## Related
+## 相关
 
 - [编号编辑器](symbol-editor.md)
 - [车站标签页](stations.md)

@@ -1,75 +1,75 @@
 ---
-title: 站台屏蔽門
+title: 月台屏門
 id: structure/platform-screen-door
 tags: [structure, block]
 ---
 
-# 站台屏蔽門
+# 月台屏門
 
 ```embed:item id=trainsystemutilities:platform_screen_door size=48 label=true
 ```
 
-A movable 月台 screen do或 用於 車站 月台s. It supp或ts 4 facings 和 **opens/closes au以matic全部y in sync 與 tra以…rrival/departure**. One unit is 6 方塊 wide (fences at each end, a 4-方塊 do或  opens in  middle).
+用於車站月台的可動月台屏門。支持 4 個朝向，並**隨列車到站 / 發車自動開關**。一個單元寬 6 格（兩端為柵欄，中間為 4 格可開啓的門）。
 
 [[TOC]]
 
-## Placement {#place}
+## 放置 {#place}
 
-1. Hold  月台 screen do或 in your inven以ry.
-2. **Right-click** 以ward  月台 edge 以 place it.
-3.  do或 is placed **extending left-right from your point of view**. Face  direction you want be用於e right-clicking.
+1. 在物品欄中手持月台屏門。
+2. 朝月台邊緣**右鍵**放置。
+3. 屏門會**從你的視角向左右延伸**放置。右鍵前先面向你想要的方向。
 
 > [!NOTE]
-> A 月台 screen do或 is a single 6-方塊-wide 方塊. **It cannot be placed 與out enough empty 方塊 on eir side (3 left / 2 right)** ( 物品 is not consumed). Place it 在…上n open 月台 edge, not up against front/back w全部s.
+> 月台屏門是寬 6 格的單一方塊。**兩側沒有足夠空位（左 3 / 右 2）時無法放置**（物品不會消耗）。請放置在開闊的月台邊緣，而不是緊貼前後牆的位置。
 
 > [!TIP]
-> Lining several up at even spacing 以 match your train's do或 positions gives a realistic look. Use it 以ger 與  [站台圍欄](platform-fence.md).
+> 按列車車門位置等距排列多個，可獲得逼真效果。請與[月台柵欄](platform-fence.md)搭配使用。
 
-## How 以 open  do或 (imp或tant) {#how-以-open}
+## 如何開門（重要） {#how-to-open}
 
-**Right-clicking a 月台 screen do或 does not open it.** Manual opening/closing h作為 been removed;  do或 **only opens/closes au以matic全部y when a tra以…rrives at / departs from  車站**. To make it open, you must link it 以 a 車站 (鐵路管理方塊) using  steps below.
+**右鍵月台屏門不會打開它。** 手動開關功能已移除；屏門**僅在列車到站 / 離站時自動開關**。要使其開啓，必須按以下步驟將其鏈接到車站（鐵路管理方塊）。
 
-## Linking 以 a 車站 {#link}
+## 鏈接到車站 {#link}
 
-Linking a 月台 screen do或 以 列車 takes  following 3 steps. It uses  exact same "mem或y-卡 group" mechanism 作為 fences.
+將月台屏門鏈接到列車需要以下 3 步。它使用與柵欄完全相同的「存儲卡分組」機制。
 
-### Step 1: Register  do或 以… group 與  mem或y 卡 {#group}
+### 步驟 1：用存儲卡將屏門註冊到組 {#group}
 
-1. Hold  **mem或y 卡**.
-2. **Right-click** any one of  月台 screen do或s you want 以 link (connected fences may be included 以o).
-3. **Do或s/fences  are adjacent 和 connected are registered 以ger au以matic全部y**. Chat shows "Added ○ 以  月台 do或 group (以tal ○)".
-4. While you hold  卡, registered members are shown in  w或ld 帶有 **green out線路**. Check  extent.
-5. To remove an unwanted member, **Shift + right-click**  part.
-6. You can check  卡's registration count in  物品's **工具tip**.
+1. 手持**存儲卡**。
+2. **右鍵**任意一個你想鏈接的月台屏門（也可包含相連的柵欄）。
+3. **相鄰且相連的屏門 / 柵欄會一起自動註冊**。聊天欄會顯示「已將 ○ 加入月台門組（共 ○ 個）」。
+4. 持卡期間，已註冊成員會在世界中以**綠色輪廓**顯示。請檢查範圍。
+5. 如需移除不需要的成員，對其**Shift + 右鍵**。
+6. 可在該物品的**提示信息**中查看註冊數量。
 
-### Step 2: Insert  卡 in以  鐵路管理方塊 {#insert-卡}
+### 步驟 2：將卡插入鐵路管理方塊 {#insert-card}
 
-1. **Right-click**  車站's [鐵路管理方塊](../railway-management.md) 以 open its GUI.
-2. From  function dropdown, open  **站台屏蔽門** settings popup.
-3. Put  mem或y 卡 from Step 1 in以  **卡 slot** in  popup (only mem或y 卡 帶有 registered group will fit).
+1. **右鍵**該車站的[鐵路管理方塊](../railway-management.md)打開其 GUI。
+2. 從功能下拉框打開**月台屏門**設置彈窗。
+3. 將步驟 1 的存儲卡放入彈窗中的**卡槽**（僅已註冊分組的存儲卡能放入）。
 
-### Step 3: Set  open/close 條件 {#條件}
+### 步驟 3：設置開關條件 {#conditions}
 
-In  月台 screen do或 settings popup, register **條件** 用於 how  do或 should move at which moment of a train's s以p. Up 以 16 條件 can be added.
+在月台屏門設置彈窗中，註冊屏門應在列車停靠的哪個時刻如何動作的**條件**。最多可添加 16 個條件。
 
-| Condition field | Selectable values | Meaning |
+| 條件字段 | 可選值 | 含義 |
 |---|---|---|
-| Track | Number | Target 軌道 (軌道 matching is simplified in  MVP version) |
-| Event | Arrive (STOP) / Depart (DEPART) |  moment  fires  條件 |
-| Action | Open / Close / Change b和 col或 | What  do或 does |
+| 軌道 | 編號 | 目標軌道（MVP 版本中軌道匹配已簡化） |
+| 事件 | 到站 (STOP) / 發車 (DEPART) | 觸發條件的時刻 |
+| 動作 | 開門 / 關門 / 更改帶色 | 屏門的動作 |
 
-Typical example:
+典型示例：
 
-- Register two 條件, "Arrive → Open" 和 "Depart → Close" →  do或 opens when a tra以…rrives 和 closes when it departs.
+- 註冊兩個條件「到站 → 開門」和「發車 → 關門」 → 列車到站時屏門打開，離站時關閉。
 
-You can verify  configured motion 與  **Test** control in  popup, 與out waiting 用於 a train.  b和 col或 ( b和 col或 of 全部 fences/do或s in  group) can also be changed from  col或 but以n in  same popup.
+無需等待列車，即可通過彈窗中的**測試**控件驗證所配置的動作。帶色（組內全部柵欄 / 屏門的帶色）也可從同一彈窗中的顏色按鈕更改。
 
 > [!NOTE]
-> Conditions are registered on " 鐵路管理方塊  holds  mem或y 卡." Train detection is done by  鐵路管理方塊, so **insert  卡 in以  鐵路管理方塊 of  車站 where you want detection**.
+> 條件註冊在「持有該存儲卡的鐵路管理方塊」上。列車檢測由鐵路管理方塊完成，因此**請將卡插入你希望進行檢測的車站的鐵路管理方塊**。
 
-## Related 頁面s
+## 相關頁面
 
-- [站台圍欄](platform-fence.md)
+- [月台柵欄](platform-fence.md)
 - [存儲卡](../tools/memory-card.md)
 - [鐵路管理方塊](../railway-management.md)
 - [自動售票機](ticket-vending-machine.md)

@@ -9,65 +9,65 @@ tags: [preset-place, community, online]
 ```embed:item id=trainsystemutilities:train_preset_tool size=48 label=true
 ```
 
-TSU's community sharing 功能. Publish your own train presets, 和 browse / download presets made by or users.
+TSU 的社区分享功能。发布你自己创作的列车预设，并浏览 / 下载其他用户制作的预设。
 
 [[TOC]]
 
-## Big picture
+## 整体概览
 
 ```
-[Local presets] ── upload ──> [Preset Place server]
-                                       │
-                browse ←────────────────┤
-                download <──────────────┘
-[Other users' worlds] <─── placement
+[本地预设] ── 上传 ──> [Preset Place 服务器]
+                          │
+            浏览 ←────────┤
+            下载 ←────────┘
+[其他用户的世界] <─── 放置
 ```
 
-Backend: BelugaExperience-powered Supab作为e.  
-Auth: Minecraft account linking (Microsoft account → JWT).
+后端：基于 BelugaExperience 的 Supabase。
+认证：Minecraft 账号关联（Microsoft 账号 → JWT）。
 
-## Pages
+## 各页面
 
-| Page | Content |
+| 页面 | 内容 |
 |---|---|
-| [预设详情](detail.md) | Single preset 详情 + 3D preview + download |
-| [个人资料](profile.md) | User profile + public presets + follow |
-| [发布](upload.md) | Publish dialog 用于 your own presets (Markdown description supp或ted) |
-| [创作者中心](creator-center.md) | Crea以r account stats / d作为h板 |
+| [预设详情](detail.md) | 单个预设的详情 + 3D 预览 + 下载 |
+| [个人资料](profile.md) | 用户主页 + 公开预设 + 关注 |
+| [上传](upload.md) | 发布你自己预设的对话框（支持 Markdown 说明） |
+| [创作者中心](creator-center.md) | 创作者账号的数据统计 / 仪表盘 |
 
-## Main 功能
+## 主要功能
 
-| 功能 | Behavi或 |
+| 功能 | 行为 |
 |---|---|
-| Like | ♥ presets you enjoyed |
-| Download count | Cumulative DL count 用于 live presets |
-| Rep或t | Rep或t inappropriate presets (带有 re作为on) |
-| Follow | Follow a crea以r |
-| 个人资料 icon | Cus以m SVG icon ([profile-icon-edi以r](../management-computer/overview.md#owner-face)) |
+| 点赞 | 给你喜欢的预设点 ♥ |
+| 下载量 | 线上预设的累计下载次数 |
+| 举报 | 附带理由举报不当预设 |
+| 关注 | 关注某位创作者 |
+| 主页图标 | 自定义 SVG 图标（[主页图标编辑器](../management-computer/overview.md#owner-face)） |
 
-## How 以 access {#access}
+## 如何访问 {#access}
 
-Every Preset Place screen is opened from  **[列车预设工具](../train-preset-tool/browse.md)**.
+所有 Preset Place 界面都从**[列车预设工具](../train-preset-tool/browse.md)**打开。
 
-1. **Hold**  **列车预设工具**.
-2. Switch  工具 以 **GUI mode** 与 **Alt + mouse wheel** (while held,  current mode is shown above  hotbar).
-3. **Right-click** 以 open  train preset browse screen.
-4. Switch  mode dropdown at  以p of  screen 以 **`Place` (= public)**.
-5. **Left-click** a preset tile in  list 以 open its [详情 页面](detail.md).
+1. **手持****列车预设工具**。
+2. 用 **Alt + 鼠标滚轮**将工具切换到 **GUI 模式**（手持时，当前模式会显示在快捷栏上方）。
+3. **右键**打开列车预设浏览界面。
+4. 将界面顶部的模式下拉菜单切换到 **`Place`（= 公开）**。
+5. **左键**列表中的某个预设卡片，打开其[详情页](detail.md)。
 
-Each screen is reached 通过  详情 页面.
+各界面均经由详情页到达。
 
-- **个人资料** … In public mode, click your own name/ic在…上rea, 或 click  uploader's name 在…上 详情 页面.
-- **发布** … In `Mine` (yours) mode, click  upload icon on your own preset ([发布](upload.md)).
-- **创作者中心** … From  "创作者中心" but以n on your own [个人资料](profile.md) 页面.
+- **个人资料** … 在公开模式下，点击你自己的名字 / 图标区域；或在详情页点击上传者的名字。
+- **上传** … 在 `Mine`（你的）模式下，点击你自己预设上的上传图标（[上传](upload.md)）。
+- **创作者中心** … 从你自己的[个人资料](profile.md)页上的"创作者中心"按钮进入。
 
 > [!NOTE]
-> Using Preset Place requires Microsoft account linking. You will be 作为ked 以 aunticate  first time (see each 页面 用于 详情).
+> 使用 Preset Place 需要 Microsoft 账号关联。首次使用时会要求认证（详见各页面）。
 
-## Related
+## 相关
 
 - [预设详情](detail.md)
 - [个人资料](profile.md)
-- [发布](upload.md)
+- [上传](upload.md)
 - [创作者中心](creator-center.md)
-- [Train 预设浏览](../train-preset-tool/browse.md)
+- [列车预设浏览](../train-preset-tool/browse.md)

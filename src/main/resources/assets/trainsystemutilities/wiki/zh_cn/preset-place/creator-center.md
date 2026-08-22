@@ -6,45 +6,44 @@ tags: [preset-place, creator, analytics]
 
 # 创作者中心
 
-D作为h板 用于显示 详情ed analytics 用于 your own posts.
+显示你自己发布内容的详细数据分析的仪表盘。
 
 [[TOC]]
 
-## Opening {#open}
+## 打开 {#open}
 
- 创作者中心 is opened from **your own [个人资料](profile.md) 页面**.
+创作者中心从**你自己的[个人资料](profile.md)页**打开。
 
-1. **Right-click**  [列车预设工具](../train-preset-tool/browse.md) in **GUI mode** 以 open  browse screen (switch modes 与 **Alt + wheel**).
-2. Set  mode 以 **`Place` (public)** 和 **left-click** your name/ic在…上rea at  以p 以 open your own profile.
-3. **Left-click**  **"创作者中心" but以n** in your profile.
+1. 在 **GUI 模式**下**右键**[列车预设工具](../train-preset-tool/browse.md)，打开浏览界面（用 **Alt + 滚轮**切换模式）。
+2. 将模式设为 **`Place`（公开）**，并**左键**顶部的你的名字 / 图标区域，打开你自己的主页。
+3. 在你的主页中**左键"创作者中心"按钮**。
 
 > [!NOTE]
->  创作者中心 is exclusive 以 your own account. It cannot be opened from or users' profiles ( but以n is not shown re).
+> 创作者中心仅限你自己的账号使用，无法从其他用户的主页打开（那里不会显示该按钮）。
 
-## Displayed content
+## 显示内容
 
-| Item | 说明 |
+| 项目 | 概要 |
 |---|---|
-| Post count | Total number of published presets |
-| Cumulative DL | Total downloads across 全部 presets |
-| Cumulative 例如s | Total ♥ across 全部 presets |
-| Followers | Number of users following you |
-| Monthly ranking | Monthly rank of your posts |
+| 发布数 | 已发布预设的总数 |
+| 累计下载 | 所有预设的下载总量 |
+| 累计点赞 | 所有预设的 ♥ 总数 |
+| 关注者 | 关注你的用户数 |
+| 月度排名 | 你的发布在当月的排名 |
 
-## Auth management
+## 认证管理
 
-Microsoft account auth status / 以ken regeneration / logout.  
-Account switching is also here.
+Microsoft 账号的认证状态 / 重新生成令牌 / 登出。账号切换也在此进行。
 
-## Modera以r 功能 (restricted)
+## 版主功能（受限）
 
-Additional 功能 用于 OfficialAccounts members:
-- Review rep或ted presets
-- Ban / unban users
-- Post announcements
+面向官方账号成员的额外功能：
+- 审核被举报的预设
+- 封禁 / 解封用户
+- 发布公告
 
-## Related
+## 相关
 
 - [Preset Place 概述](overview.md)
 - [个人资料](profile.md)
-- [发布](upload.md)
+- [上传](upload.md)

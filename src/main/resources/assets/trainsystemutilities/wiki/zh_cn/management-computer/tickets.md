@@ -6,35 +6,35 @@ tags: [management-computer, ticket]
 
 # 车票标签页
 
- management computer's Tickets tab. **Choose which 车站 are sold** at  ticket vending machines.
+管理用计算机的"车票"标签页。**选择在自动售票机上售卖哪些车站**。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Place** a **管理用计算机** 方块 和 **right-click** it 以 open  screen.
-2. **Click**  以p-left dropdown 和 choose **"🎫 Tickets"**.
+1. **放置**管理用计算机方块并**右键点击**它以打开界面。
+2. **点击**左上角下拉菜单并选择**"🎫 车票"**。
 
 ## 概述
 
-Lists  车站 registered on  网络 (车站 groups created 与  [车站范围指定工具](../tools/station-range-tool.md)), each 带有 **sellable 以ggle**. 车站 turned ON here appear in  destination list of every [ticket vending machine](../structure/ticket-vending-machine.md).
+列出网络上已注册的车站（用[车站范围指定工具](../tools/station-range-tool.md)创建的车站组），每个车站都有一个**可售开关**。在此处开启的车站会出现在每个[自动售票机](../structure/ticket-vending-machine.md)的目的地列表中。
 
-## Usage
+## 用法
 
-- **Click  以ggle switch** on each 车站 row 以 switch sellable on/off (ON = green).
-- When re are many 车站, roll  **mouse wheel** over  list 以 scroll (a scrollbar appears on  right).
--  title shows "Sellable 车站 (sellable / 以tal)".
+- **点击每个车站行的开关**可切换可售开/关（开启 = 绿色）。
+- 当车站很多时，在列表上转动**鼠标滚轮**滚动（右侧会出现滚动条）。
+- 标题显示"可售车站（可售 / 总数）"。
 
-## How it connects 以 machines
+## 与机器的连接方式
 
--  setting is **shared 网络-wide** 和 applies 以 全部 machines immediately (machines read  server-side setting).
-- If no 车站 are registered, it shows "No 车站 on  网络". Create 车站 first 与  [车站范围指定工具](../tools/station-range-tool.md).
+- 该设置在**整个网络内共享**，并立即应用到所有机器（机器读取服务端的设置）。
+- 如果没有注册任何车站，会显示"网络上没有车站"。请先用[车站范围指定工具](../tools/station-range-tool.md)创建车站。
 
 > [!NOTE]
-> In  initial state, be用于e you set anything sellable, machines show every 车站 except ir own 作为 a destination (a ready-以-use default). Once you curate here, machines are narrowed 以 just  chosen 车站.
+> 在初始状态下，在你设置任何可售内容之前，机器会将除自身外的所有车站显示为目的地（开箱即用的默认值）。一旦你在此处进行筛选，机器就只会显示所选车站。
 
-## Related
+## 相关
 
-- [自动售票机 (方块)](../structure/ticket-vending-machine.md)
+- [自动售票机（方块）](../structure/ticket-vending-machine.md)
 - [车站范围指定工具](../tools/station-range-tool.md)
-- [管理用计算机 总览](overview.md)
+- [管理用计算机概述](overview.md)

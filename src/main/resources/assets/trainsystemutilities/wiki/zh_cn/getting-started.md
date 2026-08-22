@@ -6,137 +6,137 @@ tags: [tutorial, beginner]
 
 # 快速开始
 
- entry 页面 用于 underst和ing, step by step, "which GUI manages what" 和 "what happens when I press F1" when you first pick up Train系统 Utilities.
+本页面帮助你逐步了解：刚拿到 TrainSystem Utilities 时，「哪个 GUI 管理什么」「按下 F1 会发生什么」。
 
 [[TOC]]
 
 > [!NOTE]
-> This MOD requires  **Create 1.21.1-compatible** version. It integrates closely 与 Create's 时刻表 / 车站 / 信号 mechanisms.
+> 本 MOD 需要 **Create 1.21.1 兼容版本**。它与 Create 的时刻表 / 车站 / 信号机制紧密集成。
 
-## List of this MOD's GUIs
+## 本 MOD 的 GUI 一览
 
-TSU's GUIs are broadly split in以 **"ones you open by right-clicking a 方块"** 和 **"ones you use by holding an 物品"**. Operate 作为 shown in  "How 以 open" column below 以 open  GUI.
+TSU 的 GUI 大致分为 **「右键方块打开的」** 和 **「手持物品使用的」** 两类。按下文「如何打开」一栏所示的方式操作即可打开对应 GUI。
 
-### Block GUIs (place, n right-click)
+### 方块 GUI（放置后右键）
 
-| GUI | How 以 open | 作用 |
+| GUI | 如何打开 | 作用 |
 |---|---|---|
-| 管理用计算机 | Place  方块 和 **right-click** it |  hub 用于 显示器ing 和 configuring  whole 网络. Switch between  tab group below 以 use it |
-| 铁路管理方块 | Place 在…上 车站 月台 和 **right-click** | Per-车站 显示 板 (arriving / next train / 车站 显示器) |
-| 海报管理方块 | **Right-click**  方块 | Slideshow 显示 of PNG/JPG 图片 |
-| Ticket Machine | **Right-click**  方块 | Choose a destinati在…上nd buy a ticket |
+| 管理用计算机 | 放置方块后 **右键** | 监控与配置整个网络的中枢。通过下方的标签组切换使用 |
+| 铁路管理方块 | 放置在车站月台上并 **右键** | 单个车站的显示板（到站 / 下一趟列车 / 车站显示器） |
+| 海报管理方块 | **右键** 方块 | 以轮播方式显示 PNG/JPG 图片 |
+| 自动售票机 | **右键** 方块 | 选择目的地并购票 |
 
-### 管理用计算机 tabs / sub-screens
+### 管理用计算机的标签页 / 子界面
 
-Opened from  管理用计算机 通过 tab switching 或 but以ns.
+通过标签切换或按钮，从管理用计算机中打开。
 
-| Screen | How 以 open | 作用 |
+| 界面 | 如何打开 | 作用 |
 |---|---|---|
-| 线路图 / Trains / 时刻表 / 车站 / Ticket Machine / Line Symbols tabs | Switch 与  以p-left dropdown (显示器) 或 tabs | List / settings 用于 each 功能 |
-| Line 编号编辑器 | Line Symbols tab → **"＋ New"** / click an 现有 编号 | Edit a 编号's text / col或 / shape (built-in col或 picker) |
-| 布局编辑器 |  **"Layout"** but以n at  bot以m | Edit  arrangement of 显示器 显示 panels |
-| 颜色设置 / Col或 Picker |  **"Col或"** but以n at  bot以m | Change  显示器's col或 scheme |
-| 时刻表 Edi以r | 时刻表 tab → select a tra以…nd edit | Edit / exp或t a Create 时刻表 |
+| 线路图 / 列车 / 时刻表 / 车站 / 自动售票机 / 线路编号 标签页 | 用左上角下拉框（显示器）或标签切换 | 各功能的列表 / 设置 |
+| 线路编号编辑器 | 线路编号标签页 → **「＋ 新建」** / 点击已有编号 | 编辑编号的文字 / 颜色 / 形状（内置取色器） |
+| 布局编辑器 | 底部的 **「Layout」** 按钮 | 编辑显示器面板的排列方式 |
+| 颜色设置 / 取色器 | 底部的 **「Color」** 按钮 | 更改显示器的配色 |
+| 时刻表编辑器 | 时刻表标签页 → 选择一列列车并编辑 | 编辑 / 导出 Create 时刻表 |
 
-### Item GUIs / 工具 (hold 和 use)
+### 物品 GUI / 工具（手持使用）
 
-| Tool | How 以 open / operate | 作用 |
+| 工具 | 如何打开 / 操作 | 作用 |
 |---|---|---|
-| 换乘查询终端 | Hold it 和 **right-click** | Guidance on routes, travel times, 和 times between 车站 |
-| 车站范围指定工具 | Hold it, switch mode 与 **Alt+wheel**, right-click 以 designate | Create 车站 groups / link ticket machines 和 gates |
-| 列车预设工具 | Hold it 和 **right-click** (settings) / place 通过 mode switch | Save 列车 以 JSON 格式, place m, refill materials |
-| 连接工具 Tool | Hold it 和 **right-click** | Lay wires / 自定义 wire presets |
-| Wire Pole Au以-Placement Tool | Hold it, configure 与 **Alt/Ctrl/Shift+wheel**, right-click 以 place | Au以matic全部y place wire poles in sequence |
+| 换乘查询终端 | 手持并 **右键** | 路线、行驶时间与车站间耗时的导引 |
+| 车站范围指定工具 | 手持，用 **Alt+滚轮** 切换模式，右键指定 | 创建车站组 / 关联自动售票机与闸门 |
+| 列车预设工具 | 手持并 **右键**（设置）/ 通过模式切换放置 | 将列车保存为 JSON、放置列车、补充材料 |
+| 连接工具 | 手持并 **右键** | 铺设接触网 / 自定义接触网预设 |
+| 电线杆自动放置工具 | 手持，用 **Alt/Ctrl/Shift+滚轮** 配置，右键放置 | 依次自动放置电线杆 |
 
-### 电气化系统 (方块/devices)
+### 电气化系统（方块 / 设备）
 
-| Device | 作用 |
+| 设备 | 作用 |
 |---|---|
-| 受电弓 / wire / sub车站 / FE inverter | Supply FE / Create 能量 以 列车 通过 overhead wire (详情: [电气化系统](electrification/pantograph.md)) |
+| 受电弓 / 接触网 / 箱式变电所 / FE 逆变器 | 通过架空接触网为列车提供 FE / Create 能量（详见 [电气化系统](electrification/pantograph.md)） |
 
-### On线路 sharing (Preset Place)
+### 在线共享（Preset Place）
 
-| Screen | How 以 open | 作用 |
+| 界面 | 如何打开 | 作用 |
 |---|---|---|
-| 预设 browse / 详情 / upload / profile / crea以r center | From  列车预设工具's menu | On线路 sharing of your own train presets |
+| 预设浏览 / 详情 / 上传 / 个人资料 / 创作者中心 | 从列车预设工具的菜单中打开 | 在线共享你自己的列车预设 |
 
-### 铁路管理方块 preview
+### 铁路管理方块预览
 
 ![](bws:trainsystemutilities:wiki/screens/railway-management__ja_jp.png)
 
-### 连接工具 Tool preview
+### 连接工具预览
 
 ![](bws:trainsystemutilities:wiki/screens/wire-connector__ja_jp.png)
 
-## 提示和 F1 {#hints-和-f1}
+## 提示与 F1 {#hints-and-f1}
 
-Turn ON  **Hint** 以ggle in  upper right of each GUI, 和 a brief descripti在…上ppears when you hover  mouse over a but以n / 物品.  
-Press **F1** in  state, 和  wiki 跳转s directly 以  description section 用于  功能 you are currently hovering.
+在每个 GUI 右上角打开 **Hint** 开关后，将鼠标悬停在按钮 / 物品上时会显示简短说明。  
+在此状态下按 **F1**，wiki 会直接跳转到你当前悬停功能的说明章节。
 
 > [!TIP]
-> It helps 以 think of F1 not 作为 "a key  opens  wiki" but 作为 **a key  跳转s 以  description of  功能**.
-> Example: hover over  显示器 以ggle 和 press F1 →  "显示器" section opens directly.
+> 把 F1 理解成 **「跳转到该功能说明的按键」**，而不是「打开 wiki 的按键」会更好。
+> 例如：将鼠标悬停在显示器开关上按 F1 → 直接打开「显示器显示」章节。
 
-### Usage flow
+### 使用流程
 
-1. Turn  `Hint` 以ggle ON.
-2. Move  curs或 on以  but以n / tab you want explained.
-3. Press **F1**.
-4. It au以matic全部y moves 以  wiki heading c或responding 以  功能.
+1. 将 `Hint` 开关打开。
+2. 把光标移到你想了解的按钮 / 标签上。
+3. 按下 **F1**。
+4. 自动跳转到对应功能的 wiki 标题。
 
-## 一种 e作为y flow 以 learn first
+## 建议先熟悉的一条流程
 
-1. In [管理用计算机 概述](management-computer/overview.md), get a gr作为p of which tab h和les what.
-2. When you want 以 watch train operation, read  [列车标签页](management-computer/trains.md) 和 [时刻表标签页](management-computer/schedule.md).
-3. When you want 以 或ganize  线路 编号 shown at 车站, read  [车站标签页](management-computer/stations.md) 和 [线路编号标签页](management-computer/line-symbols.md).
-4. When you want 以 check  车站-side 显示, read  [铁路管理方块](railway-management.md).
-5. When you want 以 build image 显示, read  [海报管理方块](poster-management.md).
-6. When you want 以 electrify 列车, read  [电气化系统](electrification/pantograph.md).
+1. 在 [管理用计算机概述](management-computer/overview.md) 中了解各标签页分别负责什么。
+2. 想观察列车运行时，阅读 [列车标签页](management-computer/trains.md) 与 [时刻表标签页](management-computer/schedule.md)。
+3. 想整理车站显示的线路编号时，阅读 [车站标签页](management-computer/stations.md) 与 [线路编号标签页](management-computer/line-symbols.md)。
+4. 想查看车站侧的显示时，阅读 [铁路管理方块](railway-management.md)。
+5. 想搭建图片显示时，阅读 [海报管理方块](poster-management.md)。
+6. 想为列车供电时，阅读 [电气化系统](electrification/pantograph.md)。
 
 > [!WARNING]
-> F或 server operation, **Private mode** is essential. 其他 players may rewrite your 时刻表.
-> As a rule, 管理用计算机s 在…上 main 线路 should be Private.
+> 服务器运行时，**私有模式** 是必须的。其他玩家可能会改写你的时刻表。
+> 原则上，主线上的管理用计算机应设为私有。
 
-## Choosing an access mode {#access-mode}
+## 选择访问模式 {#access-mode}
 
-You can switch  mode 与  face icon in  lower right of each GUI.
+可以通过每个 GUI 右下角的脸形图标切换模式。
 
-<详情>
-<summary>Difference between Private / Public</summary>
+<details>
+<summary>私有 / 公开的区别</summary>
 
-| Mode | Display | Setting changes | Use c作为e |
+| 模式 | 显示 | 设置更改 | 适用场景 |
 |---|---|---|---|
-| Public | Blue-framed face | 一种yone can change | Cooperative operation / test w或ld |
-| Private | Red-framed face | Only  placer | Main 线路 operation / multiplayer |
+| 公开 | 蓝框脸形 | 任何人都能更改 | 协作运营 / 测试世界 |
+| 私有 | 红框脸形 | 仅放置者可改 | 主线运营 / 多人联机 |
 
-Creating 和 reading links 带有 mem或y 卡 w或ks regardless of mode, but 以ggle operations 和 col或 settings are treated 作为 access-mode-gated.
+使用存储卡创建和读取链接与模式无关，但开关操作和颜色设置受访问模式限制。
 
-</详情>
+</details>
 
-## GUI au以-sizing
+## GUI 自动缩放
 
-All V3 GUIs are au以matic全部y scaled down 以 match Minecraft's GUI scale (1×/2×/3×/4×) 和  screen size.
+所有 V3 GUI 都会自动按 Minecraft 的 GUI 缩放（1×/2×/3×/4×）和屏幕尺寸进行缩小适配。
 
-- ** b作为e线路 is GUI scale 2×** (= a 960×540 viewp或t at 1920×1080). All dialogs are designed 以 fit at this b作为e线路.
-- Au以-shrinks (5% margin) if a dialog overflows at 4× 或 以… sm全部-screen mod environment
-- Can be disabled per subcl作为s 与 `autoScaleEnabled() = false`
+- **基准为 GUI 缩放 2×**（= 1920×1080 下 960×540 视口）。所有对话框都按此基准设计。
+- 在 4× 或小屏 MOD 环境下对话框溢出时会自动缩小（5% 边距）
+- 可通过子类的 `autoScaleEnabled() = false` 禁用
 
-## New wiki system 功能
+## 新 wiki 系统功能
 
- `embed:item` / `embed:items` / `embed:screen` / `embed:model` mechanisms used on this 页面:
+本页使用的 `embed:item` / `embed:items` / `embed:screen` / `embed:model` 机制：
 
-| Syntax | Purpose |
+| 语法 | 用途 |
 |---|---|
-| `embed:item id=<modid:itemid> size=N` | ItemStack rendering, just 例如 an inven以ry slot |
-| `embed:model id=<itemid> size=N rotate=true` | 3D 显示 of a BlockItem (au以-rotation) |
-| `embed:screen id=<screen-id>` | Display a captured V3 screen (au以-switches 以  current language) |
+| `embed:item id=<modid:itemid> size=N` | ItemStack 渲染，和物品栏格子一样 |
+| `embed:model id=<itemid> size=N rotate=true` | BlockItem 的 3D 展示（自动旋转） |
+| `embed:screen id=<screen-id>` | 显示截取的 V3 界面（自动切换到当前语言） |
 
-GUI 截图 are au以-generated on login, so you can see everything in  wiki 与out opening  screens.  
-After a language change, run `/tsu-wiki-prebuild` 以 regenerate  captures 用于  language.
+GUI 截图在登录时自动生成，因此无需打开界面即可在 wiki 中查看全部内容。  
+切换语言后，运行 `/tsu-wiki-prebuild` 重新生成该语言的截图。
 
-## Next 页面s 以 read
+## 接下来阅读的页面
 
-- [管理用计算机 概述](management-computer/overview.md)
+- [管理用计算机概述](management-computer/overview.md)
 - [铁路管理方块](railway-management.md)
 - [电气化系统](electrification/pantograph.md)
 - [海报管理方块](poster-management.md)

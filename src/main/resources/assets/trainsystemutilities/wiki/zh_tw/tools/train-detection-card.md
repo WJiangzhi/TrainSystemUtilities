@@ -9,48 +9,48 @@ tags: [tool, item, detection]
 ```embed:item id=trainsystemutilities:train_detection_card size=48 label=true
 ```
 
-A **held auxiliary 卡**  rec或ds **a single specific point** 在…上 軌道 作為 a "place  reacts when a train p作為ses."  
- rec或ded point is used in  [鐵路管理方塊](../railway-management.md)'s [SAS 廣播](../railway-management/announcement.md) 作為 a trigger 以 "play an announcement when a train p作為ses this point."
+一種**手持輔助卡**，將鐵軌上**單一特定點**記錄為"列車經過時觸發的位置"。
+記錄的點用於[鐵路管理方塊](../railway-management.md)的[SAS 廣播](../railway-management/announcement.md)，作為"列車經過此點時播放廣播"的觸發條件。
 
 [[TOC]]
 
-## Holding / usage
+## 持有 / 使用
 
-This 卡 h作為 no dedicated settings GUI. You just **hold it, right-click a 軌道, 和 rec或d a point.**  詳情ed 條件 (target train, announcement content, 等) are set afterward in  **railway management 方塊's GUI**.
+此卡沒有專用的設定 GUI，只需**手持它、右鍵鐵軌、記錄一個點**即可。詳細條件（目標列車、廣播內容等）後續在**鐵路管理方塊的 GUI** 中設定。
 
-1. **Put  列車檢測卡 on your hotbar 和 hold it.**
-2. **Right-click  軌道 方塊 (Create's 軌道)** you want 以 rec或d (by default,  **right mouse but以n**).
-   - Right-clicking something or than a 軌道 shows a message 以  effect of "This is not a 軌道" 和 nothing is rec或ded.
-3. On a successful rec或d, "Point rec或ded (co或dinates)" is shown at  bot以m of  screen.
-4.  rec或ded co或dinates can be checked in  **工具tip** when you **hover**  卡.
-5. **Shift + right-click** (right-click while sneaking) **clears**  rec或ded point.
+1. **將列車檢測卡放入快捷欄並手持。**
+2. **右鍵要記錄的鐵軌方塊（Create 的鐵軌）**（預設為**滑鼠右鍵**）。
+   - 右鍵非鐵軌的方塊會顯示類似"這不是鐵軌"的提示，且不會記錄任何內容。
+3. 記錄成功後，螢幕底部會顯示"已記錄點（座標）"。
+4. 手持該卡時，將游標**懸停**可在**提示資訊**中檢視已記錄的座標。
+5. **Shift + 右鍵**（潛行時右鍵）即可**清除**已記錄的點。
 
 > [!NOTE]
-> This 卡 only remembers **a single point on  軌道**. 詳情ed 條件 例如 a "detection range (radius)," "target-train filtering," 或 "trigger-timing type" **are not on  卡.**  
-> Those are adjusted on  [SAS 廣播設定](../railway-management/announcement.md) GUI after you insert  rec或ded 卡 in以  railway management 方塊.
+> 此卡僅記錄**鐵軌上的一個點**。"檢測範圍（半徑）""目標列車篩選""觸發時機型別"等詳細條件**都不在卡上**。
+> 請在將記錄好的卡插入鐵路管理方塊後，於[SAS 廣播設定](../railway-management/announcement.md)的 GUI 中調整這些內容。
 
-## Operation summary
+## 操作一覽
 
-| Operation | What happens |
+| 操作 | 效果 |
 |---|---|
-| **Right-click** a 軌道 | Rec或d  軌道 point 作為 a detection point |
-| **Shift + right-click** | Clear  rec或ded point |
-| **Hover** over  卡 | Check  rec或ded co或dinates in  工具tip |
+| **右鍵**鐵軌 | 將該鐵軌點記錄為檢測點 |
+| **Shift + 右鍵** | 清除已記錄的點 |
+| 游標**懸停**於卡上 | 在提示資訊中檢視已記錄的座標 |
 
-## Usage 與  鐵路管理方塊
+## 與鐵路管理方塊配合使用
 
- rec或ded 卡 becomes an actual trigger through  following flow.
+記錄好的卡透過以下流程成為真正的觸發條件。
 
-1. With  steps above, rec或d  軌道 point where you want an announcement 以 play.
-2. Right-click 以 open  [鐵路管理方塊](../railway-management.md), n open  [SAS 廣播設定](../railway-management/announcement.md).
-3. In  announcement settings, **insert this rec或ded 卡 in以  detection-卡 slot**.
-4. Now, when a train p作為ses  rec或ded 軌道 point,  configured announcement plays.
+1. 按上述步驟記錄希望播放廣播的鐵軌點。
+2. 右鍵開啟[鐵路管理方塊](../railway-management.md)，再開啟[SAS 廣播設定](../railway-management/announcement.md)。
+3. 在廣播設定中，**將這張記錄好的卡插入檢測卡插槽**。
+4. 此後，當列車經過所記錄的鐵軌點時，便會播放配置好的廣播。
 
 ## 整合
 
-- Used 作為  playback trigger (p作為s-through detection point) 用於 [SAS 廣播](../railway-management/announcement.md)
+- 作為[SAS 廣播](../railway-management/announcement.md)的播放觸發（透過檢測點）
 
-## Related
+## 相關
 
 - [鐵路管理方塊](../railway-management.md)
 - [SAS 廣播設定](../railway-management/announcement.md)

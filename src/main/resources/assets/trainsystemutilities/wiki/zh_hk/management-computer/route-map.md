@@ -8,45 +8,45 @@ tags: [management-computer, map]
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__map__ja_jp.png)
 
- 線路圖 tab of  管理用計算機. Displays 全部 車站 和 軌道 作為 a 2D map.
+管理用計算機的"線路圖"標籤頁。將所有車站和軌道顯示為 2D 地圖。
 
 [[TOC]]
 
-## How 以 open
+## 如何打開
 
-1. **Place**  **管理用計算機** 方塊 和 **right-click** it 以 open  screen.
-2. **Click**  以p-left dropdown 和 choose **"📁 My 線路圖"** (this tab is open by default right after launch).
-3.  map is shown once you have linked  軌道 網絡 以…dvance 帶有 [存儲卡](../tools/memory-card.md).
+1. **放置**管理用計算機方塊並**右鍵點擊**它以打開界面。
+2. **點擊**左上角下拉菜單並選擇**"📁 我的線路圖"**（此標籤頁在啓動後默認打開）。
+3. 在使用[存儲卡](../tools/memory-card.md)預先連接軌道網絡後，地圖才會顯示。
 
-## Map elements
+## 地圖元素
 
-| Element | Rendering |
+| 元素 | 渲染方式 |
 |---|---|
-| 車站 node | Circle + 車站 name |
-| Track edge | Line connecting 車站 |
-| Train position | Real-time sm全部 icon |
-| Signal | State (red / green) |
+| 車站節點 | 圓圈 + 車站名 |
+| 軌道邊 | 連接車站的線 |
+| 列車位置 | 實時小圖標 |
+| 信號 | 狀態（紅 / 綠） |
 
-## Controls
+## 控件
 
- map is operated by **panning / zooming / clicking icons**.
+地圖通過**平移 / 縮放 / 點擊圖標**操作。
 
-| Action | How | Behavi或 |
+| 操作 | 方法 | 行為 |
 |---|---|---|
-| Pan (move) | **Hold  left mouse but以n 和 drag** over  map | Move  view up / down / left / right |
-| Zoom | **Turn  mouse wheel** over  map | Up zooms in, down zooms out |
-| Select a train | **Left-click a train icon** | Opens  train's **詳情 popup** (overlaid on  map, where you can check speed, destination, 時刻表, 等) |
-| Select a 車站 | **Left-click a 車站 icon** | Switches 以  **車站標籤頁** 和 opens  車站's 詳情 (線路 編號 分配ment, 等) |
+| 平移（移動） | 在地圖上**按住鼠標左鍵並拖動** | 上下左右移動視圖 |
+| 縮放 | 在地圖上**轉動鼠標滾輪** | 向上放大，向下縮小 |
+| 選擇列車 | **左鍵點擊列車圖標** | 打開該列車的**詳情彈窗**（疊加在地圖上，可查看速度、目的地、時刻表等） |
+| 選擇車站 | **左鍵點擊車站圖標** | 切換到**車站標籤頁**並打開該車站的詳情（線路編號分配等） |
 
 > [!TIP]
-> A click is "press 和 rele作為e in place 與out dragging." Moving even slightly counts 作為 a pan. Aim right next 以  ic在…上nd give it a quick press-和-rele作為e.
+> "點擊"是指"原地按下並鬆開，不拖動"。即使稍微移動也會被視為平移。請瞄準圖標旁邊快速按下並鬆開。
 
-## Line 編號 rendering
+## 線路編號渲染
 
-車站 nodes 顯示 ir [線路 編號](line-symbols.md) (when 分配).  
-Re分配ing in  [車站標籤頁](stations.md) reflects on  map immediately.
+車站節點會顯示其[線路編號](line-symbols.md)（已分配時）。
+在[車站標籤頁](stations.md)中重新分配會立即反映到地圖上。
 
-## Related
+## 相關
 
 - [車站標籤頁](stations.md)
 - [列車標籤頁](trains.md)

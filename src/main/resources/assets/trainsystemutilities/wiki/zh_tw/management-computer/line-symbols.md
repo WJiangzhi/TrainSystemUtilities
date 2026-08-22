@@ -8,49 +8,49 @@ tags: [management-computer, line-symbol]
 
 ![](bws:trainsystemutilities:wiki/screens/management-computer__symbol__ja_jp.png)
 
- Line Symbols tab of  管理用計算機. Create, edit, 和 delete 線路 編號 (e.g. `JA`, `JB`, `M01`).
+管理用計算機的"線路編號"標籤頁。建立、編輯和刪除線路編號（如 `JA`、`JB`、`M01`）。
 
 [[TOC]]
 
-## How 以 open
+## 如何開啟
 
-1. **Place** a **管理用計算機** 方塊 和 **right-click** it 以 open  screen.
-2. **Click**  以p-left dropdown 和 choose **"Ⓜ Line Symbols"**.
-3. When  編號 don't 全部 fit, roll  **mouse wheel** over  list 以 scroll.
+1. **放置**管理用計算機方塊並**右鍵點選**它以開啟介面。
+2. **點選**左上角下拉選單並選擇**"Ⓜ 線路編號"**。
+3. 當編號無法全部顯示時，在列表上轉動**滑鼠滾輪**滾動。
 
-## 什麼是 a Line Symbol?
+## 什麼是線路編號？
 
-一種 identifier 分配 以 each 車站 和 train. Example: Yamanote Line = `JY`, Chuo Line = `JC`.  
-Assigned 以 車站 in  [車站標籤頁](stations.md) → 顯示ed on  [線路圖](route-map.md) 和  [鐵路管理方塊](../railway-management.md).
+分配給每個車站和列車的識別符號。例如：山手線 = `JY`，中央線 = `JC`。
+在[車站標籤頁](stations.md)中分配給車站 → 顯示在[線路圖](route-map.md)和[鐵路管理方塊](../railway-management.md)上。
 
-## 什麼是 shown
+## 顯示內容
 
-| Column | Content |
+| 列 | 內容 |
 |---|---|
-| Symbol text | 2-3 character 線路 abbre透過tion (e.g. `JA`) |
-| Col或 | Background / text col或 |
-| Shape | Circle / rounded square / hexagon / 等 |
-| 車站 using it | Number of 車站 this 編號 is 分配 以 |
+| 編號文字 | 2-3 字元的線路縮寫（如 `JA`） |
+| 顏色 | 背景 / 文字顏色 |
+| 形狀 | 圓形 / 圓角方形 / 六邊形 等 |
+| 使用它的車站 | 該編號已分配給的車站數量 |
 
-## Controls
+## 控制元件
 
-| Action | How | Result |
+| 操作 | 方法 | 結果 |
 |---|---|---|
-| Create new | **Click  "＋ New" but以n** at  以p right |  [編號編輯器](symbol-editor.md) opens so you can make a new 編號 |
-| Edit | **(Left-)click a 編號 tile** in  list | Edit  編號 in  [編號編輯器](symbol-editor.md) |
-| Delete | **Right-click a 編號 tile** in  list | A delete confirmati在…上ppears ([below](#記号削除時の挙動)) |
+| 新建 | **點選右上角的"＋ 新建"按鈕** | 開啟[編號編輯器](symbol-editor.md)以建立新編號 |
+| 編輯 | 在列表中**（左鍵）點選編號磁貼** | 在[編號編輯器](symbol-editor.md)中編輯該編號 |
+| 刪除 | 在列表中**右鍵點選編號磁貼** | 出現刪除確認（[見下文](#記號削除時の挙動)） |
 
 > [!TIP]
-> Hovering over a 編號 tile shows  hint "Click: Edit / Right-click: Delete".
+> 將滑鼠懸停在編號磁貼上會顯示提示"左鍵：編輯 / 右鍵：刪除"。
 
-## Symbol delete behaviour {#記號削除時の挙動}
+## 編號刪除行為 {#記號削除時の挙動}
 
-**Right-clicking** a 編號 tile shows a **delete confirmation**. **Click "🗑 Delete"** 以 confirm; just close it 以 keep  編號.
+**右鍵點選**編號磁貼會顯示**刪除確認**。**點選"🗑 刪除"**確認；直接關閉則保留該編號。
 
-Deleting an in-use 編號 clears  編號 from every 車站 it w作為 分配 以.  
-Re分配 from  [車站標籤頁](stations.md).
+刪除正在使用中的編號會從所有已分配該編號的車站清除編號。
+請在[車站標籤頁](stations.md)中重新分配。
 
-## Related
+## 相關
 
 - [編號編輯器](symbol-editor.md)
 - [車站標籤頁](stations.md)

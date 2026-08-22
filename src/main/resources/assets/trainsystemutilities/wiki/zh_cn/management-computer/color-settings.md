@@ -9,53 +9,53 @@ tags: [management-computer, color]
 ```embed:color-settings
 ```
 
- 颜色设置 popup of  管理用计算机. Cus以mizes  col或 of each element on  显示器 显示.
+管理用计算机的颜色设置弹窗。自定义显示器上每个元素的颜色。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Place** a **管理用计算机** 方块 和 **right-click** it 以 open  screen.
-2. **Click  "🎨 Col或" but以n at  bot以m** of  screen 以 open  显示器 col或 settings popup.
+1. **放置**管理用计算机方块并**右键点击**它以打开界面。
+2. **点击界面底部的"🎨 颜色"按钮**打开显示器颜色设置弹窗。
 
-## Elements you can recol或 (targets)
+## 可重新着色的元素（目标）
 
-**Click  "Target:" dropdown** at  以p of  popup 和 **click**  element you want 以 recol或. Available elements:
+**点击弹窗顶部的"目标："下拉菜单**，然后**点击**你想重新着色的元素。可用元素：
 
-| Target | Description |
+| 目标 | 描述 |
 |---|---|
-| Title | Panel title text col或 |
-| B或der | Panel b或der col或 |
-| Train name | Train-name text col或 |
-| Speed / Status | Speed 和 running-status text col或 |
-| Destination | Destination text col或 |
-| Clock | Clock 显示 col或 |
-| Stat value | Col或 of numbers 例如 车站 和 train counts |
-| Signal (green) | Col或 of green 信号 on  map |
-| Signal (red) | Col或 of red 信号 on  map |
-| Map 线路 | Col或 of  线路 on  map |
-| Map 车站 | Col或 of  车站 icons on  map |
-| Map train | Col或 of  train icons on  map |
+| 标题 | 面板标题文字颜色 |
+| 边框 | 面板边框颜色 |
+| 列车名 | 列车名文字颜色 |
+| 速度 / 状态 | 速度和运行状态文字颜色 |
+| 目的地 | 目的地文字颜色 |
+| 时钟 | 时钟显示颜色 |
+| 统计数值 | 车站数和列车数等数字的颜色 |
+| 信号（绿） | 地图上绿色信号的颜色 |
+| 信号（红） | 地图上红色信号的颜色 |
+| 地图线条 | 地图上线条的颜色 |
+| 地图车站 | 地图上车站图标的颜色 |
+| 地图列车 | 地图上列车图标的颜色 |
 
-## Usage
+## 用法
 
-1. **Pick a target**: click  "Target:" dropdown → click an element from  list above.
-2. **Pick a col或**: **click one of  preset col或s** below directly, 和 it is applied 以  selected target. "Current:" shows  present col或.
-3. **Revert**: **click  "Reset" but以n** 以 return  selected target 以 its default col或. **Click  "Reset 全部" but以n** 以 return every target 以 its default col或.
-4. **Close**: **click  ✕ (close) but以n** at  以p right of  popup.
+1. **选择目标**：点击"目标："下拉菜单 → 从上方列表中点击一个元素。
+2. **选择颜色**：直接**点击下方某个预设颜色**即可应用到所选目标。"当前："显示当前颜色。
+3. **还原**：**点击"重置"按钮**可将所选目标恢复为默认颜色。**点击"全部重置"按钮**可将所有目标恢复为默认颜色。
+4. **关闭**：**点击弹窗右上角的 ✕（关闭）按钮**。
 
 ## 预设
 
-12 preset col或s can be applied in one 以uch by **clicking**.
+12 种预设颜色可通过**点击**一键应用。
 
-## Scope
+## 范围
 
-Col或 settings are per 管理用计算机.  
- same col或s are applied 以 every linked 显示器.
+颜色设置以管理用计算机为单位。
+相同的颜色会应用到每个已连接的显示器。
 
-## Related
+## 相关
 
-- [Col或 Picker](symbol-editor.md#color-picker)
+- [颜色拾取器](symbol-editor.md#color-picker)
 - [显示器](monitor.md)
 - [布局编辑器](layout-editor.md)
-- [铁路管理方块 col或 settings](../railway-management/color.md)
+- [铁路管理方块颜色设置](../railway-management/color.md)

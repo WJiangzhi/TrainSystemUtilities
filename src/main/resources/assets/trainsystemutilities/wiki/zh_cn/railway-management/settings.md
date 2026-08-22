@@ -8,44 +8,44 @@ tags: [station, settings]
 
 ![](bws:trainsystemutilities:wiki/screens/railway-management-settings__ja_jp.png)
 
- popup opened by  "Settings" but以n on  铁路管理方块. Configure 显示器 font size, 轨道 number position, clock 显示, batch apply, 等功能.
+通过铁路管理方块上「设置」按钮打开的弹窗。可配置显示器字体大小、轨道编号位置、时钟显示、批量应用等。
 
 [[TOC]]
 
-## How 以 open
+## 如何打开
 
-1. **Right-click**  [铁路管理方块](../railway-management.md) 以 open its GUI.
-2. **Click  "⚙ Settings" but以n** on  显示器 row, 和 this settings popup appears on  left side of  dialog.
-3. Click  "⚙ Settings" but以n again 以 close it.
+1. 对[铁路管理方块](../railway-management.md)**右键**打开其 GUI。
+2. **点击显示器行的「⚙ 设置」按钮**，此设置弹窗会出现在对话框左侧。
+3. 再次点击「⚙ 设置」按钮可关闭它。
 
-## Operation b作为ics
+## 操作基础
 
-- **Numbers (轨道 number / font size) are incre作为ed/decre作为ed by hovering  curs或 over  value 和 using  "mouse wheel".** re are no + / − but以ns.
-- **Toggles (轨道 显示 position / clock 显示) alternate** (left/right, shown/hidden) when you **click**  物品 (scrolling over  物品 以ggles it 以o).
+- **数字（轨道编号 / 字体大小）通过将光标悬停在数值上并滚动「鼠标滚轮」来增减。** 没有 + / − 按钮。
+- **开关（轨道显示位置 / 时钟显示）在**点击**该条目时切换**（左 / 右、显示 / 隐藏）（在该条目上滚动也会切换）。
 
-## Settings
+## 设置项
 
-| Item | Range | Operation | Use |
+| 项目 | 范围 | 操作 | 用途 |
 |---|---|---|---|
-| Track number | 0 – 99 (0 = none) | Hover value → **wheel** | Track shown in train info |
-| Track font size | 0 = au以, larger from re | Hover value → **wheel** | Text size |
-| Track 显示 position | Left / Right | **Click** 以 以ggle | Left/right 与in  header |
-| Clock 显示 | Shown / Hidden | **Click** 以 以ggle | Show current time in header |
-| Clock font size | 0 = au以, larger from re | Hover value → **wheel** | Clock text size |
+| 轨道编号 | 0 – 99（0 = 无） | 悬停于数值 → **滚轮** | 列车信息中显示的轨道 |
+| 轨道字体大小 | 0 = 自动，往后递增 | 悬停于数值 → **滚轮** | 文字大小 |
+| 轨道显示位置 | 左 / 右 | **点击**切换 | 头部内的左 / 右 |
+| 时钟显示 | 显示 / 隐藏 | **点击**切换 | 在头部显示当前时间 |
+| 时钟字体大小 | 0 = 自动，往后递增 | 悬停于数值 → **滚轮** | 时钟文字大小 |
 
-## Batch Apply 以ggle {#batch-apply}
+## 批量应用开关 {#batch-apply}
 
-**Clicking  "Batch Apply" 以ggle** in  popup 以 turn it ON applies  same settings in bulk 以 全部 铁路管理方块s in  same 网络 (= belonging 以  same 车站 group created 与  [车站范围指定工具](../tools/station-range-tool.md)).
+在弹窗中**点击「批量应用」开关**将其打开，可把相同设置批量应用到同一网络中的全部铁路管理方块（= 属于用[车站范围指定工具](../tools/station-range-tool.md)创建的同一车站组）。
 
-- To unify  显示 across a whole 线路: turn it **ON**, n edit each value
-- To set values individu全部y per 车站 / per face: leave it **OFF**
+- 想统一整条线路的显示：将其**打开**，再编辑各项数值
+- 想逐站 / 逐面单独设置：保持**关闭**
 
-## Two-sided 显示
+## 双面显示
 
- back side (opposite-direction 月台) can be treated 作为 a separate setting.  
-**Click  "↻ Front/Back Toggle" but以n** in  popup 以 switch between front / back, n edit each value 与  wheel / click 作为 above. Which face you are currently editing is shown in  popup (Front / Back).
+背面（反方向月台）可作为独立设置处理。  
+**点击弹窗中的「↻ 前 / 后切换」按钮**在前 / 后之间切换，然后用滚轮 / 点击如上编辑各项数值。弹窗会显示当前正在编辑哪一面（前 / 后）。
 
-## Related
+## 相关
 
 - [铁路管理方块](../railway-management.md)
 - [颜色设置](color.md)

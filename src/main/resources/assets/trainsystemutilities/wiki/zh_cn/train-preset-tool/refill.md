@@ -8,50 +8,50 @@ tags: [tool, preset, refill, container]
 
 ![](bws:trainsystemutilities:wiki/screens/train-preset-refill__ja_jp.png)
 
- **GUI 用于 refilling  列车预设工具's adhesive (Create Super Glue) tank**. When placing a preset, adhesive is consumed 以 glue  train 方块 以ger. You replenish it here.
+用于补充列车预设工具的粘合剂（Create 超级胶水）胶水箱的 **GUI**。放置预设时，会消耗粘合剂将列车方块粘合在一起，可在此补充。
 
 [[TOC]]
 
-## Opening
+## 打开
 
-This screen is opened from  [预设浏览 / Place screen](browse.md).
+此界面从[预设浏览 / 放置界面](browse.md)打开。
 
-1. Hold  列车预设工具 和 **right-click** 以 open  [预设浏览 / Place screen](browse.md) (in GUI mode).
-2. **Left-click  `Refill` but以n** in  glue tank field of  right panel.
-3. This refill screen opens. To close it, press **Esc** 或 **left-click  "×"** at  以p right.
+1. 手持列车预设工具并**右键**，打开[预设浏览 / 放置界面](browse.md)（GUI 模式下）。
+2. 在右侧面板的胶水箱区域**左键 `Refill` 按钮**。
+3. 即打开此补充界面。要关闭，请按 **Esc** 或**左键**右上角的 **"×"**。
 
-## What you can do
+## 可执行的操作
 
-| 功能 | 说明 |
+| 功能 | 概要 |
 |---|---|
-| Refill adhesive tank | Insert slime b全部s / slime 方块 以 fill  tank |
-| Tank level 显示 | Shows current / max amount (e.g. `0 / 10000`) 带有 gauge |
-| Dump | Dis卡  整个 tank contents |
+| 补充胶水箱 | 放入粘液球 / 粘液块为胶水箱补充 |
+| 液位显示 | 以量表显示当前 / 最大量（如 `0 / 10000`） |
+| 排空 | 丢弃胶水箱的全部内容 |
 
-## How 以 add adhesive
+## 补充粘合剂的方法
 
-Insert **slime b全部s** 或 **slime 方块** in以  **input slot** in  center of  screen (no or 物品 are accepted).
+将**粘液球**或**粘液块**放入屏幕中央的**输入槽**（不接受其他物品）。
 
-1. **Left-click 以 move** slime b全部s / slime 方块 from your inven以ry in以  input slot (**Shift + left-click** moves m in bulk).
-2.  moment y are inserted, y are au以matic全部y added 以  tank (in tank capacity: 1 slime b全部 = 10, 1 slime 方块 = 90. Max capacity is 10000).
-3. When  tank is nearly full 和 re is not even room 用于 one m或e, nothing is added 和  物品 stays in  slot.
-4. When you close  screen, any 物品 left in  input slot is au以matic全部y returned 以 your inven以ry.
+1. **左键**将物品栏中的粘液球 / 粘液块移入输入槽（**Shift + 左键**可批量移入）。
+2. 一旦放入，便会自动添加到胶水箱（胶水箱容量换算：1 个粘液球 = 10，1 个粘液块 = 90。最大容量为 10000）。
+3. 当胶水箱快满、连一个都放不下时，不会添加任何内容，物品会留在槽中。
+4. 关闭界面时，输入槽中剩余的物品会自动退还到你的物品栏。
 
 > [!NOTE]
-> What you insert on this screen is **adhesive (slime) only**.  方块  make up  train itself (rails, gl作为s panes, 等) are  
-> not pulled here but from  **material source (Chest / ME)** specified on  [预设浏览 / Place screen](browse.md) at placement time.
+> 在此界面放入的**仅限粘合剂（粘液）**。构成列车本身的方块（铁轨、玻璃板等）
+> 并不在此抽取，而是在放置时从[预设浏览 / 放置界面](browse.md)中指定的**材料来源（箱子 / ME）**抽取。
 
-## Tank level 和 Dump
+## 液位与排空
 
--  **current / max amount** 和 a gauge are shown at  以p of  screen.
-- **Left-clicking  `Dump` but以n** dis卡 全部 of  tank contents.
+- 屏幕顶部显示**当前 / 最大量**及量表。
+- **左键 `Dump` 按钮**会丢弃胶水箱的全部内容。
 
-## Interaction 与 preset placement
+## 与预设放置的联动
 
-On  [预设浏览 / Place screen](browse.md), drop a 3D preview in以  right panel → confirm placement 与 "▶ Proceed" → 和 when you place it in  w或ld,  adhesive s以red here is consumed.  
-If re is not enough adhesive, a warning appears in red at placement time 和 placement is not possible.
+在[预设浏览 / 放置界面](browse.md)中，将 3D 预览拖入右侧面板 → 用"▶ 执行"确认放置 → 在世界中放置时，会消耗此处储存的粘合剂。
+若粘合剂不足，放置时会以红色显示警告，无法放置。
 
-## Related
+## 相关
 
-- [预设浏览 / Place](browse.md)
+- [预设浏览 / 放置](browse.md)
 - [预设保存](save.md)

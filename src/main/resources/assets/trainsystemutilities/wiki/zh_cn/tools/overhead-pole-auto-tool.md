@@ -1,59 +1,59 @@
 ---
-title: 支柱自动工具
+title: 接触网支柱自动放置工具
 id: tools/overhead-pole-auto-tool
 tags: [electrification, tool]
 ---
 
-# 支柱自动工具
+# 接触网支柱自动放置工具
 
 ```embed:item id=trainsystemutilities:overhead_pole_auto_tool size=48 label=true
 ```
 
-A **held 工具**  places an [overhead pole](../electrification/overhead-pole.md) at  point 在…上 轨道 you right-click. First decide  pole height, clearance, number of par全部el 轨道, 等 on  settings screen, n switch 以 placement mode 和 right-click a 轨道 以 raise one pole at  point.
+一种**手持工具**，可在你右键的铁轨上的某一点放置一根[接触网支柱](../electrification/overhead-pole.md)。先在设置界面中确定支柱高度、限界、并行铁轨数量等参数，再切换到放置模式并右键铁轨，即可在该处升起一根支柱。
 
-## Video walkthrough
+## 视频演示
 
-Watch  full flow from setup 以 placement (Manta's embedded video 功能).
+观看从设置到放置的完整流程（Manta 的内嵌视频功能）。
 
 ```embed:youtube url=https://youtu.be/C3xMglvSssk title=Overhead Pole Auto Tool
 ```
 
-## Opening / holding
+## 打开 / 持有
 
-This 工具 h作为 **two modes**. Right after switching 以 it, it is in "GUI mode" ( settings screen).
+此工具有**两种模式**。刚切换到该工具时，处于"GUI 模式"（设置界面）。
 
-- **GUI mode** (initial state): Right-click opens  **settings screen**. Here you adjust  pole height, clearance from  轨道, placement interval (span), number of par全部el 轨道, truss / insula以r usage, 等
-- **Select mode**:  mode where you right-click a 轨道 以 **actu全部y place a pole**.
+- **GUI 模式**（初始状态）：右键打开**设置界面**。在此调整支柱高度、与铁轨的限界、放置间隔（跨度）、并行铁轨数量、桁架 / 绝缘子使用等。
+- **选择模式**：右键铁轨**实际放置支柱**的模式。
 
-Switch modes 与 **Alt + mouse wheel** (see "Controls" below). While held,  current mode is shown above  hotbar.
+用 **Alt + 鼠标滚轮**切换模式（见下文"操作"）。手持时，当前模式会显示在快捷栏上方。
 
-## Usage
+## 用法
 
-1. Hold  工具 和 simply **right-click** (by default,  **right mouse but以n**) 以 open  **settings screen**.
-2. On  settings screen, decide  pole height, clearance, number of par全部el 轨道, truss / insula以r, 等 (用于 settings-screen operations, see [接触网支柱](../electrification/overhead-pole.md)).
-3. Switch 以 **Select mode** 与 **Alt + wheel**, n set it 以  **"Place"** sub-mode 与 **Ctrl + wheel**.
-4. **Right-click  轨道** where you want a pole, 和 one pole is placed at  point (a translucent preview appears while you aim at  轨道).
-5. When materials are insufficient, "Not enough materials" is shown in red 和 nothing is placed.
+1. 手持工具并直接**右键**（默认为**鼠标右键**）即可打开**设置界面**。
+2. 在设置界面中确定支柱高度、限界、并行铁轨数量、桁架 / 绝缘子等（设置界面的操作请参见[接触网支柱](../electrification/overhead-pole.md)）。
+3. 用 **Alt + 滚轮**切换到**选择模式**，再用 **Ctrl + 滚轮**切换到**"放置"**子模式。
+4. 在需要支柱的位置**右键铁轨**，即可在该处放置一根支柱（瞄准铁轨时会出现半透明的预览）。
+5. 材料不足时，会以红色显示"材料不足"，且不会放置任何东西。
 
 > [!NOTE]
-> In  "Place" sub-mode, right-clicking **something or than a 轨道** shows "Ple作为e right-click a 轨道" 和 nothing is placed. Be sure 以 aim at Create's 轨道.
+> 在"放置"子模式下，若右键的不是铁轨，会显示"请右键铁轨"，且不会放置任何东西。请务必瞄准 Create 的铁轨。
 
-## Controls (wheel / click)
+## 操作（滚轮 / 点击）
 
-| Input | Action |
+| 输入 | 动作 |
 |---|---|
-| **Right-click** (GUI mode) | Open  settings screen |
-| **Right-click** (Select mode / Place) | Place one pole at  aimed 轨道 point |
-| **Alt + wheel** | Switch 工具 mode (GUI ⇔ Select). However, while in  "Place" sub-mode, rotate  pole's facing in 8 directions (45° steps) |
-| **Ctrl + wheel** | Switch sub-mode 与in Select mode (back 以 GUI / Place) |
-| **Shift + wheel** | Incre作为e / decre作为e  value of  current edit target (height / clearance / span) |
-| **Shift + middle-click** | **Link an aimed chest 作为 a material s以re** (poles' materials are drawn from it au以matic全部y) |
+| **右键**（GUI 模式） | 打开设置界面 |
+| **右键**（选择模式 / 放置） | 在瞄准的铁轨点放置一根支柱 |
+| **Alt + 滚轮** | 切换工具模式（GUI ⇔ 选择）。但在"放置"子模式下，用于以 45° 为步长在 8 个方向旋转支柱朝向 |
+| **Ctrl + 滚轮** | 在选择模式内切换子模式（回到 GUI / 放置） |
+| **Shift + 滚轮** | 增大 / 减小当前编辑目标（高度 / 限界 / 跨度）的值 |
+| **Shift + 中键** | **将瞄准的箱子链接为材料库**（支柱材料会自动从中抽取） |
 
 > [!TIP]
-> Height, clearance, 和 span can be adjusted on  **settings screen** 或 与 **Shift + wheel** (while held).  
-> F或 canted (banked) curves 和 multi-轨道 sections, you can switch 以 a configuration  uses  [接触网架](../electrification/overhead-truss.md) 通过  truss option on  settings screen.
+> 高度、限界和跨度既可在**设置界面**中调整，也可在手持时用 **Shift + 滚轮**调整。
+> 对于倾斜（超高）曲线和多线区段，可通过设置界面上的桁架选项切换为使用[接触网架](../electrification/overhead-truss.md)的配置。
 
-## Related 页面s
+## 相关页面
 
 - [接触网支柱](../electrification/overhead-pole.md) / [接触网架](../electrification/overhead-truss.md)
-- [电气化 总览](../electrification/index.md)
+- [电气化系统概述](../electrification/index.md)

@@ -9,56 +9,56 @@ tags: [tool, item, link]
 ```embed:item id=trainsystemutilities:memory_card size=48 label=true
 ```
 
-A general-purpose link 卡 用於 linking rail 網路s 和 車站 方塊 以 a **管理用計算機**, 或 用於 registering **站臺遮蔽門s / 站臺圍欄s** 作為 a group. Used in two steps: first "save" a position, n "apply" it 以 anor 方塊.
+儲存卡是一種通用連結卡，用於將鐵路網路和車站方塊連結到**管理用計算機**，或將**月臺屏門 / 月臺柵欄**註冊為一組。使用分為兩步：先"儲存"一個位置，再將其"應用"到另一個方塊。
 
 [[TOC]]
 
-## B作為ic usage
+## 基本用法
 
-1. **Save**: **Right-click**  link source (軌道 / railway management 方塊 / 月臺 screen do或, 等) 以 rec或d its position on  卡.
-2. **Apply**: **Right-click**  link target (usu全部y a 管理用計算機) 以 apply  rec或ded content.
-3.  卡's current saved content can be checked in  物品's **工具tip**.
-4. **Shift + right-click** (on empty space 或 a non-target 方塊) 以 **reset  卡**.
+1. **儲存**：**右鍵**連結源（鐵軌 / 鐵路管理方塊 / 月臺屏門等），將其位置記錄到卡上。
+2. **應用**：**右鍵**連結目標（通常是管理用計算機），將記錄的內容應用上去。
+3. 可在物品的**提示資訊**中檢視卡當前儲存的內容。
+4. **Shift + 右鍵**（在空處或非目標方塊上）即可**重置卡片**。
 
-## What  儲存卡 can operate on
+## 儲存卡可操作的物件
 
-| Target | Right-click | Shift + right-click |
+| 目標 | 右鍵 | Shift + 右鍵 |
 |---|---|---|
-| Create **軌道** | Save  rail 網路 (rec或ds 車站 / 訊號 / train counts) | (reset) |
-| **鐵路管理方塊** | Save  車站 方塊 (與 車站 name) | (reset) |
-| **管理用計算機** | **Link**  saved rail 網路 / railway management 方塊 | (reset) |
-| **站臺圍欄 / 站臺遮蔽門** | **Register  connected fences / do或s 以ger 作為 a group** | **Remove  member from  group** |
+| Create **鐵軌** | 儲存鐵路網路（記錄車站 / 訊號 / 列車數量） | （重置） |
+| **鐵路管理方塊** | 儲存該車站方塊（含車站名稱） | （重置） |
+| **管理用計算機** | **連結**已儲存的鐵路網路 / 鐵路管理方塊 | （重置） |
+| **月臺柵欄 / 月臺屏門** | **將相連的圍欄 / 遮蔽門一起註冊為一組** | **將該成員從組中移除** |
 
 > [!NOTE]
-> **Linking 以 a 顯示器 uses  dedicated [顯示器連線卡](monitor-link-card.md)** (a separate 物品 from  儲存卡). F或 train detection, use  [列車檢測卡](train-detection-card.md).
+> **連結到顯示器需使用專用的[顯示器連線卡](monitor-link-card.md)**（與儲存卡是不同的物品）。列車檢測請使用[列車檢測卡](train-detection-card.md)。
 
-## Common procedures
+## 常用操作
 
-**Link a rail 網路 以 a 管理用計算機**
+**將鐵路網路連結到管理用計算機**
 
-1. **Right-click any 軌道** on  線路 → "Rail 網路 saved" is shown.
-2. **Right-click  管理用計算機** → "Rail 網路 linked".
-3.  rail 網路 now appears in  管理用計算機's route map / train list.
+1. **右鍵線路上的任意鐵軌** → 顯示"鐵路網路已儲存"。
+2. **右鍵管理用計算機** → 顯示"鐵路網路已連結"。
+3. 該鐵路網路隨即出現在管理用計算機的路線圖 / 列車列表中。
 
-**Bind a 車站's railway management 方塊 以 a computer**
+**將車站的鐵路管理方塊繫結到計算機**
 
-1. **Right-click  railway management 方塊** on  車站 月臺 以 save it.
-2. **Right-click  管理用計算機** 以 link.
+1. **右鍵車站站臺上的鐵路管理方塊**，將其儲存。
+2. **右鍵管理用計算機**，完成連結。
 
-**Group 月臺 screen do或s / 月臺 fences**
+**將月臺屏門 / 月臺柵欄編組**
 
-1. **Right-click** one of  do或s / fences, 和  adjacent connected 方塊 are au以matic全部y registered 以ger.
-2. Exclude extra members 與 **Shift + right-click**.
-3. F或  group's 車站 linkage, see [站臺遮蔽門](../structure/platform-screen-door.md).
+1. **右鍵**其中一扇門 / 一段圍欄，相鄰相連的方塊會自動一起註冊。
+2. 用 **Shift + 右鍵**排除多餘的成員。
+3. 關於該組與車站的關聯，請參見[月臺屏門](../structure/platform-screen-door.md)。
 
-## Mode-independent
+## 與訪問模式無關
 
-Linking / reading 與  儲存卡 w或ks regardless of access mode (Private/Public).
+使用儲存卡進行連結 / 讀取時，不受訪問模式（私有 / 公開）影響。
 
-## Related
+## 相關
 
-- [顯示器連線卡](monitor-link-card.md) — 顯示器-specific link 卡
+- [顯示器連線卡](monitor-link-card.md) — 顯示器專用連結卡
 - [列車檢測卡](train-detection-card.md)
-- [站臺遮蔽門](../structure/platform-screen-door.md) / [站臺圍欄](../structure/platform-fence.md)
+- [月臺屏門](../structure/platform-screen-door.md) / [月臺柵欄](../structure/platform-fence.md)
 - [鐵路管理方塊](../railway-management.md)
-- [管理用計算機 概述](../management-computer/overview.md)
+- [管理用計算機概述](../management-computer/overview.md)

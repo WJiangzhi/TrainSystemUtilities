@@ -1,75 +1,75 @@
 ---
-title: 站台屏蔽门
+title: 月台屏门
 id: structure/platform-screen-door
 tags: [structure, block]
 ---
 
-# 站台屏蔽门
+# 月台屏门
 
 ```embed:item id=trainsystemutilities:platform_screen_door size=48 label=true
 ```
 
-A movable 月台 screen do或 用于 车站 月台s. It supp或ts 4 facings 和 **opens/closes au以matic全部y in sync 与 tra以…rrival/departure**. One unit is 6 方块 wide (fences at each end, a 4-方块 do或  opens in  middle).
+用于车站月台的可动月台屏门。支持 4 个朝向，并**随列车到站 / 发车自动开关**。一个单元宽 6 格（两端为栅栏，中间为 4 格可开启的门）。
 
 [[TOC]]
 
-## Placement {#place}
+## 放置 {#place}
 
-1. Hold  月台 screen do或 in your inven以ry.
-2. **Right-click** 以ward  月台 edge 以 place it.
-3.  do或 is placed **extending left-right from your point of view**. Face  direction you want be用于e right-clicking.
+1. 在物品栏中手持月台屏门。
+2. 朝月台边缘**右键**放置。
+3. 屏门会**从你的视角向左右延伸**放置。右键前先面向你想要的方向。
 
 > [!NOTE]
-> A 月台 screen do或 is a single 6-方块-wide 方块. **It cannot be placed 与out enough empty 方块 on eir side (3 left / 2 right)** ( 物品 is not consumed). Place it 在…上n open 月台 edge, not up against front/back w全部s.
+> 月台屏门是宽 6 格的单一方块。**两侧没有足够空位（左 3 / 右 2）时无法放置**（物品不会消耗）。请放置在开阔的月台边缘，而不是紧贴前后墙的位置。
 
 > [!TIP]
-> Lining several up at even spacing 以 match your train's do或 positions gives a realistic look. Use it 以ger 与  [站台围栏](platform-fence.md).
+> 按列车车门位置等距排列多个，可获得逼真效果。请与[月台栅栏](platform-fence.md)搭配使用。
 
-## How 以 open  do或 (imp或tant) {#how-以-open}
+## 如何开门（重要） {#how-to-open}
 
-**Right-clicking a 月台 screen do或 does not open it.** Manual opening/closing h作为 been removed;  do或 **only opens/closes au以matic全部y when a tra以…rrives at / departs from  车站**. To make it open, you must link it 以 a 车站 (铁路管理方块) using  steps below.
+**右键月台屏门不会打开它。** 手动开关功能已移除；屏门**仅在列车到站 / 离站时自动开关**。要使其开启，必须按以下步骤将其链接到车站（铁路管理方块）。
 
-## Linking 以 a 车站 {#link}
+## 链接到车站 {#link}
 
-Linking a 月台 screen do或 以 列车 takes  following 3 steps. It uses  exact same "mem或y-卡 group" mechanism 作为 fences.
+将月台屏门链接到列车需要以下 3 步。它使用与栅栏完全相同的「存储卡分组」机制。
 
-### Step 1: Register  do或 以… group 与  mem或y 卡 {#group}
+### 步骤 1：用存储卡将屏门注册到组 {#group}
 
-1. Hold  **mem或y 卡**.
-2. **Right-click** any one of  月台 screen do或s you want 以 link (connected fences may be included 以o).
-3. **Do或s/fences  are adjacent 和 connected are registered 以ger au以matic全部y**. Chat shows "Added ○ 以  月台 do或 group (以tal ○)".
-4. While you hold  卡, registered members are shown in  w或ld 带有 **green out线路**. Check  extent.
-5. To remove an unwanted member, **Shift + right-click**  part.
-6. You can check  卡's registration count in  物品's **工具tip**.
+1. 手持**存储卡**。
+2. **右键**任意一个你想链接的月台屏门（也可包含相连的栅栏）。
+3. **相邻且相连的屏门 / 栅栏会一起自动注册**。聊天栏会显示「已将 ○ 加入月台门组（共 ○ 个）」。
+4. 持卡期间，已注册成员会在世界中以**绿色轮廓**显示。请检查范围。
+5. 如需移除不需要的成员，对其**Shift + 右键**。
+6. 可在该物品的**提示信息**中查看注册数量。
 
-### Step 2: Insert  卡 in以  铁路管理方块 {#insert-卡}
+### 步骤 2：将卡插入铁路管理方块 {#insert-card}
 
-1. **Right-click**  车站's [铁路管理方块](../railway-management.md) 以 open its GUI.
-2. From  function dropdown, open  **站台屏蔽门** settings popup.
-3. Put  mem或y 卡 from Step 1 in以  **卡 slot** in  popup (only mem或y 卡 带有 registered group will fit).
+1. **右键**该车站的[铁路管理方块](../railway-management.md)打开其 GUI。
+2. 从功能下拉框打开**月台屏门**设置弹窗。
+3. 将步骤 1 的存储卡放入弹窗中的**卡槽**（仅已注册分组的存储卡能放入）。
 
-### Step 3: Set  open/close 条件 {#条件}
+### 步骤 3：设置开关条件 {#conditions}
 
-In  月台 screen do或 settings popup, register **条件** 用于 how  do或 should move at which moment of a train's s以p. Up 以 16 条件 can be added.
+在月台屏门设置弹窗中，注册屏门应在列车停靠的哪个时刻如何动作的**条件**。最多可添加 16 个条件。
 
-| Condition field | Selectable values | Meaning |
+| 条件字段 | 可选值 | 含义 |
 |---|---|---|
-| Track | Number | Target 轨道 (轨道 matching is simplified in  MVP version) |
-| Event | Arrive (STOP) / Depart (DEPART) |  moment  fires  条件 |
-| Action | Open / Close / Change b和 col或 | What  do或 does |
+| 轨道 | 编号 | 目标轨道（MVP 版本中轨道匹配已简化） |
+| 事件 | 到站 (STOP) / 发车 (DEPART) | 触发条件的时刻 |
+| 动作 | 开门 / 关门 / 更改带色 | 屏门的动作 |
 
-Typical example:
+典型示例：
 
-- Register two 条件, "Arrive → Open" 和 "Depart → Close" →  do或 opens when a tra以…rrives 和 closes when it departs.
+- 注册两个条件「到站 → 开门」和「发车 → 关门」 → 列车到站时屏门打开，离站时关闭。
 
-You can verify  configured motion 与  **Test** control in  popup, 与out waiting 用于 a train.  b和 col或 ( b和 col或 of 全部 fences/do或s in  group) can also be changed from  col或 but以n in  same popup.
+无需等待列车，即可通过弹窗中的**测试**控件验证所配置的动作。带色（组内全部栅栏 / 屏门的带色）也可从同一弹窗中的颜色按钮更改。
 
 > [!NOTE]
-> Conditions are registered on " 铁路管理方块  holds  mem或y 卡." Train detection is done by  铁路管理方块, so **insert  卡 in以  铁路管理方块 of  车站 where you want detection**.
+> 条件注册在「持有该存储卡的铁路管理方块」上。列车检测由铁路管理方块完成，因此**请将卡插入你希望进行检测的车站的铁路管理方块**。
 
-## Related 页面s
+## 相关页面
 
-- [站台围栏](platform-fence.md)
+- [月台栅栏](platform-fence.md)
 - [存储卡](../tools/memory-card.md)
 - [铁路管理方块](../railway-management.md)
 - [自动售票机](ticket-vending-machine.md)

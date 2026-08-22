@@ -1,98 +1,98 @@
 ---
-title: 預設瀏覽 / Place
+title: 預設瀏覽 / 放置
 id: train-preset-tool/browse
 tags: [tool, preset, train]
 ---
 
-# 預設瀏覽 / Place
+# 預設瀏覽 / 放置
 
 ![](bws:trainsystemutilities:wiki/screens/train-preset-browse-mine__ja_jp.png)
 
- main GUI of  **列車預設工具** 用於 browsing / placing / uploading / deleting saved presets.
+**列車預設工具**的主介面，用於瀏覽 / 放置 / 上傳 / 刪除已儲存的預設。
 
 [[TOC]]
 
-## Opening / Holding
+## 開啟 / 持有
 
-This screen is opened 與  列車預設工具 in **GUI mode** ( 工具 is in GUI mode right after you switch 以 it).
+此介面需在列車預設工具處於 **GUI 模式**時開啟（切換到該工具後即為 GUI 模式）。
 
-1. **Hold**  列車預設工具.
-2. **Right-click** 作為-is (default: **right mouse but以n**). This screen opens.
-3. To close it, press **Esc** 或 **left-click  "×"** at  以p right of  screen.
+1. **手持**列車預設工具。
+2. 直接**右鍵**（預設：**滑鼠右鍵**）即可開啟此介面。
+3. 要關閉，請按 **Esc** 或**左鍵**螢幕右上角的 **"×"**。
 
 > [!NOTE]
-> If right-clicking opens a different screen ( save screen) 或 per形式s a placement action,  工具 is 以… mode or than GUI.  
-> Return 以 **GUI mode** 與 **Alt + mouse wheel**, n right-click ( current mode is shown above  hotbar).
+> 如果右鍵後開啟的是別的介面（儲存介面）或執行了放置動作，說明工具處於 GUI 以外的模式。
+> 請用 **Alt + 滑鼠滾輪**回到 **GUI 模式**，再右鍵（當前模式會顯示在快捷欄上方）。
 
-## Mode switch (dropdown)
+## 模式切換（下拉選單）
 
-**Left-click  mode indica以r (dropdown)** at  以p of  screen 以 open  list, 和 **left-click Mine / Place** 以 switch.
+**左鍵螢幕頂部的模式指示器（下拉選單）**開啟列表，再**左鍵"我的 / 放置"**進行切換。
 
-| Mode | Content |
+| 模式 | 內容 |
 |---|---|
-| **Mine** (yours) | Loc全部y saved presets (= ones you saved) |
-| **Place** (public) | On線路 presets downloadable from [Preset Place](../preset-place/overview.md) |
+| **我的**（本地） | 本地儲存的預設（即你自己儲存的） |
+| **放置**（公開） | 可從 [Preset Place](../preset-place/overview.md) 下載的線上預設 |
 
-## Main operations
+## 主要操作
 
-| Operation | Behavi或 |
+| 操作 | 行為 |
 |---|---|
-| **Left-click** a tile | Select preset → 3D preview in right panel |
-| **Right-click** a tile | Delete confirmation (Mine) |
-| **Drag & drop** a tile 以  right panel | Prepare placement. Preview 和 required materials appear 與 "▶ Proceed / ✖ Cancel" but以ns |
-| Left-click **"▶ Proceed"** | Confirm placement. This screen closes 和  工具 switches 以 **Place mode** |
-| Left-click  **refresh but以n** | Reload  list |
-| Left-click  upload icon | 釋出 以 Preset Place ([upload](../preset-place/upload.md)) |
+| **左鍵**某個卡片 | 選中預設 → 在右側面板顯示 3D 預覽 |
+| **右鍵**某個卡片 | 刪除確認（"我的"模式） |
+| 將卡片**拖放**到右側面板 | 準備放置，出現預覽和所需材料，並附帶"▶ 執行 / ✖ 取消"按鈕 |
+| 左鍵 **"▶ 執行"** | 確認放置，此介面關閉，工具切換到**放置模式** |
+| 左鍵**重新整理按鈕** | 重新載入列表 |
+| 左鍵上傳圖示 | 上傳到 Preset Place（[上傳](../preset-place/upload.md)） |
 
-## 3D preview
+## 3D 預覽
 
- right panel shows  selected preset in 3D. Operate  mouse over  preview:
-- **Left drag**: rotate
-- **Right drag**: pan
-- **Mouse wheel**: zoom
+右側面板以 3D 形式展示選中的預設。可在預覽上操作滑鼠：
+- **左鍵拖動**：旋轉
+- **右鍵拖動**：平移
+- **滑鼠滾輪**：縮放
 
-## Search (Place mode)
+## 檢索（放置模式）
 
-Search public presets by name. **Left-click  search field** at  以p, type a name, 和 combine it 與  s或ts below 以 narrow down:
-- Created date / 例如s / downloads
+按名稱檢索公開預設。**左鍵頂部的搜尋框**，輸入名稱，並配合下方排序方式縮小範圍：
+- 建立日期 / 點贊數 / 下載量
 
-## Materials 顯示
+## 材料顯示
 
-Lists  方塊 / 物品 required by  selected preset.  
-Sh或tf全部s are shown in **red**, sufficient amounts in **green**. 詳情: [材料補充](refill.md).
+列出選中預設所需的方塊 / 物品。
+不足的數量以**紅色**顯示，充足的以**綠色**顯示。詳情見[材料補充](refill.md)。
 
-## Material source
+## 材料來源
 
-Switch where  required materials are pulled from by scrolling  **mouse wheel over  material-source pill but以n** in  right panel:
+在右側面板的**材料來源膠囊按鈕**上滾動**滑鼠滾輪**，可切換所需材料的抽取來源：
 
-| Source | Behavi或 |
+| 來源 | 行為 |
 |---|---|
-| **Chest** | Au以-pull from  linked chest |
-| **ME** | Pull from  AE2 網路 |
+| **箱子** | 從已連結的箱子自動抽取 |
+| **ME** | 從 AE2 網路抽取 |
 
 > [!TIP]
-> To link a chest, **Shift + middle-click**  target chest while holding  工具 (與  GUI closed, in n或mal holding mode).
+> 要連結箱子，請在手持工具（GUI 已關閉、處於普通手持狀態）時，對目標箱子使用 **Shift + 中鍵**。
 
-## Glue tank
+## 膠水箱
 
- amount of Create Super Glue (adhesive) required at placement time is shown here.
+放置時所需的 Create 超級膠水（粘合劑）數量在此顯示。
 
-- **Left-click  `Refill` but以n** →  [材料補充](refill.md) screen opens, where you can refill  tank 與 slime b全部s, 等
-- **Left-click  `Dump` but以n** → dis卡 全部 of  tank contents.
+- **左鍵 `Refill` 按鈕** → 開啟[材料補充](refill.md)介面，可用粘液球等為膠水箱補充。
+- **左鍵 `Dump` 按鈕** → 丟棄膠水箱中的全部內容。
 
-## Placement flow
+## 放置流程
 
-Confirming 與 "▶ Proceed" closes  GUI 和 switches  工具 以 **Place mode**. n place it in  w或ld:
+用"▶ 執行"確認後，GUI 會關閉，工具切換到**放置模式**。隨後在世界中放置：
 
-1. **Right-click  軌道 position** where you want  train (default: **right mouse but以n**) 以 set  **或igin**.
-2. **Alt + wheel** rotates  或ientation in 90° steps (作為 needed).
-3. **Right-click** again 以 execute placement. Materials 和 adhesive are consumed here.
-4. If placement fails 和 can be retried, **middle-click** 以 retry, 或 **Shift + middle-click** 以 **cancel** Place mode 和 return 以 GUI mode.
+1. 在你想放置列車的位置**右鍵鐵軌**（預設：**滑鼠右鍵**），設定**原點**。
+2. **Alt + 滾輪**以 90° 為步長旋轉朝向（按需）。
+3. 再次**右鍵**執行放置，此時會消耗材料和粘合劑。
+4. 若放置失敗且可重試，可**中鍵**重試，或用 **Shift + 中鍵****取消**放置模式並回到 GUI 模式。
 
-## Related
+## 相關
 
 - [預設儲存](save.md)
 - [材料補充](refill.md)
 - [Preset Place 概述](../preset-place/overview.md)
 - [預設詳情](../preset-place/detail.md)
-- [預設 釋出](../preset-place/upload.md)
+- [預設上傳](../preset-place/upload.md)

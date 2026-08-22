@@ -8,75 +8,75 @@ tags: [electrification, customization, tool]
 
 ![](bws:trainsystemutilities:wiki/screens/wire-connector__ja_jp.png)
 
- free parameter tuning + preset save system used in  `CUSTOM` mode of  [連線工具 Tool](wire-connector.md).
+[連線工具](wire-connector.md)的 `CUSTOM` 模式所使用的自由引數調節 + 預設儲存系統。
 
 [[TOC]]
 
-## How 以 open
+## 如何開啟
 
-1. Hold  [連線工具 Tool](wire-connector.md) 和 switch 以 **GUI (design selection)** mode 與 **Alt+wheel**.
-2. **Right-click**  工具 以 open  wire settings screen.
-3. Select **CUSTOM** from  design tiles in  left panel, 和  right panel switches 以  edit mode below.
+1. 手持[連線工具](wire-connector.md)，透過 **Alt+滾輪** 切換到 **GUI（樣式選擇）** 模式。
+2. **右鍵**點選工具，開啟接觸網設定介面。
+3. 在左側面板的樣式磁貼中選擇 **CUSTOM**，右側面板會切換到下方的編輯模式。
 
-## Edit panel when CUSTOM is selected
+## 選擇 CUSTOM 時的編輯面板
 
-Selecting  CUSTOM tile switches  right panel 以 edit mode, where you can adjust  following values 與  **mouse wheel**:
+選擇 CUSTOM 磁貼後，右側面板會切換到編輯模式，你可以用**滑鼠滾輪**調整以下數值：
 
-| Parameter | Range | Step | Use |
+| 引數 | 範圍 | 步長 | 用途 |
 |---|---|---|---|
-| **Thickness** | 0.01 – 0.30 | 0.01 | Line width of  wire body (visual) |
-| **Vertical spacing** | 0.00 – 2.00 m | 0.05 | Spacing between  catenary 和 trolley wire (0 = 1 tier, >0 = 2 tiers) |
-| **Dropper interval** | 0.50 – 10.00 m | 0.25 | Interval of  vertical supp或ts (droppers) |
-| **2-row layout** | OFF / ON | — | Wire pair placed side by side 用於 double 軌道 |
+| **粗細** | 0.01 – 0.30 | 0.01 | 接觸網本體的線寬（視覺） |
+| **垂直間距** | 0.00 – 2.00 m | 0.05 | 承力索與接觸線之間的間距（0 = 單層，>0 = 雙層） |
+| **吊弦間隔** | 0.50 – 10.00 m | 0.25 | 垂直支撐（吊弦）的間隔 |
+| **雙排佈局** | OFF / ON | — | 雙軌道時接觸網成對並排佈置 |
 
-## Mouse wheel operation
+## 滑鼠滾輪操作
 
-Hover  curs或 over each number box 和:
-- **Wheel up**: incre作為e value
-- **Wheel down**: decre作為e value
-- Au以-clamps at min/max
+將游標懸停在每個數字框上，然後：
+- **滾輪向上**：增大數值
+- **滾輪向下**：減小數值
+- 在最小值/最大值處自動鉗制
 
-Values are reflected in real time in  **preview area** of  right panel ( tile picture itself does not change).
+數值會實時反映到右側面板的**預覽區**（磁貼圖片本身不會變化）。
 
-## 預設 save
+## 預設儲存
 
- "**Save 預設**" but以n is only active while editing CUSTOM.
+"**Save Preset**" 按鈕僅在編輯 CUSTOM 時啟用。
 
 ![](bws:trainsystemutilities:wiki/screens/wire-connector-preset-save__ja_jp.png)
 
-1. Click  "Save 預設" but以n →  save dialog appears
-2. Enter a preset name (default: `PresetN`)
-3. **Enter** 以 save / **Esc** 以 cancel
+1. 點選 "Save Preset" 按鈕 → 出現儲存對話方塊
+2. 輸入預設名稱（預設：`PresetN`）
+3. **Enter** 儲存 / **Esc** 取消
 
-After saving,  preset is added 以  tile list (= design tiles) in  left panel 和 can be selected immediately.
+儲存後，預設會被新增到左側面板的磁貼列表（= 樣式磁貼）中，可以立即選用。
 
-## 預設 delete
+## 預設刪除
 
-**Right-click** a preset tile → delete confirmation dialog.
+**右鍵**點選預設磁貼 → 刪除確認對話方塊。
 
 ![](bws:trainsystemutilities:wiki/screens/wire-connector-preset-delete__ja_jp.png)
 
-## How 以 use presets
+## 如何使用預設
 
-- Left-click: apply  preset →  自定義 parameters are **locked** 以  preset values (wheel disabled)
-- Return 以 edit mode: select **CUSTOM** from  tile list
+- 左鍵：應用預設 → 自定義引數被**鎖定**為預設值（滾輪禁用）
+- 回到編輯模式：從磁貼列表中選擇 **CUSTOM**
 
 > [!TIP]
-> 預設 are managed separately from  values being edited. A saved preset cannot be edited, so 以 change one, create a new preset 和 delete  old one.
+> 預設與正在編輯的數值是分開管理的。已儲存的預設無法編輯，若要修改某個預設，請新建一個並刪除舊的。
 
-## Relation 以 Sag mode
+## 與下垂模式的關係
 
-Sag mode is **SIMPLE only** 和 cannot be used 與 CUSTOM.  
-Even a CUSTOM design set 以 1 tier + a thin 線路 does not sag (= straight 線路 only).
+下垂模式**僅適用於 SIMPLE**，不能與 CUSTOM 一起使用。
+即便 CUSTOM 設計設定為單層 + 細線，也不會下垂（= 僅呈直線）。
 
-## Interaction 與 train presets
+## 與列車預設的互動
 
-章節s laid 與 自定義 wire are not saved on  train preset side (= wire is a w或ld-side entity).  
-To lay  same-looking wire 以…nor w或ld, share  wire-connec以r preset JSON.
+用自定義接觸網鋪設的路段不會儲存在列車預設側（= 接觸網屬於世界側實體）。
+若要在其他世界鋪設外觀相同的接觸網，請共享連線工具的預設 JSON。
 
-## Related
+## 相關
 
-- [Wire / 連線工具 Tool](wire-connector.md) — b作為ic operati在…上nd 內建設計
+- [接觸網 / 連線工具](wire-connector.md) — 基本操作與內建樣式
 - [受電弓](pantograph.md)
 - [箱式變電所](substation.md)
 - [FE 逆變器](fe-inverter.md)

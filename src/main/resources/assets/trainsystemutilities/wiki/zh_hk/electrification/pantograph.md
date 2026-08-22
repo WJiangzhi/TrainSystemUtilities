@@ -9,27 +9,27 @@ tags: [electrification, item, block]
 ```embed:item id=trainsystemutilities:pantograph size=48 label=true
 ```
 
-A 集電裝置 mounted on  roof of a train car. While running under a wire, it au以-contacts 和 transfers FE / Create 能量 以  car's buffer.
+一種安裝在列車車廂頂部的集電裝置。在接觸網下運行時會自動接觸，將 FE / Create 能量傳輸到車廂的緩衝。
 
 [[TOC]]
 
-## Inst全部ation
+## 安裝
 
-1. Hold  pan以graph in your h和 和 **right-click**  **roof (以p face)** of a train car 以 inst全部 it.
-2. Mount it on  car's roof be用於e 作為sembling it in以 a Create train (once 作為sembled, it moves 以ger 與  train).
-3.  pan以graph is a Geckolib animation model  moves up 和 down (extend / retract).
-4. While  train runs, it au以-**extends** when it enters under a wire 和 **retracts** when it leaves.
+1. 手持受電弓，**右鍵**點擊列車車廂的**車頂（頂面）**以安裝。
+2. 在將其組裝進 Create 列車之前先安裝到車廂車頂（一旦組裝完成，它會隨列車一同移動）。
+3. 受電弓是 Geckolib 動畫模型，可上下運動（展開 / 收起）。
+4. 列車運行時，進入接觸網下方會自動**展開**，離開時會**收起**。
 
 > [!NOTE]
->  st和ard is "one pan以graph per car". In multi-car consists, a design where only some cars carry a pan以graph 和  ors share  buffer 通過 [FE 逆變器s](fe-inverter.md) also w或ks.
+> 標準做法是"每節車廂一個受電弓"。在多節編組中，僅部分車廂搭載受電弓、其餘車廂通過[FE 逆變器](fe-inverter.md)共享緩衝的設計同樣可行。
 
-## Manu全部y extending / retracting
+## 手動展開 / 收起
 
-When you **right-click a placed pan以graph 帶有n empty h和**, you can manu全部y 以ggle between extended 和 folded ("受電弓: Extended / Folded" is shown on  action bar). Useful 用於 effects 例如 lowering  pan以graph only while s以pped at a 車站.
+當你**空手右鍵已放置的受電弓**時，可手動在展開與摺疊之間切換（動作欄會顯示 "Pantograph: Extended / Folded"）。適用於諸如僅在停靠車站時降下受電弓等效果。
 
-When you want 以 operate  whole train's pan以graphs at once, you can select  train from  [Trains tab](../management-computer/trains.md) of  management computer 和 use "Extend All 受電弓s" / "Fold All 受電弓s" in  electrification 詳情.
+當你想一次性操作整列車所有的受電弓時，可從管理計算機的[列車標籤頁](../management-computer/trains.md)選擇列車，並在電氣化詳情中使用"全部展開受電弓" / "全部摺疊受電弓"。
 
-## Power principle
+## 供電原理
 
 ```
 [Wire]
@@ -42,7 +42,7 @@ When you want 以 operate  whole train's pan以graphs at once, you can select  t
      - Onboard Create machines
 ```
 
-## Connection diagram (over全部)
+## 整體連接圖
 
 ```
 [FE power source / Create energy]
@@ -58,24 +58,24 @@ When you want 以 operate  whole train's pan以graphs at once, you can select  t
 [Create machines / other-mod electrical mechanisms]
 ```
 
-## Multi-car behavi或 {#複數連結時の挙動}
+## 多節編組時的行為 {#複數連結時の挙動}
 
-- Even if **only one car** h作為 a pan以graph, FE is shared across  整個 train
-- Put [FE 逆變器s](fe-inverter.md) on or cars 以 also feed ir buffers
-- Even after  train leaves  wire, it can run a certain distance on remaining buffer FE
-- Train pool-level electrification check (`isTrainElectrified`) — if one car is under a wire,  整個 train counts 作為 electrified
+- 即便**只有一節車廂**裝有受電弓，FE 也會在整列車範圍內共享
+- 在其他車廂上放置[FE 逆變器](fe-inverter.md)也能為其緩衝供電
+- 即使列車離開接觸網，仍可依靠剩餘的緩衝 FE 行駛一定距離
+- 列車池級別的電氣化檢查（`isTrainElectrified`）——只要有一節車廂位於接觸網下，整列車即視為電氣化
 
 > [!TIP]
-> Placing a pan以graph on one car (e.g.,  front car) + FE 逆變器s on  or cars lets even a long consist be fully powered by a single pan以graph.
+> 在一節車廂（如前車）放置受電弓 + 在其他車廂放置 FE 逆變器，即便長編組也能由單個受電弓完全供電。
 
-## Chunk-load independence
+## 與區塊加載無關
 
-Even when  train sits at a 車站 outside loaded chunks, its buffer doesn't decay, 和 re-contact continues when it returns.  
- sub車站 side keeps feeding power chunk-independently 通過 [變電所Registry](substation.md#savedata) (SavedData).
+即便列車停靠在已加載區塊之外的車站，其緩衝也不會衰減，返回後重新接觸即可繼續。
+變電所側通過 [SubstationRegistry](substation.md#savedata)（SavedData）保持與區塊無關的持續供電。
 
-## Related
+## 相關
 
-- [接觸網與連接工具](wire-connector.md) — wire laying
-- [箱式變電所](substation.md) —  能量源  feeds wires
-- [FE 逆變器](fe-inverter.md) — buffer sharing across or cars
-- [自定義接觸網設計](custom-wire.md) — free settings 用於 thickness / rows / spacing
+- [接觸網與連接工具](wire-connector.md) — 接觸網鋪設
+- [箱式變電所](substation.md) — 為接觸網供電的電源
+- [FE 逆變器](fe-inverter.md) — 跨其他車廂的緩衝共享
+- [自定義接觸網設計](custom-wire.md) — 粗細 / 排數 / 間距的自由設置

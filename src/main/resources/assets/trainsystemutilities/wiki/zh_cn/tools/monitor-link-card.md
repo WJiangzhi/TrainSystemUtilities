@@ -9,56 +9,56 @@ tags: [tool, item, monitor, link]
 ```embed:item id=trainsystemutilities:monitor_link_card size=48 label=true
 ```
 
-A **dedicated held 物品**  links a 显示器 方块 以 anor 方块 (railway management / poster management / management computer).
+一种**专用的手持物品**，用于将显示器方块链接到另一个方块（铁路管理方块 / 海报管理方块 / 管理用计算机）。
 
 [[TOC]]
 
-## Holding / usage
+## 持有 / 使用
 
-This 卡 h作为 no dedicated GUI. You use it simply by **holding it 和 right-clicking a 显示器**.
+此卡没有专用 GUI，只需**手持它并右键显示器**即可使用。
 
-1. **Put  显示器连接卡 on your hotbar 和 hold it.**
-2. **Right-click  显示器 方块** you want 以 link (by default,  **right mouse but以n**).
-   - Adjacent, connected 显示器 are **au以matic全部y registered 以ger 作为 a single group** (you do not need 以 click each face one by one).
-   - Right-clicking an already-registered group again **unregisters**  group.
-3. When registered, "Registered (○ groups)" is shown at  bot以m of  screen (above  hotbar).
-4.  registered content can be checked in  **工具tip** when you hover  卡: "Registered: ○".
-5. **Shift + right-click** (right-click while sneaking) **clears 全部** of  卡's registered content.
+1. **将显示器连接卡放入快捷栏并手持。**
+2. **右键要链接的显示器方块**（默认为**鼠标右键**）。
+   - 相邻且相连的显示器会**自动一起注册为一组**（无需逐面点击）。
+   - 对已注册的组再次右键则会**取消注册**该组。
+3. 注册成功后，屏幕底部（快捷栏上方）会显示"已注册（○组）"。
+4. 手持该卡时，将光标悬停可在**提示信息**中查看已注册内容："已注册：○"。
+5. **Shift + 右键**（潜行时右键）即可**清除**该卡的全部已注册内容。
 
 > [!NOTE]
-> This 卡 is one  remembers "registered 显示器". To actu全部y output 显示 content 以 a 显示器,  
-> put this registered 卡 **in以  显示器 slot of a railway management 方块, 等** (see "Usage flow" below).
+> 此卡记录的是"已注册的显示器"。要真正将显示内容输出到显示器，
+> 请将这张已注册的卡**放入铁路管理方块等方块的显示器插槽**中（参见下文"使用流程"）。
 
-## Operation summary
+## 操作一览
 
-| Operation | What happens |
+| 操作 | 效果 |
 |---|---|
-| **Right-click** a 显示器 | Register  显示器 (connected group) / unregister if already registered |
-| **Shift + right-click** | Clear 全部 of  卡's registered content |
-| **Hover** over  卡 | Check  current registration count in  工具tip |
+| **右键**显示器 | 注册该显示器（相连的一组）/ 若已注册则取消注册 |
+| **Shift + 右键** | 清除该卡的全部已注册内容 |
+| 光标**悬停**于卡上 | 在提示信息中查看当前注册数量 |
 
-## Usage flow
+## 使用流程
 
-1. **Register** 显示器 on  卡 与  steps above.
-2. Put  registered 卡 in以  **显示器 slot** of  方块 you want 作为  source ([铁路管理方块](../railway-management.md) / [海报管理方块](../poster-management.md) / [管理用计算机](../management-computer/monitor.md)).
-3. That 方块's 显示 content is now instantly synced 和 shown on  registered 显示器.
+1. 按上述步骤在卡上**注册**显示器。
+2. 将已注册的卡放入你希望作为来源的方块的**显示器插槽**中（[铁路管理方块](../railway-management.md) / [海报管理方块](../poster-management.md) / [管理用计算机](../management-computer/monitor.md)）。
+3. 该方块的显示内容会立即同步并显示在已注册的显示器上。
 
-## Linkable combinations
+## 可链接的组合
 
-| Source | Displayed content |
+| 来源 | 显示内容 |
 |---|---|
-| [铁路管理方块](../railway-management.md) | 车站 arrivals / next 列车 + 线路 编号 |
-| [海报管理方块](../poster-management.md) | Slideshow 图片 |
-| [管理用计算机 Moni以r](../management-computer/monitor.md) | Cus以m layout |
+| [铁路管理方块](../railway-management.md) | 车站到站 / 下一班列车 + 线路符号 |
+| [海报管理方块](../poster-management.md) | 轮播图片 |
+| [管理用计算机显示器](../management-computer/monitor.md) | 自定义布局 |
 
-## Moni以r 方块 placement
+## 显示器方块放置
 
-A 显示器 can be a 单个方块 或 a **multi-face 显示器** (= a grid of rows × columns).  
-When linked 与  卡,  content is str等hed across  整个 grid.
+显示器可以是单个方块，也可以是**多面显示器**（即 行 × 列 的网格）。
+用卡链接后，内容会拉伸铺满整个网格。
 
-## Related
+## 相关
 
-- [存储卡](memory-card.md) — general-purpose version
+- [存储卡](memory-card.md) — 通用版本
 - [铁路管理方块](../railway-management.md)
 - [海报管理方块](../poster-management.md)
-- [管理用计算机 显示器](../management-computer/monitor.md)
+- [管理用计算机显示器](../management-computer/monitor.md)

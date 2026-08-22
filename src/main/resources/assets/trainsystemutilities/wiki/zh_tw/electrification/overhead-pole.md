@@ -9,35 +9,35 @@ tags: [electrification, block]
 ```embed:item id=trainsystemutilities:overhead_pole size=48 label=true
 ```
 
-A single-軌道 catenary pole. Place it beside  軌道; it serves 作為  b作為e on which you mount a [Wire 絕緣子](insulator.md) 以 n string [Wire](wire-connector.md).
+一種單軌道接觸網支柱。放置在軌道旁，作為承載[接觸網絕緣子](insulator.md)的底座，再在其上架設[接觸網](wire-connector.md)。
 
 [[TOC]]
 
-## Placement
+## 放置
 
-Hold  overhead pole from your inven以ry 和 **right-click  以p face of  ground 或 a 方塊** where you want it 以 st和.
+從物品欄手持接觸網支柱，**右鍵點選你想讓它立起的地面或方塊的頂面**。
 
--  或ientation is chosen au以matic全部y 以 match  軌道 angle (8 directions, 45° steps). Used beside a 軌道, it natur全部y aligns par全部el 以  rail.
-- **To add height**: **right-click  以p** of a pole  is already st和ing, 和 anor pole of  same 或ientation stacks on 以p. Keep right-clicking 以 raise it higher 和 higher.
-- F或 evenly-spaced bulk placement,  [支柱自動工具](../tools/overhead-pole-auto-tool.md) is h和y (bulk-places poles, trusses, 和 insula以rs along  軌道 at your configured height 和 count).
+- 朝向會自動選擇以匹配軌道角度（8 個方向，45° 步進）。用於軌道旁時會自然地與鐵軌平行對齊。
+- **增高**：**右鍵點選已立起支柱的頂部**，另一根同朝向的支柱會疊放其上。持續右鍵可越升越高。
+- 若要等距批次放置，[接觸網支柱自動工具](../tools/overhead-pole-auto-tool.md)非常方便（按設定的高度和數量沿軌道批次放置支柱、桁架和絕緣子）。
 
 > [!IMPORTANT]
-> You cannot string wire directly on以  pole itself. Right-click 以 place a [Wire 絕緣子](insulator.md) 在…基礎上  pole, n right-click  insula以r 與  [連線工具 Tool](wire-connector.md) 以 string  wire.
+> 不能直接在支柱上架設接觸網。右鍵在支柱頂部放置[接觸網絕緣子](insulator.md)，然後用[連線工具](wire-connector.md)右鍵該絕緣子才能架設接觸網。
 
-## Flow up 以 stringing wire
+## 到架設接觸網的流程
 
-1. Place overhead poles beside  軌道 和 stack 它們給  required height.
-2. Right-click 以 place a [Wire 絕緣子](insulator.md) on  以p face of a pole.
-3. 放置n insula以r on  neighb或ing pole  same way.
-4. Put  [連線工具 Tool](wire-connector.md) in以 placement mode 和 right-click **insula以r → insula以r** in 或der 以 string  wire.
+1. 在軌道旁放置接觸網支柱，併疊放到所需高度。
+2. 右鍵在支柱頂面放置[接觸網絕緣子](insulator.md)。
+3. 在相鄰支柱上用同樣方式放置絕緣子。
+4. 將[連線工具](wire-connector.md)切換到放置模式，按順序右鍵**絕緣子 → 絕緣子**以架設接觸網。
 
 > [!TIP]
-> To span double-軌道 或 multi-軌道 sections, use  [接觸網架](overhead-truss.md).
+> 跨越雙軌或多軌路段時，請使用[接觸網桁架](overhead-truss.md)。
 
-## Related 頁面s
+## 相關頁面
 
-- [電氣化 總覽](index.md)
-- [Wire 絕緣子](insulator.md) —  wire mounting point placed 在…基礎上  pole
-- [Wire / 連線工具 Tool](wire-connector.md) — strings wire between insula以rs
-- [接觸網架](overhead-truss.md)
-- [支柱自動工具](../tools/overhead-pole-auto-tool.md)
+- [電氣化系統概述](index.md)
+- [接觸網絕緣子](insulator.md) — 放置在支柱頂部的接觸網掛載點
+- [接觸網 / 連線工具](wire-connector.md) — 在絕緣子之間架設接觸網
+- [接觸網桁架](overhead-truss.md)
+- [接觸網支柱自動工具](../tools/overhead-pole-auto-tool.md)

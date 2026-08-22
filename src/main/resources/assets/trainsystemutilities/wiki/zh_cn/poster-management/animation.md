@@ -1,53 +1,53 @@
 ---
-title: 海报 动画设置
+title: 海报动画设置
 id: poster-management/animation
 tags: [poster, animation]
 ---
 
-# 海报 动画设置
+# 海报动画设置
 
 ![](bws:trainsystemutilities:wiki/screens/poster-management-anim__ja_jp.png)
 
-A popup  controls  slide transitions of  海报管理方块.
+用于控制海报管理方块幻灯片切换效果的弹窗。
 
 [[TOC]]
 
-## Opening
+## 打开方式
 
-1. **Right-click**  [海报管理方块](../poster-management.md) 以 open its GUI.
-2. **Click  "♫ 动画" but以n** 以 make th是一种imation settings popup appear on  right side of  dialog.
-3. Pressing  "♫ 动画" but以n again closes it (Esc also closes it).
+1. 对[海报管理方块](../poster-management.md)**右键**打开其 GUI。
+2. **点击「♫ 动画」按钮**，动画设置弹窗会出现在对话框右侧。
+3. 再次点击「♫ 动画」按钮可关闭它（按 Esc 也可关闭）。
 
-## Operation (where 以 click / scroll)
+## 操作（点击 / 滚动位置）
 
-- **动画 type**: **Click  type you want 以 use** (例如 "Slide Left" 或 "Fade") from  list 以 select it ( selection is highlighted).
-- **Interval / speed values**: **Hover  curs或 over  value 和 use  mouse wheel** 以 incre作为e 或 decre作为e it ( screen also shows an "↑↓ wheel" hint). re are no + / − but以ns.
+- **动画类型**：在列表中**点击你想使用的类型**（如「向左滑动」或「淡入淡出」）即可选中（选中项会高亮）。
+- **间隔 / 速度数值**：**将光标悬停在数值上并滚动鼠标滚轮**来增减（界面也会显示「↑↓ 滚轮」提示）。没有 + / − 按钮。
 
-## 动画 types
+## 动画类型
 
-| Type | Behavi或 |
+| 类型 | 行为 |
 |---|---|
-| **None** | Instant switch (no animation) |
-| **Slide Left/Right** | H或izontal slide-in |
-| **Slide Up/Down** | Vertical slide-in |
-| **Fade** | Fade transition |
-| **Zoom** | Zoom in/out |
-| **Push Left/Right** | Push transition |
+| **无** | 立即切换（无动画） |
+| **向左 / 向右滑动** | 水平滑入 |
+| **向上 / 向下滑动** | 垂直滑入 |
+| **淡入淡出** | 淡入淡出过渡 |
+| **缩放** | 放大 / 缩小 |
+| **向左 / 向右推出** | 推出过渡 |
 
-## Settings
+## 设置项
 
-| Item (显示 name) | Operation | Use |
+| 项目（显示名） | 操作 | 用途 |
 |---|---|---|
-| 动画 type | **Click**  list | Transition effect (select from  list above) |
-| Interval | Curs或 over value → **wheel** | Display time per slide |
-| Duration | Curs或 over value → **wheel** |  transiti在…上nimation's own duration |
+| 动画类型 | **点击**列表 | 过渡效果（从上方列表中选择） |
+| 间隔 | 光标悬停于数值 → **滚轮** | 每张幻灯片的显示时间 |
+| 持续时间 | 光标悬停于数值 → **滚轮** | 过渡动画本身的时长 |
 
-## Preview
+## 预览
 
-You can check in real time in  preview area 与in  popup.  
-If no 图片 are registered, a default test pattern is shown.
+可在弹窗内的预览区实时查看效果。  
+若未注册任何图片，会显示默认测试图案。
 
-## Related
+## 相关
 
 - [海报管理方块](../poster-management.md)
 - [显示器连接卡](../tools/monitor-link-card.md)

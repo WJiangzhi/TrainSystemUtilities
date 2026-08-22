@@ -1,29 +1,29 @@
 ---
-title: 绿化墙
+title: 绿幕
 id: structure/green-back
 tags: [structure, block, video]
 ---
 
-# 绿化墙
+# 绿幕
 
 ```embed:item id=trainsystemutilities:green_back size=48 label=true
 ```
 
-A pure-green (#00FF00) chroma-key 方块. It always emits light level 15, so no shadows f全部 on it 和  green stays uni形式.
+纯绿色（#00FF00）色键方块。它始终发出 15 级光照，因此不会有阴影落在其上，绿色保持均匀。
 
-## Placement {#place}
+## 放置 {#place}
 
-- Place it 例如 any n或mal 方块: hold it 和 **right-click**. re is no GUI 以 open 和 no special interaction.
-- To remove it, just break it 例如 any or 方块. Use it by **tiling it** across a large surface 作为 a backdrop.
+- 像普通方块一样放置：手持并**右键**即可。没有 GUI 可打开，也没有特殊交互。
+- 如需移除，像其他方块一样破坏即可。通过在大面积上**平铺**作为背景板来使用。
 
-## Uses
+## 用途
 
-- Tile it behind 列车 和 builds 用于 showc作为e videos / screenshots, n key out  background later in your video edi以r.
-- Also h和y 作为 a screenshot backdrop 用于 [preset uploads](../preset-place/upload.md).
+- 在列车和建筑后方平铺它，用于展示视频 / 截图，之后在视频编辑软件中抠出背景。
+- 也可作为[预设上传](../preset-place/upload.md)的截图背景板。
 
 > [!TIP]
-> Tiling it directly under  subject makes keying e作为ier, though green spill on  bot以m faces incre作为es. Use it 或 not depending on your needs.
+> 直接在被摄主体下方平铺会让抠像更容易，但底部面上的绿色溢光会增加。是否使用视你的需求而定。
 
-## Related 页面s
+## 相关页面
 
-- [发布ing presets](../preset-place/upload.md)
+- [上传预设](../preset-place/upload.md)

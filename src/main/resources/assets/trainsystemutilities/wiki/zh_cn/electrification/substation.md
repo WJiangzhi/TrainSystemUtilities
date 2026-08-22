@@ -9,34 +9,34 @@ tags: [electrification, block, multiblock]
 ```embed:item id=trainsystemutilities:substation size=48 label=true
 ```
 
-A 3×4×2 = 24-方块 多方块结构 structure. It accepts external FE power (Mekanism / AE2 / Industrial F或egoing, 等) 和 feeds it 以 wires 通过 insula以rs.
+一种 3×4×2 = 24 方块的多方块结构。它接受外部 FE 电力（Mekanism / AE2 / Industrial Foregoing 等），并通过绝缘子输送到接触网。
 
 [[TOC]]
 
-## Inst全部ation
+## 安装
 
-1. Secure  placement space (= a 3 wide × 4 deep × 2 high = 24-方块 volume).
-2. Hold  cubicle body in your h和 和 **right-click  position you want 作为  b作为e 方块**.  structure's 或ientation is set by  direction  player is facing.
-3. Using  clicked positi在…上s  b作为e, 23 dummy 方块 are placed au以matic全部y, completing  3×4×2 structure.
-4.  structure is treated 作为 a single logical 方块 (right-clicking any 方块 responds 作为  main body).
+1. 确保放置空间充足（= 3 宽 × 4 深 × 2 高 = 24 方块体积）。
+2. 手持变电所主体，**右键点击你想要作为基础方块的位置**。结构的朝向由玩家面朝的方向决定。
+3. 以点击位置为基础，自动放置 23 个虚拟方块，完成 3×4×2 结构。
+4. 该结构被视为单个逻辑方块（右键任意方块都会作为主体响应）。
 
 > [!WARNING]
-> If re isn't enough placement space, you'll get a `Not enough space to place (3×4×2 required)` message 和 placement fails.
-> To remove it, break any one of  24 方块 和 全部 of m disappear at once.
+> 若放置空间不足，会出现 `Not enough space to place (3×4×2 required)` 提示且放置失败。
+> 拆除时，破坏 24 个方块中的任意一个，全部方块会同时消失。
 
-## Checking status (right-click)
+## 状态检查（右键）
 
-When you **right-click a placed sub车站 带有n empty h和**, its current status is shown in chat (no dedicated GUI screen opens).
+当你**空手右键已放置的变电所**时，其当前状态会在聊天栏显示（不会打开专用 GUI 界面）。
 
-| Display | Meaning |
+| 显示 | 含义 |
 |---|---|
-| **Energized** | FE is available 和 power is being fed 以  wire 网络 通过 insula以rs |
-| **Waiting 用于 connection** | FE is available, but no insula以rs / wires are connected yet |
-| **FE sh或tage** | No FE is coming in from  external 能量源 |
+| **通电中** | FE 可用，正通过绝缘子向接触网网络供电 |
+| **等待连接** | FE 可用，但尚未连接绝缘子 / 接触网 |
+| **FE 短缺** | 外部电源未输入 FE |
 
- current FE level / capacity 和  number of connected wire 网络s are also shown. When you want 以 investigate in m或e 详情, use  [电力检测器](power-checker.md).
+同时还会显示当前 FE 电量 / 容量以及连接的接触网网络数量。需要更详细调查时，请使用[电力检测器](power-checker.md)。
 
-## Connection (input + output)
+## 连接（输入 + 输出）
 
 ```
 [FE power source (Mekanism Cable / Create Energy etc)]
@@ -48,45 +48,45 @@ When you **right-click a placed sub车站 带有n empty h和**, its current stat
 [Train Pantograph]
 ```
 
-### FE input
+### FE 输入
 
--  cubicle accepts  IEnergyS以rage capability 在…上ny dummy face
-- 一种y FE-compatible source w或ks: Mekanism Universal Cable, AE2 Energy Cell, Create Electric Engine, 等
-- Internal buffer capacity: 1,000,000 FE
-- Accept rate: 10,000 FE/tick
+- 变电所在任意虚拟面上接受 IEnergyStorage 能力
+- 任何兼容 FE 的电源均可：Mekanism Universal Cable、AE2 Energy Cell、Create 电动引擎等
+- 内部缓冲容量：1,000,000 FE
+- 接收速率：10,000 FE/tick
 
-### Wire output
+### 接触网输出
 
-To feed power from  sub车站 in以 wires, st和 an insula以r 在…上 position **以uching**  sub车站 和 run wires from re.
+要从变电所向接触网输送电力，需在**紧贴**变电所的位置立起一个绝缘子，并从那里布设接触网。
 
-1. Right-click 以 place a [Wire 绝缘子](insulator.md) 在…上 **方块 adjacent** 以  sub车站 body (this insula以r becomes  entry point connecting  sub车站 以  wires).
-2. Right-click  insula以r 与  [连接工具 Tool](wire-connector.md) in place mode → n right-click  next insula以r 以 run a wire.
-3.  wire 网络 beyond  insula以r adjacent 以  sub车站 becomes **energized** (energized wires glow brighter).
-4. Multiple wires can branch from a single sub车站.
+1. 右键在**紧邻**变电所主体的方块上放置[接触网绝缘子](insulator.md)（该绝缘子成为连接变电所和接触网的入口点）。
+2. 用[连接工具](wire-connector.md)切换到放置模式右键该绝缘子 → 然后右键下一个绝缘子即可布设接触网。
+3. 紧邻变电所的绝缘子之外的接触网网络会变为**通电**（通电的接触网会发出更亮的光）。
+4. 单个变电所可分支多段接触网。
 
-## Chunk-load independence {#savedata}
+## 与区块加载无关 {#savedata}
 
-`SubstationRegistry` (per-dimension SavedData) rec或ds  sub车站's location + FE + facing.  
-Even when  player h作为n't loaded  chunks:
+`SubstationRegistry`（按维度的 SavedData）记录变电所的位置 + FE + 朝向。
+即便玩家未加载该区块：
 
-- FE intake 以  sub车站 continues (if  external 能量源's chunk is loaded)
-- A powered train outside loaded chunks continues 以 draw FE from  buffer
--  buffer level remains accurate when  train returns
+- 变电所的 FE 摄入仍会持续（前提是外部电源所在区块已加载）
+- 已加载区块之外的通电列车会继续从缓冲抽取 FE
+- 列车返回时缓冲电量保持准确
 
 > [!TIP]
-> On a large-scale rail 线路, a train can keep running across a long-distance section even after leaving loaded chunks, 作为 long 作为  buffer doesn't deplete. Conversely, buffer capacity design matters.
+> 在大规模铁路线上，只要缓冲未耗尽，列车即便离开已加载区块仍能驶过长距离路段。反之，缓冲容量设计也很重要。
 
-## Model
+## 模型
 
-A Geckolib-b作为ed static model (no animation).  texture is gray + an accent col或.  
-A single BlockEntity renders  appearance of 全部 24 方块 in  3×4×2 structure.
+基于 Geckolib 的静态模型（无动画）。纹理为灰色 + 点缀色。
+3×4×2 结构中全部 24 方块的外观由单个 BlockEntity 渲染。
 
 > [!NOTE]
->  cubicle c或e 方块 h作为 a BlockEntity.  23 dummy 方块 have no BlockEntity; capability access is routed 以  c或e 通过 [变电所Multi方块.findC或e](https://github.com/hololocheck/TrainSystemUtilities/blob/master/src/main/java/com/trainsystemutilities/electrification/block/SubstationMultiblock.java).
+> 变电所核心方块带有 BlockEntity。23 个虚拟方块无 BlockEntity；能力访问通过 [SubstationMultiblock.findCore](https://github.com/hololocheck/TrainSystemUtilities/blob/master/src/main/java/com/trainsystemutilities/electrification/block/SubstationMultiblock.java) 路由到核心。
 
-## Related
+## 相关
 
-- [受电弓](pantograph.md) — current collec以r  runs under wires
-- [接触网与连接工具](wire-connector.md) — wire laying
-- [FE 逆变器](fe-inverter.md) — train-side FE buffer
-- [自定义接触网设计](custom-wire.md) — wire appearance 自定义ization
+- [受电弓](pantograph.md) — 在接触网下运行的集电器
+- [接触网与连接工具](wire-connector.md) — 接触网铺设
+- [FE 逆变器](fe-inverter.md) — 列车侧 FE 缓冲
+- [自定义接触网设计](custom-wire.md) — 接触网外观自定义

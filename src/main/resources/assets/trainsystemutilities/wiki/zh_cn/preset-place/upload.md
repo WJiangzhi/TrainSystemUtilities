@@ -1,58 +1,58 @@
 ---
-title: 预设 发布
+title: 预设上传
 id: preset-place/upload
 tags: [preset-place, upload]
 ---
 
-# 预设 发布
+# 预设上传
 
 ![](bws:trainsystemutilities:wiki/screens/preset-place-upload__ja_jp.png)
 
-Dialog 用于 requesting 以 publish your own preset 以 Preset Place.
+用于请求将自己的预设发布到 Preset Place 的对话框。
 
 [[TOC]]
 
-## Opening {#open}
+## 打开 {#open}
 
-First, you must save  train you want 以 publish loc全部y 作为 a [train preset](../train-preset-tool/browse.md).
+首先，你需要将要发布的列车在本地保存为[列车预设](../train-preset-tool/browse.md)。
 
-1. **Right-click**  [列车预设工具](../train-preset-tool/browse.md) in **GUI mode** 以 open  browse screen (switch modes 与 **Alt + wheel**).
-2. Set  mode 以 **`Mine` (yours)**.
-3. **Left-click**  **upload icon** on  tile of  preset you want 以 publish 以 open this dialog.
+1. 在 **GUI 模式**下**右键**[列车预设工具](../train-preset-tool/browse.md)，打开浏览界面（用 **Alt + 滚轮**切换模式）。
+2. 将模式设为 **`Mine`（你的）**。
+3. **左键**你想发布的预设卡片上的**上传图标**，打开此对话框。
 
 > [!NOTE]
->  upload icon is shown only on your own presets  have Microsoft account linking set up 和 were not downloaded from Preset Place.
+> 上传图标仅在你自己的、已完成 Microsoft 账号关联、且并非从 Preset Place 下载的预设上显示。
 
-## 发布 物品
+## 上传项目
 
-| Item | 说明 |
+| 项目 | 概要 |
 |---|---|
-| Images (up 以 5) | PNG / JPG 用于 preview. Add 与  + but以n |
-| Markdown description | 4096 chars. Supp或ts new线路 / p作为te / copy / Ctrl+Enter |
-| Publish but以n | Submits  publish request after input validation |
+| 图片（最多 5 张） | 用于预览的 PNG / JPG。用 + 按钮添加 |
+| Markdown 说明 | 4096 字符。支持换行 / 粘贴 / 复制 / Ctrl+Enter |
+| 发布按钮 | 输入校验通过后提交发布请求 |
 
-## Description edi以r
+## 说明编辑器
 
-Multi-线路 Markdown editing. 使用 `Preview` 以ggle 以 check  rendered result:
+多行 Markdown 编辑。可使用 `Preview` 切换查看渲染结果：
 
-- St和ard Markdown 例如 headings / lists / links / emph作为is / quotes
-- Ctrl + Enter executes `Publish`
+- 标题 / 列表 / 链接 / 强调 / 引用等标准 Markdown
+- Ctrl + Enter 执行 `Publish`
 
-## Publish flow
+## 发布流程
 
-1. `Publish` is enabled 与 1+ image 和 1+ char of description
-2. Publish confirm dialog
-3.  client sends it 以  Preset Place server
-4. Goes live after review (= au以matic 或 modera以r)
+1. 至少 1 张图片 + 至少 1 字符说明后，`Publish` 即可用
+2. 发布确认对话框
+3. 客户端将其发送到 Preset Place 服务器
+4. 审核通过后上线（= 自动或版主审核）
 
-## Auntication
+## 认证
 
-Publishing requires Microsoft account auntication.  
-Check auth status / re-aunticate in  [创作者中心](creator-center.md).
+发布需要 Microsoft 账号认证。
+可在[创作者中心](creator-center.md)查看认证状态 / 重新认证。
 
-## Related
+## 相关
 
 - [Preset Place 概述](overview.md)
 - [预设详情](detail.md)
 - [创作者中心](creator-center.md)
-- [Train 预设浏览](../train-preset-tool/browse.md)
+- [列车预设浏览](../train-preset-tool/browse.md)

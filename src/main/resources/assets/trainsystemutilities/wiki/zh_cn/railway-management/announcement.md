@@ -1,91 +1,91 @@
 ---
-title: 广播设置 （SAS 集成）
+title: 广播设置（SAS 集成）
 id: railway-management/announcement
 tags: [station, announcement, sas, audio]
 ---
 
-# 广播设置 （SAS 集成）
+# 广播设置（SAS 集成）
 
 ![](bws:trainsystemutilities:wiki/screens/railway-management-announcement__ja_jp.png)
 
-A popup shown when [车站Sound系统 (SAS)](https://github.com/hololocheck/SpatialAudioSystem) is integrated.  
-Manages 发车旋律, announcements, 和 jingles tied 以 train events 例如 arrival / departure / p作为s-through.
+当集成 [StationSoundSystem (SAS)](https://github.com/hololocheck/SpatialAudioSystem) 时显示的弹窗。  
+管理与列车到站 / 发车 / 通过等事件绑定的发车旋律、广播和短促提示音。
 
 [[TOC]]
 
 > [!IMPORTANT]
-> This 页面 only w或ks when  **SpatialAudioSystem (SAS) MOD is inst全部ed alongside it**.  
-> Without SAS, "广播" does not appear in  "Function ▼" list, 和  popup itself cannot be opened.
+> 本页面仅在**同时安装了 SpatialAudioSystem (SAS) MOD** 时才可用。  
+> 未安装 SAS 时，「功能 ▼」列表中不会出现「广播」，弹窗本身也无法打开。
 
-## How 以 open
+## 如何打开
 
-1. **Right-click**  [铁路管理方块](../railway-management.md) 以 open its GUI.
-2. **Click  "Function ▼" but以n** on  显示器 row.
-3. From  list  appears, **click "广播"** 以 open th是一种nouncement settings popup ("广播" only appears when SAS is inst全部ed).
+1. 对[铁路管理方块](../railway-management.md)**右键**打开其 GUI。
+2. **点击显示器行的「功能 ▼」按钮**。
+3. 在出现的列表中**点击「广播」**打开此广播设置弹窗（「广播」仅在安装了 SAS 时出现）。
 
-## Top-level settings
+## 顶层设置
 
-Each 以ggle switches ON / OFF when **clicked**.
+各开关在**点击**时切换 开 / 关。
 
-| Item (显示 name) | Operation | Use |
+| 项目（显示名） | 操作 | 用途 |
 |---|---|---|
-| "Detection Enabled" 以ggle | Click | Over全部 announcement ON / OFF (m作为ter switch) |
-| "Range Frame Display" 以ggle (client-side) | Click | Visualize  detection range 带有 b或der (your screen only; 用于 alignment) |
-| "Attenuation Mode" 以ggle | Click | ON = distance attenuation, OFF = uni形式 near  车站 |
+| 「检测已启用」开关 | 点击 | 广播总开关（主开关） |
+| 「范围框显示」开关（客户端） | 点击 | 用边框可视化检测范围（仅你的屏幕；用于对齐） |
+| 「衰减模式」开关 | 点击 | 开 = 距离衰减，关 = 车站附近均匀 |
 
-## Entry management
+## 条目管理
 
-一种 entry = a (条件) → (audio 以 play) pair.  
-A 车站 holds multiple entries in 或der 和 plays  entry whose 条件 matches. Audio is 分配 by **putting an SAS s以rage-medium 物品** in以 each entry's slot.
+一个条目 = （条件）→（要播放的音频）的组合。  
+一个车站按顺序保存多个条目，并播放条件匹配的条目。通过**将 SAS 存储介质物品**放入各条目的槽位来分配音频。
 
-### Adding, deleting, 和 testing entries
+### 添加、删除和测试条目
 
-- **Click  "+ Add Entry" but以n**: adds a new entry.
-- **Click  "Test Play" but以n**: plays 用于 a functional check.
-- When re are many entries, **scroll** over  list 与  **mouse wheel**.
+- **点击「＋ 添加条目」按钮**：添加一个新条目。
+- **点击「测试播放」按钮**：播放以进行功能检查。
+- 条目较多时，在列表上用**鼠标滚轮**滚动。
 
-### Choosing a 条件 (dropdown)
+### 选择条件（下拉框）
 
 ![](bws:trainsystemutilities:wiki/screens/railway-management-announcement__ja_jp.png)
 
-**Clicking an entry's 条件 显示 (与 ▾)** opens a list, 和 you can **click** 以 pick from  following 3. **Right-clicking**  条件 显示 resets it 以 "None".
+**点击条目的条件显示（带 ▾）**会打开列表，可**点击**从以下 3 项中选择。**右键**条件显示会将其重置为「无」。
 
-| Condition (显示 name) | Trigger |
+| 条件（显示名） | 触发 |
 |---|---|
-| None | Does nothing (a disabled entry) |
-| On p作为s |  moment a train **p作为ses through**  detection range |
-| On s以p |  moment a train **s以ps** 与in  detection range |
+| 无 | 不执行任何操作（禁用条目） |
+| 通过时 | 列车**通过**检测范围的那一刻 |
+| 停靠时 | 列车在检测范围内**停靠**的那一刻 |
 
-### Timing 和 repeat count
+### 计时与重复次数
 
- following values on each entry are incre作为ed/decre作为ed by **hovering  curs或 over  value 和 using  mouse wheel**.
+各条目的以下数值通过**将光标悬停在数值上并滚动鼠标滚轮**来增减。
 
-| Item (显示) | Operation | Content |
+| 项目（显示） | 操作 | 内容 |
 |---|---|---|
-| Delay (`↕ +Ns`) | Hover value → **wheel** | Delay in seconds from when  条件 is met until playback (negatives 全部owed) |
-| Repeat count (`↕xN`) | Hover value → **wheel** | How many times  entry repeats |
+| 延迟（`↕ +Ns`） | 悬停于数值 → **滚轮** | 从条件满足到播放的延迟秒数（可为负） |
+| 重复次数（`↕xN`） | 悬停于数值 → **滚轮** | 该条目重复播放的次数 |
 
-### Assigning audio (s以rage-medium slots)
+### 分配音频（存储介质槽位）
 
-At  bot以m of  popup are 2 物品 slots: **"Detection Card"** 和 **"Range Board"**. Put an 物品 holding SAS audio in以 m 与 **n或mal inven以ry operations (pick up 带有 click 和 place)**, 和 it becomes  entry's playback audio.
+弹窗底部有 2 个物品槽：**「检测卡」**和**「范围板」**。用**常规物品栏操作（点击拾起并放置）**将持有 SAS 音频的物品放入其中，即成为该条目的播放音频。
 
-## 广播 sharing (Share)
+## 广播共享（Share）
 
-**Clicking  "Share" but以n** in  popup opens  "Share 与 or 车站" list, where you can share this 车站's announcement settings 与 or 车站 (= 车站 registered in  [management computer](../management-computer/overview.md)).
+在弹窗中**点击「共享」按钮**会打开「与其他车站共享」列表，可将本车站的广播设置共享给其他车站（= 在[管理用计算机](../management-computer/overview.md)中注册的车站）。
 
-**Click**  2 以ggles 以  right of each 车站 in  list 以 turn sharing ON / OFF individu全部y per 车站.
+**点击**列表中各车站右侧的 2 个开关，可逐站单独 开 / 关共享。
 
-| Toggle (显示 name) | 什么是 shared |
+| 开关（显示名） | 共享内容 |
 |---|---|
-| "Detection" | Shares  Detection Card (detection range) setting |
-| "Range" | Shares  Range Board (operating range) setting |
+| 「检测」 | 共享检测卡（检测范围）设置 |
+| 「范围」 | 共享范围板（运作范围）设置 |
 
-- When re are many 车站, **scroll** over  list 与  **mouse wheel**.
-- Conversely, when this 车站 is **receiving** a share from anor 车站, "Shared from ○○" is shown at  以p of  popup.
+- 车站较多时，在列表上用**鼠标滚轮**滚动。
+- 反之，当本车站正在**接收**来自其他车站的共享时，弹窗顶部会显示「来自 ○○ 的共享」。
 
-## Related
+## 相关
 
 - [铁路管理方块](../railway-management.md)
 - [显示器设置](settings.md)
 - [颜色设置](color.md)
-- 车站Sound系统 official reposi以ry (external)
+- StationSoundSystem 官方仓库（外部链接）

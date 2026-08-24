@@ -86,8 +86,8 @@ public class MemoryCardItem extends Item {
             tag.putString("StationName", stationName != null ? stationName : "");
             stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
             if (player != null) {
-                player.displayClientMessage(Component.literal(
-                        "\u00a7b\u9244\u9053\u7ba1\u7406\u30d6\u30ed\u30c3\u30af\u3092\u767b\u9332\u3057\u307e\u3057\u305f"), true);
+                player.displayClientMessage(Component.translatable(
+                        "tsu.memory_card.railway_manager_registered"), true);
             }
             return InteractionResult.SUCCESS;
         }
@@ -101,8 +101,8 @@ public class MemoryCardItem extends Item {
                     BlockPos managerPos = BlockPos.of(tag.getLong("Pos"));
                     computer.setLinkedRailwayManagerPos(managerPos);
                     if (player != null) {
-                        player.displayClientMessage(Component.literal(
-                                "\u00a7a\u9244\u9053\u7ba1\u7406\u30d6\u30ed\u30c3\u30af\u3092\u30ea\u30f3\u30af\u3057\u307e\u3057\u305f"), true);
+                        player.displayClientMessage(Component.translatable(
+                                "tsu.memory_card.linked_railway_manager"), true);
                     }
                     return InteractionResult.SUCCESS;
                 }
@@ -110,15 +110,15 @@ public class MemoryCardItem extends Item {
                     BlockPos trackPos = BlockPos.of(tag.getLong("Pos"));
                     computer.setLinkedTrackNetworkPos(trackPos);
                     if (player != null) {
-                        player.displayClientMessage(Component.literal(
-                                "\u00a7a\u7dda\u8def\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u3092\u30ea\u30f3\u30af\u3057\u307e\u3057\u305f"), true);
+                        player.displayClientMessage(Component.translatable(
+                                "tsu.memory_card.linked_track_network"), true);
                     }
                     return InteractionResult.SUCCESS;
                 }
             }
             if (player != null) {
-                player.displayClientMessage(Component.literal(
-                        "\u00a7c\u5148\u306b\u7dda\u8def\u307e\u305f\u306f\u9244\u9053\u7ba1\u7406\u30d6\u30ed\u30c3\u30af\u3092\u767b\u9332\u3057\u3066\u304f\u3060\u3055\u3044"), true);
+                player.displayClientMessage(Component.translatable(
+                        "tsu.memory_card.not_registered"), true);
             }
             return InteractionResult.FAIL;
         }
@@ -138,9 +138,9 @@ public class MemoryCardItem extends Item {
                 tag.putInt("Trains", data.trains().size());
                 stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
                 if (player != null) {
-                    player.displayClientMessage(Component.literal(
-                            "\u00a7b\u7dda\u8def\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u3092\u767b\u9332 (\u99c5:" + data.stations().size()
-                            + " \u4fe1\u53f7:" + data.signals().size() + " \u5217\u8eca:" + data.trains().size() + ")"), true);
+                    player.displayClientMessage(Component.translatable(
+                            "tsu.memory_card.track_network_registered",
+                            data.stations().size(), data.signals().size(), data.trains().size()), true);
                 }
                 return InteractionResult.SUCCESS;
             }
@@ -162,11 +162,11 @@ public class MemoryCardItem extends Item {
 
     private void clearCard(ItemStack stack, Player player) {
         stack.remove(DataComponents.CUSTOM_DATA);
-        player.displayClientMessage(Component.literal(
-                "\u00a77\u30e1\u30e2\u30ea\u30fc\u30ab\u30fc\u30c9\u3092\u521d\u671f\u5316\u3057\u307e\u3057\u305f"), true);
+        player.displayClientMessage(Component.translatable(
+                "tsu.memory_card.cleared"), true);
     }
 
-    /** 4 \u65b9\u5411 + \u4e0a\u4e0b (= multi-block dummy \u304c\u7e26\u306b\u4e26\u3076\u5834\u5408\u3042\u308a) \u3067 BFS \u3057\u3066\u9023\u7d50\u3059\u308b \u30db\u30fc\u30e0\u67f5 / \u30c9\u30a2 block \u3092\u5168\u90e8\u53ce\u96c6\u3002 */
+    /** 4 方向 + 上下 (= multi-block dummy が縦に並ぶ場合あり) で BFS して連結するホーム柵 / ドア block を全部収集。 */
     private static java.util.Set<BlockPos> findConnectedGroup(Level level, BlockPos start) {
         java.util.Set<BlockPos> visited = new java.util.HashSet<>();
         java.util.Deque<BlockPos> queue = new java.util.ArrayDeque<>();
@@ -187,7 +187,7 @@ public class MemoryCardItem extends Item {
         return visited;
     }
 
-    /** group set \u3092 \u30ab\u30fc\u30c9\u306b\u8ffd\u52a0 (= \u65e2\u5b58\u3068 union)\u3002 */
+    /** group set をカードに追加 (= 既存と union)。 */
     private void addGroup(ItemStack stack, java.util.Set<BlockPos> group, Player player) {
         CompoundTag tag = stack.has(DataComponents.CUSTOM_DATA)
                 ? stack.get(DataComponents.CUSTOM_DATA).copyTag()
@@ -213,13 +213,12 @@ public class MemoryCardItem extends Item {
         tag.put(TAG_MEMBERS, members);
         stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
         if (player != null) {
-            player.displayClientMessage(Component.literal(
-                    String.format("\u00a7b\u30db\u30fc\u30e0\u30c9\u30a2\u7fa4\u306b %d \u500b\u8ffd\u52a0 (\u8a08 %d \u500b)",
-                            added, members.size())), true);
+            player.displayClientMessage(Component.translatable(
+                    "tsu.memory_card.screen_door_added", added, members.size()), true);
         }
     }
 
-    /** group set \u3092 \u30ab\u30fc\u30c9\u304b\u3089\u524a\u9664\u3002 */
+    /** group set をカードから削除。 */
     private void removeGroup(ItemStack stack, java.util.Set<BlockPos> group, Player player) {
         if (!stack.has(DataComponents.CUSTOM_DATA)) return;
         CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).copyTag();
@@ -238,16 +237,15 @@ public class MemoryCardItem extends Item {
         if (members.isEmpty()) {
             stack.remove(DataComponents.CUSTOM_DATA);
             if (player != null) {
-                player.displayClientMessage(Component.literal(
-                        "\u00a77\u30db\u30fc\u30e0\u30c9\u30a2\u7fa4\u3092\u30af\u30ea\u30a2"), true);
+                player.displayClientMessage(Component.translatable(
+                        "tsu.memory_card.screen_door_cleared"), true);
             }
         } else {
             tag.put(TAG_MEMBERS, members);
             stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
             if (player != null) {
-                player.displayClientMessage(Component.literal(
-                        String.format("\u00a77%d \u500b\u524a\u9664 (\u6b8b\u308a %d \u500b)",
-                                removed, members.size())), true);
+                player.displayClientMessage(Component.translatable(
+                        "tsu.memory_card.screen_door_removed", removed, members.size()), true);
             }
         }
     }
@@ -258,24 +256,31 @@ public class MemoryCardItem extends Item {
             CompoundTag tag = stack.get(DataComponents.CUSTOM_DATA).copyTag();
             String type = tag.getString("Type");
             if ("railway_manager".equals(type)) {
-                tooltip.add(Component.literal("\u00a7b\u9244\u9053\u7ba1\u7406\u30d6\u30ed\u30c3\u30af\u767b\u9332\u6e08"));
+                tooltip.add(Component.translatable(
+                        "tsu.memory_card.tooltip_railway_manager"));
                 String station = tag.getString("StationName");
                 if (!station.isEmpty()) {
-                    tooltip.add(Component.literal("\u00a77\u99c5: \u00a7f" + station));
+                    tooltip.add(Component.translatable(
+                            "tsu.memory_card.tooltip_railway_manager_station", station));
                 }
             } else if ("track_network".equals(type)) {
-                tooltip.add(Component.literal("\u00a7b\u7dda\u8def\u30cd\u30c3\u30c8\u30ef\u30fc\u30af\u767b\u9332\u6e08"));
-                tooltip.add(Component.literal("\u00a77\u99c5: \u00a7f" + tag.getInt("Stations")
-                        + " \u00a77\u4fe1\u53f7: \u00a7f" + tag.getInt("Signals")
-                        + " \u00a77\u5217\u8eca: \u00a7f" + tag.getInt("Trains")));
+                tooltip.add(Component.translatable(
+                        "tsu.memory_card.tooltip_track_network"));
+                tooltip.add(Component.translatable(
+                        "tsu.memory_card.tooltip_track_network_stats",
+                        tag.getInt("Stations"), tag.getInt("Signals"), tag.getInt("Trains")));
             } else if (TYPE_SCREEN_DOOR_GROUP.equals(type)) {
                 int count = tag.getList(TAG_MEMBERS, Tag.TAG_LONG).size();
-                tooltip.add(Component.literal("\u00a7b\u30db\u30fc\u30e0\u30c9\u30a2\u7fa4\u767b\u9332\u6e08"));
-                tooltip.add(Component.literal("\u00a77\u30e1\u30f3\u30d0\u30fc: \u00a7f" + count + " \u500b"));
+                tooltip.add(Component.translatable(
+                        "tsu.memory_card.tooltip_screen_door_group"));
+                tooltip.add(Component.translatable(
+                        "tsu.memory_card.tooltip_screen_door_members", count));
             }
         } else {
-            tooltip.add(Component.literal("\u00a78\u7dda\u8def\u307e\u305f\u306f\u7ba1\u7406\u30d6\u30ed\u30c3\u30af\u3092\u53f3\u30af\u30ea\u30c3\u30af\u3067\u767b\u9332"));
-            tooltip.add(Component.literal("\u00a78\u30b7\u30d5\u30c8\u53f3\u30af\u30ea\u30c3\u30af\u3067\u521d\u671f\u5316"));
+            tooltip.add(Component.translatable(
+                    "tsu.memory_card.tooltip_unbound"));
+            tooltip.add(Component.translatable(
+                    "tsu.memory_card.tooltip_clear"));
         }
     }
 }
